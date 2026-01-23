@@ -27,7 +27,7 @@
               <a href="/puzzle/door-puzzle" @click="closeMenu">Door Puzzle</a>
             </div>
           </div>
-          <a href="/guide/overview" @click="closeMenu">Guides</a>
+          <a href="/guides" @click="closeMenu">Guides</a>
           <a href="/wiki" @click="closeMenu">Wiki</a>
         </nav>
       </div>

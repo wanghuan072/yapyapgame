@@ -17,7 +17,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/spells">Spells</a></li>
             <li><a href="/spell-generator">Spell Generator</a></li>
-            <li><a href="/guide/overview">Guides</a></li>
+            <li><a href="/guides">Guides</a></li>
             <li><a href="/wiki">Wiki</a></li>
           </ul>
         </div>

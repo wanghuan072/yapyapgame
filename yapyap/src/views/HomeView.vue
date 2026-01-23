@@ -7,7 +7,7 @@
           <div class="hero-text card">
             <div class="pill">Voice Spells · Co-op Chaos · Light Horror</div>
             <h1>YAPYAP Game Ultimate Guide & Wiki</h1>
-            <p class="lead">"Master the Spells, Solve the Puzzles, and Fix Your Mic."</p>
+            <p class="lead">"Master the spell, solve the puzzle, and escape the tower."</p>
             
             <div class="hero-features">
               <div class="hero-feature-item">
@@ -209,7 +209,7 @@
             <!-- <p class="pill">What is YAPYAP?</p> -->
             <h2 class="section-title">What is YAPYAP</h2>
             <p>
-              YAPYAP is a multiplayer horror game on Steam that leans into voice activated spells and co-op vandalism. Players act as minions infiltrating a rival tower, smashing high-value objects, solving puzzles, and escaping monsters. This multiplayer horror game combines voice activated spells with cooperative gameplay, creating a unique steam co-op experience where teams of 5-6 players work together to cause chaos and escape alive.
+              YAPYAP is a multiplayer horror game on Steam that leans into voice activated spells and co-op vandalism. Players act as minions infiltrating a rival tower, smashing high-value objects, solving puzzles, and escaping monsters. This multiplayer horror game combines voice activated spells with cooperative gameplay.
             </p>
             <p>
               The game's core mechanic revolves around voice control co-op, where players must speak spell commands into their microphones to trigger magical effects. This voice activated spells system creates an immersive spellcasting with mic experience that sets YAPYAP apart from traditional co-op horror titles. The combination of vandalism and stealth escape mechanics makes each run unpredictable and thrilling.
@@ -588,7 +588,7 @@ onUnmounted(() => {
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 12px;
   margin-top: 20px;
 }
@@ -615,7 +615,7 @@ onUnmounted(() => {
 .video-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 5 / 4;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);

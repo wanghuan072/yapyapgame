@@ -26,8 +26,8 @@ const router = createRouter({
       component: HomeView,
       meta: {
         seo: {
-          title: 'YAPYAP Guide & Wiki: Release Date, Demo & Strategies',
-          description: 'The #1 unofficial guide for YAPYAP. Track the Feb 3, 2026 release, get Steam Demo tips, and master voice commands in this chaotic coop horror game.',
+          title: 'YAPYAP Wiki & Strategy Guide: Spells, Puzzles & Voice Tips',
+          description: 'The ultimate unofficial resource for YAPYAP. Master voice spells, solve every puzzle, and survive the horror with our comprehensive wiki and coop strategies.',
           keywords: 'yapyap game, yapyap steam, yapyap release date, yapyap demo, maison bap, coop horror game, yapyap guide',
         },
       },
@@ -141,7 +141,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/guide/overview',
+      path: '/guides',
       name: 'guides',
       component: GuidesView,
       meta: {

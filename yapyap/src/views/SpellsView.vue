@@ -2,32 +2,12 @@
   <div class="page">
     <main class="container">
       <section class="page-hero">
-        <div class="hero-wrap card">
-          <div class="hero-main">
-            <p class="pill">Voice Commands · Database · Pronunciation Guide</p>
-            <h1 class="title">YAPYAP Spells &amp; Pronunciation Guide: Voice Commands Database</h1>
-            <p class="intro">
+        <p class="pill">Voice Commands · Database · Pronunciation Guide</p>
+        <h1 class="title">YAPYAP Spells &amp; Pronunciation Guide</h1>
+        <p class="intro">
               The complete YAPYAP spells list with voice commands, pronunciation, and quick “listen” demos—plus common
-              misheard phrases to improve voice recognition.
-            </p>
-            <div class="hero-ctas">
-              <a class="btn btn-primary" href="#spells-list">Browse spells list</a>
-              <a class="btn btn-ghost" href="#mic-tester">Test your mic</a>
-            </div>
-          </div>
-          <div class="hero-side">
-            <div class="stat-card">
-              <div class="stat-k">Spells DB</div>
-              <div class="stat-v">Live</div>
-              <p class="muted">Commands + pronunciation + listen.</p>
-            </div>
-            <div class="stat-card alt">
-              <div class="stat-k">Mic Tester</div>
-              <div class="stat-v">Ready</div>
-              <p class="muted">Verify input volume in-browser.</p>
-            </div>
-          </div>
-        </div>
+          misheard phrases to improve voice recognition.
+        </p>
       </section>
 
       <!-- Spells -->
@@ -267,58 +247,6 @@ const misheard = computed(() => [])
 </script>
 
 <style scoped>
-.hero-wrap {
-  display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
-  gap: 18px;
-  align-items: stretch;
-  background: linear-gradient(140deg, rgba(15, 20, 36, 0.92), rgba(18, 25, 48, 0.88));
-}
-
-.hero-main {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.hero-side {
-  display: grid;
-  gap: 10px;
-  align-content: start;
-}
-
-.hero-ctas {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 4px;
-}
-
-.stat-card {
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
-}
-
-.stat-card.alt {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.14), rgba(74, 222, 128, 0.08));
-  border-color: rgba(139, 92, 246, 0.35);
-}
-
-.stat-k {
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(237, 240, 255, 0.7);
-}
-
-.stat-v {
-  font-size: 20px;
-  font-weight: 800;
-  margin: 2px 0 4px 0;
-}
 
 .pill {
   display: inline-flex;

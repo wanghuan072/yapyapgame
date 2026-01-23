@@ -87,13 +87,16 @@
         </div>
       </div>
 
-      <!-- Spell Display Area (shown after manifest, below the layout) -->
-      <div class="spell-display" v-if="manifestedSpell">
+      <!-- Spell Display Area (always visible) -->
+      <div class="spell-display">
         <div class="spell-display-content card">
           <!-- Video/Animation Area -->
-          <div class="spell-media" v-if="showMedia">
+          <div class="spell-media">
+            <div v-if="!manifestedSpell" class="media-placeholder">
+              <p class="placeholder-text">Select a wand and spell, then click "Manifest Spell" to view the animation</p>
+            </div>
             <video
-              v-if="mediaType === 'video'"
+              v-else-if="mediaType === 'video' && mediaPath"
               :src="mediaPath"
               :key="mediaPath"
               autoplay
@@ -106,13 +109,13 @@
               Your browser does not support the video tag.
             </video>
             <img
-              v-else-if="mediaType === 'gif'"
+              v-else-if="mediaType === 'gif' && mediaPath"
               :src="mediaPath"
               alt="Spell animation"
               class="spell-gif"
               @error="handleMediaError"
             />
-            <div v-else class="media-placeholder">
+            <div v-else-if="manifestedSpell" class="media-placeholder">
               <div class="placeholder-icon">🎬</div>
               <p>Spell animation not available</p>
               <p class="small muted">Place animation file in: <code>public/videos/spells/</code></p>
@@ -120,7 +123,7 @@
           </div>
 
           <!-- Spell Info -->
-          <div class="spell-info">
+          <div class="spell-info" v-if="manifestedSpell">
             <div class="spell-header-info">
               <h3 class="spell-name-large">{{ manifestedSpell.spell }}</h3>
             </div>
@@ -134,15 +137,15 @@
               <h4>Tips & Strategy</h4>
               <p>{{ manifestedSpell.tips }}</p>
             </div>
+          </div>
 
-            <!-- Audio Player (hidden, auto-plays on manifest) -->
-            <div class="audio-controls">
-              <audio
-                ref="spellAudio"
-                :src="audioPath"
-                class="audio-player"
-              ></audio>
-            </div>
+          <!-- Audio Player (hidden, auto-plays on manifest) -->
+          <div class="audio-controls" style="display: none;">
+            <audio
+              ref="spellAudio"
+              :src="audioPath"
+              class="audio-player"
+            ></audio>
           </div>
         </div>
       </div>
@@ -632,6 +635,13 @@ onMounted(() => {
   color: rgba(237, 240, 255, 0.7);
   gap: 12px;
   padding: 20px;
+}
+
+.placeholder-text {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(237, 240, 255, 0.8);
+  text-align: center;
 }
 
 .placeholder-icon {
