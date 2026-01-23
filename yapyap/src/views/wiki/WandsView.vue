@@ -112,7 +112,7 @@
                 <strong>Shop Purchase:</strong> Most wands can be bought from the in-game shop using gold earned during runs. Prices range from 50 gold (Basic Wand) to 300+ gold (premium wands).
               </li>
               <li>
-                <strong>Loot Drops:</strong> Some rare wands can be found as loot in high-value areas or dropped by defeated enemies. These are typically higher-tier wands with powerful passive effects.
+                <strong>Opening Chests:</strong> Some rare wands can be found by opening chests in high-value areas. These are typically higher-tier wands with powerful passive effects.
               </li>
               <li>
                 <strong>Quest Rewards:</strong> Completing specific objectives or puzzles may reward you with unique wands not available in the shop.

@@ -11,7 +11,11 @@ import BestiaryView from '../views/wiki/BestiaryView.vue'
 import PotionsView from '../views/wiki/PotionsView.vue'
 import GuidesView from '../views/GuidesView.vue'
 import GuideDetailView from '../views/GuideDetailView.vue'
-import PlaceholderView from '../views/PlaceholderView.vue'
+import PrivacyPolicyView from '../views/legal/PrivacyPolicyView.vue'
+import TermsOfServiceView from '../views/legal/TermsOfServiceView.vue'
+import CopyrightView from '../views/legal/CopyrightView.vue'
+import AboutUsView from '../views/legal/AboutUsView.vue'
+import ContactUsView from '../views/legal/ContactUsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,9 +26,9 @@ const router = createRouter({
       component: HomeView,
       meta: {
         seo: {
-          title: 'YAPYAP Game Ultimate Guide & Wiki - Master the Spells, Solve the Puzzles',
-          description: 'The ultimate YAPYAP game resource. Complete spell pronunciation guide, puzzle solutions, wiki database, and voice command tips. Master the voice-activated spells and survive the tower.',
-          keywords: 'YAPYAP game, YAPYAP guide, YAPYAP wiki, YAPYAP spells, YAPYAP puzzle, voice activated spells, multiplayer horror game, steam co-op',
+          title: 'YAPYAP Guide & Wiki: Release Date, Demo & Strategies',
+          description: 'The #1 unofficial guide for YAPYAP. Track the Feb 3, 2026 release, get Steam Demo tips, and master voice commands in this chaotic coop horror game.',
+          keywords: 'yapyap game, yapyap steam, yapyap release date, yapyap demo, maison bap, coop horror game, yapyap guide',
         },
       },
     },
@@ -34,9 +38,9 @@ const router = createRouter({
       component: SpellsView,
       meta: {
         seo: {
-          title: 'YAPYAP Spells & Pronunciation Guide - Complete Voice Commands Database',
-          description: 'Complete YAPYAP spells list with pronunciation guide. Learn all voice commands, spell effects, and pronunciation tips. Test your microphone and master the voice-activated magic system.',
-          keywords: 'YAPYAP spells, YAPYAP pronunciation, voice commands, spell list, mic tester, voice activated spells, spell guide',
+          title: 'YAPYAP Spells List: Voice Commands & Pronunciation Guide',
+          description: 'Complete list of YAPYAP spells like Up-Dog and Aero-Bis. Listen to audio, learn phonetics, and stop fizzling your magic with our casting guide.',
+          keywords: 'yapyap spells list, yapyap pronunciation, yapyap voice commands, yapyap magic words, how to cast spells in yapyap',
         },
       },
     },
@@ -46,15 +50,11 @@ const router = createRouter({
       component: SpellGeneratorView,
       meta: {
         seo: {
-          title: 'YAPYAP Spell Generator - Video Tutorials & Practice Mode',
-          description: 'Interactive YAPYAP spell generator with video tutorials. Watch spell demonstrations, learn correct pronunciation, and practice voice commands with our interactive spell generator.',
-          keywords: 'YAPYAP spell generator, spell videos, spell tutorials, practice spells, spell demonstrations, voice command practice',
+          title: 'YAPYAP Spell Forge: Simulator & Pronunciation Trainer',
+          description: 'Test wands and incantations in our unofficial Spell Forge. Master phonetics for spells like Lux-Ana and view casting animations before playing.',
+          keywords: 'yapyap spell generator, yapyap simulator, spell forge, practice yapyap spells, yapyap wand types',
         },
       },
-    },
-    {
-      path: '/puzzle/orb-drop-challenge',
-      redirect: '/puzzle/ball-puzzle',
     },
     {
       path: '/puzzle/ball-puzzle',
@@ -62,15 +62,11 @@ const router = createRouter({
       component: BallPuzzleView,
       meta: {
         seo: {
-          title: 'YAPYAP Ball Puzzle: Orb Drop Challenge Guide - Easy Solo Farm Room for Double Wands',
-          description: 'Complete guide to the YAPYAP ball puzzle (Orb Drop Challenge). Learn the easiest solo farm room strategy to get 2 wands (chest + hidden cabinet). Teleport strategy, co-op tactics, and loot table included for this YAPYAP ball puzzle.',
-          keywords: 'yapyap ball puzzle, YAPYAP orb drop challenge, orb drop puzzle, yapyap ball puzzle guide, solo farm room, double wands, teleport strategy, YAPYAP challenge guide, yapyap puzzle solution',
+          title: 'YAPYAP Orb Puzzle Solution: Drop Room Strategy Guide',
+          description: 'How to solve the Orb Drop puzzle in YAPYAP. Master the "Teleport Strategy" to break the ball, kite guards, and loot the secret cabinet wand safely.',
+          keywords: 'yapyap orb puzzle, ball room, drop puzzle, teleport wand strategy',
         },
       },
-    },
-    {
-      path: '/puzzle/pitch-wheel',
-      redirect: '/puzzle/balance-puzzle',
     },
     {
       path: '/puzzle/balance-puzzle',
@@ -78,15 +74,11 @@ const router = createRouter({
       component: BalancePuzzleView,
       meta: {
         seo: {
-          title: 'YAPYAP Balance Puzzle Guide - Voice Pitch Control with Do Re Mi',
-          description: 'Complete guide to the YAPYAP balance puzzle (Pitch Wheel). Learn how to control the mechanism with pitch detection using the staccato method. Includes troubleshooting for microphone issues and co-op voice interference for this YAPYAP balance puzzle.',
-          keywords: 'yapyap balance puzzle, YAPYAP pitch wheel, balance puzzle guide, pitch puzzle, voice pitch control, staccato method, microphone puzzle, YAPYAP voice control, yapyap balance puzzle solution',
+          title: 'YAPYAP Scales Puzzle Solution: Weight & Balance Guide',
+          description: 'Stuck on the Scales? The complete solution for the YAPYAP Balance Puzzle. Learn the correct item weights and combinations to unlock the gate fast.',
+          keywords: 'yapyap scales puzzle, balance puzzle, weight solution, resonance dial',
         },
       },
-    },
-    {
-      path: '/puzzle/face-door',
-      redirect: '/puzzle/door-puzzle',
     },
     {
       path: '/puzzle/door-puzzle',
@@ -94,9 +86,9 @@ const router = createRouter({
       component: DoorPuzzleView,
       meta: {
         seo: {
-          title: 'YAPYAP Door Puzzle Guide - Face Door & Treasure Room 500+ Points',
-          description: 'Complete guide to the YAPYAP door puzzle (Face Door) and treasure room. Learn how to decode symbols, use voice recognition, and maximize loot with advanced techniques. 500+ points guaranteed reward for this YAPYAP door puzzle.',
-          keywords: 'yapyap door puzzle, YAPYAP face door, door puzzle guide, treasure room, symbol decoder, voice recognition puzzle, high reward room, YAPYAP loot guide, yapyap door puzzle solution',
+          title: 'YAPYAP Face Gate Solution: 3-Word Chant & Symbols',
+          description: 'Crack the Face Gate in YAPYAP. Guide to finding hidden symbols (Skull, Crossbones), deciphering the 3-word chant, and fixing voice recognition bugs.',
+          keywords: 'yapyap face gate, door puzzle, skull symbol, float spell, 3 words puzzle',
         },
       },
     },
@@ -106,9 +98,9 @@ const router = createRouter({
       component: WikiView,
       meta: {
         seo: {
-          title: 'YAPYAP Game Database & Wiki - Complete Items, Enemies, and Magic Guide',
-          description: 'The complete YAPYAP game database. Browse wands, bestiary, potions, and crafting recipes. Learn about loot rarity, weight system, and sound mechanics.',
-          keywords: 'YAPYAP wiki, YAPYAP database, YAPYAP wands, YAPYAP bestiary, YAPYAP crafting, game database, items database',
+          title: 'YAPYAP Wiki Database: Monsters, Items & Loot Values',
+          description: 'Unofficial database for YAPYAP monsters (Bestiary) and item values. Discover hidden mechanics, crafting recipes, and lore secrets from Maison Bap.',
+          keywords: 'yapyap wiki, yapyap monsters, yapyap items, yapyap loot value, yapyap bestiary, duplico, jester',
         },
       },
     },
@@ -118,9 +110,9 @@ const router = createRouter({
       component: WandsView,
       meta: {
         seo: {
-          title: 'YAPYAP Wands List - Complete Wand Database with Spells & Effects',
-          description: 'Complete YAPYAP wands database. Compare all wands, their spells, and passive effects. Find the best wand for your playstyle with our comprehensive guide.',
-          keywords: 'YAPYAP wands, wand list, wand database, best wand, wand spells, wand effects, YAPYAP weapons',
+          title: 'YAPYAP Wands Tier List: All Stats, Effects & Passives',
+          description: 'The complete YAPYAP Wands database. Compare stats for Storm, Tarot, and Astral wands. Find the best loadout for cast speed, range, and teleporting.',
+          keywords: 'yapyap wands list, best wands, tarot wand, storm wand, wand stats',
         },
       },
     },
@@ -130,9 +122,9 @@ const router = createRouter({
       component: BestiaryView,
       meta: {
         seo: {
-          title: 'YAPYAP Monsters Guide: How to Survive The Jester, Guards & Goblins',
-          description: 'Complete enemy database for YAPYAP. Learn every monster\'s weakness, threat level, and the best spells (like Aero-bis & Duplico) to counter them.',
-          keywords: 'yapyap monsters, how to kill guards, jester strategy, time ghost, yapyap enemies list',
+          title: 'YAPYAP Bestiary: All Monsters, Weaknesses & Survival',
+          description: 'Survive the darkness with our YAPYAP Bestiary. Detailed guide on all monsters including the Jester and Duplico. Learn their attack patterns and counters.',
+          keywords: 'yapyap monsters, bestiary, jester guide, duplico, how to kill monsters',
         },
       },
     },
@@ -142,9 +134,9 @@ const router = createRouter({
       component: PotionsView,
       meta: {
         seo: {
-          title: 'YAPYAP Potion Recipes: How to Craft Invisibility, Flight & Health Potions',
-          description: 'Complete crafting guide for YAPYAP. Learn how to brew Vitality, Strength, and Flight potions using carrots, feathers, and mushrooms. Includes ingredient spawn locations and effects.',
-          keywords: 'yapyap potion recipes, how to craft potions, invisibility potion, strength potion, yapyap carrot location',
+          title: 'YAPYAP Potions Guide: All Recipes, Effects & Crafting',
+          description: 'Complete list of YAPYAP potions and consumables. Discover crafting recipes, status effects, and where to find ingredients for essential brews.',
+          keywords: 'yapyap potions, crafting recipes, consumables, ingredients, alchemy',
         },
       },
     },
@@ -154,9 +146,9 @@ const router = createRouter({
       component: GuidesView,
       meta: {
         seo: {
-          title: 'YAPYAP Game Guides - Complete Strategy & Walkthrough Collection',
-          description: 'Complete collection of YAPYAP game guides. Learn strategies, tips, and walkthroughs for puzzles, spells, survival, and co-op gameplay.',
-          keywords: 'YAPYAP guides, YAPYAP walkthrough, game guides, strategy guide, YAPYAP tips, co-op guide',
+          title: 'YAPYAP Guides: Mic Fixes, Survival Tips & How to Revive',
+          description: 'Essential YAPYAP gameplay guides. Fix "can\'t hear friends" mic issues, learn how to revive teammates, and survive the Jester and Duplico.',
+          keywords: 'yapyap mic fix, yapyap multiplayer not working, how to revive in yapyap, yapyap beginner guide, yapyap survival tips',
         },
       },
     },
@@ -167,15 +159,67 @@ const router = createRouter({
       // SEO will be set dynamically from guide data
     },
     {
-      path: '/troubleshooting/mic-fix',
-      name: 'troubleshooting-mic-fix',
-      component: PlaceholderView,
-      props: { title: 'Troubleshooting: Mic Fix Guide (Coming Soon)' },
+      path: '/privacy-policy',
+      name: 'privacy-policy',
+      component: PrivacyPolicyView,
       meta: {
         seo: {
-          title: 'YAPYAP Microphone Fix Guide - Can\'t Hear Friends? Troubleshooting',
-          description: 'Fix microphone issues in YAPYAP. Troubleshoot voice recognition problems, mic not working, voice delay, and can\'t hear friends issues. Complete troubleshooting guide.',
-          keywords: 'YAPYAP mic fix, microphone not working, can\'t hear friends, voice recognition, mic troubleshooting, YAPYAP audio fix',
+          title: 'Privacy Policy - YAPYAP Game Guide Hub - yapyapgame.com',
+          description: 'Privacy Policy for YAPYAP Game Guide Hub. Learn how we collect, use, and protect your personal information when you visit our website.',
+          keywords: 'privacy policy, YAPYAP game, data protection, privacy',
+          robots: 'noindex, nofollow',
+        },
+      },
+    },
+    {
+      path: '/terms-of-service',
+      name: 'terms-of-service',
+      component: TermsOfServiceView,
+      meta: {
+        seo: {
+          title: 'Terms of Service - YAPYAP Game Guide Hub - yapyapgame.com',
+          description: 'Terms of Service for YAPYAP Game Guide Hub. Read our terms and conditions for using our website and services.',
+          keywords: 'terms of service, YAPYAP game, terms and conditions, user agreement',
+          robots: 'noindex, nofollow',
+        },
+      },
+    },
+    {
+      path: '/copyright',
+      name: 'copyright',
+      component: CopyrightView,
+      meta: {
+        seo: {
+          title: 'Copyright - YAPYAP Game Guide Hub - yapyapgame.com',
+          description: 'Copyright information for YAPYAP Game Guide Hub. Learn about our copyright policies and intellectual property rights.',
+          keywords: 'copyright, YAPYAP game, intellectual property, DMCA, fair use',
+          robots: 'noindex, nofollow',
+        },
+      },
+    },
+    {
+      path: '/about-us',
+      name: 'about-us',
+      component: AboutUsView,
+      meta: {
+        seo: {
+          title: 'About Us - YAPYAP Game Guide Hub - yapyapgame.com',
+          description: 'Learn about YAPYAP Game Guide Hub, an unofficial community resource for YAPYAP game. Discover our mission, what we offer, and how we help players.',
+          keywords: 'about YAPYAP Game Guide Hub, YAPYAP game community, YAPYAP resources, YAPYAP fan site',
+          robots: 'noindex, nofollow',
+        },
+      },
+    },
+    {
+      path: '/contact-us',
+      name: 'contact-us',
+      component: ContactUsView,
+      meta: {
+        seo: {
+          title: 'Contact Us - YAPYAP Game Guide Hub - yapyapgame.com',
+          description: 'Contact YAPYAP Game Guide Hub. Get in touch with us for questions, suggestions, feedback, or inquiries about our website and services.',
+          keywords: 'contact YAPYAP Game Guide Hub, YAPYAP game support, YAPYAP community contact',
+          robots: 'noindex, nofollow',
         },
       },
     },

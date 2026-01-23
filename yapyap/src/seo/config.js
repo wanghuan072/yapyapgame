@@ -37,7 +37,11 @@ export const seoConfig = {
     'wiki-wands': 0.7,
     'wiki-bestiary': 0.7,
     'wiki-potions': 0.7,
-    'troubleshooting-mic-fix': 0.6
+    'privacy-policy': 0.3,
+    'terms-of-service': 0.3,
+    'copyright': 0.3,
+    'about-us': 0.4,
+    'contact-us': 0.4
   },
 
   // 更新频率设置
@@ -54,6 +58,10 @@ export const seoConfig = {
     'wiki-wands': 'monthly',
     'wiki-bestiary': 'monthly',
     'wiki-potions': 'monthly',
-    'troubleshooting-mic-fix': 'monthly'
+    'privacy-policy': 'yearly',
+    'terms-of-service': 'yearly',
+    'copyright': 'yearly',
+    'about-us': 'monthly',
+    'contact-us': 'monthly'
   }
 }

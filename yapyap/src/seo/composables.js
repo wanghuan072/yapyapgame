@@ -58,6 +58,11 @@ export function useSEO() {
     updateMetaTag('description', seo.description)
     updateMetaTag('keywords', seo.keywords)
     updateMetaTag('author', seo.author || seoConfig.defaults.author)
+    
+    // Robots标签
+    if (seo.robots) {
+      updateMetaTag('robots', seo.robots)
+    }
 
     // Open Graph标签
     updateMetaTag('og:title', seo.title, 'property')
@@ -199,7 +204,11 @@ const routeToSeoKey = {
   'wiki-wands': 'wiki-wands',
   'wiki-bestiary': 'wiki-bestiary',
   'wiki-potions': 'wiki-potions',
-  'troubleshooting-mic-fix': 'troubleshooting-mic-fix'
+  'privacy-policy': 'privacy-policy',
+  'terms-of-service': 'terms-of-service',
+  'copyright': 'copyright',
+  'about-us': 'about-us',
+  'contact-us': 'contact-us'
 }
 
 // 动态路由名称集合（需要从数据加载 SEO 的路由）

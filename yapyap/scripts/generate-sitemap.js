@@ -23,7 +23,11 @@ const baseRoutes = [
   { path: '/wiki/wands', name: 'wiki-wands', priority: 0.7, changefreq: 'monthly' },
   { path: '/wiki/bestiary', name: 'wiki-bestiary', priority: 0.7, changefreq: 'monthly' },
   { path: '/wiki/potions', name: 'wiki-potions', priority: 0.7, changefreq: 'monthly' },
-  { path: '/troubleshooting/mic-fix', name: 'troubleshooting-mic-fix', priority: 0.6, changefreq: 'monthly' }
+  { path: '/privacy-policy', name: 'privacy-policy', priority: 0.3, changefreq: 'yearly' },
+  { path: '/terms-of-service', name: 'terms-of-service', priority: 0.3, changefreq: 'yearly' },
+  { path: '/copyright', name: 'copyright', priority: 0.3, changefreq: 'yearly' },
+  { path: '/about-us', name: 'about-us', priority: 0.4, changefreq: 'monthly' },
+  { path: '/contact-us', name: 'contact-us', priority: 0.4, changefreq: 'monthly' }
 ]
 
 // 动态加载数据

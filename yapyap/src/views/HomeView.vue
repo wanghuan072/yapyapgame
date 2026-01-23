@@ -8,12 +8,26 @@
             <div class="pill">Voice Spells · Co-op Chaos · Light Horror</div>
             <h1>YAPYAP Game Ultimate Guide & Wiki</h1>
             <p class="lead">"Master the Spells, Solve the Puzzles, and Fix Your Mic."</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener">
-                Wishlist on Steam
-              </a>
-              <a class="btn btn-ghost" href="#guides">See guides</a>
+            
+            <div class="hero-features">
+              <div class="hero-feature-item">
+                <div class="feature-icon">🎬</div>
+                <div class="feature-content">
+                  <h3>Spell Generator</h3>
+                  <p>Practice voice commands with video tutorials. Master pronunciation for every spell before you play.</p>
+                  <a href="/spell-generator" class="feature-link">Try Spell Generator →</a>
+                </div>
+              </div>
+              <div class="hero-feature-item">
+                <div class="feature-icon">📚</div>
+                <div class="feature-content">
+                  <h3>Complete Wiki</h3>
+                  <p>Browse wands, monsters, potions, and items. Find stats, crafting recipes, and survival strategies.</p>
+                  <a href="/wiki" class="feature-link">Explore Wiki →</a>
+                </div>
+              </div>
             </div>
+
             <div class="hero-stats">
               <div>
                 <span class="label">Release Date</span>
@@ -26,18 +40,6 @@
               <div>
                 <span class="label">Platform</span>
                 <span class="value">Steam · Windows</span>
-              </div>
-            </div>
-            <div class="media-overlay">
-              <p class="meta">Steam Next Fest demo · Heavily discussed</p>
-              <h3>"Say the spell, smash the tower, stay alive."</h3>
-              <p class="meta">
-                Up to 5-6 players · Vandalism points · Voice-triggered spells · Patrol monsters to evade
-              </p>
-              <div class="tags">
-                <span class="tag">Voice Spells</span>
-                <span class="tag">Co-op Chaos</span>
-                <span class="tag">Run & Hide</span>
               </div>
             </div>
           </div>
@@ -55,39 +57,51 @@
         </div>
       </section>
 
-      <!-- Quick Access Cards: Spells / Puzzle / Wiki -->
-      <section id="quick-access" class="section section-light">
+      <!-- Pain Points & Solutions -->
+      <section id="pain-points" class="section pain-points-section">
         <div class="container">
           <div class="section-header">
-            <p class="pill">Quick Access</p>
-            <h2 class="section-title">Navigate to Essential Guides</h2>
-            <p class="section-subtitle">Jump to the most-searched topics: pronunciation, puzzle solutions, crafting & items.</p>
+            <p class="pill">Struggling?</p>
+            <h2 class="section-title">Stop Fighting Alone</h2>
+            <p class="section-subtitle">We've solved the most frustrating problems players face. Get instant answers.</p>
           </div>
-          <div class="grid feature-cards">
-            <a href="/spells" class="card feature-card">
-              <div class="feature-icon">🪄</div>
-              <div>
-                <p class="pill">Core</p>
-                <h3>Spells & Pronunciation</h3>
-                <p>All spell commands, MP3 pronunciation demos, and voice-recognition tuning tips.</p>
+          <div class="pain-points-grid">
+            <div class="pain-point-card card">
+              <div class="pain-icon">🎤</div>
+              <div class="pain-content">
+                <h3>"My spells never work!"</h3>
+                <p class="pain-description">Voice recognition keeps failing? Learn the exact pronunciation for every spell with audio demos.</p>
+                <div class="pain-stats">
+                  <span class="stat-item">100+ spells</span>
+                  <span class="stat-item">Audio guides</span>
+                </div>
+                <a href="/spells" class="pain-solution-btn">Fix Spell Recognition →</a>
               </div>
-            </a>
-            <a href="/puzzle/scales-room" class="card feature-card">
-              <div class="feature-icon">⚖️</div>
-              <div>
-                <p class="pill">Pain Point</p>
-                <h3>Puzzle Solutions</h3>
-                <p>Balance/scale puzzle diagrams, how to revive teammates, and survival routing.</p>
+            </div>
+            <div class="pain-point-card card">
+              <div class="pain-icon">🎬</div>
+              <div class="pain-content">
+                <h3>"How do I say this spell?"</h3>
+                <p class="pain-description">Not sure about pronunciation? Watch video demonstrations and practice with our interactive spell generator before you play.</p>
+                <div class="pain-stats">
+                  <span class="stat-item">Video tutorials</span>
+                  <span class="stat-item">Practice mode</span>
+                </div>
+                <a href="/spell-generator" class="pain-solution-btn">Practice Spells →</a>
               </div>
-            </a>
-            <a href="/wiki" class="card feature-card">
-              <div class="feature-icon">🧪</div>
-              <div>
-                <p class="pill">Wiki</p>
-                <h3>Crafting & Items</h3>
-                <p>Crafting recipes, wand stats, potion effects, and a compact monster compendium.</p>
+            </div>
+            <div class="pain-point-card card">
+              <div class="pain-icon">📚</div>
+              <div class="pain-content">
+                <h3>"What does this item do?"</h3>
+                <p class="pain-description">Need wand stats, potion recipes, or monster info? Complete game database with all items, effects, and crafting guides.</p>
+                <div class="pain-stats">
+                  <span class="stat-item">Complete database</span>
+                  <span class="stat-item">All items & stats</span>
+                </div>
+                <a href="/wiki" class="pain-solution-btn">Browse Wiki →</a>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
@@ -100,73 +114,49 @@
             <h2 class="section-title">Latest Guides</h2>
             <p class="section-subtitle">Fresh updates from the community and demo learnings.</p>
           </div>
-          <div class="grid guide-grid">
-            <article class="card guide-card">
-              <div class="guide-image">
+          <!-- Loading State -->
+          <div v-if="loading" class="loading-state card">
+            <p class="muted">Loading guides...</p>
+          </div>
+          <!-- Guides Grid -->
+          <div v-if="!loading && homeGuides.length > 0" class="grid guide-grid">
+            <article
+              v-for="guide in homeGuides"
+              :key="guide.id"
+              class="card guide-card"
+            >
+              <div class="guide-image" v-if="guide.imageUrl">
+                <img
+                  :src="guide.imageUrl"
+                  :alt="guide.imageAlt || guide.title"
+                  class="guide-image-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="guide-image" v-else>
                 <div class="image-placeholder">📖</div>
               </div>
               <div class="guide-content">
-                <div class="guide-meta">
-                  <span class="tag">Starter</span>
-                  <span class="tag">Must-read</span>
+                <div class="guide-meta" v-if="guide.tags && guide.tags.length > 0">
+                  <span
+                    v-for="tag in guide.tags.slice(0, 3)"
+                    :key="tag"
+                    class="tag"
+                  >{{ tag }}</span>
                 </div>
-                <h3>Voice Calibration & Spell Reliability</h3>
-                <p>Step-by-step mic tuning, syllable-sensitive spells, and ambient noise control.</p>
-                <a href="/guide/voice-calibration" class="guide-link">Read more →</a>
+                <h3>{{ guide.title }}</h3>
+                <p>{{ guide.description }}</p>
+                <a :href="`/guide/${guide.addressBar}`" class="guide-link">Read more →</a>
               </div>
             </article>
-            <article class="card guide-card">
-              <div class="guide-image">
-                <div class="image-placeholder">⚖️</div>
-              </div>
-              <div class="guide-content">
-                <div class="guide-meta">
-                  <span class="tag">Puzzle</span>
-                </div>
-                <h3>Scale Puzzle & Safe Resurrections</h3>
-                <p>Diagrammed solutions for the balance puzzle, plus reviving teammates without wiping.</p>
-                <a href="/guide/scale-puzzle" class="guide-link">Read more →</a>
-              </div>
-            </article>
-            <article class="card guide-card">
-              <div class="guide-image">
-                <div class="image-placeholder">🗺️</div>
-              </div>
-              <div class="guide-content">
-                <div class="guide-meta">
-                  <span class="tag">Co-op</span>
-                </div>
-                <h3>High-Value Smash Routes (Co-op)</h3>
-                <p>Instrument → lab gear → bathrooms → luxury decor, with two fallback exits.</p>
-                <a href="/guide/smash-routes" class="guide-link">Read more →</a>
-              </div>
-            </article>
-            <article class="card guide-card">
-              <div class="guide-image">
-                <div class="image-placeholder">✨</div>
-              </div>
-              <div class="guide-content">
-                <div class="guide-meta">
-                  <span class="tag">Spells</span>
-                </div>
-                <h3>Spell Combo Toolkit</h3>
-                <p>Push/Pull separation, Levitate+Teleport for speed, Disguise/Confuse to reset aggro.</p>
-                <a href="/guide/spell-combo" class="guide-link">Read more →</a>
-              </div>
-            </article>
-            <article class="card guide-card">
-              <div class="guide-image">
-                <div class="image-placeholder">👥</div>
-              </div>
-              <div class="guide-content">
-                <div class="guide-meta">
-                  <span class="tag">Team</span>
-                </div>
-                <h3>Team Roles & Comms Pack</h3>
-                <p>Scout, Bait, Demolition, Timekeeper, Support — callout templates for fast runs.</p>
-                <a href="/guide/team-roles" class="guide-link">Read more →</a>
-              </div>
-            </article>
+          </div>
+          <!-- Empty State -->
+          <div v-if="!loading && homeGuides.length === 0" class="empty-state card">
+            <p class="muted">No guides available yet. Check back soon!</p>
+          </div>
+          <!-- View All Link -->
+          <div v-if="!loading && homeGuides.length > 0" class="guides-actions">
+            <a href="/guide/overview" class="btn btn-ghost">View All Guides</a>
           </div>
         </div>
       </section>
@@ -175,16 +165,38 @@
       <section id="troubleshoot" class="section">
         <div class="container">
           <div class="trouble-card">
-            <div>
-              <p class="pill warning-pill">Troubleshooting</p>
-              <h2 class="section-title">"Can't Hear Friends?"</h2>
-              <p class="section-subtitle">
-                Microphone not working? Voice delay? Check our Fix Guide to get chatting instantly.
-              </p>
+            <div class="trouble-content">
+              <div class="trouble-icon-wrapper">
+                <div class="trouble-icon">🎤</div>
+              </div>
+              <div class="trouble-text">
+                <p class="pill warning-pill">Voice Recognition Issues</p>
+                <h2 class="section-title">"Can't Hear Friends? Spells Not Working?"</h2>
+                <p class="section-subtitle">
+                  Voice recognition failing? Microphone problems? Learn the correct pronunciation for every spell with audio demos and troubleshooting tips.
+                </p>
+                <div class="trouble-features">
+                  <div class="trouble-feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>100+ spell pronunciations with audio</span>
+                  </div>
+                  <div class="trouble-feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Microphone setup & troubleshooting</span>
+                  </div>
+                  <div class="trouble-feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Common misheard spells guide</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="trouble-meta">
-              <span class="tag">#9 "yapyap can't hear friends"</span>
-              <a class="btn btn-primary" href="/troubleshooting/mic-fix">Open Fix Guide</a>
+            <div class="trouble-action">
+              <a class="btn btn-primary" href="/spells">
+                <span>Fix Voice Recognition</span>
+                <span class="btn-arrow">→</span>
+              </a>
+              <p class="trouble-meta-text">Most common issue: #9 "yapyap can't hear friends"</p>
             </div>
           </div>
         </div>
@@ -194,8 +206,8 @@
       <section id="what" class="section section-light">
         <div class="container what-grid">
           <div class="what-text card">
-            <p class="pill">What is YAPYAP?</p>
-            <h2 class="section-title">Co-op, Horror, Voice Control</h2>
+            <!-- <p class="pill">What is YAPYAP?</p> -->
+            <h2 class="section-title">What is YAPYAP</h2>
             <p>
               YAPYAP is a multiplayer horror game on Steam that leans into voice activated spells and co-op vandalism. Players act as minions infiltrating a rival tower, smashing high-value objects, solving puzzles, and escaping monsters. This multiplayer horror game combines voice activated spells with cooperative gameplay, creating a unique steam co-op experience where teams of 5-6 players work together to cause chaos and escape alive.
             </p>
@@ -207,65 +219,64 @@
             </p>
           </div>
           <div class="what-visual card">
-            <div class="what-illustration">🎴</div>
-            <p class="meta">Illustrative cover — swap with gameplay art later.</p>
+            <img src="/images/about-img.webp" alt="YAPYAP Game" class="what-image" />
           </div>
         </div>
       </section>
 
       <!-- Release Date / Countdown -->
-      <section id="release" class="section">
-        <div class="container release-card card">
-          <div>
-            <p class="pill">yapyap release date</p>
-            <h2 class="section-title">Countdown to Launch</h2>
-            <p class="section-subtitle">
-              YAPYAP launches on Steam (Windows) on February 3, 2026. Join the wishlist to get notified when it's available!
+      <section id="release" class="section release-section">
+        <div class="container">
+          <div class="release-hero">
+            <p class="pill release-pill">Launch Countdown</p>
+            <h2 class="section-title">Coming February 3, 2026</h2>
+            <p class="release-description">
+              YAPYAP launches on Steam (Windows). Master voice-activated spells, solve puzzles, and survive the tower with friends. Join the wishlist to get notified!
             </p>
-            <div class="countdown-panel card">
-              <div class="countdown">
-                <div class="countdown-item">
-                  <span class="countdown-value">{{ daysLeft }}</span>
-                  <span class="countdown-label">Days</span>
-                </div>
-                <div class="countdown-separator">:</div>
-                <div class="countdown-item">
-                  <span class="countdown-value">{{ String(hoursLeft).padStart(2, '0') }}</span>
-                  <span class="countdown-label">Hours</span>
-                </div>
-                <div class="countdown-separator">:</div>
-                <div class="countdown-item">
-                  <span class="countdown-value">{{ String(minutesLeft).padStart(2, '0') }}</span>
-                  <span class="countdown-label">Minutes</span>
-                </div>
-                <div class="countdown-separator">:</div>
-                <div class="countdown-item">
-                  <span class="countdown-value">{{ String(secondsLeft).padStart(2, '0') }}</span>
-                  <span class="countdown-label">Seconds</span>
-                </div>
+          </div>
+          
+          <div class="countdown-container">
+            <div class="countdown-grid">
+              <div class="countdown-box">
+                <div class="countdown-number">{{ daysLeft }}</div>
+                <div class="countdown-unit">Days</div>
               </div>
-              <div class="countdown-sub">
-                <span class="dot"></span>
-                <span>Feb 3, 2026 · Steam (Windows) · Voice-activated co-op</span>
+              <div class="countdown-divider">:</div>
+              <div class="countdown-box">
+                <div class="countdown-number">{{ String(hoursLeft).padStart(2, '0') }}</div>
+                <div class="countdown-unit">Hours</div>
               </div>
-            </div>
-            <div class="release-actions">
-              <a class="btn btn-primary" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener">
-                Wishlist on Steam
-              </a>
-              <a class="btn btn-ghost" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener">
-                Try Demo
-              </a>
+              <div class="countdown-divider">:</div>
+              <div class="countdown-box">
+                <div class="countdown-number">{{ String(minutesLeft).padStart(2, '0') }}</div>
+                <div class="countdown-unit">Minutes</div>
+              </div>
+              <div class="countdown-divider">:</div>
+              <div class="countdown-box">
+                <div class="countdown-number">{{ String(secondsLeft).padStart(2, '0') }}</div>
+                <div class="countdown-unit">Seconds</div>
+              </div>
             </div>
           </div>
-          <div class="release-art">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="release-badge">
-              <span class="badge-label">Steam</span>
-              <strong>Coming Soon</strong>
-              <p>Feb 3, 2026</p>
+
+          <div class="release-info">
+            <div class="release-meta">
+              <span class="meta-item">Steam</span>
+              <span class="meta-separator">·</span>
+              <span class="meta-item">Windows</span>
+              <span class="meta-separator">·</span>
+              <span class="meta-item">Voice Co-op</span>
             </div>
+          </div>
+
+          <div class="release-actions">
+            <a class="btn btn-primary release-btn" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener">
+              <span>Wishlist on Steam</span>
+              <span class="btn-icon">→</span>
+            </a>
+            <a class="btn btn-ghost release-btn" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener">
+              <span>Try Demo</span>
+            </a>
           </div>
         </div>
       </section>
@@ -310,7 +321,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { useGuideData } from '../composables/useGuideData'
+
+const { guides, loading, loadHomeGuidesOnly } = useGuideData()
+
+const homeGuides = computed(() => {
+  return guides.value || []
+})
 
 const releaseDate = new Date('2026-02-03T00:00:00')
 const daysLeft = ref(0)
@@ -338,9 +356,10 @@ const updateCountdown = () => {
 
 let countdownInterval = null
 
-onMounted(() => {
+onMounted(async () => {
   updateCountdown()
   countdownInterval = setInterval(updateCountdown, 1000) // Update every second
+  await loadHomeGuidesOnly()
 })
 
 onUnmounted(() => {
@@ -357,7 +376,7 @@ onUnmounted(() => {
 }
 
 .section {
-  padding: 88px 0;
+  padding: 40px 0;
 }
 
 .section-title {
@@ -374,7 +393,6 @@ onUnmounted(() => {
 .section-subtitle {
   color: var(--muted);
   max-width: 720px;
-  margin-bottom: 32px;
 }
 
 .card {
@@ -515,18 +533,64 @@ onUnmounted(() => {
   margin-bottom: 20px;
 }
 
-.hero-actions {
-  display: flex;
+.hero-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 24px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-feature-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.feature-icon {
+  font-size: 32px;
+  filter: drop-shadow(0 4px 12px rgba(139, 92, 246, 0.3));
+}
+
+.feature-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: var(--text);
+}
+
+.feature-content p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 10px 0;
+}
+
+.feature-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.feature-link:hover {
+  color: #dcd7ff;
+  gap: 8px;
 }
 
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
+  margin-top: 20px;
 }
 
 .label {
@@ -551,7 +615,7 @@ onUnmounted(() => {
 .video-frame {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  aspect-ratio: 16 / 9;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -565,22 +629,6 @@ onUnmounted(() => {
   height: 100%;
 }
 
-.media-overlay {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.meta {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.tags {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
 
 .section-light {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.03));
@@ -590,39 +638,113 @@ onUnmounted(() => {
   margin-bottom: 28px;
 }
 
-.feature-cards {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.pain-points-section {
+  background: linear-gradient(180deg, rgba(7, 9, 18, 0.95), rgba(15, 20, 36, 0.98));
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.feature-card {
+.pain-points-grid {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 16px;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
 }
 
-.feature-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+.pain-point-card {
+  background: linear-gradient(145deg, rgba(15, 20, 36, 0.95), rgba(18, 25, 48, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 28px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.feature-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  font-size: 24px;
-  background: rgba(139, 92, 246, 0.16);
+.pain-point-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #6d28d9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pain-point-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 50px rgba(139, 92, 246, 0.25);
+}
+
+.pain-point-card:hover::before {
+  opacity: 1;
+}
+
+.pain-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 4px 12px rgba(139, 92, 246, 0.3));
+}
+
+.pain-content h3 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  background: linear-gradient(120deg, var(--text), var(--accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
+}
+
+.pain-description {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.pain-stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(139, 92, 246, 0.12);
   border: 1px solid rgba(139, 92, 246, 0.25);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  color: #dcd7ff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.pain-solution-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), #6d28d9);
+  color: #0b0d16;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 16px rgba(109, 40, 217, 0.3);
+}
+
+.pain-solution-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(109, 40, 217, 0.4);
 }
 
 .guide-grid {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .guide-card {
@@ -641,10 +763,32 @@ onUnmounted(() => {
   display: grid;
   place-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.guide-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .image-placeholder {
   font-size: 48px;
+}
+
+.loading-state,
+.empty-state {
+  padding: 40px;
+  text-align: center;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.guides-actions {
+  margin-top: 32px;
+  text-align: center;
 }
 
 .guide-content {
@@ -686,28 +830,127 @@ onUnmounted(() => {
 
 .trouble-card {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 18px;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(255, 149, 128, 0.12), rgba(255, 255, 255, 0.02));
-  border: 1px solid rgba(255, 149, 128, 0.35);
-  border-radius: 16px;
-  padding: 22px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(135deg, rgba(255, 149, 128, 0.15), rgba(139, 92, 246, 0.12));
+  border: 1px solid rgba(255, 149, 128, 0.4);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 20px 50px rgba(255, 149, 128, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.trouble-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(255, 149, 128, 0.8), rgba(139, 92, 246, 0.8));
+}
+
+.trouble-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.trouble-icon-wrapper {
+  position: relative;
+}
+
+.trouble-icon {
+  font-size: 64px;
+  filter: drop-shadow(0 8px 20px rgba(255, 149, 128, 0.4));
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.trouble-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .warning-pill {
-  border-color: rgba(255, 149, 128, 0.55);
+  border-color: rgba(255, 149, 128, 0.6);
   color: #ffcbbf;
-  background: rgba(255, 149, 128, 0.12);
+  background: rgba(255, 149, 128, 0.15);
 }
 
-.trouble-meta {
+.trouble-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.trouble-feature-item {
   display: flex;
   align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.feature-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(74, 222, 128, 0.2), rgba(139, 92, 246, 0.2));
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  color: #4ade80;
+  font-weight: 700;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.trouble-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  text-align: center;
+}
+
+.trouble-action .btn {
+  min-width: 200px;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-arrow {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.trouble-action .btn:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+.trouble-meta-text {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 0;
+  max-width: 200px;
 }
 
 .what-grid {
@@ -737,153 +980,205 @@ onUnmounted(() => {
   display: grid;
   place-items: center;
   background: linear-gradient(120deg, rgba(139, 92, 246, 0.12), rgba(74, 222, 128, 0.1));
-  border: 1px dashed rgba(255, 255, 255, 0.12);
-}
-
-.what-illustration {
-  font-size: 56px;
-}
-
-.release-card {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 28px;
-  align-items: center;
-  background: linear-gradient(135deg, rgba(132, 94, 247, 0.08), rgba(7, 9, 18, 0.92));
   border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  border-radius: 18px;
 }
 
-.countdown-panel {
-  margin: 18px 0;
-  padding: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(145deg, rgba(132, 94, 247, 0.12), rgba(74, 222, 128, 0.08));
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+.what-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.release-section {
+  background: linear-gradient(180deg, rgba(7, 9, 18, 0.95), rgba(15, 20, 36, 0.98));
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.release-hero {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.countdown {
+.release-pill {
+  margin-bottom: 16px;
+}
+
+.release-description {
+  color: var(--muted);
+  max-width: 680px;
+  margin: 16px auto 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.countdown-container {
+  margin: 40px 0;
+  padding: 40px 20px;
+  background: linear-gradient(145deg, rgba(132, 94, 247, 0.1), rgba(74, 222, 128, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #6d28d9, #4ade80);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.countdown-grid {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
-.countdown-item {
+.countdown-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  min-width: 82px;
-  padding: 10px 10px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  min-width: 100px;
+  padding: 24px 20px;
+  background: linear-gradient(145deg, rgba(15, 20, 36, 0.95), rgba(18, 25, 48, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.countdown-value {
-  font-size: 34px;
+.countdown-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.countdown-box:hover::before {
+  left: 100%;
+}
+
+.countdown-box:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 16px 40px rgba(139, 92, 246, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.countdown-number {
+  font-size: 48px;
   font-weight: 900;
-  letter-spacing: 0.02em;
-  background: linear-gradient(135deg, var(--accent), #6d28d9);
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--accent), #6d28d9, #4ade80);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
 }
 
-.countdown-label {
-  font-size: 11px;
+.countdown-unit {
+  font-size: 12px;
   color: var(--muted);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
 }
 
-.countdown-separator {
-  font-size: 22px;
+.countdown-divider {
+  font-size: 32px;
   color: var(--accent);
   font-weight: 800;
-  padding: 0 2px;
+  opacity: 0.6;
+  padding: 0 4px;
 }
 
-.countdown-sub {
-  margin-top: 10px;
+.release-info {
+  text-align: center;
+  margin: 32px 0 24px;
+}
+
+.release-meta {
   display: flex;
   align-items: center;
-  gap: 8px;
   justify-content: center;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.countdown-sub .dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
-}
-
-.release-actions {
-  display: flex;
   gap: 12px;
   flex-wrap: wrap;
 }
 
-.release-art {
-  position: relative;
-  min-height: 240px;
-  background: radial-gradient(circle at 30% 30%, rgba(132, 94, 247, 0.45), rgba(7, 9, 18, 0.9));
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  overflow: hidden;
-}
-
-.orb {
-  position: absolute;
-  border-radius: 999px;
-  filter: blur(14px);
-}
-
-.orb-1 {
-  width: 170px;
-  height: 170px;
-  background: rgba(132, 94, 247, 0.45);
-  top: 14%;
-  left: 10%;
-}
-
-.orb-2 {
-  width: 200px;
-  height: 200px;
-  background: rgba(74, 222, 128, 0.32);
-  bottom: 10%;
-  right: 6%;
-}
-
-.release-badge {
-  position: absolute;
-  inset: 18px;
-  padding: 18px;
-  border-radius: 14px;
-  background: rgba(7, 9, 18, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-}
-
-.badge-label {
+.meta-item {
   color: var(--muted);
-  letter-spacing: 0.08em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.meta-separator {
+  color: var(--muted);
+  opacity: 0.4;
+}
+
+.release-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.release-btn {
+  min-width: 180px;
+  padding: 16px 28px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-icon {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.release-btn:hover .btn-icon {
+  transform: translateX(4px);
 }
 
 .faq-list {
-  display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .faq-item h3 {
@@ -897,14 +1192,74 @@ onUnmounted(() => {
 
 @media (max-width: 1024px) {
   .hero-grid,
-  .release-card,
-  .trouble-card,
   .what-grid {
     grid-template-columns: 1fr;
   }
 
+  .release-description {
+    font-size: 14px;
+  }
+
+  .trouble-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .trouble-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .trouble-icon-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .trouble-action {
+    align-items: center;
+  }
+
   .hero-text h1 {
     font-size: 30px;
+  }
+
+  .hero-features {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .hero-feature-item {
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    text-align: left;
+  }
+
+  .feature-icon {
+    font-size: 28px;
+  }
+
+  .guide-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pain-points-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .countdown-grid {
+    gap: 12px;
+  }
+
+  .countdown-box {
+    min-width: 90px;
+    padding: 20px 16px;
+  }
+
+  .countdown-number {
+    font-size: 40px;
   }
 }
 
@@ -917,12 +1272,91 @@ onUnmounted(() => {
     font-size: 26px;
   }
 
-  .countdown-value {
-    font-size: 30px;
+  .hero-features {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
   }
 
-  .countdown-item {
-    min-width: 74px;
+  .hero-feature-item {
+    grid-template-columns: auto 1fr;
+  }
+
+  .feature-icon {
+    font-size: 24px;
+  }
+
+  .feature-content h3 {
+    font-size: 16px;
+  }
+
+  .feature-content p {
+    font-size: 13px;
+  }
+
+  .countdown-container {
+    padding: 32px 16px;
+    margin: 32px 0;
+  }
+
+  .countdown-grid {
+    gap: 8px;
+  }
+
+  .countdown-box {
+    min-width: 70px;
+    padding: 16px 12px;
+  }
+
+  .countdown-number {
+    font-size: 32px;
+  }
+
+  .countdown-unit {
+    font-size: 10px;
+  }
+
+  .countdown-divider {
+    font-size: 24px;
+    padding: 0 2px;
+  }
+
+  .release-btn {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pain-points-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pain-point-card {
+    padding: 24px;
+  }
+
+  .pain-content h3 {
+    font-size: 20px;
+  }
+
+  .pain-icon {
+    font-size: 40px;
+  }
+
+  .trouble-card {
+    padding: 24px;
+  }
+
+  .trouble-icon {
+    font-size: 48px;
+  }
+
+  .trouble-action .btn {
+    min-width: 100%;
   }
 }
 </style>

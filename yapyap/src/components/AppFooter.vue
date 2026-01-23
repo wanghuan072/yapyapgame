@@ -2,38 +2,49 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <div>
-          <div class="logo-line">
+        <div class="footer-brand">
+          <div class="footer-logo">
             <div class="logo-mark">✦</div>
-            <div class="logo-text">
-              <span class="title">YAPYAP Guide Hub</span>
-              <span class="sub">Unofficial fan wiki & strategy</span>
-            </div>
+            <span class="logo-text">YAPYAP Game</span>
           </div>
-          <p class="desc">
-            聚合 YAPYAP 的资讯、攻略、法术与解谜思路。非官方站点，旨在帮助玩家快速入门与提升合作效率。
+          <p class="footer-text">
+            Comprehensive YAPYAP game resources including guides, wiki, spells database, and puzzle solutions to help you master the voice-activated magic and survive the tower.
           </p>
         </div>
-        <div class="links">
-          <h3>快速导航</h3>
-          <div class="link-list">
-            <a href="#hero">Home</a>
-            <a href="#wiki">yapyap wiki</a>
-            <a href="#guide">yapyap guide</a>
-            <a href="#spells">yapyap spells</a>
-            <a href="#puzzle">yapyap puzzle</a>
-          </div>
+        <div class="link-column">
+          <h2>Navigate</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/spells">Spells</a></li>
+            <li><a href="/spell-generator">Spell Generator</a></li>
+            <li><a href="/guide/overview">Guides</a></li>
+            <li><a href="/wiki">Wiki</a></li>
+          </ul>
         </div>
-        <div class="cta">
-          <h3>加入愿望单</h3>
-          <p class="desc">Steam 版计划 2026-02-03 上线，提前关注获取最新更新。</p>
-          <a class="btn btn-primary" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener">
-            去 Steam 查看
-          </a>
+        <div class="link-column">
+          <h2>Legal</h2>
+          <ul>
+            <li>
+              <a href="/privacy-policy" rel="nofollow">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/terms-of-service" rel="nofollow">Terms of Service</a>
+            </li>
+            <li>
+              <a href="/copyright" rel="nofollow">Copyright</a>
+            </li>
+            <li>
+              <a href="/about-us" rel="nofollow">About Us</a>
+            </li>
+            <li>
+              <a href="/contact-us" rel="nofollow">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 yapyapgame.com · Fan-made. All trademarks belong to their owners.</span>
+        <p>© 2026 yapyapgame.com. All rights reserved.</p>
+        <p>yapyapgame.com is not affiliated with, endorsed by, or connected to the original game or its publishers. This is an independent fan site created for informational purposes only. All trademarks and copyrights belong to their respective owners.</p>
       </div>
     </div>
   </footer>
@@ -41,22 +52,27 @@
 
 <style scoped>
 .site-footer {
-  border-top: 1px solid var(--border);
-  padding: 40px 0 26px 0;
-  background: linear-gradient(180deg, rgba(7, 9, 18, 0.9), rgba(7, 9, 18, 0.96));
+  padding: 30px 0 20px 0;
+  background: rgba(7, 9, 18, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 24px;
-  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
 }
 
-.logo-line {
+.footer-brand {
+  flex: 1;
+  max-width: 35%;
+}
+
+.footer-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   margin-bottom: 12px;
 }
 
@@ -72,86 +88,146 @@
   box-shadow: 0 0 22px rgba(139, 92, 246, 0.45);
 }
 
-.title {
-  font-weight: 800;
-  font-size: 16px;
-}
-
-.sub {
-  display: block;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.desc {
-  color: var(--muted);
-  margin: 0;
-  line-height: 1.6;
-}
-
-.links h3,
-.cta h3 {
-  margin: 0 0 10px 0;
-  font-size: 15px;
-  letter-spacing: 0.02em;
-}
-
-.link-list {
-  display: grid;
-  gap: 8px;
-}
-
-.link-list a {
-  color: var(--muted);
-  padding: 6px 0;
-  border-bottom: 1px dashed transparent;
-  transition: color 0.2s ease, border 0.2s ease;
-}
-
-.link-list a:hover {
-  color: var(--text);
-  border-color: rgba(139, 92, 246, 0.4);
-}
-
-.cta .btn {
-  margin-top: 12px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 18px;
-  border-radius: 12px;
+.logo-text {
+  font-size: 1.4rem;
   font-weight: 700;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border 0.2s ease;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
 }
 
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent), #6d28d9);
-  color: #0b0d16;
-  box-shadow: 0 8px 24px rgba(109, 40, 217, 0.35);
+.footer-text {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
-.btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 30px rgba(109, 40, 217, 0.45);
+.link-column {
+  flex: 0 0 auto;
+}
+
+.link-column h2 {
+  color: #ffdede;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.link-column a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.link-column a:hover {
+  color: #ffffff;
 }
 
 .footer-bottom {
-  margin-top: 28px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 12px;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
 }
 
-@media (max-width: 900px) {
+/* iPad端 - 1024px */
+@media (max-width: 1024px) {
   .footer-grid {
-    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .link-column {
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  .link-column h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 20px 0;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .link-column {
+    flex: 1 1 100%;
+  }
+
+  .footer-logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .link-column h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .link-column ul {
+    gap: 10px;
+  }
+
+  .link-column a {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    gap: 10px;
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .footer-text,
+  .link-column a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 </style>

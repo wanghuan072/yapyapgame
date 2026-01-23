@@ -2,7 +2,7 @@ export const wands = [
   {
     id: 'wand-of-wind',
     name: 'Wand 1: Wand of Wind',
-    shortName: 'Storm Wand',
+    shortName: 'WAND OF WIND',
     subtitle: 'Wind Magic',
     image: '/images/wands/wands-01.webp',
     accentGradient: 'linear-gradient(180deg, #fbbf24, #f97316)',
