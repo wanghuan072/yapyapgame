@@ -334,6 +334,12 @@ const formatDate = (dateString) => {
   color: var(--accent-2);
 }
 
+.detail-article :deep(iframe) {
+  width: 80%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
 /* Right Sidebar */
 .right-sidebar {
   display: flex;

@@ -3,7 +3,7 @@
     <main class="container">
       <section class="page-hero">
         <p class="pill">Spell Forge · Animations · Audio Pronunciations</p>
-        <h1 class="title">YAPYAP Spell Forge</h1>
+        <h1 class="title">YAPYAP Spell Generator</h1>
         <p class="intro">
           Choose your wand, select an incantation, and forge your spell. Watch animations and learn pronunciations.
         </p>

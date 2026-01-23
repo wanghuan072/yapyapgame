@@ -3,7 +3,7 @@
     <main class="container">
       <section class="page-hero">
         <p class="pill">Voice Commands · Database · Pronunciation Guide</p>
-        <h1 class="title">YAPYAP Spells &amp; Pronunciation Guide</h1>
+        <h1 class="title">YAPYAP Spells List &amp; Pronunciation Guide</h1>
         <p class="intro">
               The complete YAPYAP spells list with voice commands, pronunciation, and quick “listen” demos—plus common
           misheard phrases to improve voice recognition.
@@ -51,7 +51,7 @@
               </div>
               <div class="c action">
                 <a :href="`/spell-generator?spell=${encodeURIComponent(s.spell.toLowerCase().replace(/\s+/g, '-'))}`" class="btn btn-ghost btn-sm">
-                  View
+                  Spell Generator
                 </a>
               </div>
             </div>
@@ -455,7 +455,7 @@ const misheard = computed(() => [])
 
 .row {
   display: grid;
-  grid-template-columns: 70px 160px 1fr 1.2fr 100px;
+  grid-template-columns: 70px 120px 1fr 1.2fr 160px;
   gap: 12px;
   padding: 14px 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);

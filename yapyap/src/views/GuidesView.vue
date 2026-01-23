@@ -119,7 +119,7 @@ onMounted(async () => {
 
 .guides-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -144,7 +144,7 @@ onMounted(async () => {
 
 .guide-image-container {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: rgba(15, 20, 36, 0.6);
 }
