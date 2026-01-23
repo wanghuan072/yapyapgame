@@ -19,7 +19,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
