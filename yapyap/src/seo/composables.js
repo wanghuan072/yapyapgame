@@ -252,7 +252,7 @@ export function useAutoSEO() {
             
             item = guides.find(g => {
               if (!g.addressBar) return false
-              // addressBar 现在不包含 /guide/ 前缀，直接匹配 slug
+              // addressBar 现在不包含 /guides/ 前缀，直接匹配 slug
               return g.addressBar === slug
             })
           }

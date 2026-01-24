@@ -26,7 +26,7 @@
           <a
             v-for="guide in allGuides"
             :key="guide.id"
-            :href="`/guide/${guide.addressBar}`"
+            :href="`/guides/${guide.addressBar}`"
             class="guide-card card"
           >
             <div class="guide-image-container" v-if="guide.imageUrl">

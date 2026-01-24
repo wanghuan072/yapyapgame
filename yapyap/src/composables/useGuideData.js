@@ -43,8 +43,8 @@ export function useGuideData() {
   }
 
   const findGuideByAddressBar = (addressBar) => {
-    // addressBar 现在不包含 /guide/ 前缀，直接匹配
-    const cleanAddressBar = addressBar.replace(/^\/guide\//, '').replace(/^\//, '')
+    // addressBar 现在不包含 /guides/ 前缀，直接匹配
+    const cleanAddressBar = addressBar.replace(/^\/guides\//, '').replace(/^\/guide\//, '').replace(/^\//, '')
     return guidesData.value.find(g => g.addressBar === cleanAddressBar) || null
   }
 

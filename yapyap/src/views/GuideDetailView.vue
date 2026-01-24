@@ -83,7 +83,7 @@
               <div class="nav-grid">
                 <a
                   v-if="previousGuide"
-                  :href="`/guide/${previousGuide.addressBar}`"
+                  :href="`/guides/${previousGuide.addressBar}`"
                   class="nav-card nav-card-prev"
                 >
                   <div class="nav-card-direction">Previous</div>
@@ -94,7 +94,7 @@
                 </a>
                 <a
                   v-if="nextGuide"
-                  :href="`/guide/${nextGuide.addressBar}`"
+                  :href="`/guides/${nextGuide.addressBar}`"
                   class="nav-card nav-card-next"
                 >
                   <div class="nav-card-direction">Next</div>
@@ -116,7 +116,7 @@
         <div class="not-found card">
           <h2>Guide Not Found</h2>
           <p>The guide you're looking for doesn't exist.</p>
-          <a href="/guide/overview" class="btn btn-primary">Back to Guides</a>
+          <a href="/guides" class="btn btn-primary">Back to Guides</a>
         </div>
       </div>
     </section>

@@ -78,8 +78,8 @@ async function generateSitemap() {
   const guides = data.guides || []
   guides.forEach(guide => {
     if (!guide || !guide.addressBar) return
-    // addressBar 不包含 /guide/ 前缀，需要添加
-    const guidePath = `/guide/${guide.addressBar}`
+    // addressBar 不包含 /guides/ 前缀，需要添加
+    const guidePath = `/guides/${guide.addressBar}`
     sitemapXml += `\n${generateUrlXml(guidePath, guide.publishDate || lastmod, 0.8, 'monthly')}`
   })
 

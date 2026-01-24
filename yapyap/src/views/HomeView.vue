@@ -160,7 +160,7 @@
                 </div>
                 <h3>{{ guide.title }}</h3>
                 <p>{{ guide.description }}</p>
-                <a :href="`/guide/${guide.addressBar}`" class="guide-link">Read more →</a>
+                <a :href="`/guides/${guide.addressBar}`" class="guide-link">Read more →</a>
               </div>
             </article>
           </div>

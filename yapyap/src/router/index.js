@@ -153,7 +153,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/guide/:slug',
+      path: '/guides/:slug',
       name: 'guide-detail',
       component: GuideDetailView,
       // SEO will be set dynamically from guide data
