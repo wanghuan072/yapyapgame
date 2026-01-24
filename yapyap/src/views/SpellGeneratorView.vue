@@ -288,31 +288,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(237, 240, 255, 0.72);
-  font-size: 13px;
-  letter-spacing: 0.02em;
-}
-
-.title {
-  margin: 14px 0 12px 0;
-  font-size: 42px;
-  line-height: 1.12;
-  letter-spacing: -0.01em;
-}
-
-.intro {
-  color: rgba(237, 240, 255, 0.72);
-  max-width: 980px;
-  line-height: 1.7;
-}
 
 .spell-forge-wrapper {
   max-width: 1000px;
@@ -781,9 +756,6 @@ code {
 }
 
 @media (max-width: 768px) {
-  .title {
-    font-size: 32px;
-  }
 
   .wand-list {
     grid-template-columns: 1fr;

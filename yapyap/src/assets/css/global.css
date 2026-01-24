@@ -90,8 +90,98 @@ a {
   padding: 30px 0 70px 0;
 }
 
+/* Page Hero - Unified Style for All Inner Pages */
 .page-hero {
-  padding: 20px 0;
+  padding: 60px 20px 40px;
+  margin-bottom: 48px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(18, 12, 32, 0.92) 0%, rgba(12, 18, 32, 0.88) 50%, rgba(10, 14, 28, 0.86) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.22);
+  border-radius: 20px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.page-hero .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(74, 222, 128, 0.1));
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.1);
+}
+
+.page-hero .title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 30%, #e9d5ff 60%, #ddd6fe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 40px rgba(139, 92, 246, 0.35)) drop-shadow(0 0 60px rgba(196, 181, 253, 0.25));
+}
+
+.page-hero .intro {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .page-hero {
+    padding: 48px 20px 32px;
+    margin-bottom: 40px;
+  }
+
+  .page-hero .title {
+    font-size: 36px;
+  }
+
+  .page-hero .intro {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-hero {
+    padding: 32px 20px 24px;
+    margin-bottom: 32px;
+  }
+
+  .page-hero .pill {
+    padding: 8px 14px;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .page-hero .title {
+    font-size: 28px;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 0 16px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 32px rgba(139, 92, 246, 0.3));
+  }
+
+  .page-hero .intro {
+    font-size: 15px;
+    line-height: 1.6;
+  }
 }
 
 .breadcrumbs {

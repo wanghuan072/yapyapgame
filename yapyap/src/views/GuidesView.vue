@@ -80,32 +80,6 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--muted);
-  font-size: 13px;
-  letter-spacing: 0.02em;
-  margin-bottom: 12px;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-  margin: 0 0 12px 0;
-}
-
-.intro {
-  color: var(--muted);
-  max-width: 720px;
-  margin: 0;
-}
 
 .guides-section {
   margin-top: 40px;
@@ -173,6 +147,13 @@ onMounted(async () => {
   margin: 0 0 12px 0;
   line-height: 1.3;
   color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.3em * 2);
 }
 
 .guide-description {
@@ -181,6 +162,14 @@ onMounted(async () => {
   line-height: 1.6;
   margin: 0 0 16px 0;
   flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.6em * 3);
+  word-wrap: break-word;
 }
 
 .guide-tags {
@@ -228,9 +217,6 @@ onMounted(async () => {
 }
 
 @media (max-width: 768px) {
-  .title {
-    font-size: 28px;
-  }
 
   .guides-grid {
     grid-template-columns: 1fr;

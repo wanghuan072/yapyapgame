@@ -186,32 +186,6 @@
 <script setup></script>
 
 <style scoped>
-.pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--muted);
-  font-size: 13px;
-  letter-spacing: 0.02em;
-  margin-bottom: 12px;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-  margin: 0 0 12px 0;
-}
-
-.intro {
-  color: var(--muted);
-  max-width: 720px;
-  margin: 0;
-}
 
 .work-in-progress {
   display: flex;
@@ -573,9 +547,6 @@
 }
 
 @media (max-width: 768px) {
-  .title {
-    font-size: 28px;
-  }
 
   .section-title {
     font-size: 24px;

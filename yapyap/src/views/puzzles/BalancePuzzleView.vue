@@ -265,41 +265,6 @@
   position: relative;
 }
 
-.page-hero {
-  margin-bottom: 40px;
-}
-
-.pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--muted);
-  font-size: 13px;
-  letter-spacing: 0.02em;
-  margin-bottom: 12px;
-}
-
-.title {
-  font-size: 42px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-  margin: 14px 0 12px 0;
-  background: linear-gradient(120deg, var(--text), var(--accent));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.intro {
-  color: var(--muted);
-  max-width: 720px;
-  line-height: 1.7;
-  margin: 0 0 20px 0;
-}
 
 .puzzle-meta {
   display: flex;
@@ -843,9 +808,6 @@
 }
 
 @media (max-width: 768px) {
-  .title {
-    font-size: 32px;
-  }
 
   .card {
     padding: 20px;

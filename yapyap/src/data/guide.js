@@ -13,6 +13,7 @@ export const guides = [
       description: "New to Yapyap? Learn essential controls, settings (including microphone fix!), inventory management & elemental interactions in this beginner's guide.",
       keywords: "yapyap, getting started, yapyap controls, spell casting, voice casting, inventory, elemental interactions, wizard game, magic",
     },
+    isHome: true,
     addressBar: "getting-started-yapyap-essential-controls-settings-guide",
     detailsHtml: `
   <div class="yapyap-guide-container">
@@ -99,6 +100,7 @@ export const guides = [
       description: "Unlock Yapyap's hidden potential! This guide reveals how to farm 30+ coins, get free wands, and achieve infinite flight before entering the castle. Dominate the game!",
       keywords: "yapyap, secrets, guide, coin farming, infinite flight, double wand trick, hidden coins, merchant, gems",
     },
+    isHome: true,
     addressBar: "yapyap-secrets-guide-how-to-farm-coins-fly-infinitely",
     detailsHtml: `
   <div class="yapyap-guide-container">
@@ -155,7 +157,7 @@ export const guides = [
   },
 
   {
-    id: "cmkp6t7a60007lg04xgrpbo4k",
+    id: 3,
     title: "Yapyap Night 1 Survival Guide: The \"Infinite Flight\" Strategy & Best Loot Routes",
     iframeUrl: "1",
     description: "The first night in Yapyap sets the pace for your entire run. Many new wizards die because they can't find the exit or get cornered by the Clown Girl. This guide details the \"Standardized Opening\" strategy that pro players use to secure 800+ points and safe extraction in under 5 minutes.",
@@ -163,6 +165,7 @@ export const guides = [
     publishDate: "2026-01-22",
     imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769070237/cms-uploads/cms-1769070236697-715966904.jpg",
     imageAlt: "Yapyap Day 1 Survival Guide",
+    isHome: true,
     seo:{
       title: "Yapyap Night 1 Guide: Infinite Flight, Loot Spots & Escape Strategy",
       description: "Meta Description: Survive Day 1 in Yapyap with our pro guide. Learn the Double-Wand flight trick, where to find hidden washroom loot, and how to identify the Blue Escape Tower.",

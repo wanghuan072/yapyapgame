@@ -7,14 +7,14 @@
           <div class="hero-text card">
             <div class="pill">Voice Spells · Co-op Chaos · Light Horror</div>
             <h1>YAPYAP Game Ultimate Guide & Wiki</h1>
-            <p class="lead">"Master the spell, solve the puzzle, and escape the tower."</p>
+            <p class="lead">Master the <a href="/spell-generator">spell</a>, solve the <a href="/puzzle/ball-puzzle">puzzle</a>, and escape the tower. The ultimate <strong>YAPYAP game</strong> resource for voice commands, co-op tips, and wiki.</p>
             
             <div class="hero-features">
               <div class="hero-feature-item">
                 <div class="feature-icon">🎬</div>
                 <div class="feature-content">
                   <h3>Spell Generator</h3>
-                  <p>Practice voice commands with video tutorials. Master pronunciation for every spell before you play.</p>
+                  <p>Practice <strong>YAPYAP game</strong> voice commands with video tutorials. Master pronunciation for every spell before you play.</p>
                   <a href="/spell-generator" class="feature-link">Try Spell Generator →</a>
                 </div>
               </div>
@@ -22,7 +22,7 @@
                 <div class="feature-icon">📚</div>
                 <div class="feature-content">
                   <h3>Complete Wiki</h3>
-                  <p>Browse wands, monsters, potions, and items. Find stats, crafting recipes, and survival strategies.</p>
+                  <p>Browse <a href="/wiki/wands">wands</a>, <a href="/wiki/bestiary">monsters</a>, <a href="/wiki/potions">potions</a>, and items. Find stats, crafting recipes, and survival strategies for the YAPYAP game.</p>
                   <a href="/wiki" class="feature-link">Explore Wiki →</a>
                 </div>
               </div>
@@ -45,8 +45,20 @@
           </div>
           <div class="hero-media card">
             <div class="video-frame">
+              <template v-if="!heroVideoLoaded">
+                <div
+                  class="video-mask"
+                  :style="{ backgroundImage: 'url(https://img.youtube.com/vi/vzl2ljQ8OaQ/hqdefault.jpg)' }"
+                >
+                  <div class="video-mask-overlay"></div>
+                  <button type="button" class="video-play-btn" aria-label="Play YAPYAP Trailer" @click="heroVideoLoaded = true">
+                    <span class="play-icon"></span>
+                  </button>
+                </div>
+              </template>
               <iframe
-                src="https://www.youtube.com/embed/qjLDbxB-Xt4"
+                v-else
+                src="https://www.youtube.com/embed/vzl2ljQ8OaQ?autoplay=1"
                 title="YAPYAP Trailer"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -70,7 +82,7 @@
               <div class="pain-icon">🎤</div>
               <div class="pain-content">
                 <h3>"My spells never work!"</h3>
-                <p class="pain-description">Voice recognition keeps failing? Learn the exact pronunciation for every spell with audio demos.</p>
+                <p class="pain-description">In the <strong>YAPYAP game</strong>, voice recognition keeps failing? Learn the exact pronunciation for every spell with audio demos on our <a href="/spells">Spells</a> page.</p>
                 <div class="pain-stats">
                   <span class="stat-item">100+ spells</span>
                   <span class="stat-item">Audio guides</span>
@@ -82,7 +94,7 @@
               <div class="pain-icon">🎬</div>
               <div class="pain-content">
                 <h3>"How do I say this spell?"</h3>
-                <p class="pain-description">Not sure about pronunciation? Watch video demonstrations and practice with our interactive spell generator before you play.</p>
+                <p class="pain-description">Not sure about <strong>YAPYAP game</strong> spell pronunciation? Watch video demos and practice with our <a href="/spell-generator">Spell Generator</a> before you play.</p>
                 <div class="pain-stats">
                   <span class="stat-item">Video tutorials</span>
                   <span class="stat-item">Practice mode</span>
@@ -94,7 +106,7 @@
               <div class="pain-icon">📚</div>
               <div class="pain-content">
                 <h3>"What does this item do?"</h3>
-                <p class="pain-description">Need wand stats, potion recipes, or monster info? Complete game database with all items, effects, and crafting guides.</p>
+                <p class="pain-description">Need wand stats, potion recipes, or monster info for the YAPYAP game? Our <a href="/wiki">Wiki</a> has the complete database: items, effects, and crafting guides.</p>
                 <div class="pain-stats">
                   <span class="stat-item">Complete database</span>
                   <span class="stat-item">All items & stats</span>
@@ -111,8 +123,8 @@
         <div class="container">
           <div class="section-header">
             <p class="pill">yapyap guide</p>
-            <h2 class="section-title">Latest Guides</h2>
-            <p class="section-subtitle">Fresh updates from the community and demo learnings.</p>
+            <h2 class="section-title">YAPYAP Game Latest Guides</h2>
+            <p class="section-subtitle">Fresh <strong>YAPYAP game</strong> updates from the community and demo learnings. <a href="/guides">View all guides</a>.</p>
           </div>
           <!-- Loading State -->
           <div v-if="loading" class="loading-state card">
@@ -156,7 +168,7 @@
           </div>
           <!-- View All Link -->
           <div v-if="!loading && homeGuides.length > 0" class="guides-actions">
-            <a href="/guide/overview" class="btn btn-ghost">View All Guides</a>
+            <a href="/guides" class="btn btn-ghost">View All Guides</a>
           </div>
         </div>
       </section>
@@ -173,16 +185,16 @@
                 <p class="pill warning-pill">Voice Recognition Issues</p>
                 <h2 class="section-title">"Can't Hear Friends? Spells Not Working?"</h2>
                 <p class="section-subtitle">
-                  Voice recognition failing? Microphone problems? Learn the correct pronunciation for every spell with audio demos and troubleshooting tips.
+                  <strong>YAPYAP game</strong> voice recognition failing? Microphone problems? Learn the correct pronunciation for every spell with <a href="/spells">audio demos</a> and <a href="/spell-generator">practice mode</a>. Fix "yapyap can't hear friends" fast.
                 </p>
                 <div class="trouble-features">
                   <div class="trouble-feature-item">
                     <span class="feature-check">✓</span>
-                    <span>100+ spell pronunciations with audio</span>
+                    <span>100+ <strong>YAPYAP game</strong> spell pronunciations with audio</span>
                   </div>
                   <div class="trouble-feature-item">
                     <span class="feature-check">✓</span>
-                    <span>Microphone setup & troubleshooting</span>
+                    <span>Microphone setup & troubleshooting for YAPYAP game</span>
                   </div>
                   <div class="trouble-feature-item">
                     <span class="feature-check">✓</span>
@@ -206,16 +218,15 @@
       <section id="what" class="section section-light">
         <div class="container what-grid">
           <div class="what-text card">
-            <!-- <p class="pill">What is YAPYAP?</p> -->
-            <h2 class="section-title">What is YAPYAP</h2>
+            <h2 class="section-title">What is the YAPYAP Game?</h2>
             <p>
-              YAPYAP is a multiplayer horror game on Steam that leans into voice activated spells and co-op vandalism. Players act as minions infiltrating a rival tower, smashing high-value objects, solving puzzles, and escaping monsters. This multiplayer horror game combines voice activated spells with cooperative gameplay.
+              The <strong>YAPYAP game</strong> is a multiplayer horror game on Steam that leans into voice-activated spells and co-op vandalism. Players act as minions infiltrating a rival tower, smashing high-value objects, solving <a href="/puzzle/ball-puzzle">puzzles</a>, and escaping monsters. Use our <a href="/spells">Spells</a> and <a href="/wiki">Wiki</a> to master the <strong>YAPYAP game</strong>.
             </p>
             <p>
-              The game's core mechanic revolves around voice control co-op, where players must speak spell commands into their microphones to trigger magical effects. This voice activated spells system creates an immersive spellcasting with mic experience that sets YAPYAP apart from traditional co-op horror titles. The combination of vandalism and stealth escape mechanics makes each run unpredictable and thrilling.
+              The YAPYAP game core mechanic revolves around voice control co-op: speak spell commands into your mic to trigger magical effects. This voice-activated spell system creates an immersive spellcasting experience. Check the <a href="/spell-generator">Spell Generator</a> and <a href="/guides">Guides</a> for tips. Vandalism and stealth escape mechanics make each run unpredictable and thrilling.
             </p>
             <p class="seo-text">
-              Keywords: yapyap game info, yapyap game, multiplayer horror game, voice activated spells, steam co-op, co-op horror, voice control co-op, spellcasting with mic, vandalism and stealth escape.
+              Keywords: <strong>yapyap game</strong>, yapyap game info, multiplayer horror, voice activated spells, steam co-op, co-op horror, spellcasting with mic, vandalism and stealth escape.
             </p>
           </div>
           <div class="what-visual card">
@@ -229,12 +240,21 @@
         <div class="container">
           <div class="release-hero">
             <p class="pill release-pill">Launch Countdown</p>
-            <h2 class="section-title">Coming February 3, 2026</h2>
+            <h2 class="section-title">YAPYAP Release Date</h2>
             <p class="release-description">
-              YAPYAP launches on Steam (Windows). Master voice-activated spells, solve puzzles, and survive the tower with friends. Join the wishlist to get notified!
+              <strong>YAPYAP game release date:</strong> February 3, 2026. <strong>Steam YAPYAP game</strong> launches with voice-activated spells, co-op gameplay, and tower survival. Master <a href="/spells">voice commands</a>, solve <a href="/puzzle/ball-puzzle">puzzles</a>, and escape with friends. See <a href="#system-requirements">system requirements</a> below. Join the wishlist to get notified!
             </p>
           </div>
           
+          <div class="release-info">
+            <div class="release-meta">
+              <span class="meta-item">Steam</span>
+              <span class="meta-separator">·</span>
+              <span class="meta-item">Voice Co-op</span>
+            </div>
+          </div>
+
+          <!-- Countdown -->
           <div class="countdown-container">
             <div class="countdown-grid">
               <div class="countdown-box">
@@ -259,22 +279,47 @@
             </div>
           </div>
 
-          <div class="release-info">
-            <div class="release-meta">
-              <span class="meta-item">Steam</span>
-              <span class="meta-separator">·</span>
-              <span class="meta-item">Windows</span>
-              <span class="meta-separator">·</span>
-              <span class="meta-item">Voice Co-op</span>
+          <!-- System Requirements -->
+          <div id="system-requirements" class="system-requirements card">
+            <h3 class="requirements-title">YAPYAP Game System Requirements</h3>
+            <div class="requirements-grid">
+              <div class="requirement-item">
+                <span class="requirement-label">OS</span>
+                <span class="requirement-value">Windows® 10</span>
+              </div>
+              <div class="requirement-item">
+                <span class="requirement-label">Processor</span>
+                <span class="requirement-value">Core i5 6600</span>
+              </div>
+              <div class="requirement-item">
+                <span class="requirement-label">Memory</span>
+                <span class="requirement-value">8 GB RAM</span>
+              </div>
+              <div class="requirement-item">
+                <span class="requirement-label">Graphics</span>
+                <span class="requirement-value">GTX 970</span>
+              </div>
+              <div class="requirement-item">
+                <span class="requirement-label">DirectX</span>
+                <span class="requirement-value">Version 10</span>
+              </div>
+              <div class="requirement-item">
+                <span class="requirement-label">Network</span>
+                <span class="requirement-value">Broadband Internet</span>
+              </div>
+              <div class="requirement-item">
+                <span class="requirement-label">Storage</span>
+                <span class="requirement-value">2 GB available</span>
+              </div>
             </div>
           </div>
 
           <div class="release-actions">
-            <a class="btn btn-primary release-btn" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener">
+            <a class="btn btn-primary release-btn" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener noreferrer nofollow">
               <span>Wishlist on Steam</span>
               <span class="btn-icon">→</span>
             </a>
-            <a class="btn btn-ghost release-btn" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener">
+            <a class="btn btn-ghost release-btn" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener noreferrer nofollow">
               <span>Try Demo</span>
             </a>
           </div>
@@ -290,28 +335,28 @@
           </div>
           <div class="faq-list">
             <div class="card faq-item">
-              <h3>Voice recognition feels flaky?</h3>
-              <p>Lower background noise, raise mic gain slightly, enunciate vowels, and test in settings. Some spells are syllable-sensitive.</p>
+              <h3>YAPYAP Can't Hear Friends?</h3>
+              <p>If you can't hear friends in the <strong>YAPYAP game</strong>, check mic permissions, verify input device in settings, and ensure your mic isn't muted. Visit our <a href="/spells">Spells</a> and <a href="/spell-generator">Spell Generator</a> for voice command fixes and pronunciation demos.</p>
             </div>
             <div class="card faq-item">
-              <h3>Monsters hit too hard?</h3>
-              <p>Kite and avoid trading damage. Use Confuse/Disguise to break aggro; keep two escape routes and regroup points.</p>
+              <h3>How to Start in YAPYAP?</h3>
+              <p>To start in the <strong>YAPYAP game</strong>, enable "Hold Right Mouse Button for Spell" in Accessibility if your mic fails. Learn controls, inventory, and spell casting in our <a href="/guides">Getting Started</a> and <a href="/wiki">Wiki</a> guides.</p>
             </div>
             <div class="card faq-item">
-              <h3>Best objects to smash?</h3>
-              <p>Instruments, lab gear, bathroom fixtures, and luxury decor tend to score higher. Tag props that only make noise vs. ones that award points.</p>
+              <h3>When Does YAPYAP Release?</h3>
+              <p>The <strong>YAPYAP game</strong> release date is February 3, 2026 on Steam for Windows. It features voice-activated spells, co-op, and tower survival. See <a href="#release">release countdown</a> and <a href="#system-requirements">system requirements</a> above. Join the wishlist to get notified!</p>
             </div>
             <div class="card faq-item">
-              <h3>Can't hear friends in voice chat?</h3>
-              <p>Check microphone permissions, verify input device in settings, reduce background noise, and ensure your mic isn't muted. See our troubleshooting guide for detailed fixes.</p>
+              <h3>How to Do the Scale Puzzle in YAPYAP?</h3>
+              <p>The scale puzzle in the <strong>YAPYAP game</strong> requires balancing objects on scales to unlock doors. Use inventory items to match weight. See our <a href="/puzzle/ball-puzzle">Ball Puzzle</a>, <a href="/puzzle/balance-puzzle">Balance Puzzle</a>, and <a href="/puzzle/door-puzzle">Door Puzzle</a> guides for solutions.</p>
             </div>
             <div class="card faq-item">
-              <h3>How many players can play together?</h3>
-              <p>YAPYAP supports up to 5-6 players in online co-op mode. Teams work together to infiltrate towers, solve puzzles, and escape monsters.</p>
+              <h3>How Many Players Can Play Together?</h3>
+              <p>The <strong>YAPYAP game</strong> supports up to 5 players in online co-op. Teams infiltrate towers, solve puzzles, and escape using <a href="/spells">voice spells</a> and <a href="/guides">strategies</a>.</p>
             </div>
             <div class="card faq-item">
-              <h3>What platforms is YAPYAP available on?</h3>
-              <p>YAPYAP launches on Steam for Windows on February 3, 2026. A demo is available during Steam Next Fest events.</p>
+              <h3>What Platforms is YAPYAP Available On?</h3>
+              <p>The <strong>YAPYAP game</strong> is on Steam for Windows (Feb 3, 2026). A demo runs during Steam Next Fest. Check <a href="#system-requirements">system requirements</a> above. Our <a href="/wiki">Wiki</a> covers items and mechanics.</p>
             </div>
           </div>
         </div>
@@ -330,6 +375,7 @@ const homeGuides = computed(() => {
   return guides.value || []
 })
 
+const heroVideoLoaded = ref(false)
 const releaseDate = new Date('2026-02-03T00:00:00')
 const daysLeft = ref(0)
 const hoursLeft = ref(0)
@@ -399,7 +445,7 @@ onUnmounted(() => {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
-  padding: 24px;
+  padding: 20px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
 }
@@ -526,6 +572,13 @@ onUnmounted(() => {
   font-size: 34px;
   line-height: 1.15;
   margin: 16px 0 12px 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 30%, #e9d5ff 60%, #ddd6fe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 16px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 32px rgba(139, 92, 246, 0.35)) drop-shadow(0 0 48px rgba(196, 181, 253, 0.25));
 }
 
 .lead {
@@ -627,6 +680,62 @@ onUnmounted(() => {
   inset: 0;
   width: 100%;
   height: 100%;
+}
+
+.video-mask {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(15, 20, 36, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-mask-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+}
+
+.video-play-btn {
+  position: relative;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  background: rgba(139, 92, 246, 0.85);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.5);
+}
+
+.video-play-btn:hover {
+  transform: scale(1.08);
+  background: rgba(139, 92, 246, 0.95);
+  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.6);
+}
+
+.video-play-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  margin-left: 6px;
+  border-style: solid;
+  border-width: 14px 0 14px 24px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.95);
 }
 
 
@@ -758,7 +867,7 @@ onUnmounted(() => {
 
 .guide-image {
   width: 100%;
-  height: 160px;
+  aspect-ratio: 16 / 9;
   background: linear-gradient(135deg, rgba(132, 94, 247, 0.2), rgba(74, 222, 128, 0.15));
   display: grid;
   place-items: center;
@@ -808,12 +917,29 @@ onUnmounted(() => {
 .guide-card h3 {
   margin: 0;
   font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  max-height: calc(1.4em * 2);
 }
 
 .guide-card p {
   color: var(--muted);
   margin: 0;
   flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  max-height: calc(1.5em * 3);
+  word-wrap: break-word;
 }
 
 .guide-link {
@@ -1015,11 +1141,17 @@ onUnmounted(() => {
   font-size: 15px;
 }
 
+.release-description strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .countdown-container {
-  margin: 40px 0;
-  padding: 40px 20px;
-  background: linear-gradient(145deg, rgba(132, 94, 247, 0.1), rgba(74, 222, 128, 0.08));
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 48px 32px;
+  background: linear-gradient(145deg, rgba(132, 94, 247, 0.12), rgba(74, 222, 128, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 24px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   position: relative;
@@ -1156,6 +1288,63 @@ onUnmounted(() => {
   margin-top: 32px;
 }
 
+.system-requirements {
+  margin: 32px auto 0;
+  max-width: 900px;
+  padding: 40px;
+  background: linear-gradient(150deg, rgba(15, 20, 36, 0.95), rgba(18, 25, 48, 0.92));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.requirements-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+  color: var(--text);
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.requirement-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.requirement-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(139, 92, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+.requirement-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.requirement-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
 .release-btn {
   min-width: 180px;
   padding: 16px 28px;
@@ -1188,6 +1377,38 @@ onUnmounted(() => {
 .faq-item p {
   color: var(--muted);
   margin: 0;
+  line-height: 1.6;
+}
+
+.faq-item a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.faq-item a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.lead a,
+.section-subtitle a,
+.pain-description a,
+.what-text a,
+.release-description a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.lead a:hover,
+.section-subtitle a:hover,
+.pain-description a:hover,
+.what-text a:hover,
+.release-description a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
@@ -1199,6 +1420,7 @@ onUnmounted(() => {
   .release-description {
     font-size: 14px;
   }
+
 
   .trouble-card {
     grid-template-columns: 1fr;
@@ -1222,6 +1444,7 @@ onUnmounted(() => {
 
   .hero-text h1 {
     font-size: 30px;
+    filter: drop-shadow(0 0 14px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 28px rgba(139, 92, 246, 0.35)) drop-shadow(0 0 40px rgba(196, 181, 253, 0.2));
   }
 
   .hero-features {
@@ -1270,6 +1493,7 @@ onUnmounted(() => {
 
   .hero-text h1 {
     font-size: 26px;
+    filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 24px rgba(139, 92, 246, 0.3)) drop-shadow(0 0 36px rgba(196, 181, 253, 0.2));
   }
 
   .hero-features {
@@ -1296,7 +1520,7 @@ onUnmounted(() => {
 
   .countdown-container {
     padding: 32px 16px;
-    margin: 32px 0;
+    margin: 32px 16px;
   }
 
   .countdown-grid {
@@ -1324,6 +1548,33 @@ onUnmounted(() => {
   .release-btn {
     min-width: 100%;
     width: 100%;
+  }
+
+  .system-requirements {
+    padding: 32px 24px;
+    margin: 32px 16px 0;
+  }
+
+  .requirements-title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .requirements-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .requirement-item {
+    padding: 14px 18px;
+  }
+
+  .requirement-label {
+    font-size: 11px;
+  }
+
+  .requirement-value {
+    font-size: 14px;
   }
 
   .guide-grid {
