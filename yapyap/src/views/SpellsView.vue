@@ -142,7 +142,7 @@
       <!-- Hidden Interactions & Physics -->
       <section id="hidden-interactions" class="section card">
         <div class="section-head">
-          <h2 class="section-title">Hidden Interactions & Physics</h2>
+          <h2 class="section-title">YAPYAP Hidden Spell Interactions & Physics</h2>
           <p class="section-subtitle">
             Many spells from the <strong>YAPYAP Spells List</strong> affect objects, not just enemies. Discover these hidden mechanics to gain an edge. These interactions aren't obvious when browsing the <strong>YAPYAP Spells List</strong>, but they can save you time in <a href="/puzzle/ball-puzzle">puzzle rooms</a> and <a href="/puzzle/door-puzzle">treasure vaults</a>.
           </p>

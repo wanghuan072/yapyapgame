@@ -50,9 +50,9 @@ const router = createRouter({
       component: SpellGeneratorView,
       meta: {
         seo: {
-          title: 'YAPYAP Spell Forge: Simulator & Pronunciation Trainer',
-          description: 'Test wands and incantations in our unofficial Spell Forge. Master phonetics for spells like Lux-Ana and view casting animations before playing.',
-          keywords: 'yapyap spell generator, yapyap simulator, spell forge, practice yapyap spells, yapyap wand types',
+          title: 'YAPYAP Spell Generator: Pronunciation & Casting Tool',
+          description: 'The ultimate casting simulator. Perfect your YAPYAP demo game pronunciation with standard audio. Learn how to use wands and fix voice recognition issues.',
+          keywords: 'yapyap spell generator, yapyap demo game pronunciation, spell forge, voice practice, casting simulator',
         },
       },
     },

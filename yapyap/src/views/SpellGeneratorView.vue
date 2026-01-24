@@ -2,7 +2,7 @@
   <div class="page">
     <section class="page-hero">
       <div class="container">
-        <p class="pill">Spell Forge · Animations · Audio Pronunciations</p>
+        <p class="pill">Spell Generator · Animations · Audio Pronunciations</p>
         <h1 class="title">YAPYAP Spell Generator</h1>
         <p class="intro">
           Choose your wand, select an incantation, and forge your spell. Watch animations and learn pronunciations.
@@ -150,6 +150,123 @@
           </div>
         </div>
       </div>
+
+      <!-- How to Use the Spell Forge -->
+      <section class="guide-section">
+        <div class="guide-header">
+          <h2 class="guide-title">How to Use the Spell Generator</h2>
+          <p class="guide-intro">
+            Master the <strong>YAPYAP demo game pronunciation</strong> with our interactive spell generator. Follow these simple steps to practice voice commands.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Select Your Catalyst</h3>
+              <p class="step-text">
+                Choose a Wand archetype from the left panel. Different wands may have different casting animations or visual styles.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Choose an Incantation</h3>
+              <p class="step-text">
+                Pick a spell you want to learn, such as <strong>Aero-Bis</strong> or <strong>Up-Dog</strong>. Each spell in the <strong>YAPYAP demo game</strong> requires precise pronunciation.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Manifest & Listen</h3>
+              <p class="step-text">
+                Click the "Manifest Spell" button. Watch the visual effect and listen carefully to the audio guide to hear the correct <strong>YAPYAP demo game pronunciation</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Use This Tool? -->
+      <section class="why-section">
+        <div class="why-card">
+          <div class="why-header">
+            <div class="why-icon">⚡</div>
+            <h2 class="why-title">Why Practice in the Spell Generator?</h2>
+          </div>
+          <div class="why-body">
+            <div class="why-highlight">
+              <h3 class="why-subtitle">Stop Fizzling, Start Casting.</h3>
+            </div>
+            <div class="why-text-block">
+              <p class="why-text">
+                In the heat of battle, a mispronounced spell can cost you the game. This tool allows you to practice in a safe environment without the pressure of being chased by monsters.
+              </p>
+              <p class="why-text">
+                Especially for players struggling with the strict voice recognition in the <strong>YAPYAP demo game</strong>, <strong>pronunciation accuracy</strong> is the key to survival. Our generator provides the "Golden Standard" audio—if you mimic the rhythm and tone you hear here, your success rate in-game will skyrocket.
+              </p>
+              <p class="why-text">
+                Perfect your <strong>YAPYAP demo game pronunciation</strong> before entering the tower. Every spell in the <strong>YAPYAP demo game</strong> requires precise voice commands, and this tool helps you master them all.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pro Tips: Voice Command Mechanics -->
+      <section class="tips-section">
+        <div class="tips-header">
+          <div class="tips-title-wrapper">
+            <span class="tips-badge">Pro Tips</span>
+            <h2 class="tips-title">Voice Command Mechanics</h2>
+          </div>
+          <p class="tips-subtitle">
+            Expert advice for mastering <strong>YAPYAP demo game pronunciation</strong> and voice recognition.
+          </p>
+        </div>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <div class="tip-header">
+              <div class="tip-number">1</div>
+              <h3 class="tip-title">It's About Rhythm, Not Volume</h3>
+            </div>
+            <p class="tip-text">
+              You don't need to shout! The <strong>YAPYAP demo game</strong> analyzes distinct syllables. Try to speak with a staccato rhythm (e.g., "AIR... OH... BISS" instead of "Aerobis"). This is crucial for accurate <strong>YAPYAP demo game pronunciation</strong>.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <div class="tip-header">
+              <div class="tip-number">2</div>
+              <h3 class="tip-title">Background Noise</h3>
+            </div>
+            <p class="tip-text">
+              Mechanical keyboards and fans are your enemies. Use Push-to-Talk or lower your mic sensitivity if spells are casting randomly. Clean audio input is essential for the <strong>YAPYAP demo game</strong> voice recognition system.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <div class="tip-header">
+              <div class="tip-number">3</div>
+              <h3 class="tip-title">Confidence Matters</h3>
+            </div>
+            <p class="tip-text">
+              Hesitation often leads to failure. Listen to the audio above, memorize it, and say it with confidence. Practice the <strong>YAPYAP demo game pronunciation</strong> until it becomes second nature.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </template>
@@ -359,10 +476,6 @@ onMounted(() => {
   transition: all 0.3s ease;
   overflow: hidden;
   text-align: left;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .wand-item:hover {
@@ -394,7 +507,7 @@ onMounted(() => {
 }
 
 .wand-text .wand-name-cn {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   color: rgba(248, 250, 252, 1);
   line-height: 1.2;
@@ -566,7 +679,7 @@ onMounted(() => {
 
 .spell-display {
   max-width: 1000px;
-  margin: 40px auto 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 .spell-display-content {
@@ -768,6 +881,406 @@ code {
 
   .spell-name-large {
     font-size: 24px;
+  }
+}
+
+/* Guide Section - How to Use */
+.guide-section {
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.guide-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.guide-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(139, 92, 246, 0.3));
+}
+
+.guide-intro {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(237, 240, 255, 0.75);
+}
+
+.guide-intro strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.steps-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.step-card {
+  flex: 1;
+  max-width: 320px;
+  padding: 32px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.2);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(59, 130, 246, 0.08) 100%);
+}
+
+.step-number {
+  position: absolute;
+  top: -20px;
+  left: 32px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+}
+
+.step-content {
+  margin-top: 20px;
+}
+
+.step-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: rgba(237, 240, 255, 0.95);
+}
+
+.step-text {
+  margin: 0;
+  line-height: 1.7;
+  color: rgba(237, 240, 255, 0.8);
+  font-size: 14px;
+}
+
+.step-text strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.step-connector {
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.3) 0%, rgba(59, 130, 246, 0.3) 100%);
+  margin-top: 60px;
+  position: relative;
+}
+
+.step-connector::after {
+  content: '→';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: rgba(139, 92, 246, 0.6);
+  background: rgba(15, 20, 36, 0.95);
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* Why Section */
+.why-section {
+  margin-top: 60px;
+}
+
+.why-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px;
+  background: linear-gradient(135deg, rgba(18, 12, 32, 0.95) 0%, rgba(15, 20, 36, 0.95) 100%);
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+.why-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.why-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.why-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.why-highlight {
+  padding: 20px 24px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+}
+
+.why-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: rgba(237, 240, 255, 0.95);
+}
+
+.why-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.why-text {
+  margin: 0;
+  line-height: 1.8;
+  color: rgba(237, 240, 255, 0.85);
+  font-size: 15px;
+}
+
+.why-text strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Tips Section */
+.tips-section {
+  margin-top: 60px;
+  padding: 48px 0;
+}
+
+.tips-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.tips-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.tips-badge {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tips-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(139, 92, 246, 0.3));
+}
+
+.tips-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(237, 240, 255, 0.75);
+}
+
+.tips-subtitle strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tip-card {
+  padding: 28px;
+  background: rgba(15, 20, 36, 0.8);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tip-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.2);
+  background: rgba(15, 20, 36, 0.95);
+}
+
+.tip-card:hover::before {
+  opacity: 1;
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tip-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.tip-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: rgba(237, 240, 255, 0.95);
+}
+
+.tip-text {
+  margin: 0;
+  line-height: 1.7;
+  color: rgba(237, 240, 255, 0.8);
+  font-size: 14px;
+}
+
+.tip-text strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .step-connector {
+    width: 120px;
+    height: 2px;
+    margin: 0;
+    transform: rotate(90deg);
+  }
+
+  .step-connector::after {
+    content: '↓';
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+
+  .step-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .guide-section,
+  .why-section,
+  .tips-section {
+    margin-top: 40px;
+  }
+
+  .guide-title,
+  .tips-title {
+    font-size: 24px;
+  }
+
+  .why-card {
+    padding: 32px 24px;
+  }
+
+  .why-title {
+    font-size: 22px;
+  }
+
+  .why-subtitle {
+    font-size: 20px;
+  }
+
+  .why-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .tip-card {
+    padding: 20px;
   }
 }
 </style>

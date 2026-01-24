@@ -4,7 +4,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <div class="logo-mark">✦</div>
+            <img src="/images/logo.png" alt="YAPYAP Game" class="brand-logo" />
             <span class="logo-text">YAPYAP Game</span>
           </div>
           <p class="footer-text">
@@ -76,24 +76,17 @@
   margin-bottom: 12px;
 }
 
-.logo-mark {
-  width: 44px;
-  height: 44px;
+.footer-logo img {
+  width: 42px;
+  height: 42px;
   border-radius: 12px;
-  background: radial-gradient(circle at 20% 20%, rgba(74, 222, 128, 0.9), rgba(139, 92, 246, 0.95));
-  display: grid;
-  place-items: center;
-  font-weight: 900;
-  color: #0b0d16;
-  box-shadow: 0 0 22px rgba(139, 92, 246, 0.45);
 }
 
-.logo-text {
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+.footer-logo span {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
   color: var(--accent);
-  text-transform: uppercase;
 }
 
 .footer-text {

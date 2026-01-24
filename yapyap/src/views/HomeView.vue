@@ -74,7 +74,7 @@
         <div class="container">
           <div class="section-header">
             <p class="pill">Struggling?</p>
-            <h2 class="section-title">Stop Fighting Alone</h2>
+            <h2 class="section-title">YAPYAP Game Trainer</h2>
             <p class="section-subtitle">We've solved the most frustrating problems players face. Get instant answers.</p>
           </div>
           <div class="pain-points-grid">
@@ -84,7 +84,7 @@
                 <h3>"My spells never work!"</h3>
                 <p class="pain-description">In the <strong>YAPYAP game</strong>, voice recognition keeps failing? Learn the exact pronunciation for every spell with audio demos on our <a href="/spells">Spells</a> page.</p>
                 <div class="pain-stats">
-                  <span class="stat-item">100+ spells</span>
+                  <span class="stat-item">All spells</span>
                   <span class="stat-item">Audio guides</span>
                 </div>
                 <a href="/spells" class="pain-solution-btn">Fix Spell Recognition →</a>
@@ -124,7 +124,9 @@
           <div class="section-header">
             <p class="pill">yapyap guide</p>
             <h2 class="section-title">YAPYAP Game Latest Guides</h2>
-            <p class="section-subtitle">Fresh <strong>YAPYAP game</strong> updates from the community and demo learnings. <a href="/guides">View all guides</a>.</p>
+            <p class="section-subtitle">
+              Fresh <strong>YAPYAP game</strong> updates from our <a href="https://www.youtube.com/watch?v=FAIY5sW9aK4&list=PLRDGNl7G_p442o1bzxUpvwEkTBpK4x8PH">YouTube channel</a> and demo insights. <a href="/guides">View all guides</a>.
+            </p>
           </div>
           <!-- Loading State -->
           <div v-if="loading" class="loading-state card">
@@ -183,7 +185,7 @@
               </div>
               <div class="trouble-text">
                 <p class="pill warning-pill">Voice Recognition Issues</p>
-                <h2 class="section-title">"Can't Hear Friends? Spells Not Working?"</h2>
+                <h2 class="section-title">YAPYAP can't hear friends</h2>
                 <p class="section-subtitle">
                   <strong>YAPYAP game</strong> voice recognition failing? Microphone problems? Learn the correct pronunciation for every spell with <a href="/spells">audio demos</a> and <a href="/spell-generator">practice mode</a>. Fix "yapyap can't hear friends" fast.
                 </p>

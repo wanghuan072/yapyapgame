@@ -3,9 +3,9 @@
     <section class="page-hero">
       <div class="container">
         <p class="pill">Puzzle Room · Voice Control · Pitch Detection</p>
-        <h1 class="title">YAPYAP Balance Puzzle: Pitch Wheel Guide</h1>
+        <h1 class="title"><strong>YAPYAP Balance Puzzle</strong>: Pitch Wheel Guide</h1>
         <p class="intro">
-          Complete guide to the YAPYAP balance puzzle (Pitch Wheel). How to control the mechanism with "Do Re Mi"? A microphone-assisted guide to solving this tricky YAPYAP balance puzzle.
+          Complete guide to the <strong>YAPYAP Balance Puzzle</strong> (Pitch Wheel). Master the <strong>YAPYAP rotating balance puzzle</strong> mechanism with "Do Re Mi" voice commands. This microphone-assisted guide will help you solve this tricky <strong>YAPYAP Balance Puzzle</strong>, also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>.
         </p>
         <div class="puzzle-meta">
           <span class="tag medium">Medium Difficulty</span>
@@ -27,7 +27,7 @@
           <div class="overview-card card">
             <div class="overview-label">Core Mechanic</div>
             <div class="overview-value">Pitch Control</div>
-            <div class="overview-desc">High pitch vs low pitch detection</div>
+            <div class="overview-desc">The <strong>YAPYAP rotating balance puzzle</strong> uses high pitch vs low pitch detection. Also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>.</div>
           </div>
           <div class="overview-card card">
             <div class="overview-label">Required Tools</div>
@@ -54,7 +54,7 @@
       <section class="video-section card">
         <div class="section-head">
           <h2 class="section-title">Video Walkthrough</h2>
-          <p class="section-subtitle">Watch the complete YAPYAP balance puzzle demonstration (pitch control + staccato method)</p>
+          <p class="section-subtitle">Watch the complete <strong>YAPYAP Balance Puzzle</strong> demonstration (pitch control + staccato method). Learn how to master the <strong>YAPYAP rotating balance puzzle</strong> mechanism.</p>
         </div>
         <div class="video-frame">
           <iframe
@@ -69,14 +69,14 @@
 
       <!-- Objective Section -->
       <section class="objective-section card">
-        <div class="section-head">
-          <h2 class="section-title">The Objective</h2>
-          <p class="section-subtitle">What you need to accomplish</p>
-        </div>
+          <div class="section-head">
+            <h2 class="section-title">The Objective</h2>
+            <p class="section-subtitle">What you need to accomplish in the <strong>YAPYAP Balance Puzzle</strong>. Master the <strong>YAPYAP rotating balance puzzle</strong>, <strong>YAPYAP arrow puzzle</strong>, and <strong>YAPYAP scircle puzzle</strong> mechanics.</p>
+          </div>
         <div class="objective-content">
           <div class="objective-main">
             <p class="objective-text">
-              In this YAPYAP balance puzzle, control the large rotating wheel on the wall to move the <strong>yellow orb</strong> on the outer ring into the <strong>blue center area</strong>. This is the core objective of the YAPYAP balance puzzle.
+              In this <strong>YAPYAP Balance Puzzle</strong>, control the large rotating wheel on the wall to move the <strong>yellow orb</strong> on the outer ring into the <strong>blue center area</strong>. This <strong>YAPYAP rotating balance puzzle</strong> requires precise voice control. The <strong>YAPYAP arrow puzzle</strong> mechanism (also called the <strong>YAPYAP scircle puzzle</strong>) responds to pitch changes in your voice.
             </p>
           </div>
 
@@ -107,14 +107,14 @@
       <section class="technique-section card">
         <div class="section-head">
           <h2 class="section-title">Core Technique: Staccato Method</h2>
-          <p class="section-subtitle">The most important strategy to solve "random wheel spinning" in the YAPYAP balance puzzle</p>
+          <p class="section-subtitle">The most important strategy to solve "random wheel spinning" in the <strong>YAPYAP Balance Puzzle</strong>. Master the <strong>YAPYAP rotating balance puzzle</strong> with proper technique.</p>
         </div>
         <div class="technique-content">
           <div class="technique-comparison">
             <div class="technique-box wrong-technique">
               <h3 class="technique-title">Wrong Approach: Continuous Speech</h3>
               <p class="technique-desc">
-                If you speak continuously (legato) or hold long notes like normal speech, the game struggles to detect pitch changes. This causes the wheel to spin erratically left and right, wasting time.
+                If you speak continuously (legato) or hold long notes like normal speech, the <strong>YAPYAP Balance Puzzle</strong> struggles to detect pitch changes. The <strong>YAPYAP rotating balance puzzle</strong> (also called the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>) requires distinct pitch separation. This causes the wheel to spin erratically left and right, wasting time.
               </p>
             </div>
 
@@ -122,7 +122,7 @@
               <h3 class="technique-title">Correct Approach: Staccato (Short, Sharp Sounds)</h3>
               <div class="technique-details">
                 <p class="technique-desc">
-                  Use short, rhythmic sounds with clear pauses between them.
+                  Use short, rhythmic sounds with clear pauses between them. This is the key to mastering the <strong>YAPYAP Balance Puzzle</strong>. The <strong>YAPYAP rotating balance puzzle</strong> responds best to staccato rhythm, whether you're solving the <strong>YAPYAP arrow puzzle</strong> or the <strong>YAPYAP scircle puzzle</strong> variant.
                 </p>
                 <div class="technique-examples">
                   <div class="example-item">
@@ -146,10 +146,10 @@
 
       <!-- Step-by-Step Guide -->
       <section class="walkthrough-section card">
-        <div class="section-head">
-          <h2 class="section-title">Step-by-Step Walkthrough</h2>
-          <p class="section-subtitle">Detailed guide for optimal completion</p>
-        </div>
+          <div class="section-head">
+            <h2 class="section-title">Step-by-Step Walkthrough</h2>
+            <p class="section-subtitle">Detailed guide for optimal completion of the <strong>YAPYAP Balance Puzzle</strong>. Follow these steps to master the <strong>YAPYAP rotating balance puzzle</strong> (also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>).</p>
+          </div>
         <div class="walkthrough-steps">
           <div class="walkthrough-step">
             <div class="step-header">
@@ -157,7 +157,7 @@
               <h3 class="step-title">Positioning</h3>
             </div>
             <p class="step-description">
-              Stand on the platform directly in front of the wheel, ensuring you can clearly see the orb's position.
+              Stand on the platform directly in front of the wheel, ensuring you can clearly see the orb's position. This is crucial for the <strong>YAPYAP Balance Puzzle</strong>—you need a clear view of the <strong>YAPYAP rotating balance puzzle</strong> mechanism.
             </p>
           </div>
 
@@ -167,7 +167,7 @@
               <h3 class="step-title">Calibrate Your Voice</h3>
             </div>
             <p class="step-description">
-              Test low pitch first to confirm which direction the wheel rotates. Then test high pitch to confirm the reverse direction.
+              Test low pitch first to confirm which direction the wheel rotates in the <strong>YAPYAP Balance Puzzle</strong>. Then test high pitch to confirm the reverse direction. The <strong>YAPYAP rotating balance puzzle</strong> (also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>) may have different rotation directions depending on the room.
             </p>
           </div>
 
@@ -177,7 +177,7 @@
               <h3 class="step-title">Move the Orb to Center (Staccato Method)</h3>
             </div>
             <p class="step-description">
-              Use the staccato method to carefully move the orb to the center in this YAPYAP balance puzzle. Don't rush—maintain a steady rhythm for the YAPYAP balance puzzle.
+              Use the staccato method to carefully move the orb to the center in this <strong>YAPYAP Balance Puzzle</strong>. The <strong>YAPYAP rotating balance puzzle</strong> requires patience—don't rush. Maintain a steady rhythm for the <strong>YAPYAP arrow puzzle</strong> mechanism (also known as the <strong>YAPYAP scircle puzzle</strong>).
             </p>
           </div>
 
@@ -216,9 +216,9 @@
         </div>
         <div class="troubleshooting-content">
           <div class="trouble-item critical">
-            <h3 class="trouble-question">Q: Will teammates' voices affect me in the YAPYAP balance puzzle? (Co-op Interference)</h3>
+            <h3 class="trouble-question">Q: Will teammates' voices affect me in the <strong>YAPYAP Balance Puzzle</strong>? (Co-op Interference)</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> Absolutely! This is a "radio silence" puzzle. When one person is operating the wheel in the YAPYAP balance puzzle, all other teammates must remain completely silent. Any laughter, talking, or background noise will be detected as "interference" by the system, causing the wheel to spin randomly in this YAPYAP balance puzzle.
+              <strong>A:</strong> Absolutely! This is a "radio silence" puzzle. When one person is operating the wheel in the <strong>YAPYAP Balance Puzzle</strong>, all other teammates must remain completely silent. The <strong>YAPYAP rotating balance puzzle</strong> (also called the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>) is extremely sensitive to background noise. Any laughter, talking, or background noise will be detected as "interference" by the system, causing the wheel to spin randomly in this <strong>YAPYAP Balance Puzzle</strong>.
             </p>
             <div class="trouble-suggestion">
               <strong>Suggestion:</strong> In public matches, use in-game gestures to signal "shush" to teammates.
@@ -226,31 +226,30 @@
           </div>
 
           <div class="trouble-item">
-            <h3 class="trouble-question">Q: I'm tone-deaf / my microphone is bad. What can I do?</h3>
+            <h3 class="trouble-question">Q: How to do the scale puzzle in YAPYAP?</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> Here's a workaround method:
-            </p>
-            <div class="workaround-box">
-              <h4 class="workaround-title">The Phone Method:</h4>
-              <ol class="workaround-steps">
-                <li>Take out your phone and open a piano app or online tone generator.</li>
-                <li>Play "C3" (low pitch) and "C5" (high pitch) into your microphone.</li>
-                <li>The recognition rate is nearly 100%—much more accurate than human voice.</li>
-              </ol>
-            </div>
-          </div>
-
-          <div class="trouble-item">
-            <h3 class="trouble-question">Q: The wheel keeps spinning randomly in the YAPYAP balance puzzle. Why?</h3>
-            <p class="trouble-answer">
-              <strong>A:</strong> This usually means you're speaking continuously instead of using staccato in the YAPYAP balance puzzle. Make sure to use short, sharp sounds with clear pauses. Also check that teammates are silent for this YAPYAP balance puzzle.
+              <strong>A:</strong> The <strong>YAPYAP Balance Puzzle</strong> (also known as the scale puzzle) requires voice pitch control. Use low pitch sounds to rotate the wheel in one direction, and high pitch sounds to rotate it in the opposite direction. The key is using staccato rhythm—short, sharp sounds with clear pauses. Move the yellow orb from the outer ring to the blue center, then attack it with your wand to complete the <strong>YAPYAP rotating balance puzzle</strong>.
             </p>
           </div>
 
           <div class="trouble-item">
-            <h3 class="trouble-question">Q: My microphone isn't being detected at all.</h3>
+            <h3 class="trouble-question">Q: How do you do the puzzle with the tilting ball?</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> Check your microphone permissions in Windows settings, verify the correct input device is selected in-game, and ensure your mic isn't muted. Test your microphone using the in-game mic tester or visit our <a href="/spells#mic-tester" class="link">Mic Tester page</a>.
+              <strong>A:</strong> The puzzle with the tilting ball refers to the <strong>YAPYAP Balance Puzzle</strong>. Control the tilting mechanism by using your voice: low pitch tilts one way, high pitch tilts the other. The <strong>YAPYAP arrow puzzle</strong> (also called the <strong>YAPYAP scircle puzzle</strong>) uses this same voice-controlled tilting mechanism. Remember to use staccato sounds and ensure teammates stay silent during operation.
+            </p>
+          </div>
+
+          <div class="trouble-item">
+            <h3 class="trouble-question">Q: How to turn puzzle in YAPYAP?</h3>
+            <p class="trouble-answer">
+              <strong>A:</strong> To turn the puzzle wheel in the <strong>YAPYAP Balance Puzzle</strong>, use voice pitch control. Lower your voice pitch to rotate the wheel counterclockwise, and raise your pitch to rotate it clockwise. The <strong>YAPYAP rotating balance puzzle</strong> responds to distinct pitch changes, so use short, rhythmic sounds (staccato method) rather than continuous speech. The <strong>YAPYAP arrow puzzle</strong> and <strong>YAPYAP scircle puzzle</strong> variants work the same way.
+            </p>
+          </div>
+
+          <div class="trouble-item">
+            <h3 class="trouble-question">Q: YAPYAP how to do marble puzzle?</h3>
+            <p class="trouble-answer">
+              <strong>A:</strong> The marble puzzle in YAPYAP is the <strong>YAPYAP Balance Puzzle</strong>. You need to guide the marble (yellow orb) from the outer ring to the center using voice-controlled rotation. Use low pitch to rotate the wheel one direction, high pitch for the opposite direction. Once the marble reaches the center, attack it with your wand to complete the <strong>YAPYAP rotating balance puzzle</strong>. The <strong>YAPYAP arrow puzzle</strong> and <strong>YAPYAP scircle puzzle</strong> are variations of this same marble/ball puzzle mechanic.
             </p>
           </div>
         </div>

@@ -2,12 +2,9 @@
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="#top" class="brand">
-          <div class="brand-mark">✦</div>
-          <div class="brand-text">
-            <span class="brand-title">YAPYAP Guide</span>
-            <span class="brand-sub">Fan-made Wiki & Guides</span>
-          </div>
+        <a href="/" class="logo">
+          <img src="/images/logo.png" alt="YAPYAP Game" class="brand-logo">
+          <span class="logo-title">YAPYAP Game</span>
         </a>
 
         <button class="menu-toggle" @click="toggleMenu" aria-label="Switch navigation">
@@ -65,7 +62,7 @@ const closeMenu = () => {
   padding: 16px 0;
 }
 
-.brand {
+.logo {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -73,33 +70,17 @@ const closeMenu = () => {
   text-decoration: none;
 }
 
-.brand-mark {
+.logo img {
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  background: radial-gradient(circle at 30% 30%, rgba(74, 222, 128, 0.8), rgba(139, 92, 246, 0.95));
-  display: grid;
-  place-items: center;
-  font-weight: 900;
-  color: #0b0d16;
-  box-shadow: 0 0 24px rgba(139, 92, 246, 0.4);
 }
 
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.brand-title {
-  font-size: 16px;
+.logo-title {
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 0.02em;
-}
-
-.brand-sub {
-  font-size: 12px;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .nav {
