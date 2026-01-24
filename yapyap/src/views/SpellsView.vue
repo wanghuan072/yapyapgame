@@ -144,7 +144,7 @@
         <div class="section-head">
           <h2 class="section-title">YAPYAP Hidden Spell Interactions & Physics</h2>
           <p class="section-subtitle">
-            Many spells from the <strong>YAPYAP Spells List</strong> affect objects, not just enemies. Discover these hidden mechanics to gain an edge. These interactions aren't obvious when browsing the <strong>YAPYAP Spells List</strong>, but they can save you time in <a href="/puzzle/ball-puzzle">puzzle rooms</a> and <a href="/puzzle/door-puzzle">treasure vaults</a>.
+            Many spells from the <strong>YAPYAP Spells List</strong> affect objects, not just enemies. Discover these hidden mechanics to gain an edge. These interactions aren't obvious when browsing the <strong>YAPYAP Spells List</strong>, but they can save you time in <a href="/puzzles/ball-puzzle">puzzle rooms</a> and <a href="/puzzles/door-puzzle">treasure vaults</a>.
           </p>
         </div>
 
@@ -159,7 +159,7 @@
           <div class="interaction-item">
             <h3 class="interaction-title">Loot Movement</h3>
             <p class="interaction-text">
-              Use <strong>Tempest</strong> from the <strong>YAPYAP Spells List</strong> to pull loot items from unreachable ledges down to the floor. This technique isn't mentioned in the standard <strong>YAPYAP Spells List</strong> descriptions but is crucial for efficient farming in <a href="/puzzle/ball-puzzle">challenge rooms</a>.
+              Use <strong>Tempest</strong> from the <strong>YAPYAP Spells List</strong> to pull loot items from unreachable ledges down to the floor. This technique isn't mentioned in the standard <strong>YAPYAP Spells List</strong> descriptions but is crucial for efficient farming in <a href="/puzzles/ball-puzzle">challenge rooms</a>.
             </p>
           </div>
 

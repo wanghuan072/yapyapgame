@@ -7,7 +7,7 @@
           <div class="hero-text card">
             <div class="pill">Voice Spells · Co-op Chaos · Light Horror</div>
             <h1>YAPYAP Game Ultimate Guide & Wiki</h1>
-            <p class="lead">Master the <a href="/spell-generator">spell</a>, solve the <a href="/puzzle/ball-puzzle">puzzle</a>, and escape the tower. The ultimate <strong>YAPYAP game</strong> resource for voice commands, co-op tips, and wiki.</p>
+            <p class="lead">Master the <a href="/spell-generator">spell</a>, solve the <a href="/puzzles/ball-puzzle">puzzle</a>, and escape the tower. The ultimate <strong>YAPYAP game</strong> resource for voice commands, co-op tips, and wiki.</p>
             
             <div class="hero-features">
               <div class="hero-feature-item">
@@ -222,7 +222,7 @@
           <div class="what-text card">
             <h2 class="section-title">What is the YAPYAP Game?</h2>
             <p>
-              The <strong>YAPYAP game</strong> is a multiplayer horror game on Steam that leans into voice-activated spells and co-op vandalism. Players act as minions infiltrating a rival tower, smashing high-value objects, solving <a href="/puzzle/ball-puzzle">puzzles</a>, and escaping monsters. Use our <a href="/spells">Spells</a> and <a href="/wiki">Wiki</a> to master the <strong>YAPYAP game</strong>.
+              The <strong>YAPYAP game</strong> is a multiplayer horror game on Steam that leans into voice-activated spells and co-op vandalism. Players act as minions infiltrating a rival tower, smashing high-value objects, solving <a href="/puzzles/ball-puzzle">puzzles</a>, and escaping monsters. Use our <a href="/spells">Spells</a> and <a href="/wiki">Wiki</a> to master the <strong>YAPYAP game</strong>.
             </p>
             <p>
               The YAPYAP game core mechanic revolves around voice control co-op: speak spell commands into your mic to trigger magical effects. This voice-activated spell system creates an immersive spellcasting experience. Check the <a href="/spell-generator">Spell Generator</a> and <a href="/guides">Guides</a> for tips. Vandalism and stealth escape mechanics make each run unpredictable and thrilling.
@@ -244,7 +244,7 @@
             <p class="pill release-pill">Launch Countdown</p>
             <h2 class="section-title">YAPYAP Release Date</h2>
             <p class="release-description">
-              <strong>YAPYAP game release date:</strong> February 3, 2026. <strong>Steam YAPYAP game</strong> launches with voice-activated spells, co-op gameplay, and tower survival. Master <a href="/spells">voice commands</a>, solve <a href="/puzzle/ball-puzzle">puzzles</a>, and escape with friends. See <a href="#system-requirements">system requirements</a> below. Join the wishlist to get notified!
+              <strong>YAPYAP game release date:</strong> February 3, 2026. <strong>Steam YAPYAP game</strong> launches with voice-activated spells, co-op gameplay, and tower survival. Master <a href="/spells">voice commands</a>, solve <a href="/puzzles/ball-puzzle">puzzles</a>, and escape with friends. See <a href="#system-requirements">system requirements</a> below. Join the wishlist to get notified!
             </p>
           </div>
           
@@ -350,7 +350,7 @@
             </div>
             <div class="card faq-item">
               <h3>How to Do the Scale Puzzle in YAPYAP?</h3>
-              <p>The scale puzzle in the <strong>YAPYAP game</strong> requires balancing objects on scales to unlock doors. Use inventory items to match weight. See our <a href="/puzzle/ball-puzzle">Ball Puzzle</a>, <a href="/puzzle/balance-puzzle">Balance Puzzle</a>, and <a href="/puzzle/door-puzzle">Door Puzzle</a> guides for solutions.</p>
+              <p>The scale puzzle in the <strong>YAPYAP game</strong> requires balancing objects on scales to unlock doors. Use inventory items to match weight. See our <a href="/puzzles/ball-puzzle">Ball Puzzle</a>, <a href="/puzzles/balance-puzzle">Balance Puzzle</a>, and <a href="/puzzles/door-puzzle">Door Puzzle</a> guides for solutions.</p>
             </div>
             <div class="card faq-item">
               <h3>How Many Players Can Play Together?</h3>

@@ -19,9 +19,9 @@
           <div class="nav-dropdown" :class="{ open: isOpen }">
             <span class="nav-trigger">Puzzles ▾</span>
             <div class="nav-dropdown-menu">
-              <a href="/puzzle/ball-puzzle" @click="closeMenu">Ball Puzzle</a>
-              <a href="/puzzle/balance-puzzle" @click="closeMenu">Balance Puzzle</a>
-              <a href="/puzzle/door-puzzle" @click="closeMenu">Door Puzzle</a>
+              <a href="/puzzles/ball-puzzle" @click="closeMenu">Ball Puzzle</a>
+              <a href="/puzzles/balance-puzzle" @click="closeMenu">Balance Puzzle</a>
+              <a href="/puzzles/door-puzzle" @click="closeMenu">Door Puzzle</a>
             </div>
           </div>
           <a href="/guides" @click="closeMenu">Guides</a>

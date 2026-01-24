@@ -57,7 +57,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/puzzle/ball-puzzle',
+      path: '/puzzles/ball-puzzle',
       name: 'ball-puzzle',
       component: BallPuzzleView,
       meta: {
@@ -69,7 +69,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/puzzle/balance-puzzle',
+      path: '/puzzles/balance-puzzle',
       name: 'balance-puzzle',
       component: BalancePuzzleView,
       meta: {
@@ -81,7 +81,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/puzzle/door-puzzle',
+      path: '/puzzles/door-puzzle',
       name: 'door-puzzle',
       component: DoorPuzzleView,
       meta: {
