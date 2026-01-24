@@ -5,7 +5,7 @@
         <p class="pill">Treasure Room · High Risk High Reward · Voice Recognition</p>
         <h1 class="title">YAPYAP Door Puzzle: Face Door & Treasure Room Guide</h1>
         <p class="intro">
-          Complete guide to the YAPYAP door puzzle (Face Door). High risk, high reward! A treasure vault worth 500+ points per room, but be careful with your microphone in this YAPYAP door puzzle...
+          Complete guide to the YAPYAP door puzzle (Face Door). High risk, high reward! A treasure vault worth 500+ points per room, but be careful with your microphone in this YAPYAP door puzzle. Unlike the <strong>YAPYAP scales puzzle</strong> (<a href="/puzzles/balance-puzzle">Balance Puzzle</a>) which uses weight balancing, this puzzle requires voice recognition—master both the <strong>YAPYAP scales puzzle</strong> and door puzzle to maximize your loot. Practice <a href="/spells">voice spells</a> with our <a href="/spell-generator">Spell Generator</a> before attempting this challenge.
         </p>
         <div class="puzzle-meta">
           <span class="tag hard">Hard</span>
@@ -49,7 +49,7 @@
       </section>
 
       <!-- Video Section -->
-      <section class="video-section card">
+      <!-- <section class="video-section card">
         <div class="section-head">
           <h2 class="section-title">Video Walkthrough</h2>
           <p class="section-subtitle">Complete demonstration of the YAPYAP door puzzle and treasure room looting</p>
@@ -63,13 +63,13 @@
             allowfullscreen
           ></iframe>
         </div>
-      </section>
+      </section> -->
 
       <!-- Puzzle Logic -->
       <section class="logic-section card">
         <div class="section-head">
           <h2 class="section-title">The Puzzle Logic</h2>
-          <p class="section-subtitle">How the YAPYAP door puzzle works (many beginners find this confusing)</p>
+          <p class="section-subtitle">How the YAPYAP door puzzle works (many beginners find this confusing). Unlike the <strong>YAPYAP scales puzzle</strong> (<a href="/puzzles/balance-puzzle">Balance Puzzle</a>) which requires balancing items, this puzzle uses <a href="/spells">voice recognition</a> and hidden symbols. If you struggle with voice commands, practice with our <a href="/spell-generator">Spell Generator</a> first.</p>
         </div>
         <div class="logic-content">
           <div class="logic-steps">
@@ -112,7 +112,7 @@
                 <h3 class="step-title">Speak the Words</h3>
               </div>
               <p class="step-description">
-                Return to the door circle. Speak the three words in the <strong>exact order</strong> they appear on the door (left to right). Each word must be spoken clearly with pauses between them.
+                Return to the door circle. Speak the three words in the <strong>exact order</strong> they appear on the door (left to right). Each word must be spoken clearly with pauses between them. This voice recognition is more complex than the <strong>YAPYAP scales puzzle</strong>, which only requires pitch control.
               </p>
             </div>
           </div>
@@ -123,7 +123,7 @@
       <section class="decoder-section card">
         <div class="section-head">
           <h2 class="section-title">Symbol Decoder</h2>
-          <p class="section-subtitle">Common icon-to-word mappings for the YAPYAP door puzzle (compiled from video)</p>
+          <p class="section-subtitle">Common icon-to-word mappings for the YAPYAP door puzzle (compiled from video). While the <strong>YAPYAP scales puzzle</strong> focuses on item weights, this puzzle requires decoding symbols into words.</p>
         </div>
         <div class="decoder-note">
           <p class="note-text">
@@ -212,7 +212,7 @@
               <li>You can't find the last symbol after searching thoroughly</li>
             </ul>
             <div class="skip-suggestion">
-              <strong>Suggestion:</strong> Go loot other rooms instead. Don't get stuck here. While this room is lucrative, if you're stuck for 5+ minutes, it's not worth it.
+              <strong>Suggestion:</strong> Go loot other rooms instead. Don't get stuck here. While this room is lucrative, if you're stuck for 5+ minutes, it's not worth it. Consider trying the <strong>YAPYAP scales puzzle</strong> instead, which is generally easier and more forgiving than this door puzzle.
             </div>
           </div>
         </div>
@@ -222,12 +222,12 @@
       <section class="treasure-section card">
         <div class="section-head">
           <h2 class="section-title">The Treasure Room Looting Guide</h2>
-          <p class="section-subtitle">Once the YAPYAP door puzzle opens, this is paradise</p>
+          <p class="section-subtitle">Once the YAPYAP door puzzle opens, this is paradise. Unlike the <strong>YAPYAP scales puzzle</strong> which rewards strategic thinking, this room rewards exploration and voice command precision.</p>
         </div>
         <div class="treasure-content">
           <div class="treasure-intro">
             <p>
-              The video demonstrates very advanced looting techniques. This room has no large chest, but is <strong>filled with valuable small items</strong> (vases, statues, paintings) scattered everywhere.
+              The video demonstrates very advanced looting techniques. This room has no large chest, but is <strong>filled with valuable small items</strong> (vases, statues, paintings) scattered everywhere. Unlike the <strong>YAPYAP scales puzzle</strong> room which rewards strategic item placement, this treasure room rewards thorough exploration and voice command mastery.
             </p>
           </div>
 
@@ -235,21 +235,21 @@
             <div class="technique-item">
               <h3 class="technique-name">Scanning Technique</h3>
               <p class="technique-desc">
-                Use the <strong>Nova Staff</strong> (X-ray wand) with the <strong>Astral-Eyes</strong> spell. You'll see the entire room highlighted with valuable items.
+                Use the <strong>Nova Staff</strong> (X-ray wand) from the <a href="/wiki/wands">YAPYAP wands list</a> with the <strong>Astral-Eyes</strong> <a href="/spells">spell</a>. You'll see the entire room highlighted with valuable items.
               </p>
             </div>
 
             <div class="technique-item">
               <h3 class="technique-name">High Items</h3>
               <p class="technique-desc">
-                Use <strong>Up Dog</strong> to jump onto shelves and push items down to break them and collect points.
+                Use <strong>Up Dog</strong> <a href="/spells">spell</a> to jump onto shelves and push items down to break them and collect points. Learn all <a href="/spells">spells</a> from our comprehensive <a href="/spells">Spells List</a>.
               </p>
             </div>
 
             <div class="technique-item highlight-technique">
               <h3 class="technique-name">Moving Large Objects (Pro Tip)</h3>
               <p class="technique-desc">
-                The video demonstrates a genius technique: If an item is too large to grab (like huge paintings or statues), use the <strong>Grotesque Wand</strong> (Fish-yuk spell) on it.
+                The video demonstrates a genius technique: If an item is too large to grab (like huge paintings or statues), use the <strong>Grotesque Wand</strong> from the <a href="/wiki/wands">YAPYAP wands list</a> (Fish-yuk <a href="/spells">spell</a>) on it.
               </p>
               <div class="technique-demo">
                 <p class="demo-text">
@@ -291,6 +291,7 @@
               <li>Speak clearly and enunciate each syllable</li>
               <li>If it doesn't work after 2-3 attempts, consider skipping this room</li>
               <li>Use the symbol decoder table above to ensure you have the correct words</li>
+              <li>If voice recognition is too difficult, try the <strong>YAPYAP scales puzzle</strong> first to practice voice commands. The <strong>YAPYAP scales puzzle</strong> uses simpler pitch-based controls that can help you improve your microphone technique.</li>
             </ul>
           </div>
         </div>
@@ -323,7 +324,7 @@
           </div>
           <div class="value-verdict">
             <p class="verdict-text">
-              <strong>Bottom Line:</strong> This YAPYAP door puzzle room is hard to enter, but if you have the Fish-yuk wand or a good microphone, you should definitely try it—there's 500+ points inside. This utilitarian approach is what players love most for the YAPYAP door puzzle.
+              <strong>Bottom Line:</strong> This YAPYAP door puzzle room is hard to enter, but if you have the Fish-yuk wand from the <a href="/wiki/wands">YAPYAP wands list</a> or a good microphone, you should definitely try it—there's 500+ points inside. This utilitarian approach is what players love most for the YAPYAP door puzzle. If you find the <strong>YAPYAP scales puzzle</strong> (<a href="/puzzles/balance-puzzle">Balance Puzzle</a>) easier, master that first before attempting this more challenging door puzzle. The <strong>YAPYAP scales puzzle</strong> is a good warm-up for voice-controlled puzzles. For more strategies, check our <a href="/guides">YAPYAP guides</a>.
             </p>
           </div>
         </div>
@@ -1099,5 +1100,36 @@
   .decoder-table td {
     padding: 10px 12px;
   }
+}
+
+/* Internal Links Styling */
+.intro a,
+.section-subtitle a,
+.step-description a,
+.overview-desc a,
+.technique-desc a,
+.warning-text a,
+.verdict-text a,
+.voice-warning-content a,
+.tips-list a,
+.skip-suggestion a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.intro a:hover,
+.section-subtitle a:hover,
+.step-description a:hover,
+.overview-desc a:hover,
+.technique-desc a:hover,
+.warning-text a:hover,
+.verdict-text a:hover,
+.voice-warning-content a:hover,
+.tips-list a:hover,
+.skip-suggestion a:hover {
+  text-decoration: underline;
+  color: var(--accent-2, rgba(139, 92, 246, 0.8));
 }
 </style>

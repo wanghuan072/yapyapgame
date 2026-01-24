@@ -39,14 +39,14 @@
             </div>
 
             <!-- Incantations Selection -->
-            <div class="selection-card" v-if="selectedWand">
+            <div class="selection-card">
               <div class="selection-header">
                 <span class="section-icon scroll-icon">📜</span>
                 <h2 class="selection-title">Select Incantation</h2>
               </div>
               <div class="incantation-list">
                 <button
-                  v-for="spell in selectedWand.spells"
+                  v-for="spell in (selectedWand || defaultWand)?.spells || []"
                   :key="spell.spell"
                   :class="['incantation-item', { active: selectedSpell?.spell === spell.spell }]"
                   @click="selectSpell(spell)"
@@ -293,6 +293,9 @@ const showMedia = ref(false)
 const mediaType = ref(null)
 const mediaPath = ref(null)
 
+// Default wand (first wand) for displaying incantations when no wand is selected
+const defaultWand = computed(() => wands.length > 0 ? wands[0] : null)
+
 // Helper function to convert spell name to audio file name format (for media files)
 function getSpellFileName(spellName) {
   return spellName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
@@ -401,6 +404,11 @@ onMounted(() => {
         break
       }
     }
+  } else {
+    // Default to first wand if no spell query parameter
+    if (wands.length > 0 && !selectedWand.value) {
+      selectWand(wands[0])
+    }
   }
 })
 </script>
@@ -422,13 +430,13 @@ onMounted(() => {
 .selection-panel {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 15px;
 }
 
 .selection-card {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .selection-header {
@@ -463,7 +471,7 @@ onMounted(() => {
 .wand-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 10px;
 }
 
 .wand-item {
@@ -532,7 +540,7 @@ onMounted(() => {
   background: rgba(15, 23, 42, 1);
   border: 2px solid rgba(30, 41, 59, 1);
   border-radius: 999px;
-  padding: 12px 24px;
+  padding: 10px 20px;
   font-size: 14px;
   font-weight: 700;
   color: rgba(203, 213, 225, 1);
@@ -686,11 +694,11 @@ onMounted(() => {
   background: rgba(15, 20, 36, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
-  padding: 32px;
+  padding: 20px;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .spell-media {
@@ -886,7 +894,6 @@ code {
 
 /* Guide Section - How to Use */
 .guide-section {
-  margin-top: 60px;
   padding: 40px 0;
 }
 
@@ -923,8 +930,6 @@ code {
   align-items: flex-start;
   justify-content: center;
   gap: 32px;
-  max-width: 1200px;
-  margin: 0 auto;
   position: relative;
 }
 
@@ -1008,14 +1013,8 @@ code {
 }
 
 /* Why Section */
-.why-section {
-  margin-top: 60px;
-}
-
 .why-card {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 48px;
+  padding: 25px;
   background: linear-gradient(135deg, rgba(18, 12, 32, 0.95) 0%, rgba(15, 20, 36, 0.95) 100%);
   border: 2px solid rgba(139, 92, 246, 0.3);
   border-radius: 24px;
@@ -1052,14 +1051,14 @@ code {
 }
 
 .why-highlight {
-  padding: 20px 24px;
+  padding: 10px 20px;
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%);
   border-left: 4px solid var(--accent);
   border-radius: 12px;
 }
 
 .why-subtitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
   color: rgba(237, 240, 255, 0.95);

@@ -5,7 +5,7 @@
         <p class="pill">Puzzle Room · Voice Control · Pitch Detection</p>
         <h1 class="title"><strong>YAPYAP Balance Puzzle</strong>: Pitch Wheel Guide</h1>
         <p class="intro">
-          Complete guide to the <strong>YAPYAP Balance Puzzle</strong> (Pitch Wheel). Master the <strong>YAPYAP rotating balance puzzle</strong> mechanism with "Do Re Mi" voice commands. This microphone-assisted guide will help you solve this tricky <strong>YAPYAP Balance Puzzle</strong>, also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>.
+          Complete guide to the <strong>YAPYAP Balance Puzzle</strong> (Pitch Wheel). Master the <strong>YAPYAP rotating balance puzzle</strong> mechanism with "Do Re Mi" <a href="/spells">voice commands</a>. This microphone-assisted guide will help you solve this tricky <strong>YAPYAP Balance Puzzle</strong>, also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>. Practice pronunciation with our <a href="/spell-generator">Spell Generator</a> and check our <a href="/spells#mic-tester">Mic Tester</a> if you have issues.
         </p>
         <div class="puzzle-meta">
           <span class="tag medium">Medium Difficulty</span>
@@ -32,7 +32,7 @@
           <div class="overview-card card">
             <div class="overview-label">Required Tools</div>
             <div class="overview-value">Microphone + Wand</div>
-            <div class="overview-desc">Voice input required; wand needed for final step</div>
+            <div class="overview-desc">Voice input required; wand needed for final step. Check the <a href="/wiki/wands">YAPYAP wands list</a> for recommended wands. Any wand from the <a href="/wiki/wands">YAPYAP wands list</a> will work for the final step.</div>
           </div>
           <div class="overview-card card">
             <div class="overview-label">Expected Reward</div>
@@ -51,7 +51,7 @@
       </section>
 
       <!-- Video Section -->
-      <section class="video-section card">
+      <!-- <section class="video-section card">
         <div class="section-head">
           <h2 class="section-title">Video Walkthrough</h2>
           <p class="section-subtitle">Watch the complete <strong>YAPYAP Balance Puzzle</strong> demonstration (pitch control + staccato method). Learn how to master the <strong>YAPYAP rotating balance puzzle</strong> mechanism.</p>
@@ -65,7 +65,7 @@
             allowfullscreen
           ></iframe>
         </div>
-      </section>
+      </section> -->
 
       <!-- Objective Section -->
       <section class="objective-section card">
@@ -177,7 +177,7 @@
               <h3 class="step-title">Move the Orb to Center (Staccato Method)</h3>
             </div>
             <p class="step-description">
-              Use the staccato method to carefully move the orb to the center in this <strong>YAPYAP Balance Puzzle</strong>. The <strong>YAPYAP rotating balance puzzle</strong> requires patience—don't rush. Maintain a steady rhythm for the <strong>YAPYAP arrow puzzle</strong> mechanism (also known as the <strong>YAPYAP scircle puzzle</strong>).
+              Use the staccato method to carefully move the orb to the center in this <strong>YAPYAP Balance Puzzle</strong>. The <strong>YAPYAP rotating balance puzzle</strong> requires patience—don't rush. Maintain a steady rhythm for the <strong>YAPYAP arrow puzzle</strong> mechanism (also known as the <strong>YAPYAP scircle puzzle</strong>). For more voice command tips, check our <a href="/spells">Spells List</a> and <a href="/guides">YAPYAP guides</a>.
             </p>
           </div>
 
@@ -228,7 +228,7 @@
           <div class="trouble-item">
             <h3 class="trouble-question">Q: How to do the scale puzzle in YAPYAP?</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> The <strong>YAPYAP Balance Puzzle</strong> (also known as the scale puzzle) requires voice pitch control. Use low pitch sounds to rotate the wheel in one direction, and high pitch sounds to rotate it in the opposite direction. The key is using staccato rhythm—short, sharp sounds with clear pauses. Move the yellow orb from the outer ring to the blue center, then attack it with your wand to complete the <strong>YAPYAP rotating balance puzzle</strong>.
+              <strong>A:</strong> The <strong>YAPYAP Balance Puzzle</strong> (also known as the scale puzzle) requires voice pitch control. Use low pitch sounds to rotate the wheel in one direction, and high pitch sounds to rotate it in the opposite direction. The key is using staccato rhythm—short, sharp sounds with clear pauses. Move the yellow orb from the outer ring to the blue center, then attack it with your <a href="/wiki/wands">wand</a> to complete the <strong>YAPYAP rotating balance puzzle</strong>. Practice with our <a href="/spell-generator">Spell Generator</a> to master pitch control.
             </p>
           </div>
 
@@ -242,14 +242,14 @@
           <div class="trouble-item">
             <h3 class="trouble-question">Q: How to turn puzzle in YAPYAP?</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> To turn the puzzle wheel in the <strong>YAPYAP Balance Puzzle</strong>, use voice pitch control. Lower your voice pitch to rotate the wheel counterclockwise, and raise your pitch to rotate it clockwise. The <strong>YAPYAP rotating balance puzzle</strong> responds to distinct pitch changes, so use short, rhythmic sounds (staccato method) rather than continuous speech. The <strong>YAPYAP arrow puzzle</strong> and <strong>YAPYAP scircle puzzle</strong> variants work the same way.
+              <strong>A:</strong> To turn the puzzle wheel in the <strong>YAPYAP Balance Puzzle</strong>, use voice pitch control. Lower your voice pitch to rotate the wheel counterclockwise, and raise your pitch to rotate it clockwise. The <strong>YAPYAP rotating balance puzzle</strong> responds to distinct pitch changes, so use short, rhythmic sounds (staccato method) rather than continuous speech. The <strong>YAPYAP arrow puzzle</strong> and <strong>YAPYAP scircle puzzle</strong> variants work the same way. Practice pitch control with our <a href="/spell-generator">Spell Generator</a> and check <a href="/spells">voice commands</a> for reference.
             </p>
           </div>
 
           <div class="trouble-item">
             <h3 class="trouble-question">Q: YAPYAP how to do marble puzzle?</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> The marble puzzle in YAPYAP is the <strong>YAPYAP Balance Puzzle</strong>. You need to guide the marble (yellow orb) from the outer ring to the center using voice-controlled rotation. Use low pitch to rotate the wheel one direction, high pitch for the opposite direction. Once the marble reaches the center, attack it with your wand to complete the <strong>YAPYAP rotating balance puzzle</strong>. The <strong>YAPYAP arrow puzzle</strong> and <strong>YAPYAP scircle puzzle</strong> are variations of this same marble/ball puzzle mechanic.
+              <strong>A:</strong> The marble puzzle in YAPYAP is the <strong>YAPYAP Balance Puzzle</strong>. You need to guide the marble (yellow orb) from the outer ring to the center using voice-controlled rotation. Use low pitch to rotate the wheel one direction, high pitch for the opposite direction. Once the marble reaches the center, attack it with your <a href="/wiki/wands">wand</a> to complete the <strong>YAPYAP rotating balance puzzle</strong>. The <strong>YAPYAP arrow puzzle</strong> and <strong>YAPYAP scircle puzzle</strong> are variations of this same marble/ball puzzle mechanic. For other puzzle solutions, check our <a href="/puzzles/ball-puzzle">Ball Puzzle</a> and <a href="/puzzles/door-puzzle">Door Puzzle</a> guides.
             </p>
           </div>
         </div>
@@ -831,5 +831,28 @@
   .step-number {
     align-self: flex-start;
   }
+}
+
+/* Internal Links Styling */
+.intro a,
+.section-subtitle a,
+.step-description a,
+.overview-desc a,
+.objective-text a,
+.trouble-answer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.intro a:hover,
+.section-subtitle a:hover,
+.step-description a:hover,
+.overview-desc a:hover,
+.objective-text a:hover,
+.trouble-answer a:hover {
+  text-decoration: underline;
+  color: var(--accent-2, rgba(139, 92, 246, 0.8));
 }
 </style>

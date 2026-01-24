@@ -12,7 +12,7 @@
         <p class="pill">Wands Database · Stats · Passive Effects</p>
         <h1 class="title">🪄 YAPYAP Wands List</h1>
         <p class="intro">
-          Complete guide to all wands in YAPYAP. Each wand can cast multiple spells. Compare wands and their spell capabilities to find the best wand for your playstyle.
+          Complete <strong>YAPYAP wands list</strong> guide. This comprehensive <strong>YAPYAP wands list</strong> includes all wands in YAPYAP. Each wand in the <strong>YAPYAP wands list</strong> can cast multiple <a href="/spells">spells</a>. Compare wands from the <strong>YAPYAP wands list</strong> and their spell capabilities to find the best wand for your playstyle. Practice spell pronunciation with our <a href="/spell-generator">Spell Generator</a>.
         </p>
       </div>
     </section>
@@ -24,13 +24,13 @@
           <h2 class="intro-title">What Are Wands in YAPYAP?</h2>
           <div class="intro-content">
             <p>
-              <strong>Wands are the essential catalyst for casting spells in YAPYAP.</strong> Without a wand, you cannot cast any spells—no matter how loudly you shout the spell commands. Wands are not just cosmetic items; they fundamentally affect your gameplay experience.
+              <strong>Wands are the essential catalyst for casting spells in YAPYAP.</strong> This <strong>YAPYAP wands list</strong> covers every wand available in the game. Without a wand, you cannot cast any spells—no matter how loudly you shout the spell commands. The <strong>YAPYAP wands list</strong> shows that wands are not just cosmetic items; they fundamentally affect your gameplay experience.
             </p>
             <p>
-              Different wands offer unique passive effects that impact your mana regeneration speed, spell recognition range, movement speed, and even your carrying capacity. Understanding <strong>wand mechanics</strong> and <strong>how to cast spells</strong> effectively is crucial for survival in the tower.
+              The <strong>YAPYAP wands list</strong> reveals that different wands offer unique passive effects that impact your mana regeneration speed, spell recognition range, movement speed, and even your carrying capacity. Understanding <strong>wand mechanics</strong> from the <strong>YAPYAP wands list</strong> and <strong>how to cast spells</strong> effectively is crucial for survival in the tower. Learn all <a href="/spells">spells</a> and practice with the <a href="/spell-generator">Spell Generator</a> to master voice commands.
             </p>
             <p class="intro-tip">
-              <strong>Pro Tip:</strong> New players should start with the <strong>Basic Wand</strong> to learn the fundamentals. Don't rush to buy the most expensive wand—master the basics first, then upgrade based on your playstyle.
+              <strong>Pro Tip:</strong> New players should start with the <strong>Basic Wand</strong> from the <strong>YAPYAP wands list</strong> to learn the fundamentals. Don't rush to buy the most expensive wand from the <strong>YAPYAP wands list</strong>—master the basics first, then upgrade based on your playstyle.
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="section-head">
           <h2 class="section-title">All Wands</h2>
           <p class="section-subtitle">
-            Which wand should you buy? Which wand is the strongest? Find out here.
+            The complete <strong>YAPYAP wands list</strong> below shows every wand available in the game. Which wand should you buy? Which wand is the strongest? Use this <strong>YAPYAP wands list</strong> to compare and find the best wand for your needs.
           </p>
         </div>
 
@@ -111,20 +111,20 @@
             </p>
             <ul class="acquisition-list">
               <li>
-                <strong>Shop Purchase:</strong> Most wands can be bought from the in-game shop using gold earned during runs. Prices range from 50 gold (Basic Wand) to 300+ gold (premium wands).
+                <strong>Shop Purchase:</strong> Most wands in the <strong>YAPYAP wands list</strong> can be bought from the in-game shop using gold earned during runs. The <strong>YAPYAP wands list</strong> shows prices range from 50 gold (Basic Wand) to 300+ gold (premium wands).
               </li>
               <li>
-                <strong>Opening Chests:</strong> Some rare wands can be found by opening chests in high-value areas. These are typically higher-tier wands with powerful passive effects.
+                <strong>Opening Chests:</strong> Some rare wands from the <strong>YAPYAP wands list</strong> can be found by opening chests in high-value areas. These are typically higher-tier wands with powerful passive effects not always available in shops.
               </li>
               <li>
-                <strong>Quest Rewards:</strong> Completing specific objectives or puzzles may reward you with unique wands not available in the shop.
+                <strong>Quest Rewards:</strong> Completing specific objectives or <a href="/puzzles/ball-puzzle">puzzles</a> may reward you with unique wands from the <strong>YAPYAP wands list</strong> that are not available in the shop. Check our <a href="/puzzles/balance-puzzle">Balance Puzzle</a> and <a href="/puzzles/door-puzzle">Door Puzzle</a> guides for wand rewards.
               </li>
               <li>
-                <strong>Team Sharing:</strong> In co-op mode, teammates can drop wands for you to pick up. This is especially useful if you die and lose your equipment.
+                <strong>Team Sharing:</strong> In co-op mode, teammates can drop wands from the <strong>YAPYAP wands list</strong> for you to pick up. This is especially useful if you die and lose your equipment.
               </li>
             </ul>
             <p class="acquisition-note muted">
-              <strong>Note:</strong> Always check your inventory weight before purchasing or picking up wands. Heavier wands may slow you down, making you vulnerable to fast enemies.
+              <strong>Note:</strong> Always check your inventory weight before purchasing or picking up wands from the <strong>YAPYAP wands list</strong>. Heavier wands in the <strong>YAPYAP wands list</strong> may slow you down, making you vulnerable to fast enemies.
             </p>
           </div>
         </div>
@@ -138,13 +138,13 @@
             <div class="faq-item">
               <h3 class="faq-question">Do I lose my wand if I die?</h3>
               <p class="faq-answer">
-                <strong>Yes, you drop all equipment including your wand when you die.</strong> However, your teammates can pick up your dropped items and return them to you. If you're playing solo or your team can't recover your gear, you'll need to purchase a new wand from the shop. This is why it's important to start with cheaper wands until you're comfortable with the game mechanics.
+                <strong>Yes, you drop all equipment including your wand when you die.</strong> However, your teammates can pick up your dropped items and return them to you. If you're playing solo or your team can't recover your gear, you'll need to purchase a new wand from the <strong>YAPYAP wands list</strong> in the shop. This is why it's important to start with cheaper wands from the <strong>YAPYAP wands list</strong> until you're comfortable with the game mechanics.
               </p>
             </div>
             <div class="faq-item">
               <h3 class="faq-question">Does the wand affect my voice recognition?</h3>
               <p class="faq-answer">
-                <strong>Yes, some wands improve voice recognition range and accuracy.</strong> The <strong>Voice Amplifier</strong> wand, for example, increases the distance from which your voice commands are detected. This means you can cast spells from further away, which is especially useful in stealth situations or when you need to maintain distance from enemies. Higher-tier wands may also reduce the required voice volume, making it easier to cast spells quietly.
+                <strong>Yes, some wands in the YAPYAP wands list improve voice recognition range and accuracy.</strong> The <strong>Voice Amplifier</strong> wand from the <strong>YAPYAP wands list</strong>, for example, increases the distance from which your <a href="/spells">voice commands</a> are detected. This means you can cast <a href="/spells">spells</a> from further away, which is especially useful in stealth situations or when you need to maintain distance from <a href="/wiki/bestiary">enemies</a>. Higher-tier wands in the <strong>YAPYAP wands list</strong> may also reduce the required voice volume, making it easier to cast spells quietly. Practice pronunciation with our <a href="/spell-generator">Spell Generator</a> to maximize wand effectiveness.
               </p>
             </div>
             <div class="faq-item">
@@ -156,7 +156,7 @@
             <div class="faq-item">
               <h3 class="faq-question">Do wands have durability? Will they break?</h3>
               <p class="faq-answer">
-                <strong>No, wands do not have durability and will not break from use.</strong> Once you purchase or obtain a wand, it will last indefinitely unless you die and drop it (or sell it). You don't need to repair wands or worry about them degrading over time. This makes wands a long-term investment—once you find a wand that suits your playstyle, you can use it for as long as you can keep it safe.
+                <strong>No, wands from the YAPYAP wands list do not have durability and will not break from use.</strong> Once you purchase or obtain a wand from the <strong>YAPYAP wands list</strong>, it will last indefinitely unless you die and drop it (or sell it). You don't need to repair wands or worry about them degrading over time. This makes wands from the <strong>YAPYAP wands list</strong> a long-term investment—once you find a wand from the <strong>YAPYAP wands list</strong> that suits your playstyle, you can use it for as long as you can keep it safe.
               </p>
             </div>
           </div>
@@ -572,5 +572,28 @@ const wands = wandsData.map(wand => ({
 .faq-answer strong {
   color: var(--text);
   font-weight: 600;
+}
+
+/* Internal Links Styling */
+.intro a,
+.intro-content a,
+.section-subtitle a,
+.acquisition-content a,
+.acquisition-note a,
+.faq-answer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.intro a:hover,
+.intro-content a:hover,
+.section-subtitle a:hover,
+.acquisition-content a:hover,
+.acquisition-note a:hover,
+.faq-answer a:hover {
+  text-decoration: underline;
+  color: var(--accent-2, rgba(139, 92, 246, 0.8));
 }
 </style>

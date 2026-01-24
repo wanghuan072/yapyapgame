@@ -5,7 +5,7 @@
         <p class="pill">Game Database · Items · Enemies · Crafting</p>
         <h1 class="title">YAPYAP Game Database & Wiki</h1>
         <p class="intro">
-          The complete index of Items, Enemies, and Magic.
+          The complete <strong>YAPYAP wiki</strong> index of Items, Enemies, and Magic. This comprehensive <strong>YAPYAP wiki</strong> database helps you master every aspect of the game. Whether you're searching for <strong>YAPYAP wiki</strong> information on wands, monsters, or crafting recipes, this <strong>YAPYAP wiki</strong> has everything you need. Explore <a href="/spells">spells</a>, <a href="/spell-generator">practice pronunciation</a>, solve <a href="/puzzles/ball-puzzle">puzzles</a>, and read <a href="/guides">guides</a> to become a master wizard. Bookmark this <strong>YAPYAP wiki</strong> for quick reference during your runs.
         </p>
       </div>
     </section>
@@ -23,7 +23,7 @@
         <h2 class="section-title">Mastering the Tower</h2>
         <div class="core-loop-content card">
           <p>
-            Welcome to the comprehensive YAPYAP Wiki. To survive the tower, wizards must balance their inventory weight with loot value. This database breaks down every item's scrap price, the passive effects of different <strong>Wands</strong>, and the distinct sound cues of every <strong>Monster</strong>. The core gameplay loop follows: <strong>Infiltrate</strong> the tower, <strong>Loot</strong> valuable items while managing your weight limit, <strong>Survive</strong> encounters with enemies using <strong>Spells</strong> and stealth, and <strong>Upgrade</strong> your equipment with better <strong>Wands</strong> and crafted <strong>Potions</strong>. Understanding <strong>Scrap Value</strong>, meeting your <strong>Quota</strong>, and knowing which items to prioritize is essential for successful runs.
+            Welcome to the comprehensive <strong>YAPYAP wiki</strong>. This <strong>YAPYAP wiki</strong> is your ultimate resource for mastering the game. To survive the tower, wizards must balance their inventory weight with loot value. This <strong>YAPYAP wiki</strong> database breaks down every item's scrap price, the passive effects of different <a href="/wiki/wands"><strong>Wands</strong></a>, and the distinct sound cues of every <a href="/wiki/bestiary"><strong>Monster</strong></a>. The core gameplay loop follows: <strong>Infiltrate</strong> the tower, <strong>Loot</strong> valuable items while managing your weight limit, <strong>Survive</strong> encounters with enemies using <a href="/spells"><strong>Spells</strong></a> and stealth, and <strong>Upgrade</strong> your equipment with better <a href="/wiki/wands"><strong>Wands</strong></a> and crafted <a href="/wiki/potions"><strong>Potions</strong></a>. Understanding <strong>Scrap Value</strong>, meeting your <strong>Quota</strong>, and knowing which items to prioritize is essential for successful runs. Use this <strong>YAPYAP wiki</strong> to plan your strategy. The <strong>YAPYAP wiki</strong> provides detailed information on every game mechanic, making it the most complete <strong>YAPYAP wiki</strong> available. For voice command practice, visit our <a href="/spell-generator">Spell Generator</a>, or check out <a href="/guides">YAPYAP guides</a> for advanced strategies. Bookmark this <strong>YAPYAP wiki</strong> and refer to it during your runs for maximum efficiency.
           </p>
         </div>
       </section>
@@ -31,26 +31,29 @@
       <!-- Wiki Navigation Grid -->
       <section class="wiki-grid-section">
         <h2 class="section-title">Browse by Category</h2>
+        <p class="section-subtitle muted" style="margin-bottom: 24px;">
+          Explore the <strong>YAPYAP wiki</strong> categories below. Each section of this <strong>YAPYAP wiki</strong> contains detailed information to help you master the game. Combine this <strong>YAPYAP wiki</strong> data with our <a href="/spells">Spells List</a> and <a href="/guides">Guides</a> for complete mastery.
+        </p>
         <div class="wiki-grid">
           <a href="/wiki/wands" class="wiki-card card">
             <div class="wiki-card-icon">🪄</div>
             <h2 class="wiki-card-title">Wands</h2>
-            <p class="wiki-card-desc">Stats, Prices, and Passive Effects.</p>
-            <div class="wiki-card-keywords muted">yapyap wands list, best wand</div>
+            <p class="wiki-card-desc">Stats, Prices, and Passive Effects. Browse the <strong>YAPYAP wiki</strong> wands database.</p>
+            <div class="wiki-card-keywords muted">yapyap wands list, best wand, yapyap wiki</div>
           </a>
 
           <a href="/wiki/bestiary" class="wiki-card card">
             <div class="wiki-card-icon">👹</div>
             <h2 class="wiki-card-title">Bestiary</h2>
-            <p class="wiki-card-desc">Enemy behaviors, weaknesses & sound cues.</p>
-            <div class="wiki-card-keywords muted">yapyap monsters, enemies</div>
+            <p class="wiki-card-desc">Enemy behaviors, weaknesses & sound cues. Complete <strong>YAPYAP wiki</strong> bestiary guide.</p>
+            <div class="wiki-card-keywords muted">yapyap monsters, enemies, yapyap wiki</div>
           </a>
 
           <a href="/wiki/potions" class="wiki-card card">
             <div class="wiki-card-icon">🧪</div>
             <h2 class="wiki-card-title">Potions & Crafting</h2>
-            <p class="wiki-card-desc">Recipes, ingredients, and effects.</p>
-            <div class="wiki-card-keywords muted">yapyap crafting recipes</div>
+            <p class="wiki-card-desc">Recipes, ingredients, and effects. Master crafting with the <strong>YAPYAP wiki</strong> potions guide.</p>
+            <div class="wiki-card-keywords muted">yapyap crafting recipes, yapyap wiki</div>
           </a>
         </div>
       </section>
@@ -58,6 +61,9 @@
       <!-- Featured / Meta Picks -->
       <section class="featured-section">
         <h2 class="section-title">Current Meta Picks</h2>
+        <p class="section-subtitle muted" style="margin-bottom: 24px;">
+          Based on the latest <strong>YAPYAP wiki</strong> data analysis. These are the top recommendations from our <strong>YAPYAP wiki</strong> community.
+        </p>
         <div class="featured-grid">
           <div class="featured-card card">
             <div class="featured-header">
@@ -76,7 +82,7 @@
               <h3 class="featured-title">Best Starter Wand</h3>
             </div>
             <p class="featured-content">
-              <a href="/wiki/wands">Voice Amplifier</a> - Increases spell recognition range, perfect for beginners learning voice commands.
+              <a href="/wiki/wands">Voice Amplifier</a> - According to the <strong>YAPYAP wiki</strong>, this wand increases spell recognition range, perfect for beginners learning <a href="/spells">voice commands</a>. The <strong>YAPYAP wiki</strong> recommends this as the best starter wand. This <strong>YAPYAP wiki</strong> recommendation is based on extensive testing. Practice pronunciation with our <a href="/spell-generator">Spell Generator</a> to maximize its effectiveness. Check the <strong>YAPYAP wiki</strong> wands section for more details.
             </p>
           </div>
           <div class="featured-card card">
@@ -85,7 +91,7 @@
               <h3 class="featured-title">Most Dangerous Enemy</h3>
             </div>
             <p class="featured-content">
-              <a href="/wiki/bestiary">The Librarian</a> - Extremely sound-sensitive, requires perfect stealth. Highest death rate in co-op runs.
+              <a href="/wiki/bestiary">The Librarian</a> - The <strong>YAPYAP wiki</strong> identifies this as the most dangerous enemy. Extremely sound-sensitive, requires perfect stealth. The <strong>YAPYAP wiki</strong> data shows the highest death rate in co-op runs. The <strong>YAPYAP wiki</strong> bestiary section provides detailed strategies for dealing with this enemy. Learn more survival tactics in our <a href="/guides">YAPYAP guides</a>.
             </p>
           </div>
         </div>
@@ -94,12 +100,15 @@
       <!-- Global Mechanics Breakdown -->
       <section class="mechanics-section">
         <h2 class="section-title">Game Mechanics Explained</h2>
+        <p class="section-subtitle muted" style="margin-bottom: 24px;">
+          The <strong>YAPYAP wiki</strong> mechanics guide. Understanding these systems is essential for success. This <strong>YAPYAP wiki</strong> section explains core gameplay mechanics.
+        </p>
         
         <div class="mechanics-grid">
           <!-- Rarity Guide -->
           <div class="mechanic-card card">
             <h3 class="mechanic-title">Loot Rarity & Colors</h3>
-            <p class="mechanic-desc">Understanding item rarity helps you prioritize valuable loot during runs.</p>
+            <p class="mechanic-desc">The <strong>YAPYAP wiki</strong> rarity system helps you prioritize valuable loot during runs. Understanding item rarity in the <strong>YAPYAP wiki</strong> is crucial for efficient farming. The <strong>YAPYAP wiki</strong> categorizes all items by rarity to help you make informed decisions. Refer to this <strong>YAPYAP wiki</strong> section when deciding which items to prioritize.</p>
             <div class="rarity-list">
               <div class="rarity-item">
                 <span class="rarity-color common">⬜</span>
@@ -129,12 +138,13 @@
           <div class="mechanic-card card">
             <h3 class="mechanic-title">Weight & Stamina System</h3>
             <p class="mechanic-desc">
-              Every item in YAPYAP has a weight stat. Carrying too much <strong>Heavy Scrap</strong> will drain your stamina and make you easy prey for fast monsters. When your inventory is full, movement speed decreases and stamina regeneration slows significantly.
+              The <strong>YAPYAP wiki</strong> weight system is critical for survival. Every item in YAPYAP has a weight stat documented in this <strong>YAPYAP wiki</strong>. Carrying too much <strong>Heavy Scrap</strong> will drain your stamina and make you easy prey for fast monsters. The <strong>YAPYAP wiki</strong> recommends checking item weights before prioritizing loot. When your inventory is full, movement speed decreases and stamina regeneration slows significantly. This <strong>YAPYAP wiki</strong> section explains how weight affects gameplay, making it essential reading for all players.
             </p>
             <ul class="mechanic-list">
               <li>Overweight players move slower and can't sprint</li>
               <li>Stamina drains faster when carrying heavy items</li>
-              <li>Check item weights in this Wiki before prioritizing loot</li>
+              <li>Check item weights in this <strong>YAPYAP wiki</strong> before prioritizing loot</li>
+              <li>The <strong>YAPYAP wiki</strong> weight data helps you optimize your inventory</li>
             </ul>
             <p class="mechanic-note muted">
               Always balance loot value with weight to maintain mobility and survival chances.
@@ -145,7 +155,7 @@
           <div class="mechanic-card card">
             <h3 class="mechanic-title">Sound & Noise Tiers</h3>
             <p class="mechanic-desc">
-              Understanding noise levels is crucial for stealth gameplay. The "Sound Sensitivity" rating in our Bestiary indicates how enemies react to different noise levels.
+              The <strong>YAPYAP wiki</strong> sound system guide. Understanding noise levels is crucial for stealth gameplay. The <strong>YAPYAP wiki</strong> <a href="/wiki/bestiary">Bestiary</a> section includes "Sound Sensitivity" ratings that indicate how enemies react to different noise levels. This <strong>YAPYAP wiki</strong> data can save your life. When using <a href="/spells">voice spells</a>, be aware of noise levels to avoid detection.
             </p>
             <div class="noise-tiers">
               <div class="noise-tier">
@@ -159,7 +169,7 @@
               </div>
             </div>
             <p class="mechanic-note muted">
-              Use crouch-walking to reduce noise. Some enemies are completely deaf, while others have extreme sensitivity.
+              Use crouch-walking to reduce noise. Some enemies are completely deaf, while others have extreme sensitivity. Check the <a href="/wiki/bestiary">Bestiary</a> for detailed enemy sound sensitivity data, and read our <a href="/guides">YAPYAP guides</a> for stealth strategies.
             </p>
           </div>
         </div>
@@ -170,10 +180,10 @@
         <div class="contribution-card card">
           <h3 class="contribution-title">Data Validity & Updates</h3>
           <p class="contribution-text">
-            <strong>Current Data:</strong> Based on Patch v0.8 (Demo). We update this Wiki regularly as new patches and content are released.
+            <strong>Current Data:</strong> Based on Patch v0.8 (Demo). We update this <strong>YAPYAP wiki</strong> regularly as new patches and content are released. The <strong>YAPYAP wiki</strong> is constantly evolving. This <strong>YAPYAP wiki</strong> is maintained by dedicated players who ensure all information is accurate. Bookmark this <strong>YAPYAP wiki</strong> to stay updated with the latest game data.
           </p>
           <p class="contribution-text">
-            <strong>Found a new secret item?</strong> Discovered a better strategy? Join our community to submit data and help keep this Wiki accurate and up-to-date!
+            <strong>Found a new secret item?</strong> Discovered a better strategy? Join our community to submit data and help keep this <strong>YAPYAP wiki</strong> accurate and up-to-date! Your contributions make the <strong>YAPYAP wiki</strong> better for everyone. The <strong>YAPYAP wiki</strong> grows stronger with each community contribution. Share your discoveries in our <a href="/guides">Guides</a> section or help improve our <a href="/spells">Spells List</a>. Together, we build the most comprehensive <strong>YAPYAP wiki</strong> available.
           </p>
           <!-- <div class="contribution-cta">
             <a href="#" class="btn btn-primary">Join Discord Community</a>
@@ -545,6 +555,31 @@
 .btn-primary:hover {
   background: rgba(139, 92, 246, 0.3);
   border-color: rgba(139, 92, 246, 0.6);
+}
+
+/* Internal Links Styling */
+.intro a,
+.core-loop-content a,
+.section-subtitle a,
+.featured-content a,
+.mechanic-desc a,
+.mechanic-note a,
+.contribution-text a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.intro a:hover,
+.core-loop-content a:hover,
+.section-subtitle a:hover,
+.featured-content a:hover,
+.mechanic-desc a:hover,
+.mechanic-note a:hover,
+.contribution-text a:hover {
+  text-decoration: underline;
+  color: var(--accent-2, rgba(139, 92, 246, 0.8));
 }
 
 @media (max-width: 768px) {

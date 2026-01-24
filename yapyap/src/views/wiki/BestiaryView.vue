@@ -12,7 +12,7 @@
         <p class="pill">Monsters · Enemies · Sound Cues · Strategies</p>
         <h1 class="title">YAPYAP Bestiary: All Monsters & Survival Guide</h1>
         <p class="intro">
-          Complete guide to all enemies in YAPYAP. Learn their behaviors, weaknesses, sound sensitivity, and how to counter them.
+          Complete <strong>YAPYAP bestiary</strong> guide to all enemies in YAPYAP. This comprehensive <strong>YAPYAP bestiary</strong> helps you learn their behaviors, weaknesses, sound sensitivity, and how to counter them. The <strong>YAPYAP bestiary</strong> is your essential reference for surviving encounters with <strong>YAPYAP monsters</strong>. Use this <strong>YAPYAP bestiary</strong> to master every <strong>YAPYAP enemy</strong> type.
         </p>
       </div>
     </section>
@@ -23,7 +23,7 @@
         <div class="section-head">
           <h2 class="section-title">All Enemies</h2>
           <p class="section-subtitle">
-            Quick reference guide to all monsters, their threat levels, and detection methods.
+            Quick reference <strong>YAPYAP bestiary</strong> guide to all <strong>YAPYAP monsters</strong>, their threat levels, and detection methods. This <strong>YAPYAP bestiary</strong> section covers every <strong>YAPYAP enemy</strong> you'll encounter in the tower.
           </p>
         </div>
 
@@ -149,7 +149,7 @@
             <h2 class="section-title">Farming Enemies for Points</h2>
             <div class="mechanics-content">
               <p>
-                Killing enemies isn't just about survival—it's about maximizing your quota. Understanding which enemies are worth farming is key to successful runs.
+                Killing <strong>YAPYAP enemies</strong> isn't just about survival—it's about maximizing your quota. Understanding which <strong>YAPYAP monsters</strong> are worth farming is key to successful runs. This <strong>YAPYAP bestiary</strong> farming guide helps you identify the most valuable targets. The <strong>YAPYAP bestiary</strong> point values vary by enemy type.
               </p>
 
               <div class="mechanics-topic">
@@ -189,10 +189,10 @@
           <h2 class="section-title">Death Penalties</h2>
           <div class="death-content">
             <p>
-              When you die, <strong>all items in your inventory drop at your death location</strong>, including Scrap, your equipped Wand, and consumables. Your corpse remains visible to teammates who can recover your items.
+              When you die to <strong>YAPYAP enemies</strong>, <strong>all items in your inventory drop at your death location</strong>, including Scrap, your equipped Wand, and consumables. Your corpse remains visible to teammates who can recover your items. The <strong>YAPYAP bestiary</strong> shows which <strong>YAPYAP monsters</strong> are most likely to cause deaths.
             </p>
             <p>
-              Each death reduces your team's quota progress. Dead players cannot contribute to the quota, so it's crucial to keep at least one person alive.
+              Each death reduces your team's quota progress. Dead players cannot contribute to the quota, so it's crucial to keep at least one person alive. Study this <strong>YAPYAP bestiary</strong> to avoid dangerous <strong>YAPYAP enemies</strong> that can wipe your team.
             </p>
             <div class="death-warning">
               <div class="warning-icon">⚠️</div>
@@ -214,14 +214,14 @@
               <div class="link-icon">🪄</div>
               <div class="link-content">
                 <h3 class="link-title">Get the Right Weapons</h3>
-                <p class="link-desc">Which wands knock back Guards? Find the perfect wand for your survival strategy.</p>
+                <p class="link-desc">Which wands knock back Guards? Find the perfect wand for your survival strategy against <strong>YAPYAP monsters</strong>.</p>
               </div>
             </a>
             <a href="/spells" class="related-link">
               <div class="link-icon">✨</div>
               <div class="link-content">
                 <h3 class="link-title">Learn Defense Spells</h3>
-                <p class="link-desc">Spells to block lasers and slow enemies. Master Aero-bis, Duplico, and more.</p>
+                <p class="link-desc">Spells to block lasers and slow <strong>YAPYAP enemies</strong>. Master Aero-bis, Duplico, and more. Combine with this <strong>YAPYAP bestiary</strong> for maximum effectiveness.</p>
               </div>
             </a>
           </div>

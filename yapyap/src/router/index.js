@@ -62,9 +62,9 @@ const router = createRouter({
       component: BallPuzzleView,
       meta: {
         seo: {
-          title: 'YAPYAP Orb Puzzle Solution: Drop Room Strategy Guide',
-          description: 'How to solve the Orb Drop puzzle in YAPYAP. Master the "Teleport Strategy" to break the ball, kite guards, and loot the secret cabinet wand safely.',
-          keywords: 'yapyap orb puzzle, ball room, drop puzzle, teleport wand strategy',
+          title: 'YAPYAP Ball Puzzle Solution: Drop Room & Secret Wand',
+          description: 'The complete YAPYAP Ball Puzzle guide. Master the Drop Room strategy: how to break the orb, avoid guards, and loot the hidden cabinet for a free wand.',
+          keywords: 'yapyap ball puzzle, yapyap orb room, drop puzzle solution, secret wand location, teleport strategy',
         },
       },
     },
@@ -74,9 +74,9 @@ const router = createRouter({
       component: BalancePuzzleView,
       meta: {
         seo: {
-          title: 'YAPYAP Scales Puzzle Solution: Weight & Balance Guide',
-          description: 'Stuck on the Scales? The complete solution for the YAPYAP Balance Puzzle. Learn the correct item weights and combinations to unlock the gate fast.',
-          keywords: 'yapyap scales puzzle, balance puzzle, weight solution, resonance dial',
+          title: 'YAPYAP Balance Puzzle: Resonance Dial & Pitch Guide',
+          description: 'Solve the YAPYAP Balance Puzzle (Resonance Dial). Master high/low pitch voice commands, use the "Do-Do" rhythm, and destroy the orb for the wand.',
+          keywords: 'yapyap balance puzzle, resonance dial, pitch puzzle, high low pitch, voice control, puzzle solution',
         },
       },
     },
@@ -86,9 +86,9 @@ const router = createRouter({
       component: DoorPuzzleView,
       meta: {
         seo: {
-          title: 'YAPYAP Face Gate Solution: 3-Word Chant & Symbols',
-          description: 'Crack the Face Gate in YAPYAP. Guide to finding hidden symbols (Skull, Crossbones), deciphering the 3-word chant, and fixing voice recognition bugs.',
-          keywords: 'yapyap face gate, door puzzle, skull symbol, float spell, 3 words puzzle',
+          title: 'YAPYAP Door Puzzle Solution: Face Gate & Symbols Guide',
+          description: 'The complete YAPYAP Door Puzzle guide. Crack the "Face Gate" by finding hidden words like FLOAT. Fix voice recognition issues and loot the treasure room.',
+          keywords: 'yapyap door puzzle, face gate solution, 3 words chant, skull symbol, high value loot, float spell',
         },
       },
     },

@@ -12,7 +12,7 @@
         <p class="pill">Crafting Recipes · Ingredients · Effects</p>
         <h1 class="title">YAPYAP Potions & Crafting Recipes Guide</h1>
         <p class="intro">
-          Complete guide to all crafting recipes in YAPYAP. Master the three-step brewing process using the Cauldron and learn which ingredients to eat raw vs. brew into potions.
+          Complete <strong>YAPYAP potions</strong> guide to all crafting recipes in YAPYAP. This comprehensive <strong>YAPYAP crafting</strong> guide helps you master the three-step brewing process using the Cauldron and learn which ingredients to eat raw vs. brew into <strong>YAPYAP potions</strong>. The <strong>YAPYAP potions</strong> system is essential for survival. Use this <strong>YAPYAP crafting</strong> guide to master all <strong>YAPYAP recipes</strong>.
         </p>
       </div>
     </section>
@@ -37,7 +37,7 @@
           <h2 class="section-title">How to Brew Potions (The Three-Step Process)</h2>
           <div class="mechanic-content">
             <p>
-              Brewing potions in YAPYAP requires a <strong>Cauldron</strong> (the green alchemy pot), an <strong>Ingredient</strong>, and an <strong>Empty Bottle</strong>. The process is simple but requires all three components.
+              Brewing <strong>YAPYAP potions</strong> requires a <strong>Cauldron</strong> (the green alchemy pot), an <strong>Ingredient</strong>, and an <strong>Empty Bottle</strong>. The <strong>YAPYAP crafting</strong> process is simple but requires all three components. This <strong>YAPYAP potions</strong> guide explains every step of <strong>YAPYAP crafting</strong>. Master these <strong>YAPYAP recipes</strong> to create powerful <strong>YAPYAP potions</strong>.
             </p>
             <div class="steps-list">
               <div class="step-item">
@@ -75,7 +75,7 @@
         <div class="section-head">
           <h2 class="section-title">Potion Recipes Database</h2>
           <p class="section-subtitle">
-            Complete list of all potions, their colors, recipes, effects, and durations.
+            Complete <strong>YAPYAP potions</strong> list of all <strong>YAPYAP recipes</strong>, their colors, recipes, effects, and durations. This <strong>YAPYAP crafting</strong> database contains every <strong>YAPYAP potions</strong> recipe available. Use this <strong>YAPYAP crafting</strong> guide to master all <strong>YAPYAP recipes</strong>.
           </p>
         </div>
 
@@ -173,7 +173,7 @@
           <h2 class="section-title">Raw Ingredient Effects (Eating without Crafting)</h2>
           <div class="raw-content">
             <p>
-              Right-click to eat ingredients directly. This section compares the effects of eating raw vs. brewing, which is crucial for survival decisions in critical moments.
+              Right-click to eat ingredients directly. This <strong>YAPYAP crafting</strong> section compares the effects of eating raw vs. brewing into <strong>YAPYAP potions</strong>, which is crucial for survival decisions in critical moments. The <strong>YAPYAP potions</strong> guide helps you decide when to craft vs. eat raw. Understanding <strong>YAPYAP recipes</strong> and raw effects is essential.
             </p>
             
             <!-- Desktop table -->
@@ -233,7 +233,7 @@
           <h2 class="section-title">The Potion Room Secrets</h2>
           <div class="secrets-content">
             <p>
-              The Potion Room contains a hidden mechanic that advanced players should know about. This is an "expert-level" tip that can save your life.
+              The Potion Room contains a hidden mechanic that advanced players should know about. This <strong>YAPYAP crafting</strong> secret is an "expert-level" tip that can save your life. The Potion Room is essential for <strong>YAPYAP potions</strong> crafting. This <strong>YAPYAP recipes</strong> location provides guaranteed <strong>YAPYAP potions</strong>.
             </p>
             <div class="ladder-strategy">
               <div class="ladder-icon">🪜</div>
@@ -263,31 +263,31 @@
             <div class="faq-item">
               <h3 class="faq-question">Can I stack potion effects?</h3>
               <p class="faq-answer">
-                <strong>No, potion effects do not stack.</strong> Drinking a new potion will either replace the previous effect or refresh the timer. You can only have one active potion effect at a time. Plan your potion usage carefully—don't waste a Flight Potion if you already have Invisibility active.
+                <strong>No, YAPYAP potions effects do not stack.</strong> Drinking a new <strong>YAPYAP potions</strong> will either replace the previous effect or refresh the timer. You can only have one active <strong>YAPYAP potions</strong> effect at a time. Plan your <strong>YAPYAP potions</strong> usage carefully—don't waste a Flight Potion if you already have Invisibility active. This <strong>YAPYAP crafting</strong> limitation is important to remember.
               </p>
             </div>
             <div class="faq-item">
               <h3 class="faq-question">Can I use broken bottles to brew potions?</h3>
               <p class="faq-answer">
-                <strong>Yes!</strong> Broken glass bottles found on the floor work perfectly for brewing potions. You don't need to buy empty bottles from the shop. Just pick up any broken bottle, face the cauldron, and press <strong>E</strong> to fill it.
+                <strong>Yes!</strong> Broken glass bottles found on the floor work perfectly for brewing <strong>YAPYAP potions</strong>. You don't need to buy empty bottles from the shop. Just pick up any broken bottle, face the cauldron, and press <strong>E</strong> to fill it. This <strong>YAPYAP crafting</strong> tip saves money and makes <strong>YAPYAP recipes</strong> more accessible.
               </p>
             </div>
             <div class="faq-item">
               <h3 class="faq-question">What does Strength Potion actually do?</h3>
               <p class="faq-answer">
-                <strong>Strength Potion enhances your physics capabilities.</strong> Before drinking, you cannot lift heavy crates. After drinking, you can throw heavy wooden crates high into the air. It's essential for moving heavy objects and reaching high loot. It does <strong>not</strong> increase melee damage against enemies.
+                <strong>Strength Potion is one of the most useful YAPYAP potions.</strong> This <strong>YAPYAP potions</strong> enhances your physics capabilities. Before drinking, you cannot lift heavy crates. After drinking, you can throw heavy wooden crates high into the air. It's essential for moving heavy objects and reaching high loot. This <strong>YAPYAP crafting</strong> recipe creates a powerful <strong>YAPYAP potions</strong>. It does <strong>not</strong> increase melee damage against enemies.
               </p>
             </div>
             <div class="faq-item">
               <h3 class="faq-question">Should I eat mushrooms raw or brew them?</h3>
               <p class="faq-answer">
-                <strong>Do NOT eat normal mushrooms raw!</strong> They only restore 15 HP when eaten, but brewing them into Strength Potion is far more valuable for moving heavy crates. Save them for the cauldron unless you're in a life-or-death emergency.
+                <strong>Do NOT eat normal mushrooms raw!</strong> They only restore 15 HP when eaten, but brewing them into <strong>YAPYAP potions</strong> (Strength Potion) is far more valuable for moving heavy crates. This <strong>YAPYAP crafting</strong> strategy maximizes the value of ingredients. Save them for the cauldron unless you're in a life-or-death emergency. Follow this <strong>YAPYAP recipes</strong> advice for optimal results.
               </p>
             </div>
             <div class="faq-item">
               <h3 class="faq-question">What happens if I drink Nasty Potion?</h3>
               <p class="faq-answer">
-                <strong>Nasty Potion causes a Dizzy debuff</strong> that makes your screen blurry and spin. It's essentially useless for you, but some players throw it at teammates as a prank. Avoid crafting it unless you're intentionally trolling.
+                <strong>Nasty Potion is one YAPYAP potions you should avoid.</strong> This <strong>YAPYAP potions</strong> causes a Dizzy debuff that makes your screen blurry and spin. It's essentially useless for you, but some players throw it at teammates as a prank. Avoid this <strong>YAPYAP crafting</strong> recipe unless you're intentionally trolling. Most <strong>YAPYAP recipes</strong> are useful, but this <strong>YAPYAP potions</strong> is an exception.
               </p>
             </div>
           </div>

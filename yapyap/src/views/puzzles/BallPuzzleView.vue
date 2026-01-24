@@ -43,7 +43,7 @@
       </section>
 
       <!-- Video Section -->
-      <section class="video-section card">
+      <!-- <section class="video-section card">
         <div class="section-head">
           <h2 class="section-title">Video Walkthrough</h2>
           <p class="section-subtitle">Watch the complete YAPYAP ball puzzle strategy demonstration</p>
@@ -59,7 +59,7 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Objective Section -->
       <section class="objective-section card">
