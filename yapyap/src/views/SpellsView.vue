@@ -603,25 +603,137 @@ const wands = computed(() =>
 }
 
 
-@media (max-width: 1100px) {
+/* iPad端 - 1024px */
+@media (max-width: 1024px) {
   .row {
     grid-template-columns: 60px 150px 1fr 1fr 90px;
   }
 }
 
-@media (max-width: 920px) {
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  /* 板块间距 */
+  .section {
+    padding: 0.8rem 0;
+    margin-top: 0.8rem;
+  }
+
+  /* card padding */
+  .card {
+    padding: 0.8rem;
+  }
+
+  /* h1 - 使用class选择器 */
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
+  .section-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3 - 使用class选择器 */
+  .wand-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .interaction-title,
+  .faq-question {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .intro {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .wand-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .faq-answer,
+  .interaction-text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* 布局调整 */
   .table {
     display: none;
   }
+
   .mobile-list {
     display: grid;
+    gap: 0.8rem;
   }
-  .wand-title {
-    font-size: 20px;
+
+  .section-head {
+    margin: 0.7rem 0;
   }
+
+  .wand-section {
+    margin-top: 0.8rem;
+  }
+
+  .wand-header {
+    margin-bottom: 0.7rem;
+  }
+
   .mic-head {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.7rem;
+  }
+
+  .spell-card {
+    padding: 0.8rem;
+  }
+
+  .interaction-item,
+  .faq-item {
+    padding: 0.8rem;
+  }
+
+  .interactions-list,
+  .faq-list {
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  .meter-wrap {
+    margin-top: 0.7rem;
+  }
+
+  .meter-meta {
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+  }
+
+  .error,
+  .hint {
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
 }
 
@@ -719,16 +831,5 @@ const wands = computed(() =>
   margin-top: 4px;
 }
 
-@media (max-width: 920px) {
-  .interaction-item,
-  .faq-item {
-    padding: 14px;
-  }
-
-  .interaction-title,
-  .faq-question {
-    font-size: 16px;
-  }
-}
 </style>
 

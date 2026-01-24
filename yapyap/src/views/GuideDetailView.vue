@@ -466,9 +466,11 @@ const formatDate = (dateString) => {
   border-color: rgba(139, 92, 246, 0.6);
 }
 
+/* iPad端 - 1024px */
 @media (max-width: 1024px) {
   .content-layout {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .right-sidebar {
@@ -476,21 +478,175 @@ const formatDate = (dateString) => {
   }
 
   .guide-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 640px) {
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  /* 板块间距 */
+  .guide-content {
+    padding: 0.8rem 0;
+  }
+
+  .guide-detail-content {
+    margin-top: 0.7rem;
+  }
+
+  /* card padding */
+  .card {
+    padding: 0.8rem;
+  }
+
+  .guide-info-box {
+    padding: 0.8rem;
+  }
+
+  .guide-navigation {
+    padding: 0.8rem;
+  }
+
+  .not-found {
+    padding: 0.8rem;
+  }
+
+  /* h1 - 使用class选择器 */
   .guide-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
   }
 
+  /* h2 - 使用class选择器 */
   .detail-article :deep(h2) {
-    font-size: 24px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin: 0.8rem 0 0.7rem 0;
   }
 
+  /* h3 - 使用class选择器 */
   .detail-article :deep(h3) {
-    font-size: 20px;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin: 0.8rem 0 0.7rem 0;
+  }
+
+  .info-box-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h4 - 使用class选择器 */
+  .nav-title {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .detail-article {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .detail-article :deep(p) {
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .not-found h2 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .not-found p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* 布局调整 */
+  .content-layout {
+    gap: 0.8rem;
+  }
+
+  .right-sidebar {
+    gap: 0.8rem;
+  }
+
+  .guide-detail-meta {
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .meta-item {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .meta-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .guide-tags {
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .tag {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  .info-box-header {
+    margin-bottom: 0.7rem;
+  }
+
+  .guide-meta {
+    margin-bottom: 0.7rem;
+  }
+
+  .nav-grid {
+    gap: 0.7rem;
+  }
+
+  .nav-card {
+    padding: 0.8rem;
+  }
+
+  .nav-card-direction {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-card-title {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-card-meta {
+    font-size: 0.7rem;
+  }
+
+  .detail-article :deep(ul),
+  .detail-article :deep(ol) {
+    margin-bottom: 0.7rem;
+    padding-left: 1rem;
+  }
+
+  .detail-article :deep(li) {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .detail-article :deep(iframe) {
+    width: 100%;
   }
 }
 </style>

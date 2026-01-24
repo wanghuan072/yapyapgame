@@ -438,7 +438,18 @@ const wands = wandsData.map(wand => ({
   line-height: 1.5;
 }
 
-@media (min-width: 1024px) {
+/* iPad端 - 1024px */
+@media (max-width: 1024px) {
+  .table {
+    display: none;
+  }
+
+  .cards-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 1025px) {
   .table {
     display: flex;
   }
@@ -448,24 +459,174 @@ const wands = wandsData.map(wand => ({
   }
 }
 
-@media (max-width: 1023px) {
-  .table {
-    display: none;
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  /* 板块间距 */
+  .introduction-section,
+  .acquisition-section,
+  .faq-section {
+    padding: 0.8rem 0;
+    margin: 0.8rem 0;
   }
 
-  .cards-mobile {
-    display: flex;
+  /* card padding */
+  .card {
+    padding: 0.8rem;
   }
-
 
   .wiki-content {
-    padding: 20px;
+    padding: 0.8rem;
   }
 
   .intro-card,
   .acquisition-card,
   .faq-card {
-    padding: 20px;
+    padding: 0.8rem;
+  }
+
+  .wand-card {
+    padding: 0.8rem;
+  }
+
+  .faq-item {
+    padding: 0.8rem;
+  }
+
+  /* h1 - 使用class选择器 */
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
+  .section-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .intro-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3 - 使用class选择器 */
+  .wand-name {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .faq-question {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h4 - 使用class选择器 */
+  .spells-title {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .intro {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .intro-content p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .acquisition-content p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .faq-answer {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .intro-tip {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+    padding: 0.8rem;
+  }
+
+  .acquisition-note {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+    padding: 0.7rem;
+  }
+
+  /* 布局调整 */
+  .section-head {
+    margin-bottom: 0.7rem;
+  }
+
+  .intro-content {
+    gap: 0.7rem;
+  }
+
+  .acquisition-content {
+    margin-top: 0.7rem;
+  }
+
+  .acquisition-list {
+    padding-left: 1rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .acquisition-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-list {
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  .wand-card-header {
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .wand-spells {
+    margin-top: 0.7rem;
+  }
+
+  .spell-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .spell-name {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .spell-effect {
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
 }
 

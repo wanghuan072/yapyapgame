@@ -929,37 +929,189 @@
   }
 }
 
+/* 移动端 - 768px */
 @media (max-width: 768px) {
-
-  .card {
-    padding: 20px;
+  /* 板块间距 */
+  .overview-section,
+  .objective-section,
+  .strategy-section,
+  .spells-section,
+  .tactics-section,
+  .loot-section,
+  .faq-section {
+    padding: 0.8rem 0;
+    margin: 0.8rem 0;
   }
 
+  /* card padding */
+  .card {
+    padding: 0.8rem;
+  }
+
+  .overview-card {
+    padding: 0.8rem;
+  }
+
+  .approach-box {
+    padding: 0.8rem;
+  }
+
+  .step-card {
+    padding: 0.8rem;
+  }
+
+  .spell-card,
+  .tactic-card,
+  .faq-item {
+    padding: 0.8rem;
+  }
+
+  /* h1 - 使用class选择器 */
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
+  .section-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3 - 使用class选择器 */
+  .approach-title,
+  .step-title,
+  .strategy-title,
+  .tactics-title,
+  .faq-question {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .intro {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .objective-text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .step-description {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .faq-answer {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .overview-desc {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* 布局调整 */
   .overview-grid {
     grid-template-columns: 1fr;
+    gap: 0.8rem;
   }
 
   .approach-comparison {
     grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .strategy-steps {
+    gap: 0.8rem;
   }
 
   .step-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 0.7rem;
   }
 
   .step-number {
     align-self: flex-start;
   }
 
+  .section-head {
+    margin-bottom: 0.7rem;
+  }
+
+  .objective-content {
+    margin-top: 0.7rem;
+  }
+
+  .approach-list {
+    gap: 0.5rem;
+  }
+
+  .approach-list li {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
   .loot-table {
-    font-size: 12px;
+    font-size: 0.7rem;
   }
 
   .loot-table th,
   .loot-table td {
-    padding: 10px 12px;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .puzzle-meta {
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+  }
+
+  .tag {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  .overview-label {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-value {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .spell-name,
+  .tactic-name {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .spell-desc,
+  .tactic-desc {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
   }
 }
 </style>

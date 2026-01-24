@@ -293,23 +293,117 @@ onMounted(async () => {
   color: var(--accent-2, rgba(139, 92, 246, 0.8));
 }
 
-@media (max-width: 768px) {
-
+/* iPad端 - 1024px */
+@media (max-width: 1024px) {
   .guides-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  /* 板块间距 */
+  .guides-section,
+  .seo-content-section {
+    padding: 0.8rem 0;
+    margin: 0.8rem 0;
+  }
+
+  /* card padding */
+  .card {
+    padding: 0.8rem;
+  }
+
+  .guide-card {
+    padding: 0;
+  }
+
+  .guide-card-content {
+    padding: 0.8rem;
+  }
+
+  .loading-state,
+  .error-state {
+    padding: 0.8rem;
   }
 
   .seo-content-card {
-    padding: 24px;
+    padding: 0.8rem;
   }
 
+  /* h1 - 使用class选择器 */
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
   .seo-title {
-    font-size: 20px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3 - 使用class选择器 */
+  .guide-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .intro {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .guide-description {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
   }
 
   .seo-content {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .seo-content p {
+    margin-bottom: 0.7rem;
+  }
+
+  /* 布局调整 */
+  .guides-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .guide-tags {
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .tag {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  .guide-footer {
+    padding-top: 0.7rem;
+  }
+
+  .update-date {
+    font-size: 0.7rem;
+  }
+
+  .view-link {
+    font-size: 0.8rem;
+  }
+
+  .muted {
+    font-size: 0.8rem;
   }
 }
 </style>

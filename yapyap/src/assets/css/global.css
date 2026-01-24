@@ -136,6 +136,7 @@ a {
 }
 
 /* Responsive */
+/* iPad端 - 1024px */
 @media (max-width: 1024px) {
   .page-hero {
     padding: 48px 20px 32px;
@@ -149,29 +150,53 @@ a {
   .page-hero .intro {
     font-size: 16px;
   }
+
+  .container {
+    padding: 0 16px;
+  }
 }
 
-@media (max-width: 640px) {
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  /* 板块间距 */
   .page-hero {
-    padding: 32px 20px 24px;
-    margin-bottom: 32px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
   }
 
-  .page-hero .pill {
-    padding: 8px 14px;
-    font-size: 12px;
-    margin-bottom: 16px;
+  /* container padding */
+  .container {
+    padding: 0 0.8rem;
   }
 
+  /* h1 - .page-hero .title */
   .page-hero .title {
-    font-size: 28px;
-    margin-bottom: 16px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
     filter: drop-shadow(0 0 16px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 32px rgba(139, 92, 246, 0.3));
   }
 
+  /* p - .page-hero .intro */
   .page-hero .intro {
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* .page-hero .pill */
+  .page-hero .pill {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.7rem;
+    margin-bottom: 0.7rem;
+    gap: 0.5rem;
+  }
+
+  /* breadcrumbs */
+  .breadcrumbs {
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    gap: 0.5rem;
   }
 }
 

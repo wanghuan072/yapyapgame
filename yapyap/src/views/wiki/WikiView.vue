@@ -582,16 +582,216 @@
   color: var(--accent-2, rgba(139, 92, 246, 0.8));
 }
 
-@media (max-width: 768px) {
+/* iPad端 - 1024px */
+@media (max-width: 1024px) {
+  .wiki-grid,
+  .featured-grid,
+  .mechanics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-  .section-title {
-    font-size: 24px;
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  /* 板块间距 */
+  .core-loop-section,
+  .wiki-grid-section,
+  .featured-section,
+  .mechanics-section,
+  .contribution-section {
+    padding: 0.8rem 0;
+    margin: 0.8rem 0;
   }
 
+  /* card padding */
+  .card {
+    padding: 0.8rem;
+  }
+
+  .work-in-progress {
+    padding: 0.8rem;
+    gap: 0.7rem;
+  }
+
+  .core-loop-content {
+    padding: 0.8rem;
+  }
+
+  .wiki-card {
+    padding: 0.8rem;
+  }
+
+  .featured-card {
+    padding: 0.8rem;
+  }
+
+  .mechanic-card {
+    padding: 0.8rem;
+  }
+
+  .contribution-card {
+    padding: 0.8rem;
+  }
+
+  /* h1 - 使用class选择器 */
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
+  .section-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .wiki-card-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3 - 使用class选择器 */
+  .featured-title,
+  .mechanic-title,
+  .contribution-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .intro {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .core-loop-content p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .wiki-card-desc {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .featured-content {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .mechanic-desc {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .contribution-text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .work-in-progress p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  /* 布局调整 */
   .wiki-grid,
   .featured-grid,
   .mechanics-grid {
     grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .featured-header {
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .featured-icon {
+    font-size: 1.5rem;
+  }
+
+  .featured-list li {
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .wiki-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .wiki-card-keywords {
+    font-size: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .rarity-list {
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .rarity-item {
+    padding: 0.8rem;
+    gap: 0.7rem;
+  }
+
+  .rarity-color {
+    font-size: 1.2rem;
+  }
+
+  .rarity-item strong {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .mechanic-list {
+    padding-left: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .mechanic-list li {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .noise-tiers {
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .noise-tier {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .mechanic-note {
+    font-size: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .muted {
+    font-size: 0.8rem;
   }
 }
 </style>

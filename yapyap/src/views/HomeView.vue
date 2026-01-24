@@ -1413,56 +1413,11 @@ onUnmounted(() => {
   text-decoration: underline;
 }
 
+/* iPad端 - 1024px */
 @media (max-width: 1024px) {
   .hero-grid,
   .what-grid {
     grid-template-columns: 1fr;
-  }
-
-  .release-description {
-    font-size: 14px;
-  }
-
-
-  .trouble-card {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .trouble-content {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .trouble-icon-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .trouble-action {
-    align-items: center;
-  }
-
-  .hero-text h1 {
-    font-size: 30px;
-    filter: drop-shadow(0 0 14px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 28px rgba(139, 92, 246, 0.35)) drop-shadow(0 0 40px rgba(196, 181, 253, 0.2));
-  }
-
-  .hero-features {
-    grid-template-columns: 1fr;
-    padding: 16px;
-    gap: 16px;
-  }
-
-  .hero-feature-item {
-    grid-template-columns: auto 1fr;
-    gap: 12px;
-    text-align: left;
-  }
-
-  .feature-icon {
-    font-size: 28px;
   }
 
   .guide-grid {
@@ -1471,145 +1426,223 @@ onUnmounted(() => {
 
   .pain-points-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-
-  .countdown-grid {
-    gap: 12px;
-  }
-
-  .countdown-box {
-    min-width: 90px;
-    padding: 20px 16px;
-  }
-
-  .countdown-number {
-    font-size: 40px;
   }
 }
 
-@media (max-width: 640px) {
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  /* 板块间距 */
   .section {
-    padding: 64px 0;
+    padding: 0.8rem 0;
   }
 
-  .hero-text h1 {
-    font-size: 26px;
-    filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 24px rgba(139, 92, 246, 0.3)) drop-shadow(0 0 36px rgba(196, 181, 253, 0.2));
+  /* card padding */
+  .card {
+    padding: 0.8rem;
   }
 
+  /* 容器 padding */
   .hero-features {
-    grid-template-columns: 1fr;
-    padding: 16px;
-    gap: 16px;
+    padding: 0.8rem;
   }
 
-  .hero-feature-item {
-    grid-template-columns: auto 1fr;
+  .pain-point-card {
+    padding: 0.8rem;
   }
 
-  .feature-icon {
-    font-size: 24px;
+  .guide-content {
+    padding: 0.8rem;
   }
 
-  .feature-content .feature-title {
-    font-size: 16px;
-  }
-
-  .feature-content .feature-description {
-    font-size: 13px;
+  .trouble-card {
+    padding: 0.8rem;
   }
 
   .countdown-container {
-    padding: 32px 16px;
-    margin: 32px 16px;
-  }
-
-  .countdown-grid {
-    gap: 8px;
-  }
-
-  .countdown-box {
-    min-width: 70px;
-    padding: 16px 12px;
-  }
-
-  .countdown-number {
-    font-size: 32px;
-  }
-
-  .countdown-unit {
-    font-size: 10px;
-  }
-
-  .countdown-divider {
-    font-size: 24px;
-    padding: 0 2px;
-  }
-
-  .release-btn {
-    min-width: 100%;
-    width: 100%;
+    padding: 0.8rem;
   }
 
   .system-requirements {
-    padding: 32px 24px;
-    margin: 32px 16px 0;
-  }
-
-  .requirements-title {
-    font-size: 20px;
-    margin-bottom: 24px;
-  }
-
-  .requirements-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    padding: 0.8rem;
   }
 
   .requirement-item {
-    padding: 14px 18px;
+    padding: 0.8rem;
   }
 
-  .requirement-label {
-    font-size: 11px;
+  .loading-state,
+  .empty-state {
+    padding: 0.8rem;
   }
 
-  .requirement-value {
-    font-size: 14px;
+  /* h1 - 使用class选择器 */
+  .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
+  .section-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3 - 使用class选择器 */
+  .pain-content h3 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .guide-content h3 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .faq-item h3 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .requirements-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h4 - 使用class选择器 */
+  .feature-content .feature-title {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .lead {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .pain-description {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .feature-content .feature-description {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .what-text p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .release-description {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .guide-content p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .faq-item p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* 布局调整 */
+  .hero-grid,
+  .what-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .guide-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .pain-points-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .pain-point-card {
-    padding: 24px;
-  }
-
-  .pain-content h3 {
-    font-size: 20px;
-  }
-
-  .pain-icon {
-    font-size: 40px;
+    gap: 1rem;
   }
 
   .trouble-card {
-    padding: 24px;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  .trouble-icon {
-    font-size: 48px;
+  .trouble-content {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
   }
 
-  .trouble-action .btn {
-    min-width: 100%;
+  .hero-features {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .hero-feature-item {
+    gap: 0.7rem;
+  }
+
+  .section-header {
+    margin-bottom: 0.7rem;
+  }
+
+  .countdown-grid {
+    gap: 0.3rem;
+  }
+
+  .countdown-container {
+    margin: 0.8rem auto;
+  }
+
+  .countdown-box {
+    min-width: auto;
+    padding: 0.5rem;
+  }
+
+  .countdown-number {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 0.2rem;
+  }
+
+  .countdown-unit {
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+
+  .countdown-divider {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .requirements-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
   }
 }
+
 </style>

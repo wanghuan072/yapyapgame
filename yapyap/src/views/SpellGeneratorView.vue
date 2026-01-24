@@ -877,18 +877,202 @@ code {
   }
 }
 
+/* 移动端 - 768px */
 @media (max-width: 768px) {
+  /* 板块间距 */
+  .guide-section,
+  .why-section,
+  .tips-section {
+    padding: 0.8rem 0;
+    margin-top: 0.8rem;
+  }
 
-  .wand-list {
-    grid-template-columns: 1fr;
+  /* card padding */
+  .card {
+    padding: 0.8rem;
+  }
+
+  .selection-card {
+    padding: 0.8rem;
   }
 
   .forge-content {
-    padding: 20px;
+    padding: 0.8rem;
   }
 
+  .spell-display-content {
+    padding: 0.8rem;
+  }
+
+  .why-card {
+    padding: 0.8rem;
+  }
+
+  .tip-card {
+    padding: 0.8rem;
+  }
+
+  .step-card {
+    padding: 0.8rem;
+  }
+
+  /* h1 - 使用class选择器 */
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
+  .selection-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .guide-title,
+  .tips-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .why-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3/h4 - 使用class选择器 */
   .spell-name-large {
-    font-size: 24px;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .spell-effect-section h4,
+  .spell-tips-section h4 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .intro {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .placeholder-text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .spell-effect-section p,
+  .spell-tips-section p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .why-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* 布局调整 */
+  .wand-list {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .incantation-list {
+    gap: 0.7rem;
+  }
+
+  .spell-forge-layout {
+    gap: 0.8rem;
+  }
+
+  .spell-display {
+    margin-top: 0.8rem;
+  }
+
+  .spell-info {
+    gap: 0.7rem;
+  }
+
+  .spell-header-info {
+    gap: 0.7rem;
+  }
+
+  .why-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+
+  .steps-container {
+    gap: 0.8rem;
+  }
+
+  .step-connector {
+    width: 60px;
+    margin: 0.7rem 0;
+  }
+
+  .tips-grid {
+    gap: 0.8rem;
+  }
+
+  .vocal-timbre-section {
+    margin-bottom: 0.7rem;
+  }
+
+  .manifest-button {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .wand-item {
+    padding: 0.8rem;
+  }
+
+  .incantation-item {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .selection-header {
+    margin-bottom: 0.7rem;
+    gap: 0.7rem;
+  }
+
+  .forge-content .selection-header {
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .media-placeholder {
+    padding: 0.8rem;
+    gap: 0.7rem;
+  }
+
+  .spell-media {
+    min-height: 200px;
+  }
+
+  .vocal-timbre-label {
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .vocal-timbre-dropdown {
+    padding: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1248,38 +1432,4 @@ code {
   }
 }
 
-@media (max-width: 768px) {
-  .guide-section,
-  .why-section,
-  .tips-section {
-    margin-top: 40px;
-  }
-
-  .guide-title,
-  .tips-title {
-    font-size: 24px;
-  }
-
-  .why-card {
-    padding: 32px 24px;
-  }
-
-  .why-title {
-    font-size: 22px;
-  }
-
-  .why-subtitle {
-    font-size: 20px;
-  }
-
-  .why-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .tip-card {
-    padding: 20px;
-  }
-}
 </style>

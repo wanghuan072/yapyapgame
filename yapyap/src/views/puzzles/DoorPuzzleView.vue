@@ -1072,33 +1072,230 @@
   }
 }
 
+/* 移动端 - 768px */
 @media (max-width: 768px) {
-
-  .card {
-    padding: 20px;
+  /* 板块间距 */
+  .overview-section,
+  .logic-section,
+  .decoder-section,
+  .treasure-section,
+  .voice-warning-section,
+  .technique-section,
+  .tips-section,
+  .verdict-section {
+    padding: 0.8rem 0;
+    margin: 0.8rem 0;
   }
 
+  /* card padding */
+  .card {
+    padding: 0.8rem;
+  }
+
+  .overview-card {
+    padding: 0.8rem;
+  }
+
+  .warning-box {
+    padding: 0.8rem;
+  }
+
+  .logic-step {
+    padding: 0.8rem;
+  }
+
+  .technique-box {
+    padding: 0.8rem;
+  }
+
+  .tip-card {
+    padding: 0.8rem;
+  }
+
+  .verdict-card {
+    padding: 0.8rem;
+  }
+
+  /* h1 - 使用class选择器 */
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
+  .section-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3 - 使用class选择器 */
+  .step-title,
+  .technique-title,
+  .tips-title,
+  .warning-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .intro {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .step-description {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .warning-text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .technique-desc {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .tips-text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .verdict-text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .overview-desc {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .voice-warning-content {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .skip-suggestion {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .step-tip {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* 布局调整 */
   .overview-grid {
     grid-template-columns: 1fr;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .logic-steps {
+    gap: 0.8rem;
   }
 
   .step-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
   }
 
   .step-number {
     align-self: flex-start;
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .section-head {
+    margin-bottom: 0.7rem;
+  }
+
+  .logic-content {
+    margin-top: 0.7rem;
+  }
+
+  .trap-comparison {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .technique-grid {
+    gap: 0.8rem;
+  }
+
+  .tips-list {
+    gap: 0.7rem;
+  }
+
+  .tips-list li {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
   }
 
   .decoder-table {
-    font-size: 12px;
+    font-size: 0.7rem;
   }
 
   .decoder-table th,
   .decoder-table td {
-    padding: 10px 12px;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .puzzle-meta {
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+  }
+
+  .tag {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  .overview-label {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-value {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .treasure-list {
+    gap: 0.7rem;
+  }
+
+  .treasure-item {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
   }
 }
 

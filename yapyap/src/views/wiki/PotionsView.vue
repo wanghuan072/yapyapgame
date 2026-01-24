@@ -1191,7 +1191,26 @@ const rawIngredients = [
   margin: 0;
 }
 
-@media (min-width: 1024px) {
+/* iPad端 - 1024px */
+@media (max-width: 1024px) {
+  .table {
+    display: none;
+  }
+
+  .cards-mobile {
+    display: flex;
+  }
+
+  .raw-table {
+    display: none;
+  }
+
+  .raw-cards-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 1025px) {
   .table {
     display: flex;
   }
@@ -1209,63 +1228,189 @@ const rawIngredients = [
   }
 }
 
-@media (max-width: 1023px) {
-  .table {
-    display: none;
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  /* 板块间距 */
+  .seo-highlight-section,
+  .crafting-mechanic-section,
+  .raw-ingredients-section,
+  .secrets-section,
+  .faq-section {
+    padding: 0.8rem 0;
+    margin: 0.8rem 0;
   }
 
-  .cards-mobile {
-    display: flex;
+  /* card padding */
+  .card {
+    padding: 0.8rem;
   }
-
-  .raw-table {
-    display: none;
-  }
-
-  .raw-cards-mobile {
-    display: flex;
-  }
-
 
   .wiki-content,
   .mechanic-card,
   .raw-card,
   .faq-card,
   .secrets-card {
-    padding: 20px;
+    padding: 0.8rem;
+    margin-top: 0.8rem;
   }
 
   .seo-highlight {
-    padding: 20px;
+    padding: 0.8rem;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.7rem;
   }
 
-  .seo-icon {
-    font-size: 28px;
+  .recipe-card,
+  .raw-card-item {
+    padding: 0.8rem;
+  }
+
+  .faq-item {
+    padding: 0.8rem;
+  }
+
+  /* h1 - 使用class选择器 */
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h2 - 使用class选择器 */
+  .section-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* h3 - 使用class选择器 */
+  .seo-title,
+  .step-title,
+  .ladder-title,
+  .faq-question {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  /* p - 使用class选择器 */
+  .intro {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .seo-text {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .mechanic-content p,
+  .raw-content p,
+  .secrets-content p,
+  .faq-answer {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .step-content p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .mechanic-warning {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .mechanic-formula {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.8rem;
+    margin-top: 0.7rem;
+  }
+
+  .step-note {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .ladder-list li {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .ladder-tip {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-top: 0.7rem;
+  }
+
+  /* 布局调整 */
+  .section-head {
+    margin-bottom: 0.7rem;
   }
 
   .steps-list {
-    gap: 16px;
+    gap: 0.8rem;
+    margin-bottom: 0.7rem;
   }
 
   .step-item {
     flex-direction: column;
-    gap: 12px;
+    gap: 0.7rem;
+    padding: 0.8rem;
   }
 
   .step-number {
     align-self: flex-start;
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .seo-icon {
+    font-size: 1.5rem;
   }
 
   .ladder-strategy {
     flex-direction: column;
-    gap: 16px;
+    gap: 0.7rem;
   }
 
   .ladder-icon {
-    font-size: 40px;
+    font-size: 2rem;
     align-self: flex-start;
+  }
+
+  .recipe-formula-card,
+  .recipe-effect,
+  .recipe-meta {
+    margin-top: 0.7rem;
+  }
+
+  .raw-card-row {
+    margin-bottom: 0.5rem;
+  }
+
+  .raw-label,
+  .raw-value {
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
 }
 </style>
