@@ -13,7 +13,7 @@
               <div class="hero-feature-item">
                 <div class="feature-icon">🎬</div>
                 <div class="feature-content">
-                  <h3>Spell Generator</h3>
+                  <p class="feature-title">Spell Generator</p>
                   <p>Practice <strong>YAPYAP game</strong> voice commands with video tutorials. Master pronunciation for every spell before you play.</p>
                   <a href="/spell-generator" class="feature-link">Try Spell Generator →</a>
                 </div>
@@ -21,7 +21,7 @@
               <div class="hero-feature-item">
                 <div class="feature-icon">📚</div>
                 <div class="feature-content">
-                  <h3>Complete Wiki</h3>
+                  <p class="feature-title">Complete Wiki</p>
                   <p>Browse <a href="/wiki/wands">wands</a>, <a href="/wiki/bestiary">monsters</a>, <a href="/wiki/potions">potions</a>, and items. Find stats, crafting recipes, and survival strategies for the YAPYAP game.</p>
                   <a href="/wiki" class="feature-link">Explore Wiki →</a>
                 </div>
@@ -611,14 +611,14 @@ onUnmounted(() => {
   filter: drop-shadow(0 4px 12px rgba(139, 92, 246, 0.3));
 }
 
-.feature-content h3 {
+.feature-content .feature-title {
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 8px 0;
   color: var(--text);
 }
 
-.feature-content p {
+.feature-content .feature-description {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.6;
@@ -1512,11 +1512,11 @@ onUnmounted(() => {
     font-size: 24px;
   }
 
-  .feature-content h3 {
+  .feature-content .feature-title {
     font-size: 16px;
   }
 
-  .feature-content p {
+  .feature-content .feature-description {
     font-size: 13px;
   }
 
