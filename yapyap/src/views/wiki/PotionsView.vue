@@ -1,7 +1,7 @@
 <template>
   <div class="page" id="top">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <nav class="breadcrumbs">
           <a href="/">Home</a>
           <span class="separator">></span>
@@ -14,7 +14,9 @@
         <p class="intro">
           Complete guide to all crafting recipes in YAPYAP. Master the three-step brewing process using the Cauldron and learn which ingredients to eat raw vs. brew into potions.
         </p>
-      </section>
+      </div>
+    </section>
+    <main class="container">
 
       <!-- SEO Highlight -->
       <section class="seo-highlight-section">

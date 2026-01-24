@@ -1,21 +1,22 @@
 <template>
   <div class="page">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <p class="pill">Voice Commands · Database · Pronunciation Guide</p>
         <h1 class="title">YAPYAP Spells List &amp; Pronunciation Guide</h1>
         <p class="intro">
-              The complete YAPYAP spells list with voice commands, pronunciation, and quick “listen” demos—plus common
-          misheard phrases to improve voice recognition.
+          The complete YAPYAP spells list with voice commands, pronunciation, and quick “listen”
+          demos—plus common misheard phrases to improve voice recognition.
         </p>
-      </section>
-
+      </div>
+    </section>
+    <main class="container">
       <!-- Spells -->
       <section id="spells-list" class="section">
         <div class="section-head">
           <h2 class="section-title">The Complete YAPYAP Spells List</h2>
           <p class="section-subtitle">
-            Tap "Play" to hear a pronunciation demo (browser text-to-speech placeholder). Replace with MP3 later.
+            This comprehensive <strong>YAPYAP Spells List</strong> includes all voice commands, effects, and tips. Click <a href="/spell-generator">Spell Generator</a> to hear pronunciation demos and practice voice commands with audio guides. For wand details, check our <a href="/wiki/wands">Wands Wiki</a>, or explore <a href="/guides">YAPYAP guides</a> for advanced strategies.
           </p>
         </div>
 
@@ -29,11 +30,11 @@
           <!-- Desktop table -->
           <div class="table card" :aria-label="`${wand.name} spells list`">
             <div class="row head">
-              <div class="c icon">Icon</div>
-              <div class="c spell">Spell</div>
-              <div class="c effect">Effect</div>
-              <div class="c tips">Tips</div>
-              <div class="c action">Action</div>
+              <div class="icon">Icon</div>
+              <div class="spell">Spell</div>
+              <div class="effect">Effect</div>
+              <div class="tips">Tips</div>
+              <div class="action">Action</div>
             </div>
 
             <div class="row" v-for="s in wand.spells" :key="s.spell">
@@ -50,7 +51,12 @@
                 <div class="small muted" v-if="s.misheardTip">{{ s.misheardTip }}</div>
               </div>
               <div class="c action">
-                <a :href="`/spell-generator?spell=${encodeURIComponent(s.spell.toLowerCase().replace(/\s+/g, '-'))}`" class="btn btn-ghost btn-sm">
+                <a
+                  :href="`/spell-generator?spell=${encodeURIComponent(
+                    s.spell.toLowerCase().replace(/\s+/g, '-')
+                  )}`"
+                  class="btn btn-ghost btn-sm"
+                >
                   Spell Generator
                 </a>
               </div>
@@ -59,7 +65,11 @@
 
           <!-- Mobile cards -->
           <div class="mobile-list">
-            <article class="card spell-card" v-for="s in wand.spells" :key="`m-${wand.id}-${s.spell}`">
+            <article
+              class="card spell-card"
+              v-for="s in wand.spells"
+              :key="`m-${wand.id}-${s.spell}`"
+            >
               <div class="spell-top">
                 <div class="spell-icon">{{ s.icon }}</div>
                 <div class="spell-main">
@@ -84,7 +94,13 @@
                   <span class="small muted">{{ s.misheardTip }}</span>
                 </div>
                 <div class="spell-actions">
-                  <a :href="`/spell-generator?spell=${encodeURIComponent(s.spell.toLowerCase().replace(/\s+/g, '-'))}`" class="btn btn-ghost btn-sm">View</a>
+                  <a
+                    :href="`/spell-generator?spell=${encodeURIComponent(
+                      s.spell.toLowerCase().replace(/\s+/g, '-')
+                    )}`"
+                    class="btn btn-ghost btn-sm"
+                    >View</a
+                  >
                 </div>
               </div>
             </article>
@@ -97,7 +113,7 @@
         <div class="mic-head">
           <div>
             <h2 class="section-title">Mic Tester</h2>
-            <p class="section-subtitle">Can't cast spells? Test your mic volume here!</p>
+            <p class="section-subtitle">Can't cast spells from the <strong>YAPYAP Spells List</strong>? Test your mic volume here! If spells from the <strong>YAPYAP Spells List</strong> keep failing, use this tool to diagnose microphone issues.</p>
           </div>
           <div class="mic-actions">
             <button class="btn btn-primary" @click="toggleMic" :disabled="isMicBusy">
@@ -117,23 +133,76 @@
           </div>
           <p class="error" v-if="micError">{{ micError }}</p>
           <p class="hint">
-            Tip: if the bar barely moves, check Windows privacy settings, the correct input device, and in-game mic gain.
+            Tip: if the bar barely moves, check Windows privacy settings, the correct input device,
+            and in-game mic gain.
           </p>
         </div>
       </section>
 
-      <!-- Misheard dictionary -->
-      <section class="section misheard card">
-        <h2 class="section-title">Misheard Spells Dictionary</h2>
-        <p class="section-subtitle">
-          If a spell doesn't trigger, try speaking louder and cleaner. Avoid common "nearby" phrases below.
-        </p>
-        <ul class="misheard-list">
-          <li v-for="m in misheard" :key="m.spell">
-            <strong>{{ m.spell }}</strong> → often misheard as <span class="mono">{{ m.bad }}</span>.
-            <span class="muted">Tip: {{ m.tip }}</span>
-          </li>
-        </ul>
+      <!-- Hidden Interactions & Physics -->
+      <section id="hidden-interactions" class="section card">
+        <div class="section-head">
+          <h2 class="section-title">Hidden Interactions & Physics</h2>
+          <p class="section-subtitle">
+            Many spells from the <strong>YAPYAP Spells List</strong> affect objects, not just enemies. Discover these hidden mechanics to gain an edge. These interactions aren't obvious when browsing the <strong>YAPYAP Spells List</strong>, but they can save you time in <a href="/puzzle/ball-puzzle">puzzle rooms</a> and <a href="/puzzle/door-puzzle">treasure vaults</a>.
+          </p>
+        </div>
+
+        <div class="interactions-list">
+          <div class="interaction-item">
+            <h3 class="interaction-title">Breakable Objects</h3>
+            <p class="interaction-text">
+              <strong>Aero-Bis</strong> from the <strong>YAPYAP Spells List</strong> can shatter glass windows and weak wooden fences, saving you time finding keys. This hidden interaction makes the <strong>YAPYAP Spells List</strong> more versatile than it appears.
+            </p>
+          </div>
+
+          <div class="interaction-item">
+            <h3 class="interaction-title">Loot Movement</h3>
+            <p class="interaction-text">
+              Use <strong>Tempest</strong> from the <strong>YAPYAP Spells List</strong> to pull loot items from unreachable ledges down to the floor. This technique isn't mentioned in the standard <strong>YAPYAP Spells List</strong> descriptions but is crucial for efficient farming in <a href="/puzzle/ball-puzzle">challenge rooms</a>.
+            </p>
+          </div>
+
+          <div class="interaction-item">
+            <h3 class="interaction-title">Heavy Items</h3>
+            <p class="interaction-text">
+              Spells from the <strong>YAPYAP Spells List</strong> have stronger knockback on lighter items. Heavy statues won't move much, even with powerful spells from the <strong>YAPYAP Spells List</strong>. Understanding physics interactions helps you use the <strong>YAPYAP Spells List</strong> more effectively.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section card">
+        <div class="section-head">
+          <h2 class="section-title">Common Casting Issues</h2>
+          <p class="section-subtitle">
+            Troubleshooting guide for voice casting problems with the <strong>YAPYAP Spells List</strong>. If spells from the <strong>YAPYAP Spells List</strong> aren't working, check these common issues. For more help, visit our <a href="/guides">YAPYAP guides</a> or check the <a href="/wiki">Wiki</a>.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3 class="faq-question">Q1: Why do my spells keep failing?</h3>
+            <p class="faq-answer">
+              If spells from the <strong>YAPYAP Spells List</strong> keep failing, check your background noise. The game hates mechanical keyboard clicks. Make sure you're pronouncing spells from the <strong>YAPYAP Spells List</strong> clearly and using the <a href="/spell-generator">Spell Generator</a> to practice.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Q2: Do accents matter?</h3>
+            <p class="faq-answer">
+              Slightly. When using the <strong>YAPYAP Spells List</strong>, try to mimic the "American English" pronunciation in our <a href="/spell-generator">Spell Generator</a> if you are struggling. The <strong>YAPYAP Spells List</strong> works best with clear pronunciation.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Q3: Can I play without a microphone?</h3>
+            <p class="faq-answer">
+              Yes, you can use the <strong>YAPYAP Spells List</strong> without a microphone by enabling "Right Click Casting" in settings, but it's less fun! The full experience of the <strong>YAPYAP Spells List</strong> requires voice commands. Check our <a href="/guides">YAPYAP guides</a> for microphone setup tips.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   </div>
@@ -161,17 +230,23 @@ function cleanupMic() {
   level.value = 0
 
   if (source) {
-    try { source.disconnect() } catch {}
+    try {
+      source.disconnect()
+    } catch {}
   }
   source = null
 
   if (analyser) {
-    try { analyser.disconnect() } catch {}
+    try {
+      analyser.disconnect()
+    } catch {}
   }
   analyser = null
 
   if (audioCtx) {
-    try { audioCtx.close() } catch {}
+    try {
+      audioCtx.close()
+    } catch {}
   }
   audioCtx = null
 
@@ -231,24 +306,23 @@ onUnmounted(() => {
 })
 
 // --- Wands data (grouped by wand) ---
-const wands = computed(() => wandsData.map(wand => ({
-  id: wand.id,
-  name: wand.name,
-  subtitle: wand.subtitle,
-  spells: wand.spells.map(spell => ({
-    icon: spell.icon,
-    spell: spell.spell,
-    effect: spell.effect,
-    tips: spell.tips,
-  })),
-})))
+const wands = computed(() =>
+  wandsData.map((wand) => ({
+    id: wand.id,
+    name: wand.name,
+    subtitle: wand.subtitle,
+    spells: wand.spells.map((spell) => ({
+      icon: spell.icon,
+      spell: spell.spell,
+      effect: spell.effect,
+      tips: spell.tips,
+    })),
+  }))
+)
 
-const misheard = computed(() => [])
 </script>
 
 <style scoped>
-
-
 .section {
   margin-top: 22px;
 }
@@ -266,6 +340,18 @@ const misheard = computed(() => [])
 .section-subtitle {
   margin: 0;
   color: rgba(237, 240, 255, 0.72);
+  line-height: 1.6;
+}
+
+.section-subtitle a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.section-subtitle a:hover {
+  text-decoration: underline;
 }
 
 .card {
@@ -339,7 +425,8 @@ const misheard = computed(() => [])
 }
 
 .mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
 }
 
 .small {
@@ -515,16 +602,6 @@ const misheard = computed(() => [])
   color: rgba(237, 240, 255, 0.82);
 }
 
-/* Misheard */
-.misheard-list {
-  margin: 0;
-  padding: 0 0 0 18px;
-  color: rgba(237, 240, 255, 0.82);
-}
-
-.misheard-list li {
-  margin: 10px 0;
-}
 
 @media (max-width: 1100px) {
   .row {
@@ -545,6 +622,112 @@ const misheard = computed(() => [])
   .mic-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* Hidden Interactions & Physics */
+.interactions-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.interaction-item {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.interaction-item:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.interaction-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: rgba(237, 240, 255, 0.95);
+}
+
+.interaction-text {
+  margin: 8px 0 0 0;
+  line-height: 1.6;
+  color: rgba(237, 240, 255, 0.85);
+}
+
+.interaction-text strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.interaction-text.muted {
+  font-size: 13px;
+  color: rgba(237, 240, 255, 0.6);
+  margin-top: 4px;
+}
+
+/* FAQ */
+.faq-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.faq-item {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.faq-question {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: rgba(237, 240, 255, 0.95);
+}
+
+.faq-answer {
+  margin: 8px 0 0 0;
+  line-height: 1.6;
+  color: rgba(237, 240, 255, 0.85);
+}
+
+.faq-answer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.faq-answer a:hover {
+  text-decoration: underline;
+}
+
+.faq-answer.muted {
+  font-size: 13px;
+  color: rgba(237, 240, 255, 0.6);
+  margin-top: 4px;
+}
+
+@media (max-width: 920px) {
+  .interaction-item,
+  .faq-item {
+    padding: 14px;
+  }
+
+  .interaction-title,
+  .faq-question {
+    font-size: 16px;
   }
 }
 </style>

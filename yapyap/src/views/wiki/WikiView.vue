@@ -1,14 +1,15 @@
 <template>
   <div class="page" id="top">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <p class="pill">Game Database · Items · Enemies · Crafting</p>
         <h1 class="title">YAPYAP Game Database & Wiki</h1>
         <p class="intro">
           The complete index of Items, Enemies, and Magic.
         </p>
-      </section>
-
+      </div>
+    </section>
+    <main class="container">
       <div class="work-in-progress card">
         <span class="wip-icon">⚠️</span>
         <div>

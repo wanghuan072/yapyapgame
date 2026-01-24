@@ -1,7 +1,7 @@
 <template>
   <div class="page" id="top">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <nav class="breadcrumbs">
           <a href="/">Home</a>
           <span class="separator">></span>
@@ -14,7 +14,9 @@
         <p class="intro">
           Complete guide to all wands in YAPYAP. Each wand can cast multiple spells. Compare wands and their spell capabilities to find the best wand for your playstyle.
         </p>
-      </section>
+      </div>
+    </section>
+    <main class="container">
 
       <!-- Introduction Section -->
       <section class="introduction-section">

@@ -1,7 +1,7 @@
 <template>
   <div class="page" id="top">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <p class="pill">Puzzle Room · Voice Control · Pitch Detection</p>
         <h1 class="title">YAPYAP Balance Puzzle: Pitch Wheel Guide</h1>
         <p class="intro">
@@ -12,7 +12,9 @@
           <span class="tag voice">Voice Required</span>
           <span class="tag tricky">Tricky Detection</span>
         </div>
-      </section>
+      </div>
+    </section>
+    <main class="container">
 
       <!-- Quick Overview -->
       <section class="overview-section">

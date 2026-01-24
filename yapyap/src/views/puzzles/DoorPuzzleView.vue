@@ -1,7 +1,7 @@
 <template>
   <div class="page" id="top">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <p class="pill">Treasure Room · High Risk High Reward · Voice Recognition</p>
         <h1 class="title">YAPYAP Door Puzzle: Face Door & Treasure Room Guide</h1>
         <p class="intro">
@@ -12,7 +12,9 @@
           <span class="tag voice">Voice Required</span>
           <span class="tag reward">High Reward</span>
         </div>
-      </section>
+      </div>
+    </section>
+    <main class="container">
 
       <!-- Quick Overview -->
       <section class="overview-section">

@@ -1,14 +1,15 @@
 <template>
   <div class="page">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <p class="pill">Spell Forge · Animations · Audio Pronunciations</p>
         <h1 class="title">YAPYAP Spell Generator</h1>
         <p class="intro">
           Choose your wand, select an incantation, and forge your spell. Watch animations and learn pronunciations.
         </p>
-      </section>
-
+      </div>
+    </section>
+    <main class="container">
       <div class="spell-forge-wrapper">
         <div class="spell-forge-layout">
           <!-- Left Column: Wand & Spell Selection -->

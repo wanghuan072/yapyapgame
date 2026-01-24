@@ -1,40 +1,38 @@
 <template>
   <div class="guide-detail-view">
     <!-- Guide Detail Header -->
-    <section class="guide-detail-header" v-if="guide">
+    <section class="page-hero" v-if="guide">
       <div class="container">
-        <div class="page-hero">
-          <nav class="breadcrumbs">
-            <a href="/">Home</a>
-            <span class="separator">></span>
-            <a href="/guide/overview">Guides</a>
-            <span class="separator">></span>
-            <span>{{ guide.title }}</span>
-          </nav>
+        <nav class="breadcrumbs">
+          <a href="/">Home</a>
+          <span class="separator">></span>
+          <a href="/guides">Guides</a>
+          <span class="separator">></span>
+          <span>{{ guide.title }}</span>
+        </nav>
 
-          <div class="guide-detail-content">
-            <div class="guide-detail-text">
-              <h1 class="guide-title">{{ guide.title }}</h1>
+        <div class="guide-detail-content">
+          <div class="guide-detail-text">
+            <h1 class="guide-title">{{ guide.title }}</h1>
 
-              <div class="guide-detail-meta">
-                <div class="meta-item">
-                  <svg
-                    class="meta-icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12,6 12,12 16,14" />
-                  </svg>
-                  <span class="meta-text">{{ formatDate(guide.publishDate) }}</span>
-                </div>
+            <div class="guide-detail-meta">
+              <div class="meta-item">
+                <svg
+                  class="meta-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
+                </svg>
+                <span class="meta-text">{{ formatDate(guide.publishDate) }}</span>
               </div>
+            </div>
 
-              <div class="guide-tags" v-if="guide.tags && guide.tags.length > 0">
-                <span v-for="tag in guide.tags" :key="tag" class="tag">{{ tag }}</span>
-              </div>
+            <div class="guide-tags" v-if="guide.tags && guide.tags.length > 0">
+              <span v-for="tag in guide.tags" :key="tag" class="tag">{{ tag }}</span>
             </div>
           </div>
         </div>
@@ -213,9 +211,6 @@ const formatDate = (dateString) => {
 }
 
 /* Guide Detail Header */
-.guide-detail-header {
-  padding: 80px 0 40px;
-}
 
 .guide-detail-content {
   margin-top: 20px;

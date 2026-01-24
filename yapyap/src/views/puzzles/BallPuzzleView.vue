@@ -1,7 +1,7 @@
 <template>
   <div class="page" id="top">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <p class="pill">Challenge Room · Solo Farm · Easy Loot</p>
         <h1 class="title">YAPYAP Ball Puzzle: Orb Drop Challenge Guide</h1>
         <p class="intro">
@@ -12,7 +12,9 @@
           <span class="tag solo">Solo Friendly</span>
           <span class="tag loot">High Loot</span>
         </div>
-      </section>
+      </div>
+    </section>
+    <main class="container">
 
       <!-- Quick Overview -->
       <section class="overview-section">

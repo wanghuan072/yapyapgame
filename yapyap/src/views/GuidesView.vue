@@ -1,14 +1,15 @@
 <template>
   <div class="page" id="top">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <p class="pill">Guides · Walkthroughs · Tips & Strategies</p>
         <h1 class="title">YAPYAP Guides</h1>
         <p class="intro">
           Comprehensive guides, walkthroughs, and strategies to help you master YAPYAP. From beginner tips to advanced techniques.
         </p>
-      </section>
-
+      </div>
+    </section>
+    <main class="container">
       <section class="guides-section">
         <!-- Loading State -->
         <div v-if="loading" class="loading-state card">

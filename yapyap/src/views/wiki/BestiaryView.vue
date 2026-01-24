@@ -1,7 +1,7 @@
 <template>
   <div class="page" id="top">
-    <main class="container">
-      <section class="page-hero">
+    <section class="page-hero">
+      <div class="container">
         <nav class="breadcrumbs">
           <a href="/">Home</a>
           <span class="separator">></span>
@@ -14,7 +14,9 @@
         <p class="intro">
           Complete guide to all enemies in YAPYAP. Learn their behaviors, weaknesses, sound sensitivity, and how to counter them.
         </p>
-      </section>
+      </div>
+    </section>
+    <main class="container">
 
       <!-- Enemy List -->
       <section class="wiki-content card">

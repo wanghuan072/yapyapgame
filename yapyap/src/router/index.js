@@ -39,8 +39,8 @@ const router = createRouter({
       meta: {
         seo: {
           title: 'YAPYAP Spells List: Voice Commands & Pronunciation Guide',
-          description: 'Complete list of YAPYAP spells like Up-Dog and Aero-Bis. Listen to audio, learn phonetics, and stop fizzling your magic with our casting guide.',
-          keywords: 'yapyap spells list, yapyap pronunciation, yapyap voice commands, yapyap magic words, how to cast spells in yapyap',
+          description: 'Browse the full YAPYAP Spells List for all Wands. Compare spell effects, cooldowns, and phonetics for commands like Up-Dog. Includes a free Mic Tester.',
+          keywords: 'yapyap spells list, yapyap wands, yapyap spell effects, yapyap pronunciation, yapyap voice commands',
         },
       },
     },
