@@ -18,7 +18,7 @@ const baseRoutes = [
   { path: '/puzzles/ball-puzzle', name: 'ball-puzzle', priority: 0.8, changefreq: 'monthly' },
   { path: '/puzzles/balance-puzzle', name: 'balance-puzzle', priority: 0.8, changefreq: 'monthly' },
   { path: '/puzzles/door-puzzle', name: 'door-puzzle', priority: 0.8, changefreq: 'monthly' },
-  { path: '/guide', name: 'guides', priority: 0.9, changefreq: 'weekly' },
+  { path: '/guides', name: 'guides', priority: 0.9, changefreq: 'weekly' },
   { path: '/wiki', name: 'wiki', priority: 0.8, changefreq: 'weekly' },
   { path: '/wiki/wands', name: 'wiki-wands', priority: 0.7, changefreq: 'monthly' },
   { path: '/wiki/bestiary', name: 'wiki-bestiary', priority: 0.7, changefreq: 'monthly' },
