@@ -123,6 +123,26 @@
             </div>
           </div>
 
+          <!-- Pronunciation Guide for specific spells -->
+          <div class="pronunciation-guide" v-if="manifestedSpell && (manifestedSpell.spell === 'Dub-ill-oo' || manifestedSpell.spell === 'Mim-ill-oo')">
+            <div class="pronunciation-item" v-if="manifestedSpell.spell === 'Dub-ill-oo'">
+              <div class="pronunciation-header">
+                <span class="pronunciation-spell">Dub-ill-oo</span>
+                <span class="pronunciation-phonetic">/ DUB - ill - oo /</span>
+              </div>
+              <p class="pronunciation-tip">💡 Tip: Just say the letter "W" (Double-U).</p>
+              <p class="pronunciation-technique">Casting Technique: Don't rush the syllables. Try separating them: "Dub... ill... oo".</p>
+            </div>
+            <div class="pronunciation-item" v-if="manifestedSpell.spell === 'Mim-ill-oo'">
+              <div class="pronunciation-header">
+                <span class="pronunciation-spell">Mim-ill-oo</span>
+                <span class="pronunciation-phonetic">/ MIM - ill - oo /</span>
+              </div>
+              <p class="pronunciation-tip">💡 Tip: Rhymes with "Dub-ill-oo". Think "Mimic" + "Lou".</p>
+              <p class="pronunciation-technique">Casting Technique: Emphasize the first syllable MIM.</p>
+            </div>
+          </div>
+
           <!-- Spell Info -->
           <div class="spell-info" v-if="manifestedSpell">
             <div class="spell-header-info">
@@ -789,6 +809,61 @@ onMounted(() => {
   line-height: 1.7;
 }
 
+.pronunciation-guide {
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.08) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 16px;
+  border-left: 4px solid var(--accent);
+}
+
+.pronunciation-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pronunciation-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pronunciation-spell {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(237, 240, 255, 0.95);
+  letter-spacing: 0.05em;
+}
+
+.pronunciation-phonetic {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(196, 181, 253, 0.9);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+.pronunciation-tip {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(237, 240, 255, 0.85);
+  line-height: 1.6;
+  padding: 12px;
+  background: rgba(139, 92, 246, 0.08);
+  border-radius: 8px;
+  border-left: 3px solid rgba(139, 92, 246, 0.4);
+}
+
+.pronunciation-technique {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(237, 240, 255, 0.75);
+  line-height: 1.6;
+  font-style: italic;
+}
+
 .audio-controls {
   display: none;
 }
@@ -1073,6 +1148,45 @@ code {
   .vocal-timbre-dropdown {
     padding: 0.7rem;
     font-size: 0.8rem;
+  }
+
+  .pronunciation-guide {
+    margin-top: 0.8rem;
+    padding: 0.8rem;
+    gap: 0.7rem;
+  }
+
+  .pronunciation-item {
+    gap: 0.7rem;
+  }
+
+  .pronunciation-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .pronunciation-spell {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .pronunciation-phonetic {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .pronunciation-tip {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .pronunciation-technique {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
   }
 }
 

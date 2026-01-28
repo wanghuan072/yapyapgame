@@ -342,7 +342,11 @@
             </div>
             <div class="card faq-item">
               <h3>How to Start in YAPYAP?</h3>
-              <p>To start in the <strong>YAPYAP game</strong>, enable "Hold Right Mouse Button for Spell" in Accessibility if your mic fails. Learn controls, inventory, and spell casting in our <a href="/guides">Getting Started</a> and <a href="/wiki">Wiki</a> guides.</p>
+              <p>If you're searching <span class="mono">how to start in yapyap</span>, begin by enabling "Hold Right Mouse Button for Spell" in Accessibility if your mic fails. Learn controls, inventory, and spell casting in our <a href="/guides">Getting Started</a> and <a href="/wiki">Wiki</a> guides.</p>
+            </div>
+            <div class="card faq-item">
+              <h3>YAPYAP How to Revive Players?</h3>
+              <p>If you're looking for <span class="mono">yapyap how to revive players</span>, prioritize team safety first: clear nearby threats, regroup, then attempt the revive when voice-casting and movement are stable. For co-op survival and recovery tips, read our <a href="/guides">Guides</a> and learn reliable spell control on the <a href="/spells">Spells</a> page.</p>
             </div>
             <div class="card faq-item">
               <h3>When Does YAPYAP Release?</h3>
