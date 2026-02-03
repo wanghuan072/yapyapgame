@@ -382,7 +382,7 @@ const homeGuides = computed(() => {
 })
 
 const heroVideoLoaded = ref(false)
-const releaseDate = new Date('2026-02-03T00:00:00')
+const releaseDate = new Date('2026-02-04T00:00:00')
 const daysLeft = ref(0)
 const hoursLeft = ref(0)
 const minutesLeft = ref(0)
