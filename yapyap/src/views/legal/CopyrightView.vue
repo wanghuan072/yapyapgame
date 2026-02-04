@@ -2,8 +2,8 @@
   <div class="legal-page">
     <section class="legal-header">
       <div class="container">
-        <h1 class="page-title">Copyright</h1>
-        <p class="page-date">Last Updated: January 23, 2026</p>
+        <h1 class="page-title">{{ t('Legal.Copyright.title') }}</h1>
+        <p class="page-date">{{ t('Legal.Copyright.lastUpdated') }}</p>
       </div>
     </section>
 
@@ -11,46 +11,46 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="legal-text">
-            <h2>Copyright Notice</h2>
+            <h2>{{ t('Legal.Copyright.notice.title') }}</h2>
             <p>
-              © 2026 YAPYAP Game Guide Hub. All rights reserved. This website and its content are protected by copyright laws.
+              {{ t('Legal.Copyright.notice.text') }}
             </p>
 
-            <h2>Ownership</h2>
+            <h2>{{ t('Legal.Copyright.ownership.title') }}</h2>
             <p>
-              All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of YAPYAP Game Guide Hub or its content suppliers and is protected by international copyright laws.
+              {{ t('Legal.Copyright.ownership.text') }}
             </p>
 
-            <h2>Trademark Notice</h2>
+            <h2>{{ t('Legal.Copyright.trademark.title') }}</h2>
             <p>
-              YAPYAP is a trademark of its respective owners. This website is not affiliated with or endorsed by the original game developers or publishers. All references to YAPYAP and related trademarks are used for informational purposes only.
+              {{ t('Legal.Copyright.trademark.text') }}
             </p>
 
-            <h2>Fair Use</h2>
+            <h2>{{ t('Legal.Copyright.fairUse.title') }}</h2>
             <p>
-              This website contains information about the YAPYAP game for educational and informational purposes. We believe our use of game-related content falls under fair use as we provide commentary, analysis, and community resources.
+              {{ t('Legal.Copyright.fairUse.text') }}
             </p>
 
-            <h2>User-Generated Content</h2>
+            <h2>{{ t('Legal.Copyright.userContent.title') }}</h2>
             <p>
-              Users who submit content to our website retain ownership of their original content but grant YAPYAP Game Guide Hub a license to use, display, and distribute that content on our website.
+              {{ t('Legal.Copyright.userContent.text') }}
             </p>
 
-            <h2>DMCA Policy</h2>
+            <h2>{{ t('Legal.Copyright.dmca.title') }}</h2>
             <p>
-              If you believe that any content on our website infringes your copyright, please contact us at <a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a> with the following information:
+              {{ t('Legal.Copyright.dmca.text') }}<a href="mailto:wyong@yapyapgame.com">{{ t('Legal.Copyright.dmca.email') }}</a>{{ t('Legal.Copyright.dmca.text_2') }}
             </p>
             <ul>
-              <li>Your contact information</li>
-              <li>A description of the copyrighted work you claim has been infringed</li>
-              <li>The location of the allegedly infringing material on our website</li>
-              <li>A statement that you have a good faith belief that the use is not authorized</li>
-              <li>A statement that the information in your notice is accurate</li>
+              <li>{{ t('Legal.Copyright.dmca.list.contact') }}</li>
+              <li>{{ t('Legal.Copyright.dmca.list.desc') }}</li>
+              <li>{{ t('Legal.Copyright.dmca.list.location') }}</li>
+              <li>{{ t('Legal.Copyright.dmca.list.faith') }}</li>
+              <li>{{ t('Legal.Copyright.dmca.list.accurate') }}</li>
             </ul>
 
-            <h2>Contact Us</h2>
+            <h2>{{ t('Legal.Copyright.contact.title') }}</h2>
             <p>
-              For copyright-related inquiries, please contact us at <a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a>.
+              {{ t('Legal.Copyright.contact.text') }}<a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a>.
             </p>
           </div>
         </div>
@@ -61,6 +61,9 @@
 
 <script setup>
 // SEO is set in router/index.js via route.meta.seo
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

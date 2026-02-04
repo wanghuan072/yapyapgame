@@ -2,11 +2,10 @@
   <div class="page">
     <section class="page-hero">
       <div class="container">
-        <p class="pill">Voice Commands · Database · Pronunciation Guide</p>
-        <h1 class="title">YAPYAP Spells List &amp; Pronunciation Guide</h1>
+        <p class="pill">{{ $t('SpellsPage.hero.pill') }}</p>
+        <h1 class="title">{{ $t('SpellsPage.hero.title') }}</h1>
         <p class="intro">
-          The complete YAPYAP spells list with voice commands, pronunciation, and quick “listen”
-          demos—plus common misheard phrases to improve voice recognition.
+          {{ $t('SpellsPage.hero.intro') }}
         </p>
       </div>
     </section>
@@ -14,9 +13,17 @@
       <!-- Spells -->
       <section id="spells-list" class="section">
         <div class="section-head">
-          <h2 class="section-title">The Complete YAPYAP Spells List</h2>
+          <h2 class="section-title">{{ $t('SpellsPage.list.title') }}</h2>
           <p class="section-subtitle">
-            This comprehensive <strong>YAPYAP Spells List</strong> includes all voice commands, effects, and tips. Click <a href="/spell-generator">Spell Generator</a> to hear pronunciation demos and practice voice commands with audio guides. For wand details, check our <a href="/wiki/wands">Wands Wiki</a>, or explore <a href="/guides">YAPYAP guides</a> for advanced strategies.
+            {{ $t('SpellsPage.list.subtitle_1') }}
+            <strong>{{ $t('SpellsPage.list.subtitle_bold') }}</strong>
+            {{ $t('SpellsPage.list.subtitle_2') }}
+            <a href="/spell-generator">{{ $t('SpellsPage.list.subtitle_link1') }}</a>
+            {{ $t('SpellsPage.list.subtitle_3') }}
+            <a href="/wiki/wands">{{ $t('SpellsPage.list.subtitle_link2') }}</a>
+            {{ $t('SpellsPage.list.subtitle_4') }}
+            <a href="/guides">{{ $t('SpellsPage.list.subtitle_link3') }}</a>
+            {{ $t('SpellsPage.list.subtitle_5') }}
           </p>
         </div>
 
@@ -30,11 +37,11 @@
           <!-- Desktop table -->
           <div class="table card" :aria-label="`${wand.name} spells list`">
             <div class="row head">
-              <div class="icon">Icon</div>
-              <div class="spell">Spell</div>
-              <div class="effect">Effect</div>
-              <div class="tips">Tips</div>
-              <div class="action">Action</div>
+              <div class="icon">{{ $t('SpellsPage.list.table.icon') }}</div>
+              <div class="spell">{{ $t('SpellsPage.list.table.spell') }}</div>
+              <div class="effect">{{ $t('SpellsPage.list.table.effect') }}</div>
+              <div class="tips">{{ $t('SpellsPage.list.table.tips') }}</div>
+              <div class="action">{{ $t('SpellsPage.list.table.action') }}</div>
             </div>
 
             <div class="row" v-for="s in wand.spells" :key="s.spell">
@@ -42,7 +49,7 @@
               <div class="c spell">
                 <strong>{{ s.spell }}</strong>
                 <div class="small" v-if="s.misheard">
-                  Misheard as: <span class="mono">{{ s.misheard }}</span>
+                  {{ $t('SpellsPage.list.table.misheard') }} <span class="mono">{{ s.misheard }}</span>
                 </div>
               </div>
               <div class="c effect">{{ s.effect }}</div>
@@ -57,7 +64,7 @@
                   )}`"
                   class="btn btn-ghost btn-sm"
                 >
-                  Spell Generator
+                  {{ $t('SpellsPage.list.table.generator') }}
                 </a>
               </div>
             </div>
@@ -78,19 +85,19 @@
               </div>
               <div class="spell-body">
                 <div class="spell-row">
-                  <span class="label">Effect:</span>
+                  <span class="label">{{ $t('SpellsPage.list.table.mobile.effect') }}</span>
                   <span>{{ s.effect }}</span>
                 </div>
                 <div class="spell-row">
-                  <span class="label">Tips:</span>
+                  <span class="label">{{ $t('SpellsPage.list.table.mobile.tips') }}</span>
                   <span>{{ s.tips }}</span>
                 </div>
                 <div class="spell-row" v-if="s.misheard">
-                  <span class="label warn">Misheard:</span>
+                  <span class="label warn">{{ $t('SpellsPage.list.table.mobile.misheard') }}</span>
                   <span class="mono">{{ s.misheard }}</span>
                 </div>
                 <div class="spell-row" v-if="s.misheardTip">
-                  <span class="label warn">Note:</span>
+                  <span class="label warn">{{ $t('SpellsPage.list.table.mobile.note') }}</span>
                   <span class="small muted">{{ s.misheardTip }}</span>
                 </div>
                 <div class="spell-actions">
@@ -99,7 +106,7 @@
                       s.spell.toLowerCase().replace(/\s+/g, '-')
                     )}`"
                     class="btn btn-ghost btn-sm"
-                    >View</a
+                    >{{ $t('SpellsPage.list.table.view') }}</a
                   >
                 </div>
               </div>
@@ -112,12 +119,18 @@
       <section id="mic-tester" class="section mic card">
         <div class="mic-head">
           <div>
-            <h2 class="section-title">Mic Tester</h2>
-            <p class="section-subtitle">Can't cast spells from the <strong>YAPYAP Spells List</strong>? Test your mic volume here! If spells from the <strong>YAPYAP Spells List</strong> keep failing, use this tool to diagnose microphone issues.</p>
+            <h2 class="section-title">{{ $t('SpellsPage.mic.title') }}</h2>
+            <p class="section-subtitle">
+              {{ $t('SpellsPage.mic.subtitle_1') }}
+              <strong>{{ $t('SpellsPage.mic.subtitle_bold1') }}</strong>
+              {{ $t('SpellsPage.mic.subtitle_2') }}
+              <strong>{{ $t('SpellsPage.mic.subtitle_bold2') }}</strong>
+              {{ $t('SpellsPage.mic.subtitle_3') }}
+            </p>
           </div>
           <div class="mic-actions">
             <button class="btn btn-primary" @click="toggleMic" :disabled="isMicBusy">
-              {{ micEnabled ? 'Stop Test' : 'Start Mic Test' }}
+              {{ micEnabled ? $t('SpellsPage.mic.stop') : $t('SpellsPage.mic.start') }}
             </button>
           </div>
         </div>
@@ -127,14 +140,13 @@
             <div class="meter-fill" :style="{ width: `${Math.round(level * 100)}%` }"></div>
           </div>
           <div class="meter-meta">
-            <span class="tag">Input level: {{ Math.round(level * 100) }}%</span>
-            <span class="tag" v-if="micEnabled">Listening… speak loudly</span>
-            <span class="tag warn" v-else>Not listening</span>
+            <span class="tag">{{ $t('SpellsPage.mic.level') }} {{ Math.round(level * 100) }}%</span>
+            <span class="tag" v-if="micEnabled">{{ $t('SpellsPage.mic.listening') }}</span>
+            <span class="tag warn" v-else>{{ $t('SpellsPage.mic.notListening') }}</span>
           </div>
-          <p class="error" v-if="micError">{{ micError }}</p>
+          <p class="error" v-if="micError">{{ $t('SpellsPage.mic.error') }}</p>
           <p class="hint">
-            Tip: if the bar barely moves, check Windows privacy settings, the correct input device,
-            and in-game mic gain.
+            {{ $t('SpellsPage.mic.hint') }}
           </p>
         </div>
       </section>
@@ -142,31 +154,58 @@
       <!-- Hidden Interactions & Physics -->
       <section id="hidden-interactions" class="section card">
         <div class="section-head">
-          <h2 class="section-title">YAPYAP Hidden Spell Interactions & Physics</h2>
+          <h2 class="section-title">{{ $t('SpellsPage.hidden.title') }}</h2>
           <p class="section-subtitle">
-            Many spells from the <strong>YAPYAP Spells List</strong> affect objects, not just enemies. Discover these hidden mechanics to gain an edge. These interactions aren't obvious when browsing the <strong>YAPYAP Spells List</strong>, but they can save you time in <a href="/puzzles/ball-puzzle">puzzle rooms</a> and <a href="/puzzles/door-puzzle">treasure vaults</a>.
+            {{ $t('SpellsPage.hidden.subtitle_1') }}
+            <strong>{{ $t('SpellsPage.hidden.subtitle_bold1') }}</strong>
+            {{ $t('SpellsPage.hidden.subtitle_2') }}
+            <strong>{{ $t('SpellsPage.hidden.subtitle_bold2') }}</strong>
+            {{ $t('SpellsPage.hidden.subtitle_3') }}
+            <a href="/puzzles/ball-puzzle">{{ $t('SpellsPage.hidden.subtitle_link1') }}</a>
+            {{ $t('SpellsPage.hidden.subtitle_4') }}
+            <a href="/puzzles/door-puzzle">{{ $t('SpellsPage.hidden.subtitle_link2') }}</a>
+            {{ $t('SpellsPage.hidden.subtitle_5') }}
           </p>
         </div>
 
         <div class="interactions-list">
           <div class="interaction-item">
-            <h3 class="interaction-title">Breakable Objects</h3>
+            <h3 class="interaction-title">{{ $t('SpellsPage.hidden.items.p1.title') }}</h3>
             <p class="interaction-text">
-              <strong>Aero-Bis</strong> from the <strong>YAPYAP Spells List</strong> can shatter glass windows and weak wooden fences, saving you time finding keys. This hidden interaction makes the <strong>YAPYAP Spells List</strong> more versatile than it appears.
+              <strong>{{ $t('SpellsPage.hidden.items.p1.text_bold1') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p1.text_1') }}
+              <strong>{{ $t('SpellsPage.hidden.items.p1.text_bold2') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p1.text_2') }}
+              <strong>{{ $t('SpellsPage.hidden.items.p1.text_bold3') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p1.text_3') }}
             </p>
           </div>
 
           <div class="interaction-item">
-            <h3 class="interaction-title">Loot Movement</h3>
+            <h3 class="interaction-title">{{ $t('SpellsPage.hidden.items.p2.title') }}</h3>
             <p class="interaction-text">
-              Use <strong>Tempest</strong> from the <strong>YAPYAP Spells List</strong> to pull loot items from unreachable ledges down to the floor. This technique isn't mentioned in the standard <strong>YAPYAP Spells List</strong> descriptions but is crucial for efficient farming in <a href="/puzzles/ball-puzzle">challenge rooms</a>.
+              {{ $t('SpellsPage.hidden.items.p2.text_1') }}
+              <strong>{{ $t('SpellsPage.hidden.items.p2.text_bold1') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p2.text_2') }}
+              <strong>{{ $t('SpellsPage.hidden.items.p2.text_bold2') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p2.text_3') }}
+              <strong>{{ $t('SpellsPage.hidden.items.p2.text_bold3') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p2.text_4') }}
+              <a href="/puzzles/ball-puzzle">{{ $t('SpellsPage.hidden.items.p2.text_link1') }}</a>
+              {{ $t('SpellsPage.hidden.items.p2.text_5') }}
             </p>
           </div>
 
           <div class="interaction-item">
-            <h3 class="interaction-title">Heavy Items</h3>
+            <h3 class="interaction-title">{{ $t('SpellsPage.hidden.items.p3.title') }}</h3>
             <p class="interaction-text">
-              Spells from the <strong>YAPYAP Spells List</strong> have stronger knockback on lighter items. Heavy statues won't move much, even with powerful spells from the <strong>YAPYAP Spells List</strong>. Understanding physics interactions helps you use the <strong>YAPYAP Spells List</strong> more effectively.
+              {{ $t('SpellsPage.hidden.items.p3.text_1') }}
+              <strong>{{ $t('SpellsPage.hidden.items.p3.text_bold1') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p3.text_2') }}
+              <strong>{{ $t('SpellsPage.hidden.items.p3.text_bold2') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p3.text_3') }}
+              <strong>{{ $t('SpellsPage.hidden.items.p3.text_bold3') }}</strong>
+              {{ $t('SpellsPage.hidden.items.p3.text_4') }}
             </p>
           </div>
         </div>
@@ -175,31 +214,57 @@
       <!-- FAQ -->
       <section id="faq" class="section card">
         <div class="section-head">
-          <h2 class="section-title">Common Casting Issues</h2>
+          <h2 class="section-title">{{ $t('SpellsPage.faq.title') }}</h2>
           <p class="section-subtitle">
-            Troubleshooting guide for voice casting problems with the <strong>YAPYAP Spells List</strong>. If spells from the <strong>YAPYAP Spells List</strong> aren't working, check these common issues. For more help, visit our <a href="/guides">YAPYAP guides</a> or check the <a href="/wiki">Wiki</a>.
+            {{ $t('SpellsPage.faq.subtitle_1') }}
+            <strong>{{ $t('SpellsPage.faq.subtitle_bold1') }}</strong>
+            {{ $t('SpellsPage.faq.subtitle_2') }}
+            <strong>{{ $t('SpellsPage.faq.subtitle_bold2') }}</strong>
+            {{ $t('SpellsPage.faq.subtitle_3') }}
+            <a href="/guides">{{ $t('SpellsPage.faq.subtitle_link1') }}</a>
+            {{ $t('SpellsPage.faq.subtitle_4') }}
+            <a href="/wiki">{{ $t('SpellsPage.faq.subtitle_link2') }}</a>
+            {{ $t('SpellsPage.faq.subtitle_5') }}
           </p>
         </div>
 
         <div class="faq-list">
           <div class="faq-item">
-            <h3 class="faq-question">Q1: Why do my spells keep failing?</h3>
+            <h3 class="faq-question">{{ $t('SpellsPage.faq.q1') }}</h3>
             <p class="faq-answer">
-              If spells from the <strong>YAPYAP Spells List</strong> keep failing, check your background noise. The game hates mechanical keyboard clicks. Make sure you're pronouncing spells from the <strong>YAPYAP Spells List</strong> clearly and using the <a href="/spell-generator">Spell Generator</a> to practice.
+              {{ $t('SpellsPage.faq.a1_1') }}
+              <strong>{{ $t('SpellsPage.faq.a1_bold1') }}</strong>
+              {{ $t('SpellsPage.faq.a1_2') }}
+              <strong>{{ $t('SpellsPage.faq.a1_bold2') }}</strong>
+              {{ $t('SpellsPage.faq.a1_3') }}
+              <a href="/spell-generator">{{ $t('SpellsPage.faq.a1_link1') }}</a>
+              {{ $t('SpellsPage.faq.a1_4') }}
             </p>
           </div>
 
           <div class="faq-item">
-            <h3 class="faq-question">Q2: Do accents matter?</h3>
+            <h3 class="faq-question">{{ $t('SpellsPage.faq.q2') }}</h3>
             <p class="faq-answer">
-              Slightly. When using the <strong>YAPYAP Spells List</strong>, try to mimic the "American English" pronunciation in our <a href="/spell-generator">Spell Generator</a> if you are struggling. The <strong>YAPYAP Spells List</strong> works best with clear pronunciation.
+              {{ $t('SpellsPage.faq.a2_1') }}
+              <strong>{{ $t('SpellsPage.faq.a2_bold1') }}</strong>
+              {{ $t('SpellsPage.faq.a2_2') }}
+              <a href="/spell-generator">{{ $t('SpellsPage.faq.a2_link1') }}</a>
+              {{ $t('SpellsPage.faq.a2_3') }}
+              <strong>{{ $t('SpellsPage.faq.a2_bold2') }}</strong>
+              {{ $t('SpellsPage.faq.a2_4') }}
             </p>
           </div>
 
           <div class="faq-item">
-            <h3 class="faq-question">Q3: Can I play without a microphone?</h3>
+            <h3 class="faq-question">{{ $t('SpellsPage.faq.q3') }}</h3>
             <p class="faq-answer">
-              Yes, you can use the <strong>YAPYAP Spells List</strong> without a microphone by enabling "Right Click Casting" in settings, but it's less fun! The full experience of the <strong>YAPYAP Spells List</strong> requires voice commands. Check our <a href="/guides">YAPYAP guides</a> for microphone setup tips.
+              {{ $t('SpellsPage.faq.a3_1') }}
+              <strong>{{ $t('SpellsPage.faq.a3_bold1') }}</strong>
+              {{ $t('SpellsPage.faq.a3_2') }}
+              <strong>{{ $t('SpellsPage.faq.a3_bold2') }}</strong>
+              {{ $t('SpellsPage.faq.a3_3') }}
+              <a href="/guides">{{ $t('SpellsPage.faq.a3_link1') }}</a>
+              {{ $t('SpellsPage.faq.a3_4') }}
             </p>
           </div>
         </div>
@@ -210,7 +275,10 @@
 
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue'
-import { wands as wandsData } from '@/data/wands.js'
+import { useWands } from '@/composables/useWands'
+
+// --- Wands data ---
+const { wands: wandsData } = useWands()
 
 // --- Mic tester state ---
 const micEnabled = ref(false)
@@ -307,7 +375,7 @@ onUnmounted(() => {
 
 // --- Wands data (grouped by wand) ---
 const wands = computed(() =>
-  wandsData.map((wand) => ({
+  wandsData.value.map((wand) => ({
     id: wand.id,
     name: wand.name,
     subtitle: wand.subtitle,

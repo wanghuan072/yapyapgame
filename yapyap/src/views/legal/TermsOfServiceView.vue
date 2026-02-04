@@ -2,8 +2,8 @@
   <div class="legal-page">
     <section class="legal-header">
       <div class="container">
-        <h1 class="page-title">Terms of Service</h1>
-        <p class="page-date">Last Updated: January 23, 2026</p>
+        <h1 class="page-title">{{ t('Legal.TermsOfService.title') }}</h1>
+        <p class="page-date">{{ t('Legal.TermsOfService.lastUpdated') }}</p>
       </div>
     </section>
 
@@ -11,44 +11,44 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="legal-text">
-            <h2>Agreement to Terms</h2>
+            <h2>{{ t('Legal.TermsOfService.agreement.title') }}</h2>
             <p>
-              By accessing and using YAPYAP Game Guide Hub, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website.
+              {{ t('Legal.TermsOfService.agreement.text') }}
             </p>
 
-            <h2>Use of Website</h2>
+            <h2>{{ t('Legal.TermsOfService.use.title') }}</h2>
             <p>
-              You may use our website for lawful purposes only. You agree not to use the website in any way that violates any applicable laws or regulations, or that could harm, disable, or impair the website.
+              {{ t('Legal.TermsOfService.use.text') }}
             </p>
 
-            <h2>Intellectual Property</h2>
+            <h2>{{ t('Legal.TermsOfService.intellectual.title') }}</h2>
             <p>
-              All content on this website, including text, graphics, logos, and images, is the property of YAPYAP Game Guide Hub or its content suppliers and is protected by copyright and other intellectual property laws. YAPYAP is a trademark of its respective owners. This website is not affiliated with or endorsed by the original game developers or publishers.
+              {{ t('Legal.TermsOfService.intellectual.text') }}
             </p>
 
-            <h2>User Content</h2>
+            <h2>{{ t('Legal.TermsOfService.userContent.title') }}</h2>
             <p>
-              If you submit any content to our website, you grant us a non-exclusive, royalty-free license to use, reproduce, and distribute that content. You represent that you have the right to grant such license.
+              {{ t('Legal.TermsOfService.userContent.text') }}
             </p>
 
-            <h2>Disclaimer</h2>
+            <h2>{{ t('Legal.TermsOfService.disclaimer.title') }}</h2>
             <p>
-              The information on this website is provided "as is" without warranties of any kind. We do not guarantee the accuracy, completeness, or usefulness of any information on the website. We are not responsible for any errors or omissions in the content.
+              {{ t('Legal.TermsOfService.disclaimer.text') }}
             </p>
 
-            <h2>Limitation of Liability</h2>
+            <h2>{{ t('Legal.TermsOfService.liability.title') }}</h2>
             <p>
-              To the fullest extent permitted by law, YAPYAP Game Guide Hub shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of the website.
+              {{ t('Legal.TermsOfService.liability.text') }}
             </p>
 
-            <h2>Changes to Terms</h2>
+            <h2>{{ t('Legal.TermsOfService.changes.title') }}</h2>
             <p>
-              We reserve the right to modify these Terms of Service at any time. We will notify you of any changes by posting the new Terms of Service on this page and updating the "Last Updated" date.
+              {{ t('Legal.TermsOfService.changes.text') }}
             </p>
 
-            <h2>Contact Us</h2>
+            <h2>{{ t('Legal.TermsOfService.contact.title') }}</h2>
             <p>
-              If you have any questions about these Terms of Service, please contact us at <a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a>.
+              {{ t('Legal.TermsOfService.contact.text') }}<a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a>.
             </p>
           </div>
         </div>
@@ -59,6 +59,9 @@
 
 <script setup>
 // SEO is set in router/index.js via route.meta.seo
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

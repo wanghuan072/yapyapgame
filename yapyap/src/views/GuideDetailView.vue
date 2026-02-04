@@ -4,9 +4,9 @@
     <section class="page-hero" v-if="guide">
       <div class="container">
         <nav class="breadcrumbs">
-          <a href="/">Home</a>
+          <a href="/">{{ t('Guides.GuideDetail.breadcrumb.home') }}</a>
           <span class="separator">></span>
-          <a href="/guides">Guides</a>
+          <a href="/guides">{{ t('Guides.GuideDetail.breadcrumb.guides') }}</a>
           <span class="separator">></span>
           <span>{{ guide.title }}</span>
         </nav>
@@ -79,14 +79,14 @@
 
             <!-- Guide navigation -->
             <div class="guide-navigation card" v-if="previousGuide || nextGuide">
-              <h4 class="nav-title">Navigation</h4>
+              <h4 class="nav-title">{{ t('Guides.GuideDetail.navigation.title') }}</h4>
               <div class="nav-grid">
                 <a
                   v-if="previousGuide"
                   :href="`/guides/${previousGuide.addressBar}`"
                   class="nav-card nav-card-prev"
                 >
-                  <div class="nav-card-direction">Previous</div>
+                  <div class="nav-card-direction">{{ t('Guides.GuideDetail.navigation.prev') }}</div>
                   <div class="nav-card-title">{{ previousGuide.title }}</div>
                   <div class="nav-card-meta">
                     <span>{{ formatDate(previousGuide.publishDate) }}</span>
@@ -97,7 +97,7 @@
                   :href="`/guides/${nextGuide.addressBar}`"
                   class="nav-card nav-card-next"
                 >
-                  <div class="nav-card-direction">Next</div>
+                  <div class="nav-card-direction">{{ t('Guides.GuideDetail.navigation.next') }}</div>
                   <div class="nav-card-title">{{ nextGuide.title }}</div>
                   <div class="nav-card-meta">
                     <span>{{ formatDate(nextGuide.publishDate) }}</span>
@@ -114,9 +114,9 @@
     <section class="guide-content" v-else>
       <div class="container">
         <div class="not-found card">
-          <h2>Guide Not Found</h2>
-          <p>The guide you're looking for doesn't exist.</p>
-          <a href="/guides" class="btn btn-primary">Back to Guides</a>
+          <h2>{{ t('Guides.GuideDetail.notFound.title') }}</h2>
+          <p>{{ t('Guides.GuideDetail.notFound.desc') }}</p>
+          <a :href="getLocalizedPath('/guides')" class="btn btn-primary">{{ t('Guides.GuideDetail.notFound.back') }}</a>
         </div>
       </div>
     </section>
@@ -126,12 +126,16 @@
 <script setup>
 import { ref, onMounted, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
-import { useSEO } from '../composables/useSEO'
+import { useSEO } from '../seo/composables'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
 const route = useRoute()
+const { t } = useI18n()
 const { guides, loadData, findGuideByAddressBar } = useGuideData()
 const { setSEO } = useSEO()
+const { getLocalizedPath } = useLocalizedPath()
 const guide = ref(null)
 const contentRef = ref(null)
 

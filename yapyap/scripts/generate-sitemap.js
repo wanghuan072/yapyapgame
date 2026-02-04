@@ -10,7 +10,20 @@ const seoConfig = {
   fullDomain: 'https://yapyapgame.com'
 }
 
-// 基础路由配置（从 router/index.js 提取）
+// 支持的语言列表
+const supportedLocales = ['en', 'de', 'fr']
+
+// 生成本地化路径
+function createLocalizedPath(path, locale = 'en') {
+  if (locale === 'en') {
+    return path
+  }
+  // 避免 // 的情况
+  const pathSuffix = path === '/' ? '' : path
+  return `/${locale}${pathSuffix}`
+}
+
+// 基础路由配置
 const baseRoutes = [
   { path: '/', name: 'home', priority: 1.0, changefreq: 'weekly' },
   { path: '/spells', name: 'spells', priority: 0.9, changefreq: 'weekly' },
@@ -30,19 +43,29 @@ const baseRoutes = [
   { path: '/contact-us', name: 'contact-us', priority: 0.4, changefreq: 'monthly' }
 ]
 
-// 动态加载数据
-async function loadData() {
+// 动态加载数据（支持多语言）
+async function loadData(locale = 'en') {
   const data = {
     guides: []
   }
 
   // 加载 guides 数据
   try {
-    const guideModule = await import('../src/data/guide.js')
+    const guideModule = await import(`../src/data/guide/${locale}.js`)
     data.guides = guideModule.guides || guideModule.default || []
   } catch (error) {
-    console.warn('Failed to load guides:', error.message)
-    data.guides = []
+    console.warn(`Failed to load guides (${locale}):`, error.message)
+    // 尝试降级到英语
+    if (locale !== 'en') {
+        try {
+            const guideModule = await import(`../src/data/guide/en.js`)
+            data.guides = guideModule.guides || guideModule.default || []
+        } catch (e) {
+            data.guides = []
+        }
+    } else {
+        data.guides = []
+    }
   }
 
   return data
@@ -59,28 +82,37 @@ function generateUrlXml(path, lastmod, priority, changefreq) {
   </url>`
 }
 
-// 生成站点地图
+// 生成站点地图（支持多语言）
 async function generateSitemap() {
   const lastmod = new Date().toISOString().split('T')[0]
 
-  // 加载数据
-  const data = await loadData()
+  // 加载所有语言的数据
+  const allData = {}
+  for (const locale of supportedLocales) {
+    allData[locale] = await loadData(locale)
+  }
 
+  // 注意：这里移除了 xmlns:xhtml，因为不再使用 xhtml:link 标签
   let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
 
-  // 生成基础路由
+  // 生成基础路由（为每种语言生成）
   baseRoutes.forEach(route => {
-    sitemapXml += `\n${generateUrlXml(route.path, lastmod, route.priority, route.changefreq)}`
+    supportedLocales.forEach(locale => {
+      const localizedPath = createLocalizedPath(route.path, locale)
+      sitemapXml += `\n${generateUrlXml(localizedPath, lastmod, route.priority, route.changefreq)}`
+    })
   })
 
-  // 为 guides 生成URL
-  const guides = data.guides || []
-  guides.forEach(guide => {
-    if (!guide || !guide.addressBar) return
-    // addressBar 不包含 /guides/ 前缀，需要添加
-    const guidePath = `/guides/${guide.addressBar}`
-    sitemapXml += `\n${generateUrlXml(guidePath, guide.publishDate || lastmod, 0.8, 'monthly')}`
+  // 为 guides 生成URL（为每种语言生成）
+  supportedLocales.forEach(locale => {
+    const guides = allData[locale].guides || []
+    guides.forEach(guide => {
+      if (!guide || !guide.addressBar) return
+      // addressBar 不包含 /guides/ 前缀，需要添加
+      const guidePath = createLocalizedPath(`/guides/${guide.addressBar}`, locale)
+      sitemapXml += `\n${generateUrlXml(guidePath, guide.publishDate || lastmod, 0.8, 'monthly')}`
+    })
   })
 
   sitemapXml += `\n</urlset>`
@@ -90,9 +122,9 @@ async function generateSitemap() {
 // 生成并保存站点地图
 async function main() {
   try {
-    console.log('📦 Loading data...')
+    console.log('📦 Loading data for all locales...')
     
-    console.log('🗺️  Generating sitemap...')
+    console.log('🗺️  Generating multilingual sitemap...')
     const sitemapContent = await generateSitemap()
     
     const publicPath = path.join(__dirname, '../public/sitemap.xml')
@@ -115,15 +147,6 @@ async function main() {
 
     const urlCount = (sitemapContent.match(/<url>/g) || []).length
     console.log(`✅ Total URLs in sitemap: ${urlCount}`)
-    
-    // 统计URL类型
-    const baseUrlCount = baseRoutes.length
-    const guideUrlCount = urlCount - baseUrlCount
-    
-    console.log('\n📊 URLs by type:')
-    console.log(`   Base routes: ${baseUrlCount}`)
-    console.log(`   Guide pages: ${guideUrlCount}`)
-    console.log(`   Total: ${urlCount}`)
     
     // 验证生成的站点地图
     const validation = sitemapContent.includes('<?xml') && 

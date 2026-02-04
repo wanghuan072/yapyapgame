@@ -2,7 +2,7 @@
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="/" class="logo">
+        <a :href="getLocalizedPath('/')" class="logo">
           <img src="/images/logo.png" alt="YAPYAP Game" class="brand-logo">
           <span class="logo-title">YAPYAP Game</span>
         </a>
@@ -14,19 +14,37 @@
         </button>
 
         <nav class="nav" :class="{ open: isOpen }">
-          <a href="/" @click="closeMenu">Home</a>
-          <a href="/spells" @click="closeMenu">Spells</a>
-          <a href="/spell-generator" @click="closeMenu">Spell Generator</a>
+          <a :href="getLocalizedPath('/')" @click="closeMenu">Home</a>
+          <a :href="getLocalizedPath('/spells')" @click="closeMenu">Spells</a>
+          <a :href="getLocalizedPath('/spell-generator')" @click="closeMenu">Spell Generator</a>
           <div class="nav-dropdown" :class="{ open: isDropdownOpen }">
             <span class="nav-trigger" @click="toggleDropdown">Puzzles ▾</span>
             <div class="nav-dropdown-menu">
-              <a href="/puzzles/ball-puzzle" @click="closeMenu">Ball Puzzle</a>
-              <a href="/puzzles/balance-puzzle" @click="closeMenu">Balance Puzzle</a>
-              <a href="/puzzles/door-puzzle" @click="closeMenu">Door Puzzle</a>
+              <a :href="getLocalizedPath('/puzzles/ball-puzzle')" @click="closeMenu">Ball Puzzle</a>
+              <a :href="getLocalizedPath('/puzzles/balance-puzzle')" @click="closeMenu">Balance Puzzle</a>
+              <a :href="getLocalizedPath('/puzzles/door-puzzle')" @click="closeMenu">Door Puzzle</a>
             </div>
           </div>
-          <a href="/guides" @click="closeMenu">Guides</a>
-          <a href="/wiki" @click="closeMenu">Wiki</a>
+          <a :href="getLocalizedPath('/guides')" @click="closeMenu">Guides</a>
+          <a :href="getLocalizedPath('/wiki')" @click="closeMenu">Wiki</a>
+
+          <!-- Language Switcher -->
+          <div class="nav-dropdown lang-switcher" :class="{ open: isLangDropdownOpen }">
+            <span class="nav-trigger" @click="toggleLangDropdown">
+              {{ availableLocales[locale] || 'Language' }} ▾
+            </span>
+            <div class="nav-dropdown-menu">
+              <a 
+                v-for="(label, code) in availableLocales" 
+                :key="code"
+                :href="getPathForLocale(code)"
+                @click="closeMenu"
+                :class="{ active: locale === code }"
+              >
+                {{ label }}
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
@@ -35,24 +53,44 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useLocalizedPath } from '@/composables/useLocalizedPath'
+
+const { locale } = useI18n()
+const { getLocalizedPath, getPathForLocale } = useLocalizedPath()
 
 const isOpen = ref(false)
 const isDropdownOpen = ref(false)
+const isLangDropdownOpen = ref(false)
+
+const availableLocales = {
+  en: 'English',
+  de: 'Deutsch',
+  fr: 'Français'
+}
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value
   if (!isOpen.value) {
     isDropdownOpen.value = false
+    isLangDropdownOpen.value = false
   }
 }
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value
+  isLangDropdownOpen.value = false
+}
+
+const toggleLangDropdown = () => {
+  isLangDropdownOpen.value = !isLangDropdownOpen.value
+  isDropdownOpen.value = false
 }
 
 const closeMenu = () => {
   isOpen.value = false
   isDropdownOpen.value = false
+  isLangDropdownOpen.value = false
 }
 </script>
 
@@ -196,6 +234,10 @@ const closeMenu = () => {
 
 .menu-toggle span.open:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
+}
+
+.lang-switcher{
+  margin-left: 40px;
 }
 
 /* iPad端 - 1024px */

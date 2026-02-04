@@ -3,17 +3,15 @@
     <section class="page-hero">
       <div class="container">
         <nav class="breadcrumbs">
-          <a href="/">Home</a>
+          <router-link to="/">{{ t('Wiki.Home.breadcrumbs.home') }}</router-link>
           <span class="separator">></span>
-          <a href="/wiki">Wiki</a>
+          <router-link to="/wiki">{{ t('Wiki.Home.breadcrumbs.wiki') }}</router-link>
           <span class="separator">></span>
-          <span>Wands</span>
+          <span>{{ t('Wiki.Home.grid.wands.title') }}</span>
         </nav>
-        <p class="pill">Wands Database · Stats · Passive Effects</p>
-        <h1 class="title">🪄 YAPYAP Wands List</h1>
-        <p class="intro">
-          Complete <strong>YAPYAP wands list</strong> guide. This comprehensive <strong>YAPYAP wands list</strong> includes all wands in YAPYAP. Each wand in the <strong>YAPYAP wands list</strong> can cast multiple <a href="/spells">spells</a>. Compare wands from the <strong>YAPYAP wands list</strong> and their spell capabilities to find the best wand for your playstyle. Practice spell pronunciation with our <a href="/spell-generator">Spell Generator</a>.
-        </p>
+        <p class="pill">{{ t('Wiki.Wands.pill') }}</p>
+        <h1 class="title">{{ t('Wiki.Wands.title') }}</h1>
+        <p class="intro" v-html="t('Wiki.Wands.intro')"></p>
       </div>
     </section>
     <main class="container">
@@ -21,36 +19,27 @@
       <!-- Introduction Section -->
       <section class="introduction-section">
         <div class="intro-card card">
-          <h2 class="intro-title">What Are Wands in YAPYAP?</h2>
+          <h2 class="intro-title">{{ t('Wiki.Wands.introSection.title') }}</h2>
           <div class="intro-content">
-            <p>
-              <strong>Wands are the essential catalyst for casting spells in YAPYAP.</strong> This <strong>YAPYAP wands list</strong> covers every wand available in the game. Without a wand, you cannot cast any spells—no matter how loudly you shout the spell commands. The <strong>YAPYAP wands list</strong> shows that wands are not just cosmetic items; they fundamentally affect your gameplay experience.
-            </p>
-            <p>
-              The <strong>YAPYAP wands list</strong> reveals that different wands offer unique passive effects that impact your mana regeneration speed, spell recognition range, movement speed, and even your carrying capacity. Understanding <strong>wand mechanics</strong> from the <strong>YAPYAP wands list</strong> and <strong>how to cast spells</strong> effectively is crucial for survival in the tower. Learn all <a href="/spells">spells</a> and practice with the <a href="/spell-generator">Spell Generator</a> to master voice commands.
-            </p>
-            <p class="intro-tip">
-              <strong>Pro Tip:</strong> New players should start with the <strong>Basic Wand</strong> from the <strong>YAPYAP wands list</strong> to learn the fundamentals. Don't rush to buy the most expensive wand from the <strong>YAPYAP wands list</strong>—master the basics first, then upgrade based on your playstyle.
-            </p>
+            <p v-for="(paragraph, index) in tm('Wiki.Wands.introSection.content')" :key="index" v-html="paragraph"></p>
+            <p class="intro-tip" v-html="t('Wiki.Wands.introSection.tip')"></p>
           </div>
         </div>
       </section>
 
       <section class="wiki-content card">
         <div class="section-head">
-          <h2 class="section-title">All Wands</h2>
-          <p class="section-subtitle">
-            The complete <strong>YAPYAP wands list</strong> below shows every wand available in the game. Which wand should you buy? Which wand is the strongest? Use this <strong>YAPYAP wands list</strong> to compare and find the best wand for your needs.
-          </p>
+          <h2 class="section-title">{{ t('Wiki.Wands.list.title') }}</h2>
+          <p class="section-subtitle" v-html="t('Wiki.Wands.list.subtitle')"></p>
         </div>
 
         <!-- Desktop table -->
-        <div class="table card" aria-label="All YAPYAP wands list">
+        <div class="table card" :aria-label="t('Wiki.Wands.list.title')">
           <div class="row head">
-            <div class="image">Image</div>
-            <div class="name">Name</div>
-            <div class="spells">Spells</div>
-            <div class="effects">Spell Effects</div>
+            <div class="image">{{ t('Wiki.Wands.list.headers.image') }}</div>
+            <div class="name">{{ t('Wiki.Wands.list.headers.name') }}</div>
+            <div class="spells">{{ t('Wiki.Wands.list.headers.spells') }}</div>
+            <div class="effects">{{ t('Wiki.Wands.list.headers.effects') }}</div>
           </div>
 
           <div class="row" v-for="wand in wands" :key="wand.name">
@@ -91,7 +80,7 @@
               </div>
             </div>
             <div class="wand-spells">
-              <h4 class="spells-title">Spells</h4>
+              <h4 class="spells-title">{{ t('Wiki.Wands.list.headers.spells') }}</h4>
               <div class="spell-item" v-for="spell in wand.spells" :key="spell.name">
                 <div class="spell-name">{{ spell.name }}</div>
                 <div class="spell-effect muted">{{ spell.effect }}</div>
@@ -104,28 +93,13 @@
       <!-- How to Obtain Section -->
       <section class="acquisition-section">
         <div class="acquisition-card card">
-          <h2 class="section-title">How to Obtain Wands</h2>
+          <h2 class="section-title">{{ t('Wiki.Wands.acquisition.title') }}</h2>
           <div class="acquisition-content">
-            <p>
-              Wands in YAPYAP can be obtained through several methods:
-            </p>
+            <p v-html="t('Wiki.Wands.acquisition.content')"></p>
             <ul class="acquisition-list">
-              <li>
-                <strong>Shop Purchase:</strong> Most wands in the <strong>YAPYAP wands list</strong> can be bought from the in-game shop using gold earned during runs. The <strong>YAPYAP wands list</strong> shows prices range from 50 gold (Basic Wand) to 300+ gold (premium wands).
-              </li>
-              <li>
-                <strong>Opening Chests:</strong> Some rare wands from the <strong>YAPYAP wands list</strong> can be found by opening chests in high-value areas. These are typically higher-tier wands with powerful passive effects not always available in shops.
-              </li>
-              <li>
-                <strong>Quest Rewards:</strong> Completing specific objectives or <a href="/puzzles/ball-puzzle">puzzles</a> may reward you with unique wands from the <strong>YAPYAP wands list</strong> that are not available in the shop. Check our <a href="/puzzles/balance-puzzle">Balance Puzzle</a> and <a href="/puzzles/door-puzzle">Door Puzzle</a> guides for wand rewards.
-              </li>
-              <li>
-                <strong>Team Sharing:</strong> In co-op mode, teammates can drop wands from the <strong>YAPYAP wands list</strong> for you to pick up. This is especially useful if you die and lose your equipment.
-              </li>
+              <li v-for="(item, index) in tm('Wiki.Wands.acquisition.list')" :key="index" v-html="item"></li>
             </ul>
-            <p class="acquisition-note muted">
-              <strong>Note:</strong> Always check your inventory weight before purchasing or picking up wands from the <strong>YAPYAP wands list</strong>. Heavier wands in the <strong>YAPYAP wands list</strong> may slow you down, making you vulnerable to fast enemies.
-            </p>
+            <p class="acquisition-note muted" v-html="t('Wiki.Wands.acquisition.note')"></p>
           </div>
         </div>
       </section>
@@ -133,31 +107,11 @@
       <!-- FAQ Section -->
       <section class="faq-section">
         <div class="faq-card card">
-          <h2 class="section-title">Frequently Asked Questions</h2>
+          <h2 class="section-title">{{ t('Wiki.Wands.faq.title') }}</h2>
           <div class="faq-list">
-            <div class="faq-item">
-              <h3 class="faq-question">Do I lose my wand if I die?</h3>
-              <p class="faq-answer">
-                <strong>Yes, you drop all equipment including your wand when you die.</strong> However, your teammates can pick up your dropped items and return them to you. If you're playing solo or your team can't recover your gear, you'll need to purchase a new wand from the <strong>YAPYAP wands list</strong> in the shop. This is why it's important to start with cheaper wands from the <strong>YAPYAP wands list</strong> until you're comfortable with the game mechanics.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">Does the wand affect my voice recognition?</h3>
-              <p class="faq-answer">
-                <strong>Yes, some wands in the YAPYAP wands list improve voice recognition range and accuracy.</strong> The <strong>Voice Amplifier</strong> wand from the <strong>YAPYAP wands list</strong>, for example, increases the distance from which your <a href="/spells">voice commands</a> are detected. This means you can cast <a href="/spells">spells</a> from further away, which is especially useful in stealth situations or when you need to maintain distance from <a href="/wiki/bestiary">enemies</a>. Higher-tier wands in the <strong>YAPYAP wands list</strong> may also reduce the required voice volume, making it easier to cast spells quietly. Practice pronunciation with our <a href="/spell-generator">Spell Generator</a> to maximize wand effectiveness.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">Can I carry two wands?</h3>
-              <p class="faq-answer">
-                <strong>No, you can only equip one wand at a time.</strong> Wands occupy your main hand slot, similar to weapons in other games. You cannot dual-wield wands or carry multiple wands simultaneously. However, you can store extra wands in your inventory (if you have space), but they won't provide any passive effects until equipped. Switching wands requires opening your inventory and manually equipping the desired wand.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">Do wands have durability? Will they break?</h3>
-              <p class="faq-answer">
-                <strong>No, wands from the YAPYAP wands list do not have durability and will not break from use.</strong> Once you purchase or obtain a wand from the <strong>YAPYAP wands list</strong>, it will last indefinitely unless you die and drop it (or sell it). You don't need to repair wands or worry about them degrading over time. This makes wands from the <strong>YAPYAP wands list</strong> a long-term investment—once you find a wand from the <strong>YAPYAP wands list</strong> that suits your playstyle, you can use it for as long as you can keep it safe.
-              </p>
+            <div class="faq-item" v-for="(item, index) in tm('Wiki.Wands.faq.list')" :key="index">
+              <h3 class="faq-question">{{ item.question }}</h3>
+              <p class="faq-answer" v-html="item.answer"></p>
             </div>
           </div>
         </div>
@@ -167,16 +121,21 @@
 </template>
 
 <script setup>
-import { wands as wandsData } from '@/data/wands.js'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useWands } from '@/composables/useWands'
 
-const wands = wandsData.map(wand => ({
+const { t, tm } = useI18n()
+const { wands: wandsData } = useWands()
+
+const wands = computed(() => wandsData.value.map(wand => ({
   name: wand.shortName,
   image: wand.image,
   spells: wand.spells.map(spell => ({
     name: spell.name,
     effect: spell.effect,
   })),
-}))
+})))
 </script>
 
 <style scoped>

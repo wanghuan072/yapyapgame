@@ -2,8 +2,8 @@
   <div class="legal-page">
     <section class="legal-header">
       <div class="container">
-        <h1 class="page-title">About Us</h1>
-        <p class="page-date">Last Updated: January 23, 2026</p>
+        <h1 class="page-title">{{ t('Legal.AboutUs.title') }}</h1>
+        <p class="page-date">{{ t('Legal.AboutUs.lastUpdated') }}</p>
       </div>
     </section>
 
@@ -11,46 +11,46 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="legal-text">
-            <h2>Welcome to YAPYAP Game Guide Hub</h2>
+            <h2>{{ t('Legal.AboutUs.welcome.title') }}</h2>
             <p>
-              YAPYAP Game Guide Hub is an unofficial community resource dedicated to the YAPYAP multiplayer horror game. We are passionate fans who have created this website to help fellow players master the voice-activated spells, solve puzzles, and survive the tower.
+              {{ t('Legal.AboutUs.welcome.text') }}
             </p>
 
-            <h2>Our Mission</h2>
+            <h2>{{ t('Legal.AboutUs.mission.title') }}</h2>
             <p>
-              Our mission is to provide comprehensive, accurate, and up-to-date information about YAPYAP game. We archive spell pronunciations, puzzle solutions, game mechanics, and community strategies so players can improve their co-op gameplay experience.
+              {{ t('Legal.AboutUs.mission.text') }}
             </p>
 
-            <h2>What We Offer</h2>
+            <h2>{{ t('Legal.AboutUs.offer.title') }}</h2>
             <p>
-              We provide a wide range of resources including:
+              {{ t('Legal.AboutUs.offer.text') }}
             </p>
             <ul>
-              <li>Complete spell pronunciation guide with audio demos</li>
-              <li>Interactive spell generator with video tutorials</li>
-              <li>Detailed puzzle solutions and walkthroughs</li>
-              <li>Comprehensive wiki with wands, items, and monsters</li>
-              <li>Community-driven guides and strategies</li>
+              <li>{{ t('Legal.AboutUs.offer.list.pronunciation') }}</li>
+              <li>{{ t('Legal.AboutUs.offer.list.generator') }}</li>
+              <li>{{ t('Legal.AboutUs.offer.list.puzzles') }}</li>
+              <li>{{ t('Legal.AboutUs.offer.list.wiki') }}</li>
+              <li>{{ t('Legal.AboutUs.offer.list.community') }}</li>
             </ul>
 
-            <h2>Our Commitment</h2>
+            <h2>{{ t('Legal.AboutUs.commitment.title') }}</h2>
             <p>
-              We are committed to maintaining the accuracy and quality of our content. Our team regularly updates information based on game updates, community feedback, and verified gameplay data.
+              {{ t('Legal.AboutUs.commitment.text') }}
             </p>
 
-            <h2>Disclaimer</h2>
+            <h2>{{ t('Legal.AboutUs.disclaimer.title') }}</h2>
             <p>
-              YAPYAP Game Guide Hub is an independent, fan-operated website. We are not affiliated with, endorsed by, or connected to the original game developers or publishers. All game-related content is used for informational purposes only.
+              {{ t('Legal.AboutUs.disclaimer.text') }}
             </p>
 
-            <h2>Contact Us</h2>
+            <h2>{{ t('Legal.AboutUs.contact.title') }}</h2>
             <p>
-              If you have questions, suggestions, or feedback, please feel free to contact us at <a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a>. We appreciate your support and contributions to the YAPYAP community.
+              {{ t('Legal.AboutUs.contact.text_1') }}<a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a>{{ t('Legal.AboutUs.contact.text_2') }}
             </p>
 
-            <h2>Thank You</h2>
+            <h2>{{ t('Legal.AboutUs.thanks.title') }}</h2>
             <p>
-              Thank you for visiting YAPYAP Game Guide Hub. We hope our resources help you master the spells, solve the puzzles, and survive the tower!
+              {{ t('Legal.AboutUs.thanks.text') }}
             </p>
           </div>
         </div>
@@ -61,6 +61,9 @@
 
 <script setup>
 // SEO is set in router/index.js via route.meta.seo
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

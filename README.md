@@ -14,6 +14,7 @@ YAPYAP is a unique multiplayer horror experience where players act as minions in
 
 ## Release Information
 
+- **Status**: Available Now
 - **Release Date**: February 3, 2026
 - **Platform**: Steam (Windows)
 - **Genre**: Multiplayer Horror, Co-op, Voice Control

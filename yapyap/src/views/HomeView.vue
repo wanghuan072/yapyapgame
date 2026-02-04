@@ -5,41 +5,61 @@
       <section id="hero" class="section hero">
         <div class="container hero-grid">
           <div class="hero-text card">
-            <div class="pill">Voice Spells · Co-op Chaos · Light Horror</div>
-            <h1>YAPYAP Game Ultimate Guide & Wiki</h1>
-            <p class="lead">Master the <a href="/spell-generator">spell</a>, solve the <a href="/puzzles/ball-puzzle">puzzle</a>, and escape the tower. The ultimate <strong>YAPYAP game</strong> resource for voice commands, co-op tips, and wiki.</p>
+            <div class="pill">{{ $t('HomePage.hero.pill') }}</div>
+            <h1>{{ $t('HomePage.hero.title') }}</h1>
+            <p class="lead">
+              {{ $t('HomePage.hero.desc_1') }}
+              <a :href="getLocalizedPath('/spell-generator')">{{ $t('HomePage.hero.desc_link1') }}</a>
+              {{ $t('HomePage.hero.desc_2') }}
+              <a :href="getLocalizedPath('/puzzles/ball-puzzle')">{{ $t('HomePage.hero.desc_link2') }}</a>
+              {{ $t('HomePage.hero.desc_3') }}
+              <strong>{{ $t('HomePage.hero.desc_bold') }}</strong>
+              {{ $t('HomePage.hero.desc_4') }}
+            </p>
             
             <div class="hero-features">
               <div class="hero-feature-item">
                 <div class="feature-icon">🎬</div>
                 <div class="feature-content">
-                  <p class="feature-title">Spell Generator</p>
-                  <p>Practice <strong>YAPYAP game</strong> voice commands with video tutorials. Master pronunciation for every spell before you play.</p>
-                  <a href="/spell-generator" class="feature-link">Try Spell Generator →</a>
+                  <p class="feature-title">{{ $t('HomePage.hero.f1.title') }}</p>
+                  <p>
+                    {{ $t('HomePage.hero.f1.desc_1') }}
+                    <strong>{{ $t('HomePage.hero.f1.desc_bold') }}</strong>
+                    {{ $t('HomePage.hero.f1.desc_2') }}
+                  </p>
+                  <a :href="getLocalizedPath('/spell-generator')" class="feature-link">{{ $t('HomePage.hero.f1.link') }}</a>
                 </div>
               </div>
               <div class="hero-feature-item">
                 <div class="feature-icon">📚</div>
                 <div class="feature-content">
-                  <p class="feature-title">Complete Wiki</p>
-                  <p>Browse <a href="/wiki/wands">wands</a>, <a href="/wiki/bestiary">monsters</a>, <a href="/wiki/potions">potions</a>, and items. Find stats, crafting recipes, and survival strategies for the YAPYAP game.</p>
-                  <a href="/wiki" class="feature-link">Explore Wiki →</a>
+                  <p class="feature-title">{{ $t('HomePage.hero.f2.title') }}</p>
+                  <p>
+                    {{ $t('HomePage.hero.f2.desc_1') }}
+                    <a :href="getLocalizedPath('/wiki/wands')">{{ $t('HomePage.hero.f2.desc_link1') }}</a>
+                    {{ $t('HomePage.hero.f2.desc_2') }}
+                    <a :href="getLocalizedPath('/wiki/bestiary')">{{ $t('HomePage.hero.f2.desc_link2') }}</a>
+                    {{ $t('HomePage.hero.f2.desc_3') }}
+                    <a :href="getLocalizedPath('/wiki/potions')">{{ $t('HomePage.hero.f2.desc_link3') }}</a>
+                    {{ $t('HomePage.hero.f2.desc_4') }}
+                  </p>
+                  <a :href="getLocalizedPath('/wiki')" class="feature-link">{{ $t('HomePage.hero.f2.link') }}</a>
                 </div>
               </div>
             </div>
 
             <div class="hero-stats">
               <div>
-                <span class="label">Release Date</span>
-                <span class="value">Feb 3, 2026</span>
+                <span class="label">{{ $t('HomePage.hero.stats.release') }}</span>
+                <span class="value">{{ $t('HomePage.hero.stats.date') }}</span>
               </div>
               <div>
-                <span class="label">Core Tags</span>
-                <span class="value">Co-op / Voice Spellcasting / Stealth Escape</span>
+                <span class="label">{{ $t('HomePage.hero.stats.tags') }}</span>
+                <span class="value">{{ $t('HomePage.hero.stats.tagsVal') }}</span>
               </div>
               <div>
-                <span class="label">Platform</span>
-                <span class="value">Steam · Windows</span>
+                <span class="label">{{ $t('HomePage.hero.stats.platform') }}</span>
+                <span class="value">{{ $t('HomePage.hero.stats.platformVal') }}</span>
               </div>
             </div>
           </div>
@@ -73,45 +93,61 @@
       <section id="pain-points" class="section pain-points-section">
         <div class="container">
           <div class="section-header">
-            <p class="pill">Struggling?</p>
-            <h2 class="section-title">YAPYAP Game Trainer</h2>
-            <p class="section-subtitle">We've solved the most frustrating problems players face. Get instant answers.</p>
+            <p class="pill">{{ $t('HomePage.pain.pill') }}</p>
+            <h2 class="section-title">{{ $t('HomePage.pain.title') }}</h2>
+            <p class="section-subtitle">{{ $t('HomePage.pain.subtitle') }}</p>
           </div>
           <div class="pain-points-grid">
             <div class="pain-point-card card">
               <div class="pain-icon">🎤</div>
               <div class="pain-content">
-                <h3>"My spells never work!"</h3>
-                <p class="pain-description">In the <strong>YAPYAP game</strong>, voice recognition keeps failing? Learn the exact pronunciation for every spell with audio demos on our <a href="/spells">Spells</a> page.</p>
+                <h3>{{ $t('HomePage.pain.p1.title') }}</h3>
+                <p class="pain-description">
+                  {{ $t('HomePage.pain.p1.desc_1') }}
+                  <strong>{{ $t('HomePage.pain.p1.desc_bold') }}</strong>
+                  {{ $t('HomePage.pain.p1.desc_2') }}
+                  <a :href="getLocalizedPath('/spells')">{{ $t('HomePage.pain.p1.desc_link') }}</a>
+                  {{ $t('HomePage.pain.p1.desc_3') }}
+                </p>
                 <div class="pain-stats">
-                  <span class="stat-item">All spells</span>
-                  <span class="stat-item">Audio guides</span>
+                  <span class="stat-item">{{ $t('HomePage.pain.p1.stats1') }}</span>
+                  <span class="stat-item">{{ $t('HomePage.pain.p1.stats2') }}</span>
                 </div>
-                <a href="/spells" class="pain-solution-btn">Fix Spell Recognition →</a>
+                <a :href="getLocalizedPath('/spells')" class="pain-solution-btn">{{ $t('HomePage.pain.p1.btn') }}</a>
               </div>
             </div>
             <div class="pain-point-card card">
               <div class="pain-icon">🎬</div>
               <div class="pain-content">
-                <h3>"How do I say this spell?"</h3>
-                <p class="pain-description">Not sure about <strong>YAPYAP game</strong> spell pronunciation? Watch video demos and practice with our <a href="/spell-generator">Spell Generator</a> before you play.</p>
+                <h3>{{ $t('HomePage.pain.p2.title') }}</h3>
+                <p class="pain-description">
+                  {{ $t('HomePage.pain.p2.desc_1') }}
+                  <strong>{{ $t('HomePage.pain.p2.desc_bold') }}</strong>
+                  {{ $t('HomePage.pain.p2.desc_2') }}
+                  <a :href="getLocalizedPath('/spell-generator')">{{ $t('HomePage.pain.p2.desc_link') }}</a>
+                  {{ $t('HomePage.pain.p2.desc_3') }}
+                </p>
                 <div class="pain-stats">
-                  <span class="stat-item">Video tutorials</span>
-                  <span class="stat-item">Practice mode</span>
+                  <span class="stat-item">{{ $t('HomePage.pain.p2.stats1') }}</span>
+                  <span class="stat-item">{{ $t('HomePage.pain.p2.stats2') }}</span>
                 </div>
-                <a href="/spell-generator" class="pain-solution-btn">Practice Spells →</a>
+                <a :href="getLocalizedPath('/spell-generator')" class="pain-solution-btn">{{ $t('HomePage.pain.p2.btn') }}</a>
               </div>
             </div>
             <div class="pain-point-card card">
               <div class="pain-icon">📚</div>
               <div class="pain-content">
-                <h3>"What does this item do?"</h3>
-                <p class="pain-description">Need wand stats, potion recipes, or monster info for the YAPYAP game? Our <a href="/wiki">Wiki</a> has the complete database: items, effects, and crafting guides.</p>
+                <h3>{{ $t('HomePage.pain.p3.title') }}</h3>
+                <p class="pain-description">
+                  {{ $t('HomePage.pain.p3.desc_1') }}
+                  <a :href="getLocalizedPath('/wiki')">{{ $t('HomePage.pain.p3.desc_link') }}</a>
+                  {{ $t('HomePage.pain.p3.desc_2') }}
+                </p>
                 <div class="pain-stats">
-                  <span class="stat-item">Complete database</span>
-                  <span class="stat-item">All items & stats</span>
+                  <span class="stat-item">{{ $t('HomePage.pain.p3.stats1') }}</span>
+                  <span class="stat-item">{{ $t('HomePage.pain.p3.stats2') }}</span>
                 </div>
-                <a href="/wiki" class="pain-solution-btn">Browse Wiki →</a>
+                <a :href="getLocalizedPath('/wiki')" class="pain-solution-btn">{{ $t('HomePage.pain.p3.btn') }}</a>
               </div>
             </div>
           </div>
@@ -122,15 +158,21 @@
       <section id="guides" class="section">
         <div class="container">
           <div class="section-header">
-            <p class="pill">yapyap guide</p>
-            <h2 class="section-title">YAPYAP Game Latest Guides</h2>
+            <p class="pill">{{ $t('HomePage.guides.pill') }}</p>
+            <h2 class="section-title">{{ $t('HomePage.guides.title') }}</h2>
             <p class="section-subtitle">
-              Fresh <strong>YAPYAP game</strong> updates from our <a href="https://www.youtube.com/watch?v=FAIY5sW9aK4&list=PLRDGNl7G_p442o1bzxUpvwEkTBpK4x8PH">YouTube channel</a> and demo insights. <a href="/guides">View all guides</a>.
+              {{ $t('HomePage.guides.subtitle_1') }}
+              <strong>{{ $t('HomePage.guides.subtitle_bold') }}</strong>
+              {{ $t('HomePage.guides.subtitle_2') }}
+              <a href="https://www.youtube.com/watch?v=FAIY5sW9aK4&list=PLRDGNl7G_p442o1bzxUpvwEkTBpK4x8PH">{{ $t('HomePage.guides.subtitle_link1') }}</a>
+              {{ $t('HomePage.guides.subtitle_3') }}
+              <a :href="getLocalizedPath('/guides')">{{ $t('HomePage.guides.subtitle_link2') }}</a>
+              {{ $t('HomePage.guides.subtitle_4') }}
             </p>
           </div>
           <!-- Loading State -->
           <div v-if="loading" class="loading-state card">
-            <p class="muted">Loading guides...</p>
+            <p class="muted">{{ $t('HomePage.guides.loading') }}</p>
           </div>
           <!-- Guides Grid -->
           <div v-if="!loading && homeGuides.length > 0" class="grid guide-grid">
@@ -160,17 +202,17 @@
                 </div>
                 <h3>{{ guide.title }}</h3>
                 <p>{{ guide.description }}</p>
-                <a :href="`/guides/${guide.addressBar}`" class="guide-link">Read more →</a>
+                <a :href="getLocalizedPath(`/guides/${guide.addressBar}`)" class="guide-link">{{ $t('HomePage.guides.readMore') }}</a>
               </div>
             </article>
           </div>
           <!-- Empty State -->
           <div v-if="!loading && homeGuides.length === 0" class="empty-state card">
-            <p class="muted">No guides available yet. Check back soon!</p>
+            <p class="muted">{{ $t('HomePage.guides.empty') }}</p>
           </div>
           <!-- View All Link -->
           <div v-if="!loading && homeGuides.length > 0" class="guides-actions">
-            <a href="/guides" class="btn btn-ghost">View All Guides</a>
+            <a :href="getLocalizedPath('/guides')" class="btn btn-ghost">{{ $t('HomePage.guides.viewAll') }}</a>
           </div>
         </div>
       </section>
@@ -184,33 +226,42 @@
                 <div class="trouble-icon">🎤</div>
               </div>
               <div class="trouble-text">
-                <p class="pill warning-pill">Voice Recognition Issues</p>
-                <h2 class="section-title">YAPYAP can't hear friends</h2>
+                <p class="pill warning-pill">{{ $t('HomePage.trouble.pill') }}</p>
+                <h2 class="section-title">{{ $t('HomePage.trouble.title') }}</h2>
                 <p class="section-subtitle">
-                  <strong>YAPYAP game</strong> voice recognition failing? Microphone problems? Learn the correct pronunciation for every spell with <a href="/spells">audio demos</a> and <a href="/spell-generator">practice mode</a>. Fix "yapyap can't hear friends" fast.
+                  <strong>{{ $t('HomePage.trouble.subtitle_bold') }}</strong>
+                  {{ $t('HomePage.trouble.subtitle_1') }}
+                  <a :href="getLocalizedPath('/spells')">{{ $t('HomePage.trouble.subtitle_link1') }}</a>
+                  {{ $t('HomePage.trouble.subtitle_2') }}
+                  <a :href="getLocalizedPath('/spell-generator')">{{ $t('HomePage.trouble.subtitle_link2') }}</a>
+                  {{ $t('HomePage.trouble.subtitle_3') }}
                 </p>
                 <div class="trouble-features">
                   <div class="trouble-feature-item">
                     <span class="feature-check">✓</span>
-                    <span>100+ <strong>YAPYAP game</strong> spell pronunciations with audio</span>
+                    <span>
+                      {{ $t('HomePage.trouble.f1_1') }}
+                      <strong>{{ $t('HomePage.trouble.f1_bold') }}</strong>
+                      {{ $t('HomePage.trouble.f1_2') }}
+                    </span>
                   </div>
                   <div class="trouble-feature-item">
                     <span class="feature-check">✓</span>
-                    <span>Microphone setup & troubleshooting for YAPYAP game</span>
+                    <span>{{ $t('HomePage.trouble.f2') }}</span>
                   </div>
                   <div class="trouble-feature-item">
                     <span class="feature-check">✓</span>
-                    <span>Common misheard spells guide</span>
+                    <span>{{ $t('HomePage.trouble.f3') }}</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="trouble-action">
-              <a class="btn btn-primary" href="/spells">
-                <span>Fix Voice Recognition</span>
+              <a class="btn btn-primary" :href="getLocalizedPath('/spells')">
+                <span>{{ $t('HomePage.trouble.btn') }}</span>
                 <span class="btn-arrow">→</span>
               </a>
-              <p class="trouble-meta-text">Most common issue: #9 "yapyap can't hear friends"</p>
+              <p class="trouble-meta-text">{{ $t('HomePage.trouble.meta') }}</p>
             </div>
           </div>
         </div>
@@ -220,15 +271,31 @@
       <section id="what" class="section section-light">
         <div class="container what-grid">
           <div class="what-text card">
-            <h2 class="section-title">What is the YAPYAP Game?</h2>
+            <h2 class="section-title">{{ $t('HomePage.what.title') }}</h2>
             <p>
-              The <strong>YAPYAP game</strong> is a multiplayer horror game on Steam that leans into voice-activated spells and co-op vandalism. Players act as minions infiltrating a rival tower, smashing high-value objects, solving <a href="/puzzles/ball-puzzle">puzzles</a>, and escaping monsters. Use our <a href="/spells">Spells</a> and <a href="/wiki">Wiki</a> to master the <strong>YAPYAP game</strong>.
+              {{ $t('HomePage.what.p1_1') }}
+              <strong>{{ $t('HomePage.what.p1_bold1') }}</strong>
+              {{ $t('HomePage.what.p1_2') }}
+              <a :href="getLocalizedPath('/puzzles/ball-puzzle')">{{ $t('HomePage.what.p1_link1') }}</a>
+              {{ $t('HomePage.what.p1_3') }}
+              <a :href="getLocalizedPath('/spells')">{{ $t('HomePage.what.p1_link2') }}</a>
+              {{ $t('HomePage.what.p1_4') }}
+              <a :href="getLocalizedPath('/wiki')">{{ $t('HomePage.what.p1_link3') }}</a>
+              {{ $t('HomePage.what.p1_5') }}
+              <strong>{{ $t('HomePage.what.p1_bold2') }}</strong>
+              {{ $t('HomePage.what.p1_6') }}
             </p>
             <p>
-              The YAPYAP game core mechanic revolves around voice control co-op: speak spell commands into your mic to trigger magical effects. This voice-activated spell system creates an immersive spellcasting experience. Check the <a href="/spell-generator">Spell Generator</a> and <a href="/guides">Guides</a> for tips. Vandalism and stealth escape mechanics make each run unpredictable and thrilling.
+              {{ $t('HomePage.what.p2_1') }}
+              <a :href="getLocalizedPath('/spell-generator')">{{ $t('HomePage.what.p2_link1') }}</a>
+              {{ $t('HomePage.what.p2_2') }}
+              <a :href="getLocalizedPath('/guides')">{{ $t('HomePage.what.p2_link2') }}</a>
+              {{ $t('HomePage.what.p2_3') }}
             </p>
             <p class="seo-text">
-              Keywords: <strong>yapyap game</strong>, yapyap game info, multiplayer horror, voice activated spells, steam co-op, co-op horror, spellcasting with mic, vandalism and stealth escape.
+              {{ $t('HomePage.what.seo_1') }}
+              <strong>{{ $t('HomePage.what.seo_bold') }}</strong>
+              {{ $t('HomePage.what.seo_2') }}
             </p>
           </div>
           <div class="what-visual card">
@@ -241,88 +308,70 @@
       <section id="release" class="section release-section">
         <div class="container">
           <div class="release-hero">
-            <p class="pill release-pill">Launch Countdown</p>
-            <h2 class="section-title">YAPYAP Release Date</h2>
+            <p class="pill release-pill">{{ $t('HomePage.release.pill') }}</p>
+            <h2 class="section-title">{{ $t('HomePage.release.title') }}</h2>
             <p class="release-description">
-              <strong>YAPYAP game release date:</strong> February 3, 2026. <strong>Steam YAPYAP game</strong> launches with voice-activated spells, co-op gameplay, and tower survival. Master <a href="/spells">voice commands</a>, solve <a href="/puzzles/ball-puzzle">puzzles</a>, and escape with friends. See <a href="#system-requirements">system requirements</a> below. Join the wishlist to get notified!
+              <strong>{{ $t('HomePage.release.desc_bold') }}</strong>
+              {{ $t('HomePage.release.desc_1') }}
+              <a :href="getLocalizedPath('/spells')">{{ $t('HomePage.release.desc_link1') }}</a>
+              {{ $t('HomePage.release.desc_2') }}
+              <a :href="getLocalizedPath('/puzzles/ball-puzzle')">{{ $t('HomePage.release.desc_link2') }}</a>
+              {{ $t('HomePage.release.desc_3') }}
+              <a href="#system-requirements">{{ $t('HomePage.release.desc_link3') }}</a>
+              {{ $t('HomePage.release.desc_4') }}
             </p>
           </div>
           
           <div class="release-info">
             <div class="release-meta">
-              <span class="meta-item">Steam</span>
+              <span class="meta-item">{{ $t('HomePage.release.meta1') }}</span>
               <span class="meta-separator">·</span>
-              <span class="meta-item">Voice Co-op</span>
-            </div>
-          </div>
-
-          <!-- Countdown -->
-          <div class="countdown-container">
-            <div class="countdown-grid">
-              <div class="countdown-box">
-                <div class="countdown-number">{{ daysLeft }}</div>
-                <div class="countdown-unit">Days</div>
-              </div>
-              <div class="countdown-divider">:</div>
-              <div class="countdown-box">
-                <div class="countdown-number">{{ String(hoursLeft).padStart(2, '0') }}</div>
-                <div class="countdown-unit">Hours</div>
-              </div>
-              <div class="countdown-divider">:</div>
-              <div class="countdown-box">
-                <div class="countdown-number">{{ String(minutesLeft).padStart(2, '0') }}</div>
-                <div class="countdown-unit">Minutes</div>
-              </div>
-              <div class="countdown-divider">:</div>
-              <div class="countdown-box">
-                <div class="countdown-number">{{ String(secondsLeft).padStart(2, '0') }}</div>
-                <div class="countdown-unit">Seconds</div>
-              </div>
+              <span class="meta-item">{{ $t('HomePage.release.meta2') }}</span>
             </div>
           </div>
 
           <!-- System Requirements -->
           <div id="system-requirements" class="system-requirements card">
-            <h3 class="requirements-title">YAPYAP Game System Requirements</h3>
+            <h3 class="requirements-title">{{ $t('HomePage.req.title') }}</h3>
             <div class="requirements-grid">
               <div class="requirement-item">
-                <span class="requirement-label">OS</span>
-                <span class="requirement-value">Windows® 10</span>
+                <span class="requirement-label">{{ $t('HomePage.req.os') }}</span>
+                <span class="requirement-value">{{ $t('HomePage.req.osVal') }}</span>
               </div>
               <div class="requirement-item">
-                <span class="requirement-label">Processor</span>
-                <span class="requirement-value">Core i5 6600</span>
+                <span class="requirement-label">{{ $t('HomePage.req.proc') }}</span>
+                <span class="requirement-value">{{ $t('HomePage.req.procVal') }}</span>
               </div>
               <div class="requirement-item">
-                <span class="requirement-label">Memory</span>
-                <span class="requirement-value">8 GB RAM</span>
+                <span class="requirement-label">{{ $t('HomePage.req.mem') }}</span>
+                <span class="requirement-value">{{ $t('HomePage.req.memVal') }}</span>
               </div>
               <div class="requirement-item">
-                <span class="requirement-label">Graphics</span>
-                <span class="requirement-value">GTX 970</span>
+                <span class="requirement-label">{{ $t('HomePage.req.gpu') }}</span>
+                <span class="requirement-value">{{ $t('HomePage.req.gpuVal') }}</span>
               </div>
               <div class="requirement-item">
-                <span class="requirement-label">DirectX</span>
-                <span class="requirement-value">Version 10</span>
+                <span class="requirement-label">{{ $t('HomePage.req.dx') }}</span>
+                <span class="requirement-value">{{ $t('HomePage.req.dxVal') }}</span>
               </div>
               <div class="requirement-item">
-                <span class="requirement-label">Network</span>
-                <span class="requirement-value">Broadband Internet</span>
+                <span class="requirement-label">{{ $t('HomePage.req.net') }}</span>
+                <span class="requirement-value">{{ $t('HomePage.req.netVal') }}</span>
               </div>
               <div class="requirement-item">
-                <span class="requirement-label">Storage</span>
-                <span class="requirement-value">2 GB available</span>
+                <span class="requirement-label">{{ $t('HomePage.req.store') }}</span>
+                <span class="requirement-value">{{ $t('HomePage.req.storeVal') }}</span>
               </div>
             </div>
           </div>
 
           <div class="release-actions">
             <a class="btn btn-primary release-btn" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener noreferrer nofollow">
-              <span>Wishlist on Steam</span>
+              <span>{{ $t('HomePage.release.btn1') }}</span>
               <span class="btn-icon">→</span>
             </a>
             <a class="btn btn-ghost release-btn" href="https://store.steampowered.com/app/3834090/YAPYAP/" target="_blank" rel="noopener noreferrer nofollow">
-              <span>Try Demo</span>
+              <span>{{ $t('HomePage.release.btn2') }}</span>
             </a>
           </div>
         </div>
@@ -332,37 +381,57 @@
       <section id="faq" class="section section-light">
         <div class="container">
           <div class="section-header">
-            <p class="pill">faq</p>
-            <h2 class="section-title">Common questions</h2>
+            <p class="pill">{{ $t('HomePage.faq.pill') }}</p>
+            <h2 class="section-title">{{ $t('HomePage.faq.title') }}</h2>
           </div>
           <div class="faq-list">
             <div class="card faq-item">
-              <h3>YAPYAP Can't Hear Friends?</h3>
-              <p>If you can't hear friends in the <strong>YAPYAP game</strong>, check mic permissions, verify input device in settings, and ensure your mic isn't muted. Visit our <a href="/spells">Spells</a> and <a href="/spell-generator">Spell Generator</a> for voice command fixes and pronunciation demos.</p>
+              <h3>{{ $t('HomePage.faq.q1') }}</h3>
+              <p>
+                {{ $t('HomePage.faq.a1_1') }}
+                <strong>{{ $t('HomePage.faq.a1_bold') }}</strong>
+                {{ $t('HomePage.faq.a1_2') }}
+              </p>
             </div>
             <div class="card faq-item">
-              <h3>How to Start in YAPYAP?</h3>
-              <p>If you're searching <span class="mono">how to start in yapyap</span>, begin by enabling "Hold Right Mouse Button for Spell" in Accessibility if your mic fails. Learn controls, inventory, and spell casting in our <a href="/guides">Getting Started</a> and <a href="/wiki">Wiki</a> guides.</p>
+              <h3>{{ $t('HomePage.faq.q2') }}</h3>
+              <p>
+                {{ $t('HomePage.faq.a2_1') }}
+                <strong>{{ $t('HomePage.faq.a2_bold') }}</strong>
+                {{ $t('HomePage.faq.a2_2') }}
+              </p>
             </div>
             <div class="card faq-item">
-              <h3>YAPYAP How to Revive Players?</h3>
-              <p>If you're looking for <span class="mono">yapyap how to revive players</span>, prioritize team safety first: clear nearby threats, regroup, then attempt the revive when voice-casting and movement are stable. For co-op survival and recovery tips, read our <a href="/guides">Guides</a> and learn reliable spell control on the <a href="/spells">Spells</a> page.</p>
+              <h3>{{ $t('HomePage.faq.q3') }}</h3>
+              <p>
+                {{ $t('HomePage.faq.a3_1') }}
+                <strong>{{ $t('HomePage.faq.a3_bold') }}</strong>
+                {{ $t('HomePage.faq.a3_2') }}
+              </p>
             </div>
             <div class="card faq-item">
-              <h3>When Does YAPYAP Release?</h3>
-              <p>The <strong>YAPYAP game</strong> release date is February 3, 2026 on Steam for Windows. It features voice-activated spells, co-op, and tower survival. See <a href="#release">release countdown</a> and <a href="#system-requirements">system requirements</a> above. Join the wishlist to get notified!</p>
+              <h3>{{ $t('HomePage.faq.q4') }}</h3>
+              <p>{{ $t('HomePage.faq.a4') }}</p>
             </div>
             <div class="card faq-item">
-              <h3>How to Do the Scale Puzzle in YAPYAP?</h3>
-              <p>The scale puzzle in the <strong>YAPYAP game</strong> requires balancing objects on scales to unlock doors. Use inventory items to match weight. See our <a href="/puzzles/ball-puzzle">Ball Puzzle</a>, <a href="/puzzles/balance-puzzle">Balance Puzzle</a>, and <a href="/puzzles/door-puzzle">Door Puzzle</a> guides for solutions.</p>
+              <h3>{{ $t('HomePage.faq.q5') }}</h3>
+              <p>
+                {{ $t('HomePage.faq.a5_1') }}
+                <strong>{{ $t('HomePage.faq.a5_bold') }}</strong>
+                {{ $t('HomePage.faq.a5_2') }}
+              </p>
             </div>
             <div class="card faq-item">
-              <h3>How Many Players Can Play Together?</h3>
-              <p>The <strong>YAPYAP game</strong> supports up to 5 players in online co-op. Teams infiltrate towers, solve puzzles, and escape using <a href="/spells">voice spells</a> and <a href="/guides">strategies</a>.</p>
+              <h3>{{ $t('HomePage.faq.q6') }}</h3>
+              <p>{{ $t('HomePage.faq.a6') }}</p>
             </div>
             <div class="card faq-item">
-              <h3>What Platforms is YAPYAP Available On?</h3>
-              <p>The <strong>YAPYAP game</strong> is on Steam for Windows (Feb 3, 2026). A demo runs during Steam Next Fest. Check <a href="#system-requirements">system requirements</a> above. Our <a href="/wiki">Wiki</a> covers items and mechanics.</p>
+              <h3>{{ $t('HomePage.faq.q7') }}</h3>
+              <p>
+                {{ $t('HomePage.faq.a7_1') }}
+                <strong>{{ $t('HomePage.faq.a7_bold') }}</strong>
+                {{ $t('HomePage.faq.a7_2') }}
+              </p>
             </div>
           </div>
         </div>
@@ -374,50 +443,19 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useGuideData } from '../composables/useGuideData'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
-const { guides, loading, loadHomeGuidesOnly } = useGuideData()
+const { guides, loading, loadData } = useGuideData()
+const { getLocalizedPath } = useLocalizedPath()
 
 const homeGuides = computed(() => {
-  return guides.value || []
+  return (guides.value || []).filter(guide => guide.isHome)
 })
 
 const heroVideoLoaded = ref(false)
-const releaseDate = new Date('2026-02-04T00:00:00')
-const daysLeft = ref(0)
-const hoursLeft = ref(0)
-const minutesLeft = ref(0)
-const secondsLeft = ref(0)
-
-const updateCountdown = () => {
-  const now = new Date()
-  const diff = releaseDate - now
-
-  if (diff <= 0) {
-    daysLeft.value = 0
-    hoursLeft.value = 0
-    minutesLeft.value = 0
-    secondsLeft.value = 0
-    return
-  }
-
-  daysLeft.value = Math.floor(diff / (1000 * 60 * 60 * 24))
-  hoursLeft.value = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-  minutesLeft.value = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
-  secondsLeft.value = Math.floor((diff % (1000 * 60)) / 1000)
-}
-
-let countdownInterval = null
 
 onMounted(async () => {
-  updateCountdown()
-  countdownInterval = setInterval(updateCountdown, 1000) // Update every second
-  await loadHomeGuidesOnly()
-})
-
-onUnmounted(() => {
-  if (countdownInterval) {
-    clearInterval(countdownInterval)
-  }
+  await loadData()
 })
 </script>
 

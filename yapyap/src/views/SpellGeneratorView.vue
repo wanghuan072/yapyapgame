@@ -2,10 +2,10 @@
   <div class="page">
     <section class="page-hero">
       <div class="container">
-        <p class="pill">Spell Generator · Animations · Audio Pronunciations</p>
-        <h1 class="title">YAPYAP Spell Generator</h1>
+        <p class="pill">{{ $t('SpellGenerator.hero.pill') }}</p>
+        <h1 class="title">{{ $t('SpellGenerator.hero.title') }}</h1>
         <p class="intro">
-          Choose your wand, select an incantation, and forge your spell. Watch animations and learn pronunciations.
+          {{ $t('SpellGenerator.hero.intro') }}
         </p>
       </div>
     </section>
@@ -18,7 +18,7 @@
             <div class="selection-card">
               <div class="selection-header">
                 <span class="section-icon wand-icon">🪄</span>
-                <h2 class="selection-title">Choose Your Wand</h2>
+                <h2 class="selection-title">{{ $t('SpellGenerator.selection.chooseWand') }}</h2>
               </div>
               <div class="wand-list">
                 <button
@@ -42,7 +42,7 @@
             <div class="selection-card">
               <div class="selection-header">
                 <span class="section-icon scroll-icon">📜</span>
-                <h2 class="selection-title">Select Incantation</h2>
+                <h2 class="selection-title">{{ $t('SpellGenerator.selection.selectIncantation') }}</h2>
               </div>
               <div class="incantation-list">
                 <button
@@ -61,11 +61,11 @@
           <div class="forge-panel">
             <div class="forge-content">
               <div class="selection-header">
-                <h2 class="selection-title">Spell Forge</h2>
+                <h2 class="selection-title">{{ $t('SpellGenerator.forge.title') }}</h2>
               </div>
               <div class="forge-controls">
                 <div class="vocal-timbre-section">
-                  <label class="vocal-timbre-label">Vocal Timbre</label>
+                  <label class="vocal-timbre-label">{{ $t('SpellGenerator.forge.vocalTimbre') }}</label>
                   <div class="dropdown-wrapper">
                     <select class="vocal-timbre-dropdown" v-model="selectedTimbre">
                       <option v-for="timbre in timbres" :key="timbre.value" :value="timbre.value">
@@ -80,7 +80,7 @@
                   @click="manifestSpell"
                   :disabled="!selectedSpell || !selectedTimbre"
                 >
-                  Manifest Spell
+                  {{ $t('SpellGenerator.forge.manifest') }}
                 </button>
               </div>
             </div>
@@ -94,7 +94,7 @@
           <!-- Video/Animation Area -->
           <div class="spell-media">
             <div v-if="!manifestedSpell" class="media-placeholder">
-              <p class="placeholder-text">Select a wand and spell, then click "Manifest Spell" to view the animation</p>
+              <p class="placeholder-text">{{ $t('SpellGenerator.display.placeholder') }}</p>
             </div>
             <video
               v-else-if="mediaType === 'video' && mediaPath"
@@ -107,19 +107,19 @@
               class="spell-video"
               @error="handleMediaError"
             >
-              Your browser does not support the video tag.
+              {{ $t('SpellGenerator.display.videoNotSupported') }}
             </video>
             <img
               v-else-if="mediaType === 'gif' && mediaPath"
               :src="mediaPath"
-              alt="Spell animation"
+              :alt="$t('SpellGenerator.display.altAnimation')"
               class="spell-gif"
               @error="handleMediaError"
             />
             <div v-else-if="manifestedSpell" class="media-placeholder">
               <div class="placeholder-icon">🎬</div>
-              <p>Spell animation not available</p>
-              <p class="small muted">Place animation file in: <code>public/videos/spells/</code></p>
+              <p>{{ $t('SpellGenerator.display.noAnimation') }}</p>
+              <p class="small muted">{{ $t('SpellGenerator.display.animationHint') }}</p>
             </div>
           </div>
 
@@ -130,16 +130,16 @@
                 <span class="pronunciation-spell">Dub-ill-oo</span>
                 <span class="pronunciation-phonetic">/ DUB - ill - oo /</span>
               </div>
-              <p class="pronunciation-tip">💡 Tip: Just say the letter "W" (Double-U).</p>
-              <p class="pronunciation-technique">Casting Technique: Don't rush the syllables. Try separating them: "Dub... ill... oo".</p>
+              <p class="pronunciation-tip">{{ $t('SpellGenerator.display.pronunciationTip') }}{{ $t('SpellGenerator.display.pronunciation.dubilloo.tip') }}</p>
+              <p class="pronunciation-technique">{{ $t('SpellGenerator.display.castingTechnique') }}{{ $t('SpellGenerator.display.pronunciation.dubilloo.technique') }}</p>
             </div>
             <div class="pronunciation-item" v-if="manifestedSpell.spell === 'Mim-ill-oo'">
               <div class="pronunciation-header">
                 <span class="pronunciation-spell">Mim-ill-oo</span>
                 <span class="pronunciation-phonetic">/ MIM - ill - oo /</span>
               </div>
-              <p class="pronunciation-tip">💡 Tip: Rhymes with "Dub-ill-oo". Think "Mimic" + "Lou".</p>
-              <p class="pronunciation-technique">Casting Technique: Emphasize the first syllable MIM.</p>
+              <p class="pronunciation-tip">{{ $t('SpellGenerator.display.pronunciationTip') }}{{ $t('SpellGenerator.display.pronunciation.mimilloo.tip') }}</p>
+              <p class="pronunciation-technique">{{ $t('SpellGenerator.display.castingTechnique') }}{{ $t('SpellGenerator.display.pronunciation.mimilloo.technique') }}</p>
             </div>
           </div>
 
@@ -150,12 +150,12 @@
             </div>
 
             <div class="spell-effect-section">
-              <h4>Effect</h4>
+              <h4>{{ $t('SpellGenerator.display.effect') }}</h4>
               <p>{{ manifestedSpell.effect }}</p>
             </div>
 
             <div class="spell-tips-section" v-if="manifestedSpell.tips">
-              <h4>Tips & Strategy</h4>
+              <h4>{{ $t('SpellGenerator.display.tips') }}</h4>
               <p>{{ manifestedSpell.tips }}</p>
             </div>
           </div>
@@ -174,9 +174,11 @@
       <!-- How to Use the Spell Forge -->
       <section class="guide-section">
         <div class="guide-header">
-          <h2 class="guide-title">How to Use the Spell Generator</h2>
+          <h2 class="guide-title">{{ $t('SpellGenerator.guide.title') }}</h2>
           <p class="guide-intro">
-            Master the <strong>YAPYAP demo game pronunciation</strong> with our interactive spell generator. Follow these simple steps to practice voice commands.
+            {{ $t('SpellGenerator.guide.intro_1') }}
+            <strong>{{ $t('SpellGenerator.guide.intro_bold') }}</strong>
+            {{ $t('SpellGenerator.guide.intro_2') }}
           </p>
         </div>
 
@@ -184,10 +186,8 @@
           <div class="step-card">
             <div class="step-number">01</div>
             <div class="step-content">
-              <h3 class="step-title">Select Your Catalyst</h3>
-              <p class="step-text">
-                Choose a Wand archetype from the left panel. Different wands may have different casting animations or visual styles.
-              </p>
+              <h3 class="step-title">{{ $t('SpellGenerator.guide.step1.title') }}</h3>
+              <p class="step-text">{{ $t('SpellGenerator.guide.step1.text') }}</p>
             </div>
           </div>
 
@@ -196,9 +196,15 @@
           <div class="step-card">
             <div class="step-number">02</div>
             <div class="step-content">
-              <h3 class="step-title">Choose an Incantation</h3>
+              <h3 class="step-title">{{ $t('SpellGenerator.guide.step2.title') }}</h3>
               <p class="step-text">
-                Pick a spell you want to learn, such as <strong>Aero-Bis</strong> or <strong>Up-Dog</strong>. Each spell in the <strong>YAPYAP demo game</strong> requires precise pronunciation.
+                {{ $t('SpellGenerator.guide.step2.text_1') }}
+                <strong>{{ $t('SpellGenerator.guide.step2.text_bold1') }}</strong>
+                {{ $t('SpellGenerator.guide.step2.text_2') }}
+                <strong>{{ $t('SpellGenerator.guide.step2.text_bold2') }}</strong>
+                {{ $t('SpellGenerator.guide.step2.text_3') }}
+                <strong>{{ $t('SpellGenerator.guide.step2.text_bold3') }}</strong>
+                {{ $t('SpellGenerator.guide.step2.text_4') }}
               </p>
             </div>
           </div>
@@ -208,9 +214,11 @@
           <div class="step-card">
             <div class="step-number">03</div>
             <div class="step-content">
-              <h3 class="step-title">Manifest & Listen</h3>
+              <h3 class="step-title">{{ $t('SpellGenerator.guide.step3.title') }}</h3>
               <p class="step-text">
-                Click the "Manifest Spell" button. Watch the visual effect and listen carefully to the audio guide to hear the correct <strong>YAPYAP demo game pronunciation</strong>.
+                {{ $t('SpellGenerator.guide.step3.text_1') }}
+                <strong>{{ $t('SpellGenerator.guide.step3.text_bold') }}</strong>
+                {{ $t('SpellGenerator.guide.step3.text_2') }}
               </p>
             </div>
           </div>
@@ -222,21 +230,27 @@
         <div class="why-card">
           <div class="why-header">
             <div class="why-icon">⚡</div>
-            <h2 class="why-title">Why Practice in the Spell Generator?</h2>
+            <h2 class="why-title">{{ $t('SpellGenerator.why.title') }}</h2>
           </div>
           <div class="why-body">
             <div class="why-highlight">
-              <h3 class="why-subtitle">Stop Fizzling, Start Casting.</h3>
+              <h3 class="why-subtitle">{{ $t('SpellGenerator.why.subtitle') }}</h3>
             </div>
             <div class="why-text-block">
+              <p class="why-text">{{ $t('SpellGenerator.why.text1') }}</p>
               <p class="why-text">
-                In the heat of battle, a mispronounced spell can cost you the game. This tool allows you to practice in a safe environment without the pressure of being chased by monsters.
+                {{ $t('SpellGenerator.why.text2_1') }}
+                <strong>{{ $t('SpellGenerator.why.text2_bold1') }}</strong>
+                {{ $t('SpellGenerator.why.text2_2') }}
+                <strong>{{ $t('SpellGenerator.why.text2_bold2') }}</strong>
+                {{ $t('SpellGenerator.why.text2_3') }}
               </p>
               <p class="why-text">
-                Especially for players struggling with the strict voice recognition in the <strong>YAPYAP demo game</strong>, <strong>pronunciation accuracy</strong> is the key to survival. Our generator provides the "Golden Standard" audio—if you mimic the rhythm and tone you hear here, your success rate in-game will skyrocket.
-              </p>
-              <p class="why-text">
-                Perfect your <strong>YAPYAP demo game pronunciation</strong> before entering the tower. Every spell in the <strong>YAPYAP demo game</strong> requires precise voice commands, and this tool helps you master them all.
+                {{ $t('SpellGenerator.why.text3_1') }}
+                <strong>{{ $t('SpellGenerator.why.text3_bold1') }}</strong>
+                {{ $t('SpellGenerator.why.text3_2') }}
+                <strong>{{ $t('SpellGenerator.why.text3_bold2') }}</strong>
+                {{ $t('SpellGenerator.why.text3_3') }}
               </p>
             </div>
           </div>
@@ -247,11 +261,13 @@
       <section class="tips-section">
         <div class="tips-header">
           <div class="tips-title-wrapper">
-            <span class="tips-badge">Pro Tips</span>
-            <h2 class="tips-title">Voice Command Mechanics</h2>
+            <span class="tips-badge">{{ $t('SpellGenerator.tips.badge') }}</span>
+            <h2 class="tips-title">{{ $t('SpellGenerator.tips.title') }}</h2>
           </div>
           <p class="tips-subtitle">
-            Expert advice for mastering <strong>YAPYAP demo game pronunciation</strong> and voice recognition.
+            {{ $t('SpellGenerator.tips.subtitle_1') }}
+            <strong>{{ $t('SpellGenerator.tips.subtitle_bold') }}</strong>
+            {{ $t('SpellGenerator.tips.subtitle_2') }}
           </p>
         </div>
 
@@ -259,30 +275,38 @@
           <div class="tip-card">
             <div class="tip-header">
               <div class="tip-number">1</div>
-              <h3 class="tip-title">It's About Rhythm, Not Volume</h3>
+              <h3 class="tip-title">{{ $t('SpellGenerator.tips.tip1.title') }}</h3>
             </div>
             <p class="tip-text">
-              You don't need to shout! The <strong>YAPYAP demo game</strong> analyzes distinct syllables. Try to speak with a staccato rhythm (e.g., "AIR... OH... BISS" instead of "Aerobis"). This is crucial for accurate <strong>YAPYAP demo game pronunciation</strong>.
+              {{ $t('SpellGenerator.tips.tip1.text_1') }}
+              <strong>{{ $t('SpellGenerator.tips.tip1.text_bold1') }}</strong>
+              {{ $t('SpellGenerator.tips.tip1.text_2') }}
+              <strong>{{ $t('SpellGenerator.tips.tip1.text_bold2') }}</strong>
+              {{ $t('SpellGenerator.tips.tip1.text_3') }}
             </p>
           </div>
 
           <div class="tip-card">
             <div class="tip-header">
               <div class="tip-number">2</div>
-              <h3 class="tip-title">Background Noise</h3>
+              <h3 class="tip-title">{{ $t('SpellGenerator.tips.tip2.title') }}</h3>
             </div>
             <p class="tip-text">
-              Mechanical keyboards and fans are your enemies. Use Push-to-Talk or lower your mic sensitivity if spells are casting randomly. Clean audio input is essential for the <strong>YAPYAP demo game</strong> voice recognition system.
+              {{ $t('SpellGenerator.tips.tip2.text_1') }}
+              <strong>{{ $t('SpellGenerator.tips.tip2.text_bold') }}</strong>
+              {{ $t('SpellGenerator.tips.tip2.text_2') }}
             </p>
           </div>
 
           <div class="tip-card">
             <div class="tip-header">
               <div class="tip-number">3</div>
-              <h3 class="tip-title">Confidence Matters</h3>
+              <h3 class="tip-title">{{ $t('SpellGenerator.tips.tip3.title') }}</h3>
             </div>
             <p class="tip-text">
-              Hesitation often leads to failure. Listen to the audio above, memorize it, and say it with confidence. Practice the <strong>YAPYAP demo game pronunciation</strong> until it becomes second nature.
+              {{ $t('SpellGenerator.tips.tip3.text_1') }}
+              <strong>{{ $t('SpellGenerator.tips.tip3.text_bold') }}</strong>
+              {{ $t('SpellGenerator.tips.tip3.text_2') }}
             </p>
           </div>
         </div>
@@ -292,17 +316,21 @@
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { wands } from '@/data/wands.js'
+import { useWands } from '@/composables/useWands'
+import { useI18n } from 'vue-i18n'
+
+const { wands } = useWands()
+const { t } = useI18n()
 
 const route = useRoute()
 
 // Vocal Timbre options
-const timbres = [
-  { value: 'kore', label: 'Kore (Ancient)' },
-  { value: 'puck', label: 'Puck (Playful)' },
-]
+const timbres = computed(() => [
+  { value: 'kore', label: t('SpellGenerator.forge.timbre.kore') },
+  { value: 'puck', label: t('SpellGenerator.forge.timbre.puck') },
+])
 
 const selectedWand = ref(null)
 const selectedSpell = ref(null)
@@ -314,7 +342,7 @@ const mediaType = ref(null)
 const mediaPath = ref(null)
 
 // Default wand (first wand) for displaying incantations when no wand is selected
-const defaultWand = computed(() => wands.length > 0 ? wands[0] : null)
+const defaultWand = computed(() => wands.value.length > 0 ? wands.value[0] : null)
 
 // Helper function to convert spell name to audio file name format (for media files)
 function getSpellFileName(spellName) {
@@ -410,11 +438,13 @@ function handleMediaError(event) {
 }
 
 
-// Watch for route query parameter
-onMounted(() => {
+// Watch for route query parameter and wands data
+watch(wands, (newWands) => {
+  if (!newWands || newWands.length === 0) return
+
   if (route.query.spell) {
     const spellId = decodeURIComponent(route.query.spell)
-    for (const wand of wands) {
+    for (const wand of newWands) {
       const spell = wand.spells.find(s => getSpellFileName(s.spell) === spellId)
       if (spell) {
         selectWand(wand)
@@ -426,11 +456,11 @@ onMounted(() => {
     }
   } else {
     // Default to first wand if no spell query parameter
-    if (wands.length > 0 && !selectedWand.value) {
-      selectWand(wands[0])
+    if (newWands.length > 0 && !selectedWand.value) {
+      selectWand(newWands[0])
     }
   }
-})
+}, { immediate: true })
 </script>
 
 <style scoped>

@@ -2,15 +2,21 @@
   <div class="page" id="top">
     <section class="page-hero">
       <div class="container">
-        <p class="pill">Puzzle Room · Voice Control · Pitch Detection</p>
-        <h1 class="title"><strong>YAPYAP Balance Puzzle</strong>: Pitch Wheel Guide</h1>
+        <p class="pill">{{ t('Puzzles.balance.hero.pill') }}</p>
+        <h1 class="title">{{ t('Puzzles.balance.hero.title') }}</h1>
         <p class="intro">
-          Complete guide to the <strong>YAPYAP Balance Puzzle</strong> (Pitch Wheel). Master the <strong>YAPYAP rotating balance puzzle</strong> mechanism with "Do Re Mi" <a href="/spells">voice commands</a>. This microphone-assisted guide will help you solve this tricky <strong>YAPYAP Balance Puzzle</strong>, also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>. Practice pronunciation with our <a href="/spell-generator">Spell Generator</a> and check our <a href="/spells#mic-tester">Mic Tester</a> if you have issues.
+          {{ t('Puzzles.balance.hero.intro_1') }}
+          <a href="/spells">{{ t('Puzzles.balance.hero.intro_link1') }}</a>
+          {{ t('Puzzles.balance.hero.intro_2') }}
+          <a href="/spell-generator">{{ t('Puzzles.balance.hero.intro_link2') }}</a>
+          {{ t('Puzzles.balance.hero.intro_3') }}
+          <a href="/spells#mic-tester">{{ t('Puzzles.balance.hero.intro_link3') }}</a>
+          {{ t('Puzzles.balance.hero.intro_4') }}
         </p>
         <div class="puzzle-meta">
-          <span class="tag medium">Medium Difficulty</span>
-          <span class="tag voice">Voice Required</span>
-          <span class="tag tricky">Tricky Detection</span>
+          <span class="tag medium">{{ t('Puzzles.balance.hero.tags.medium') }}</span>
+          <span class="tag voice">{{ t('Puzzles.balance.hero.tags.voice') }}</span>
+          <span class="tag tricky">{{ t('Puzzles.balance.hero.tags.tricky') }}</span>
         </div>
       </div>
     </section>
@@ -20,85 +26,85 @@
       <section class="overview-section">
         <div class="overview-grid">
           <div class="overview-card card">
-            <div class="overview-label">Difficulty</div>
-            <div class="overview-value">Medium</div>
-            <div class="overview-desc">Simple operation, but detection is "mysterious"</div>
+            <div class="overview-label">{{ t('Puzzles.balance.overview.difficulty.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.balance.overview.difficulty.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.balance.overview.difficulty.desc') }}</div>
           </div>
           <div class="overview-card card">
-            <div class="overview-label">Core Mechanic</div>
-            <div class="overview-value">Pitch Control</div>
-            <div class="overview-desc">The <strong>YAPYAP rotating balance puzzle</strong> uses high pitch vs low pitch detection. Also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>.</div>
+            <div class="overview-label">{{ t('Puzzles.balance.overview.mechanic.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.balance.overview.mechanic.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.balance.overview.mechanic.desc') }}</div>
           </div>
           <div class="overview-card card">
-            <div class="overview-label">Required Tools</div>
-            <div class="overview-value">Microphone + Wand</div>
-            <div class="overview-desc">Voice input required; wand needed for final step. Check the <a href="/wiki/wands">YAPYAP wands list</a> for recommended wands. Any wand from the <a href="/wiki/wands">YAPYAP wands list</a> will work for the final step.</div>
+            <div class="overview-label">{{ t('Puzzles.balance.overview.tools.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.balance.overview.tools.value') }}</div>
+            <div class="overview-desc">
+              {{ t('Puzzles.balance.overview.tools.desc_1') }}
+              <a href="/wiki/wands">{{ t('Puzzles.balance.overview.tools.desc_link1') }}</a>
+              {{ t('Puzzles.balance.overview.tools.desc_2') }}
+              <a href="/wiki/wands">{{ t('Puzzles.balance.overview.tools.desc_link2') }}</a>
+              {{ t('Puzzles.balance.overview.tools.desc_3') }}
+            </div>
           </div>
           <div class="overview-card card">
-            <div class="overview-label">Expected Reward</div>
-            <div class="overview-value">~20 Coins + 1 Wand</div>
-            <div class="overview-desc">Chest spawns at room entrance after completion</div>
+            <div class="overview-label">{{ t('Puzzles.balance.overview.reward.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.balance.overview.reward.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.balance.overview.reward.desc') }}</div>
           </div>
         </div>
         <div class="pain-points card">
-          <div class="pain-label">Common Issues</div>
+          <div class="pain-label">{{ t('Puzzles.balance.pain.label') }}</div>
           <div class="pain-items">
-            <span class="pain-tag">Wheel spins randomly</span>
-            <span class="pain-tag">Microphone not responding</span>
-            <span class="pain-tag">Team voice interference</span>
+            <span class="pain-tag">{{ t('Puzzles.balance.pain.items.spin') }}</span>
+            <span class="pain-tag">{{ t('Puzzles.balance.pain.items.mic') }}</span>
+            <span class="pain-tag">{{ t('Puzzles.balance.pain.items.team') }}</span>
           </div>
         </div>
       </section>
 
       <!-- Video Section -->
-      <!-- <section class="video-section card">
+      <section class="video-section card">
         <div class="section-head">
-          <h2 class="section-title">Video Walkthrough</h2>
-          <p class="section-subtitle">Watch the complete <strong>YAPYAP Balance Puzzle</strong> demonstration (pitch control + staccato method). Learn how to master the <strong>YAPYAP rotating balance puzzle</strong> mechanism.</p>
+          <h2 class="section-title">{{ t('Puzzles.balance.video.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.balance.video.subtitle') }}</p>
         </div>
         <div class="video-frame">
           <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
+            src="https://www.youtube.com/embed/FAIY5sW9aK4"
             title="Pitch Wheel Puzzle walkthrough"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
         </div>
-      </section> -->
+      </section>
 
       <!-- Objective Section -->
       <section class="objective-section card">
           <div class="section-head">
-            <h2 class="section-title">The Objective</h2>
-            <p class="section-subtitle">What you need to accomplish in the <strong>YAPYAP Balance Puzzle</strong>. Master the <strong>YAPYAP rotating balance puzzle</strong>, <strong>YAPYAP arrow puzzle</strong>, and <strong>YAPYAP scircle puzzle</strong> mechanics.</p>
+            <h2 class="section-title">{{ t('Puzzles.balance.objective.title') }}</h2>
+            <p class="section-subtitle">{{ t('Puzzles.balance.objective.subtitle') }}</p>
           </div>
         <div class="objective-content">
           <div class="objective-main">
-            <p class="objective-text">
-              In this <strong>YAPYAP Balance Puzzle</strong>, control the large rotating wheel on the wall to move the <strong>yellow orb</strong> on the outer ring into the <strong>blue center area</strong>. This <strong>YAPYAP rotating balance puzzle</strong> requires precise voice control. The <strong>YAPYAP arrow puzzle</strong> mechanism (also called the <strong>YAPYAP scircle puzzle</strong>) responds to pitch changes in your voice.
-            </p>
+            <p class="objective-text">{{ t('Puzzles.balance.objective.text') }}</p>
           </div>
 
           <div class="control-methods">
             <div class="control-box">
-              <h3 class="control-title">Low Pitch</h3>
-              <p class="control-desc">Rotates the wheel in one direction (usually counterclockwise/left)</p>
+              <h3 class="control-title">{{ t('Puzzles.balance.objective.low.title') }}</h3>
+              <p class="control-desc">{{ t('Puzzles.balance.objective.low.desc') }}</p>
             </div>
             <div class="control-box">
-              <h3 class="control-title">High Pitch</h3>
-              <p class="control-desc">Rotates the wheel in the opposite direction (usually clockwise/right)</p>
+              <h3 class="control-title">{{ t('Puzzles.balance.objective.high.title') }}</h3>
+              <p class="control-desc">{{ t('Puzzles.balance.objective.high.desc') }}</p>
             </div>
           </div>
 
           <div class="final-step warning-box">
-            <h3 class="warning-title">Critical Final Step</h3>
-            <p class="warning-text">
-              <strong>When the orb reaches the center, the puzzle is NOT complete!</strong>
-            </p>
-            <p>
-              You must walk up to the center and <strong>attack the orb with your wand (left-click)</strong> to destroy it. Only then is the puzzle solved.
-            </p>
+            <h3 class="warning-title">{{ t('Puzzles.balance.objective.final.title') }}</h3>
+            <p class="warning-text">{{ t('Puzzles.balance.objective.final.warning') }}</p>
+            <p>{{ t('Puzzles.balance.objective.final.text') }}</p>
           </div>
         </div>
       </section>
@@ -106,38 +112,26 @@
       <!-- Core Technique -->
       <section class="technique-section card">
         <div class="section-head">
-          <h2 class="section-title">Core Technique: Staccato Method</h2>
-          <p class="section-subtitle">The most important strategy to solve "random wheel spinning" in the <strong>YAPYAP Balance Puzzle</strong>. Master the <strong>YAPYAP rotating balance puzzle</strong> with proper technique.</p>
+          <h2 class="section-title">{{ t('Puzzles.balance.technique.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.balance.technique.subtitle') }}</p>
         </div>
         <div class="technique-content">
           <div class="technique-comparison">
             <div class="technique-box wrong-technique">
-              <h3 class="technique-title">Wrong Approach: Continuous Speech</h3>
-              <p class="technique-desc">
-                If you speak continuously (legato) or hold long notes like normal speech, the <strong>YAPYAP Balance Puzzle</strong> struggles to detect pitch changes. The <strong>YAPYAP rotating balance puzzle</strong> (also called the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>) requires distinct pitch separation. This causes the wheel to spin erratically left and right, wasting time.
-              </p>
+              <h3 class="technique-title">{{ t('Puzzles.balance.technique.wrong.title') }}</h3>
+              <p class="technique-desc">{{ t('Puzzles.balance.technique.wrong.desc') }}</p>
             </div>
 
             <div class="technique-box correct-technique">
-              <h3 class="technique-title">Correct Approach: Staccato (Short, Sharp Sounds)</h3>
+              <h3 class="technique-title">{{ t('Puzzles.balance.technique.correct.title') }}</h3>
               <div class="technique-details">
-                <p class="technique-desc">
-                  Use short, rhythmic sounds with clear pauses between them. This is the key to mastering the <strong>YAPYAP Balance Puzzle</strong>. The <strong>YAPYAP rotating balance puzzle</strong> responds best to staccato rhythm, whether you're solving the <strong>YAPYAP arrow puzzle</strong> or the <strong>YAPYAP scircle puzzle</strong> variant.
-                </p>
+                <p class="technique-desc">{{ t('Puzzles.balance.technique.correct.desc') }}</p>
                 <div class="technique-examples">
-                  <div class="example-item">
-                    <strong>Rhythm Pattern:</strong> Say "doo... doo... doo..." rhythmically, like in the video.
-                  </div>
-                  <div class="example-item">
-                    <strong>Low Pitch:</strong> Lower your voice and say "do, do, do" in short bursts.
-                  </div>
-                  <div class="example-item">
-                    <strong>High Pitch:</strong> Raise your voice an octave and say "do, do, do" sharply (or like a dog bark).
-                  </div>
+                  <div class="example-item">{{ t('Puzzles.balance.technique.correct.examples.rhythm') }}</div>
+                  <div class="example-item">{{ t('Puzzles.balance.technique.correct.examples.low') }}</div>
+                  <div class="example-item">{{ t('Puzzles.balance.technique.correct.examples.high') }}</div>
                 </div>
-                <div class="technique-tip">
-                  <strong>Pro Tip:</strong> If voice doesn't work well, try whistling or use a phone to play simple piano notes.
-                </div>
+                <div class="technique-tip">{{ t('Puzzles.balance.technique.correct.tip') }}</div>
               </div>
             </div>
           </div>
@@ -147,109 +141,111 @@
       <!-- Step-by-Step Guide -->
       <section class="walkthrough-section card">
           <div class="section-head">
-            <h2 class="section-title">Step-by-Step Walkthrough</h2>
-            <p class="section-subtitle">Detailed guide for optimal completion of the <strong>YAPYAP Balance Puzzle</strong>. Follow these steps to master the <strong>YAPYAP rotating balance puzzle</strong> (also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>).</p>
+            <h2 class="section-title">{{ t('Puzzles.balance.walkthrough.title') }}</h2>
+            <p class="section-subtitle">{{ t('Puzzles.balance.walkthrough.subtitle') }}</p>
           </div>
         <div class="walkthrough-steps">
           <div class="walkthrough-step">
             <div class="step-header">
               <span class="step-number">1</span>
-              <h3 class="step-title">Positioning</h3>
+              <h3 class="step-title">{{ t('Puzzles.balance.walkthrough.step1.title') }}</h3>
             </div>
-            <p class="step-description">
-              Stand on the platform directly in front of the wheel, ensuring you can clearly see the orb's position. This is crucial for the <strong>YAPYAP Balance Puzzle</strong>—you need a clear view of the <strong>YAPYAP rotating balance puzzle</strong> mechanism.
-            </p>
+            <p class="step-description">{{ t('Puzzles.balance.walkthrough.step1.desc') }}</p>
           </div>
 
           <div class="walkthrough-step">
             <div class="step-header">
               <span class="step-number">2</span>
-              <h3 class="step-title">Calibrate Your Voice</h3>
+              <h3 class="step-title">{{ t('Puzzles.balance.walkthrough.step2.title') }}</h3>
             </div>
-            <p class="step-description">
-              Test low pitch first to confirm which direction the wheel rotates in the <strong>YAPYAP Balance Puzzle</strong>. Then test high pitch to confirm the reverse direction. The <strong>YAPYAP rotating balance puzzle</strong> (also known as the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>) may have different rotation directions depending on the room.
-            </p>
+            <p class="step-description">{{ t('Puzzles.balance.walkthrough.step2.desc') }}</p>
           </div>
 
           <div class="walkthrough-step highlight-step">
             <div class="step-header">
               <span class="step-number">3</span>
-              <h3 class="step-title">Move the Orb to Center (Staccato Method)</h3>
+              <h3 class="step-title">{{ t('Puzzles.balance.walkthrough.step3.title') }}</h3>
             </div>
             <p class="step-description">
-              Use the staccato method to carefully move the orb to the center in this <strong>YAPYAP Balance Puzzle</strong>. The <strong>YAPYAP rotating balance puzzle</strong> requires patience—don't rush. Maintain a steady rhythm for the <strong>YAPYAP arrow puzzle</strong> mechanism (also known as the <strong>YAPYAP scircle puzzle</strong>). For more voice command tips, check our <a href="/spells">Spells List</a> and <a href="/guides">YAPYAP guides</a>.
+              {{ t('Puzzles.balance.walkthrough.step3.desc_1') }}
+              <a href="/spells">{{ t('Puzzles.balance.walkthrough.step3.desc_link1') }}</a>
+              {{ t('Puzzles.balance.walkthrough.step3.desc_2') }}
+              <a href="/guides">{{ t('Puzzles.balance.walkthrough.step3.desc_link2') }}</a>
+              {{ t('Puzzles.balance.walkthrough.step3.desc_3') }}
             </p>
           </div>
 
           <div class="walkthrough-step warning-step">
             <div class="step-header">
               <span class="step-number">4</span>
-              <h3 class="step-title">Physical Destruction (The Smash)</h3>
+              <h3 class="step-title">{{ t('Puzzles.balance.walkthrough.step4.title') }}</h3>
             </div>
             <div class="step-warning-box">
-              <p class="warning-text">
-                <strong>Warning:</strong> Many beginners stand still waiting for rewards after moving the orb to the center.
-              </p>
-              <p class="step-description">
-                <strong>Action:</strong> Once you see the orb turn blue or enter the center hole, immediately rush forward and <strong>smash it with your wand</strong>!
-              </p>
+              <p class="warning-text">{{ t('Puzzles.balance.walkthrough.step4.warning.text') }}</p>
+              <p class="step-description">{{ t('Puzzles.balance.walkthrough.step4.action') }}</p>
             </div>
           </div>
 
           <div class="walkthrough-step">
             <div class="step-header">
               <span class="step-number">5</span>
-              <h3 class="step-title">Collect Reward</h3>
+              <h3 class="step-title">{{ t('Puzzles.balance.walkthrough.step5.title') }}</h3>
             </div>
-            <p class="step-description">
-              Return to the activation circle at the room entrance. A chest will appear containing coins and a wand.
-            </p>
+            <p class="step-description">{{ t('Puzzles.balance.walkthrough.step5.desc') }}</p>
           </div>
         </div>
       </section>
 
-      <!-- Troubleshooting Section -->
+      <!-- Troubleshooting -->
       <section class="troubleshooting-section card">
         <div class="section-head">
-          <h2 class="section-title">Troubleshooting & FAQ</h2>
-          <p class="section-subtitle">Solutions to common problems</p>
+          <h2 class="section-title">{{ t('Puzzles.balance.faq.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.balance.faq.subtitle') }}</p>
         </div>
         <div class="troubleshooting-content">
-          <div class="trouble-item critical">
-            <h3 class="trouble-question">Q: Will teammates' voices affect me in the <strong>YAPYAP Balance Puzzle</strong>? (Co-op Interference)</h3>
+          <div class="trouble-item">
+            <h3 class="trouble-question">{{ t('Puzzles.balance.faq.q1.q') }}</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> Absolutely! This is a "radio silence" puzzle. When one person is operating the wheel in the <strong>YAPYAP Balance Puzzle</strong>, all other teammates must remain completely silent. The <strong>YAPYAP rotating balance puzzle</strong> (also called the <strong>YAPYAP arrow puzzle</strong> or <strong>YAPYAP scircle puzzle</strong>) is extremely sensitive to background noise. Any laughter, talking, or background noise will be detected as "interference" by the system, causing the wheel to spin randomly in this <strong>YAPYAP Balance Puzzle</strong>.
+              {{ t('Puzzles.balance.faq.q1.a') }}
             </p>
-            <div class="trouble-suggestion">
-              <strong>Suggestion:</strong> In public matches, use in-game gestures to signal "shush" to teammates.
+            <div class="trouble-suggestion" v-if="t('Puzzles.balance.faq.q1.s')">
+                {{ t('Puzzles.balance.faq.q1.s') }}
             </div>
           </div>
-
           <div class="trouble-item">
-            <h3 class="trouble-question">Q: How to do the scale puzzle in YAPYAP?</h3>
+            <h3 class="trouble-question">{{ t('Puzzles.balance.faq.q2.q') }}</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> The <strong>YAPYAP Balance Puzzle</strong> (also known as the scale puzzle) requires voice pitch control. Use low pitch sounds to rotate the wheel in one direction, and high pitch sounds to rotate it in the opposite direction. The key is using staccato rhythm—short, sharp sounds with clear pauses. Move the yellow orb from the outer ring to the blue center, then attack it with your <a href="/wiki/wands">wand</a> to complete the <strong>YAPYAP rotating balance puzzle</strong>. Practice with our <a href="/spell-generator">Spell Generator</a> to master pitch control.
+              {{ t('Puzzles.balance.faq.q2.a_1') }}
+              <a href="/wiki/wands">{{ t('Puzzles.balance.faq.q2.a_link1') }}</a>
+              {{ t('Puzzles.balance.faq.q2.a_2') }}
+              <a href="/spell-generator">{{ t('Puzzles.balance.faq.q2.a_link2') }}</a>
+              {{ t('Puzzles.balance.faq.q2.a_3') }}
             </p>
           </div>
-
           <div class="trouble-item">
-            <h3 class="trouble-question">Q: How do you do the puzzle with the tilting ball?</h3>
+             <h3 class="trouble-question">{{ t('Puzzles.balance.faq.q3.q') }}</h3>
+             <p class="trouble-answer">{{ t('Puzzles.balance.faq.q3.a') }}</p>
+          </div>
+          <div class="trouble-item">
+            <h3 class="trouble-question">{{ t('Puzzles.balance.faq.q4.q') }}</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> The puzzle with the tilting ball refers to the <strong>YAPYAP Balance Puzzle</strong>. Control the tilting mechanism by using your voice: low pitch tilts one way, high pitch tilts the other. The <strong>YAPYAP arrow puzzle</strong> (also called the <strong>YAPYAP scircle puzzle</strong>) uses this same voice-controlled tilting mechanism. Remember to use staccato sounds and ensure teammates stay silent during operation.
+              {{ t('Puzzles.balance.faq.q4.a_1') }}
+              <a href="/spell-generator">{{ t('Puzzles.balance.faq.q4.a_link1') }}</a>
+              {{ t('Puzzles.balance.faq.q4.a_2') }}
+              <a href="/spells">{{ t('Puzzles.balance.faq.q4.a_link2') }}</a>
+              {{ t('Puzzles.balance.faq.q4.a_3') }}
             </p>
           </div>
-
           <div class="trouble-item">
-            <h3 class="trouble-question">Q: How to turn puzzle in YAPYAP?</h3>
+            <h3 class="trouble-question">{{ t('Puzzles.balance.faq.q5.q') }}</h3>
             <p class="trouble-answer">
-              <strong>A:</strong> To turn the puzzle wheel in the <strong>YAPYAP Balance Puzzle</strong>, use voice pitch control. Lower your voice pitch to rotate the wheel counterclockwise, and raise your pitch to rotate it clockwise. The <strong>YAPYAP rotating balance puzzle</strong> responds to distinct pitch changes, so use short, rhythmic sounds (staccato method) rather than continuous speech. The <strong>YAPYAP arrow puzzle</strong> and <strong>YAPYAP scircle puzzle</strong> variants work the same way. Practice pitch control with our <a href="/spell-generator">Spell Generator</a> and check <a href="/spells">voice commands</a> for reference.
-            </p>
-          </div>
-
-          <div class="trouble-item">
-            <h3 class="trouble-question">Q: YAPYAP how to do marble puzzle?</h3>
-            <p class="trouble-answer">
-              <strong>A:</strong> The marble puzzle in YAPYAP is the <strong>YAPYAP Balance Puzzle</strong>. You need to guide the marble (yellow orb) from the outer ring to the center using voice-controlled rotation. Use low pitch to rotate the wheel one direction, high pitch for the opposite direction. Once the marble reaches the center, attack it with your <a href="/wiki/wands">wand</a> to complete the <strong>YAPYAP rotating balance puzzle</strong>. The <strong>YAPYAP arrow puzzle</strong> and <strong>YAPYAP scircle puzzle</strong> are variations of this same marble/ball puzzle mechanic. For other puzzle solutions, check our <a href="/puzzles/ball-puzzle">Ball Puzzle</a> and <a href="/puzzles/door-puzzle">Door Puzzle</a> guides.
+              {{ t('Puzzles.balance.faq.q5.a_1') }}
+              <a href="/wiki/wands">{{ t('Puzzles.balance.faq.q5.a_link1') }}</a>
+              {{ t('Puzzles.balance.faq.q5.a_2') }}
+              <a href="/puzzles/ball-puzzle">{{ t('Puzzles.balance.faq.q5.a_link2') }}</a>
+              {{ t('Puzzles.balance.faq.q5.a_3') }}
+              <a href="/puzzles/door-puzzle">{{ t('Puzzles.balance.faq.q5.a_link3') }}</a>
+              {{ t('Puzzles.balance.faq.q5.a_4') }}
             </p>
           </div>
         </div>
@@ -258,7 +254,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .page {

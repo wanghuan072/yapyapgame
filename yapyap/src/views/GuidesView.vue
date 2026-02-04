@@ -2,10 +2,10 @@
   <div class="page" id="top">
     <section class="page-hero">
       <div class="container">
-        <p class="pill">Guides · Walkthroughs · Tips & Strategies</p>
-        <h1 class="title">YAPYAP Guides</h1>
+        <p class="pill">{{ t('Guides.hero.pill') }}</p>
+        <h1 class="title">{{ t('Guides.hero.title') }}</h1>
         <p class="intro">
-          Comprehensive guides, walkthroughs, and strategies to help you master YAPYAP. From beginner tips to advanced techniques.
+          {{ t('Guides.hero.intro') }}
         </p>
       </div>
     </section>
@@ -13,12 +13,12 @@
       <section class="guides-section">
         <!-- Loading State -->
         <div v-if="loading" class="loading-state card">
-          <p class="muted">Loading guides...</p>
+          <p class="muted">{{ t('Guides.status.loading') }}</p>
         </div>
 
         <!-- Error State -->
         <div v-if="error" class="error-state card">
-          <p class="muted">Error: {{ error }}</p>
+          <p class="muted">{{ t('Guides.status.error') }} {{ error }}</p>
         </div>
 
         <!-- Guides Grid -->
@@ -26,7 +26,7 @@
           <a
             v-for="guide in allGuides"
             :key="guide.id"
-            :href="`/guides/${guide.addressBar}`"
+            :href="getLocalizedPath(`/guides/${guide.addressBar}`)"
             class="guide-card card"
           >
             <div class="guide-image-container" v-if="guide.imageUrl">
@@ -45,7 +45,7 @@
               </div>
               <div class="guide-footer">
                 <span class="update-date muted">{{ formatDate(guide.publishDate) }}</span>
-                <span class="view-link">Read more →</span>
+                <span class="view-link">{{ t('Guides.card.readMore') }}</span>
               </div>
             </div>
           </a>
@@ -55,22 +55,22 @@
       <!-- SEO Content Section -->
       <section class="seo-content-section">
         <div class="seo-content-card card">
-          <h2 class="seo-title">Why Read Our YAPYAP Strategy Guides?</h2>
+          <h2 class="seo-title">{{ t('Guides.seo.title') }}</h2>
           <div class="seo-content">
             <p>
-              <strong>Mastering the Chaos of Maison Bap's World</strong>
+              <strong>{{ t('Guides.seo.section1.title') }}</strong>
             </p>
             <p>
-              YAPYAP is not just a horror game; it's a test of communication and voice recognition. Our <strong>YAPYAP guides</strong> go beyond simple walkthroughs. We analyze the ragdoll physics, <a href="/spells">spell interactions</a>, and <a href="/wiki/bestiary">monster AI</a> to help you survive. Whether you're struggling with the <a href="/puzzles/balance-puzzle">YAPYAP Balance Puzzle</a>, the <a href="/puzzles/door-puzzle">Face Gate puzzle</a>, or mastering <a href="/spells">voice spells</a>, our comprehensive <strong>YAPYAP strategy guides</strong> provide the insights you need.
+              {{ t('Guides.seo.section1.text_1') }}<strong>{{ t('Guides.seo.section1.text_bold') }}</strong>{{ t('Guides.seo.section1.text_2') }}<a :href="getLocalizedPath('/spells')">{{ t('Guides.seo.section1.link1') }}</a>{{ t('Guides.seo.section1.text_3') }}<a :href="getLocalizedPath('/wiki/bestiary')">{{ t('Guides.seo.section1.link2') }}</a>{{ t('Guides.seo.section1.text_4') }}<a :href="getLocalizedPath('/puzzles/balance-puzzle')">{{ t('Guides.seo.section1.link3') }}</a>{{ t('Guides.seo.section1.text_5') }}<a :href="getLocalizedPath('/puzzles/door-puzzle')">{{ t('Guides.seo.section1.link4') }}</a>{{ t('Guides.seo.section1.text_6') }}<a :href="getLocalizedPath('/spells')">{{ t('Guides.seo.section1.link5') }}</a>{{ t('Guides.seo.section1.text_7') }}<strong>{{ t('Guides.seo.section1.text_bold2') }}</strong>{{ t('Guides.seo.section1.text_8') }}
             </p>
             <p>
-              <strong>From Beginner to Archmage</strong>
+              <strong>{{ t('Guides.seo.section2.title') }}</strong>
             </p>
             <p>
-              Whether you are looking for a <strong>YAPYAP beginner guide</strong> to fix your microphone settings, or advanced strategies for the <a href="/puzzles/door-puzzle">Face Gate puzzle</a>, our database is constantly updated. We test every <a href="/wiki/wands">wand type</a> and <a href="/spells">incantation</a> in the Demo and Full Release to ensure accuracy. Our <strong>YAPYAP guides</strong> cover everything from <a href="/spell-generator">spell pronunciation</a> and <a href="/wiki/wands">wand selection</a> to <a href="/puzzles/ball-puzzle">puzzle solutions</a> and <a href="/wiki/bestiary">enemy tactics</a>. Each guide is crafted by experienced players who understand the nuances of voice recognition, spell casting mechanics, and the unique challenges of <strong>YAPYAP gameplay</strong>.
+              {{ t('Guides.seo.section2.text_1') }}<strong>{{ t('Guides.seo.section2.text_bold') }}</strong>{{ t('Guides.seo.section2.text_2') }}<a :href="getLocalizedPath('/puzzles/door-puzzle')">{{ t('Guides.seo.section2.link1') }}</a>{{ t('Guides.seo.section2.text_3') }}<a :href="getLocalizedPath('/wiki/wands')">{{ t('Guides.seo.section2.link2') }}</a>{{ t('Guides.seo.section2.text_4') }}<a :href="getLocalizedPath('/spells')">{{ t('Guides.seo.section2.link3') }}</a>{{ t('Guides.seo.section2.text_5') }}<strong>{{ t('Guides.seo.section2.text_bold2') }}</strong>{{ t('Guides.seo.section2.text_6') }}<a :href="getLocalizedPath('/spell-generator')">{{ t('Guides.seo.section2.link4') }}</a>{{ t('Guides.seo.section2.text_7') }}<a :href="getLocalizedPath('/wiki/wands')">{{ t('Guides.seo.section2.link5') }}</a>{{ t('Guides.seo.section2.text_8') }}<a :href="getLocalizedPath('/puzzles/ball-puzzle')">{{ t('Guides.seo.section2.link6') }}</a>{{ t('Guides.seo.section2.text_9') }}<a :href="getLocalizedPath('/wiki/bestiary')">{{ t('Guides.seo.section2.link7') }}</a>{{ t('Guides.seo.section2.text_10') }}<strong>{{ t('Guides.seo.section2.text_bold3') }}</strong>{{ t('Guides.seo.section2.text_11') }}
             </p>
             <p>
-              Our <strong>YAPYAP strategy guides</strong> are more than just instructions—they're your roadmap to mastering this challenging co-op horror experience. Learn how to optimize your <a href="/wiki/wands">wand loadout</a>, perfect your <a href="/spells">spell casting</a>, solve complex <a href="/puzzles/balance-puzzle">puzzles</a>, and survive encounters with dangerous <a href="/wiki/bestiary">creatures</a>. With detailed explanations, step-by-step walkthroughs, and expert tips, our <strong>YAPYAP guides</strong> will transform you from a struggling newcomer into a confident player ready to tackle the tower's most difficult challenges.
+              {{ t('Guides.seo.section3.text_1') }}<strong>{{ t('Guides.seo.section3.text_bold') }}</strong>{{ t('Guides.seo.section3.text_2') }}<a :href="getLocalizedPath('/wiki/wands')">{{ t('Guides.seo.section3.link1') }}</a>{{ t('Guides.seo.section3.text_3') }}<a :href="getLocalizedPath('/spells')">{{ t('Guides.seo.section3.link2') }}</a>{{ t('Guides.seo.section3.text_4') }}<a :href="getLocalizedPath('/puzzles/balance-puzzle')">{{ t('Guides.seo.section3.link3') }}</a>{{ t('Guides.seo.section3.text_5') }}<a :href="getLocalizedPath('/wiki/bestiary')">{{ t('Guides.seo.section3.link4') }}</a>{{ t('Guides.seo.section3.text_6') }}<strong>{{ t('Guides.seo.section3.text_bold2') }}</strong>{{ t('Guides.seo.section3.text_7') }}
             </p>
           </div>
         </div>
@@ -81,8 +81,12 @@
 
 <script setup>
 import { ref, onMounted, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
+import { useLocalizedPath } from '@/composables/useLocalizedPath'
 
+const { t } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { guides, loading, error, loadData } = useGuideData()
 
 const allGuides = computed(() => {

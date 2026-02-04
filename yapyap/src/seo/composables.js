@@ -1,15 +1,21 @@
 import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { seoConfig } from './config.js'
 
 /**
  * 加载数据模块（用于 SEO）
  */
-const loadDataForSEO = async (dataType) => {
+const loadDataForSEO = async (dataType, locale = 'en') => {
   try {
     if (dataType === 'guide') {
-      const module = await import('../data/guide.js')
-      return module
+      try {
+        const module = await import(`../data/guide/${locale}.js`)
+        return module
+      } catch (e) {
+        const module = await import('../data/guide/en.js')
+        return module
+      }
     } else {
       throw new Error(`Unknown data type: ${dataType}`)
     }
@@ -81,6 +87,9 @@ export function useSEO() {
 
     // Canonical URL
     updateCanonicalLink()
+    
+    // Hreflang Tags
+    updateHreflangTags()
   }
 
   // 更新单个meta标签
@@ -111,6 +120,56 @@ export function useSEO() {
       document.head.appendChild(canonical)
     }
     canonical.setAttribute('href', canonicalUrl.value)
+  }
+
+  // 更新Hreflang标签
+  const updateHreflangTags = () => {
+    const locales = ['en', 'de', 'fr']
+    const origin = window.location.origin
+    const path = currentPath.value
+
+    // 移除现有的 hreflang 标签
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(el => el.remove())
+
+    // 清理当前路径中的语言前缀，获取"纯净"路径
+    let cleanPath = path
+    // 检查是否以 /de 开头（注意：要处理 /de 和 /de/ 的情况）
+    if (cleanPath === '/de' || cleanPath.startsWith('/de/')) {
+      cleanPath = cleanPath.substring(3)
+    } else if (cleanPath === '/fr' || cleanPath.startsWith('/fr/')) {
+      cleanPath = cleanPath.substring(3)
+    }
+    // 确保 cleanPath 以 / 开头（如果是空字符串，则设为 /）
+    if (!cleanPath || cleanPath === '') {
+      cleanPath = '/'
+    } else if (!cleanPath.startsWith('/')) {
+      cleanPath = '/' + cleanPath
+    }
+  
+    locales.forEach(locale => {
+      const link = document.createElement('link')
+      link.setAttribute('rel', 'alternate')
+      link.setAttribute('hreflang', locale)
+      
+      let href = ''
+      if (locale === 'en') {
+        href = `${origin}${cleanPath}`
+      } else {
+        // 避免出现 // 的情况
+        const pathSuffix = cleanPath === '/' ? '' : cleanPath
+        href = `${origin}/${locale}${pathSuffix}`
+      }
+      
+      link.setAttribute('href', href)
+      document.head.appendChild(link)
+    })
+    
+    // 添加 x-default (通常指向默认语言 en)
+    const xDefault = document.createElement('link')
+    xDefault.setAttribute('rel', 'alternate')
+    xDefault.setAttribute('hreflang', 'x-default')
+    xDefault.setAttribute('href', `${origin}${cleanPath}`)
+    document.head.appendChild(xDefault)
   }
 
   // 生成结构化数据
@@ -220,6 +279,7 @@ const dynamicRouteNames = new Set([
 export function useAutoSEO() {
   const { setSEO, generateStructuredData, addStructuredData } = useSEO()
   const route = useRoute()
+  const { locale, t, te } = useI18n()
   
   // 处理SEO的函数
   const handleSEO = async () => {
@@ -238,6 +298,14 @@ export function useAutoSEO() {
       }
     }
 
+    // 从 i18n 中获取 SEO 数据 (覆盖 meta 配置)
+    if (seoKey) {
+      if (te(`tdk.${seoKey}.title`)) finalSEOData.title = t(`tdk.${seoKey}.title`)
+      if (te(`tdk.${seoKey}.description`)) finalSEOData.description = t(`tdk.${seoKey}.description`)
+      if (te(`tdk.${seoKey}.keywords`)) finalSEOData.keywords = t(`tdk.${seoKey}.keywords`)
+      if (te(`tdk.${seoKey}.robots`)) finalSEOData.robots = t(`tdk.${seoKey}.robots`)
+    }
+
     // 处理动态路由（需要从数据加载）
     if (dynamicRouteNames.has(routeName)) {
       try {
@@ -245,7 +313,7 @@ export function useAutoSEO() {
         
         if (routeName === 'guide-detail') {
           // 加载 guide 数据
-          const module = await loadDataForSEO('guide')
+          const module = await loadDataForSEO('guide', locale.value)
           if (module?.guides) {
             const guides = module.guides || []
             const slug = route.params.slug || ''

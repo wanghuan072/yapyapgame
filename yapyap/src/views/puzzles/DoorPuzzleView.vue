@@ -2,15 +2,25 @@
   <div class="page" id="top">
     <section class="page-hero">
       <div class="container">
-        <p class="pill">Treasure Room · High Risk High Reward · Voice Recognition</p>
-        <h1 class="title">YAPYAP Door Puzzle: Face Door & Treasure Room Guide</h1>
+        <p class="pill">{{ t('Puzzles.door.hero.pill') }}</p>
+        <h1 class="title">{{ t('Puzzles.door.hero.title') }}</h1>
         <p class="intro">
-          Complete guide to the YAPYAP door puzzle (Face Door). High risk, high reward! A treasure vault worth 500+ points per room, but be careful with your microphone in this YAPYAP door puzzle. Unlike the <strong>YAPYAP scales puzzle</strong> (<a href="/puzzles/balance-puzzle">Balance Puzzle</a>) which uses weight balancing, this puzzle requires voice recognition—master both the <strong>YAPYAP scales puzzle</strong> and door puzzle to maximize your loot. Practice <a href="/spells">voice spells</a> with our <a href="/spell-generator">Spell Generator</a> before attempting this challenge.
+          {{ t('Puzzles.door.hero.intro_1') }}
+          <strong>{{ t('Puzzles.door.hero.intro_bold1') }}</strong>
+          {{ t('Puzzles.door.hero.intro_2') }}
+          <a href="/puzzles/balance-puzzle">{{ t('Puzzles.door.hero.intro_link1') }}</a>
+          {{ t('Puzzles.door.hero.intro_3') }}
+          <strong>{{ t('Puzzles.door.hero.intro_bold2') }}</strong>
+          {{ t('Puzzles.door.hero.intro_4') }}
+          <a href="/spells">{{ t('Puzzles.door.hero.intro_link2') }}</a>
+          {{ t('Puzzles.door.hero.intro_5') }}
+          <a href="/spell-generator">{{ t('Puzzles.door.hero.intro_link3') }}</a>
+          {{ t('Puzzles.door.hero.intro_6') }}
         </p>
         <div class="puzzle-meta">
-          <span class="tag hard">Hard</span>
-          <span class="tag voice">Voice Required</span>
-          <span class="tag reward">High Reward</span>
+          <span class="tag hard">{{ t('Puzzles.door.hero.tags.hard') }}</span>
+          <span class="tag voice">{{ t('Puzzles.door.hero.tags.voice') }}</span>
+          <span class="tag reward">{{ t('Puzzles.door.hero.tags.reward') }}</span>
         </div>
       </div>
     </section>
@@ -20,99 +30,123 @@
       <section class="overview-section">
         <div class="overview-grid">
           <div class="overview-card card">
-            <div class="overview-label">Difficulty</div>
-            <div class="overview-value">Hard</div>
-            <div class="overview-desc">Difficult under voice recognition conditions</div>
+            <div class="overview-label">{{ t('Puzzles.door.overview.difficulty.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.door.overview.difficulty.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.door.overview.difficulty.desc') }}</div>
           </div>
           <div class="overview-card card">
-            <div class="overview-label">Core Mechanic</div>
-            <div class="overview-value">Find Hidden Objects + Memory Test</div>
-            <div class="overview-desc">Spot the difference and remember word order</div>
+            <div class="overview-label">{{ t('Puzzles.door.overview.mechanic.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.door.overview.mechanic.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.door.overview.mechanic.desc') }}</div>
           </div>
           <div class="overview-card card">
-            <div class="overview-label">Recommended Items</div>
-            <div class="overview-value">Nova Staff, Grotesque Wand</div>
-            <div class="overview-desc">X-ray vision for finding items; transform wand for moving large objects</div>
+            <div class="overview-label">{{ t('Puzzles.door.overview.items.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.door.overview.items.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.door.overview.items.desc') }}</div>
           </div>
           <div class="overview-card card highlight-card">
-            <div class="overview-label">Expected Reward</div>
-            <div class="overview-value">500+ Points</div>
-            <div class="overview-desc">Extremely high! Lots of valuable small items</div>
+            <div class="overview-label">{{ t('Puzzles.door.overview.reward.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.door.overview.reward.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.door.overview.reward.desc') }}</div>
           </div>
         </div>
         <div class="warning-box critical-warning card">
-          <div class="warning-title">Critical Warning</div>
+          <div class="warning-title">{{ t('Puzzles.door.overview.warning.title') }}</div>
           <p class="warning-text">
-            <strong>If you fail 3 attempts, immediately give up (skip this room).</strong> Don't waste time here—the voice recognition is very strict and may not be worth the frustration.
+            <strong>{{ t('Puzzles.door.overview.warning.text_bold') }}</strong>
+            {{ t('Puzzles.door.overview.warning.text_text') }}
           </p>
         </div>
       </section>
 
       <!-- Video Section -->
-      <!-- <section class="video-section card">
+      <section class="video-section card">
         <div class="section-head">
-          <h2 class="section-title">Video Walkthrough</h2>
-          <p class="section-subtitle">Complete demonstration of the YAPYAP door puzzle and treasure room looting</p>
+          <h2 class="section-title">{{ t('Puzzles.door.video.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.door.video.subtitle') }}</p>
         </div>
         <div class="video-frame">
           <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
+            src="https://www.youtube.com/embed/PAGjfkcmlAk"
             title="Face Door & Treasure Room walkthrough"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
         </div>
-      </section> -->
+      </section>
 
       <!-- Puzzle Logic -->
       <section class="logic-section card">
         <div class="section-head">
-          <h2 class="section-title">The Puzzle Logic</h2>
-          <p class="section-subtitle">How the YAPYAP door puzzle works (many beginners find this confusing). Unlike the <strong>YAPYAP scales puzzle</strong> (<a href="/puzzles/balance-puzzle">Balance Puzzle</a>) which requires balancing items, this puzzle uses <a href="/spells">voice recognition</a> and hidden symbols. If you struggle with voice commands, practice with our <a href="/spell-generator">Spell Generator</a> first.</p>
+          <h2 class="section-title">{{ t('Puzzles.door.logic.title') }}</h2>
+          <p class="section-subtitle">
+            {{ t('Puzzles.door.logic.subtitle_1') }}
+            <strong>{{ t('Puzzles.door.logic.subtitle_bold1') }}</strong>
+            {{ t('Puzzles.door.logic.subtitle_2') }}
+            <a href="/puzzles/balance-puzzle">{{ t('Puzzles.door.logic.subtitle_link1') }}</a>
+            {{ t('Puzzles.door.logic.subtitle_3') }}
+            <a href="/spells">{{ t('Puzzles.door.logic.subtitle_link2') }}</a>
+            {{ t('Puzzles.door.logic.subtitle_4') }}
+            <a href="/spell-generator">{{ t('Puzzles.door.logic.subtitle_link3') }}</a>
+            {{ t('Puzzles.door.logic.subtitle_5') }}
+          </p>
         </div>
         <div class="logic-content">
           <div class="logic-steps">
             <div class="logic-step">
               <div class="step-header">
                 <span class="step-number">1</span>
-                <h3 class="step-title">Activate</h3>
+                <h3 class="step-title">{{ t('Puzzles.door.logic.step1.title') }}</h3>
               </div>
               <p class="step-description">
-                In this YAPYAP door puzzle, step on the circular ritual circle at the door. The face on the door will display <strong>3 icons</strong> (usually skulls or crossbones) for the YAPYAP door puzzle.
+                {{ t('Puzzles.door.logic.step1.desc_1') }}
+                <strong>{{ t('Puzzles.door.logic.step1.desc_bold') }}</strong>
+                {{ t('Puzzles.door.logic.step1.desc_2') }}
               </p>
             </div>
 
             <div class="logic-step">
               <div class="step-header">
                 <span class="step-number">2</span>
-                <h3 class="step-title">Find the Graffiti</h3>
+                <h3 class="step-title">{{ t('Puzzles.door.logic.step2.title') }}</h3>
               </div>
               <p class="step-description">
-                These 3 icons correspond to <strong>hidden white graffiti</strong> scattered around the room. Leave the circle and search corners, behind crates, near the ceiling to find these markings.
+                {{ t('Puzzles.door.logic.step2.desc_1') }}
+                <strong>{{ t('Puzzles.door.logic.step2.desc_bold') }}</strong>
+                {{ t('Puzzles.door.logic.step2.desc_2') }}
               </p>
             </div>
 
             <div class="logic-step highlight-step">
               <div class="step-header">
                 <span class="step-number">3</span>
-                <h3 class="step-title">Decode (The Key Step)</h3>
+                <h3 class="step-title">{{ t('Puzzles.door.logic.step3.title') }}</h3>
               </div>
               <p class="step-description">
-                Once found, approach the graffiti and <strong>rotate your camera/view</strong> (this is crucial, as shown in the video). From far away it looks like a skull, but up close it's actually <strong>letters forming a word</strong>.
+                {{ t('Puzzles.door.logic.step3.desc_1') }}
+                <strong>{{ t('Puzzles.door.logic.step3.desc_bold1') }}</strong>
+                {{ t('Puzzles.door.logic.step3.desc_2') }}
+                <strong>{{ t('Puzzles.door.logic.step3.desc_bold2') }}</strong>
+                {{ t('Puzzles.door.logic.step3.desc_3') }}
               </p>
               <div class="step-tip">
-                <strong>Visual Trap:</strong> The graffiti itself or nearby scenery will spell out a word. Don't be fooled by the skull appearance—get close and read the actual letters!
+                <strong>{{ t('Puzzles.door.logic.step3.tip_bold') }}</strong>
+                {{ t('Puzzles.door.logic.step3.tip_text') }}
               </div>
             </div>
 
             <div class="logic-step">
               <div class="step-header">
                 <span class="step-number">4</span>
-                <h3 class="step-title">Speak the Words</h3>
+                <h3 class="step-title">{{ t('Puzzles.door.logic.step4.title') }}</h3>
               </div>
               <p class="step-description">
-                Return to the door circle. Speak the three words in the <strong>exact order</strong> they appear on the door (left to right). Each word must be spoken clearly with pauses between them. This voice recognition is more complex than the <strong>YAPYAP scales puzzle</strong>, which only requires pitch control.
+                {{ t('Puzzles.door.logic.step4.desc_1') }}
+                <strong>{{ t('Puzzles.door.logic.step4.desc_bold1') }}</strong>
+                {{ t('Puzzles.door.logic.step4.desc_2') }}
+                <strong>{{ t('Puzzles.door.logic.step4.desc_bold2') }}</strong>
+                {{ t('Puzzles.door.logic.step4.desc_3') }}
               </p>
             </div>
           </div>
@@ -122,97 +156,105 @@
       <!-- Symbol Decoder -->
       <section class="decoder-section card">
         <div class="section-head">
-          <h2 class="section-title">Symbol Decoder</h2>
-          <p class="section-subtitle">Common icon-to-word mappings for the YAPYAP door puzzle (compiled from video). While the <strong>YAPYAP scales puzzle</strong> focuses on item weights, this puzzle requires decoding symbols into words.</p>
+          <h2 class="section-title">{{ t('Puzzles.door.decoder.title') }}</h2>
+          <p class="section-subtitle">
+            {{ t('Puzzles.door.decoder.subtitle_1') }}
+            <strong>{{ t('Puzzles.door.decoder.subtitle_bold') }}</strong>
+            {{ t('Puzzles.door.decoder.subtitle_2') }}
+          </p>
         </div>
         <div class="decoder-note">
           <p class="note-text">
-            <strong>Note:</strong> This is the most valuable reference—players don't want to search for answers themselves. Based on video analysis.
+            <strong>{{ t('Puzzles.door.decoder.note_bold') }}</strong>
+            {{ t('Puzzles.door.decoder.note_text') }}
           </p>
         </div>
         <div class="table-container">
           <table class="decoder-table">
             <thead>
               <tr>
-                <th>Door Icon</th>
-                <th>Response Word</th>
-                <th>Pronunciation</th>
-                <th>Notes</th>
+                <th>{{ t('Puzzles.door.decoder.th.icon') }}</th>
+                <th>{{ t('Puzzles.door.decoder.th.word') }}</th>
+                <th>{{ t('Puzzles.door.decoder.th.pronunciation') }}</th>
+                <th>{{ t('Puzzles.door.decoder.th.notes') }}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Regular Skull</td>
-                <td>Fat</td>
-                <td>"Fat"</td>
-                <td>Relatively easy to find</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r1.icon') }}</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r1.word') }}</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r1.pron') }}</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r1.notes') }}</td>
               </tr>
               <tr>
-                <td>Crossbones</td>
-                <td>Tea</td>
-                <td>"Tee" or "Chee"</td>
-                <td>Video tip: Letter H looks like B, easy to misread</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r2.icon') }}</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r2.word') }}</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r2.pron') }}</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r2.notes') }}</td>
               </tr>
               <tr class="highlight-row">
-                <td>Jawbone Skull</td>
-                <td>Float</td>
-                <td>"Float"</td>
-                <td><strong>Visual trap:</strong> Looks like a skull from far, but is actually letters forming the word when viewed up close</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r3.icon') }}</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r3.word') }}</td>
+                <td>{{ t('Puzzles.door.decoder.rows.r3.pron') }}</td>
+                <td>
+                  <strong>{{ t('Puzzles.door.decoder.rows.r3.notes_bold') }}</strong>
+                  {{ t('Puzzles.door.decoder.rows.r3.notes_text') }}
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="decoder-note">
-          <p class="note-text muted">
-            If the game version has more words, this table can be expanded dynamically.
-          </p>
+          <p class="note-text muted">{{ t('Puzzles.door.decoder.footer') }}</p>
         </div>
       </section>
 
       <!-- Visual Trap Comparison -->
       <section class="visual-trap-section card">
         <div class="section-head">
-          <h2 class="section-title">Visual Trap: The "Float" Example</h2>
-          <p class="section-subtitle">Don't be fooled by the skull appearance</p>
+          <h2 class="section-title">{{ t('Puzzles.door.trap.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.door.trap.subtitle') }}</p>
         </div>
         <div class="trap-comparison">
           <div class="trap-view">
-            <h3 class="trap-label">Far View (Looks like skull)</h3>
+            <h3 class="trap-label">{{ t('Puzzles.door.trap.view1') }}</h3>
             <div class="trap-placeholder">
-              <p class="muted">Image placeholder: Skull appearance from distance</p>
+              <p class="muted">{{ t('Puzzles.door.trap.placeholder1') }}</p>
             </div>
           </div>
           <div class="trap-view">
-            <h3 class="trap-label">Close View (Actual word)</h3>
+            <h3 class="trap-label">{{ t('Puzzles.door.trap.view2') }}</h3>
             <div class="trap-placeholder">
-              <p class="muted">Image placeholder: Letters spelling "FLOAT" when viewed up close</p>
+              <p class="muted">{{ t('Puzzles.door.trap.placeholder2') }}</p>
             </div>
           </div>
         </div>
         <div class="trap-warning">
-          <strong>Don't be fooled!</strong> The skull IS the word. Get close and rotate your view to read the actual letters.
+          <strong>{{ t('Puzzles.door.trap.warning_bold') }}</strong>
+          {{ t('Puzzles.door.trap.warning_text') }}
         </div>
       </section>
 
       <!-- Skip Strategy -->
       <section class="skip-section card warning-card">
         <div class="section-head">
-          <h2 class="section-title">Strategic Advice: Skipping is Also a Strategy</h2>
-          <p class="section-subtitle">When to give up and move on</p>
+          <h2 class="section-title">{{ t('Puzzles.door.skip.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.door.skip.subtitle') }}</p>
         </div>
         <div class="skip-content">
           <div class="skip-when">
-            <h3 class="skip-title">When Should You Give Up?</h3>
-            <p class="skip-quote">
-              Video quote: "Voice recognition is not working well... might save you more time."
-            </p>
+            <h3 class="skip-title">{{ t('Puzzles.door.skip.when.title') }}</h3>
+            <p class="skip-quote">{{ t('Puzzles.door.skip.when.quote') }}</p>
             <ul class="skip-list">
-              <li>You've spoken the correct words but the door won't open</li>
-              <li>Your microphone has issues</li>
-              <li>You can't find the last symbol after searching thoroughly</li>
+              <li>{{ t('Puzzles.door.skip.when.l1') }}</li>
+              <li>{{ t('Puzzles.door.skip.when.l2') }}</li>
+              <li>{{ t('Puzzles.door.skip.when.l3') }}</li>
             </ul>
             <div class="skip-suggestion">
-              <strong>Suggestion:</strong> Go loot other rooms instead. Don't get stuck here. While this room is lucrative, if you're stuck for 5+ minutes, it's not worth it. Consider trying the <strong>YAPYAP scales puzzle</strong> instead, which is generally easier and more forgiving than this door puzzle.
+              <strong>{{ t('Puzzles.door.skip.when.suggestion_bold') }}</strong>
+              {{ t('Puzzles.door.skip.when.suggestion_text1') }}
+              <strong>{{ t('Puzzles.door.skip.when.suggestion_bold2') }}</strong>
+              {{ t('Puzzles.door.skip.when.suggestion_text2') }}
             </div>
           </div>
         </div>
@@ -221,44 +263,76 @@
       <!-- Treasure Room Guide -->
       <section class="treasure-section card">
         <div class="section-head">
-          <h2 class="section-title">The Treasure Room Looting Guide</h2>
-          <p class="section-subtitle">Once the YAPYAP door puzzle opens, this is paradise. Unlike the <strong>YAPYAP scales puzzle</strong> which rewards strategic thinking, this room rewards exploration and voice command precision.</p>
+          <h2 class="section-title">{{ t('Puzzles.door.treasure.title') }}</h2>
+          <p class="section-subtitle">
+            {{ t('Puzzles.door.treasure.subtitle_1') }}
+            <strong>{{ t('Puzzles.door.treasure.subtitle_bold') }}</strong>
+            {{ t('Puzzles.door.treasure.subtitle_2') }}
+          </p>
         </div>
         <div class="treasure-content">
           <div class="treasure-intro">
             <p>
-              The video demonstrates very advanced looting techniques. This room has no large chest, but is <strong>filled with valuable small items</strong> (vases, statues, paintings) scattered everywhere. Unlike the <strong>YAPYAP scales puzzle</strong> room which rewards strategic item placement, this treasure room rewards thorough exploration and voice command mastery.
+              {{ t('Puzzles.door.treasure.intro_1') }}
+              <strong>{{ t('Puzzles.door.treasure.intro_bold') }}</strong>
+              {{ t('Puzzles.door.treasure.intro_2') }}
+              <strong>{{ t('Puzzles.door.treasure.intro_bold2') }}</strong>
+              {{ t('Puzzles.door.treasure.intro_3') }}
             </p>
           </div>
 
           <div class="looting-techniques">
             <div class="technique-item">
-              <h3 class="technique-name">Scanning Technique</h3>
+              <h3 class="technique-name">{{ t('Puzzles.door.treasure.tech1.title') }}</h3>
               <p class="technique-desc">
-                Use the <strong>Nova Staff</strong> (X-ray wand) from the <a href="/wiki/wands">YAPYAP wands list</a> with the <strong>Astral-Eyes</strong> <a href="/spells">spell</a>. You'll see the entire room highlighted with valuable items.
+                {{ t('Puzzles.door.treasure.tech1.desc_1') }}
+                <strong>{{ t('Puzzles.door.treasure.tech1.desc_bold1') }}</strong>
+                {{ t('Puzzles.door.treasure.tech1.desc_2') }}
+                <a href="/wiki/wands">{{ t('Puzzles.door.treasure.tech1.desc_link1') }}</a>
+                {{ t('Puzzles.door.treasure.tech1.desc_3') }}
+                <strong>{{ t('Puzzles.door.treasure.tech1.desc_bold2') }}</strong>
+                {{ t('Puzzles.door.treasure.tech1.desc_4') }}
+                <a href="/spells">{{ t('Puzzles.door.treasure.tech1.desc_link2') }}</a>
+                {{ t('Puzzles.door.treasure.tech1.desc_5') }}
               </p>
             </div>
 
             <div class="technique-item">
-              <h3 class="technique-name">High Items</h3>
+              <h3 class="technique-name">{{ t('Puzzles.door.treasure.tech2.title') }}</h3>
               <p class="technique-desc">
-                Use <strong>Up Dog</strong> <a href="/spells">spell</a> to jump onto shelves and push items down to break them and collect points. Learn all <a href="/spells">spells</a> from our comprehensive <a href="/spells">Spells List</a>.
+                {{ t('Puzzles.door.treasure.tech2.desc_1') }}
+                <strong>{{ t('Puzzles.door.treasure.tech2.desc_bold') }}</strong>
+                {{ t('Puzzles.door.treasure.tech2.desc_2') }}
+                <a href="/spells">{{ t('Puzzles.door.treasure.tech2.desc_link1') }}</a>
+                {{ t('Puzzles.door.treasure.tech2.desc_3') }}
+                <a href="/spells">{{ t('Puzzles.door.treasure.tech2.desc_link2') }}</a>
+                {{ t('Puzzles.door.treasure.tech2.desc_4') }}
+                <a href="/spells">{{ t('Puzzles.door.treasure.tech2.desc_link3') }}</a>
+                {{ t('Puzzles.door.treasure.tech2.desc_5') }}
               </p>
             </div>
 
             <div class="technique-item highlight-technique">
-              <h3 class="technique-name">Moving Large Objects (Pro Tip)</h3>
+              <h3 class="technique-name">{{ t('Puzzles.door.treasure.tech3.title') }}</h3>
               <p class="technique-desc">
-                The video demonstrates a genius technique: If an item is too large to grab (like huge paintings or statues), use the <strong>Grotesque Wand</strong> from the <a href="/wiki/wands">YAPYAP wands list</a> (Fish-yuk <a href="/spells">spell</a>) on it.
+                {{ t('Puzzles.door.treasure.tech3.desc_1') }}
+                <strong>{{ t('Puzzles.door.treasure.tech3.desc_bold') }}</strong>
+                {{ t('Puzzles.door.treasure.tech3.desc_2') }}
+                <a href="/wiki/wands">{{ t('Puzzles.door.treasure.tech3.desc_link1') }}</a>
+                {{ t('Puzzles.door.treasure.tech3.desc_3') }}
+                <a href="/spells">{{ t('Puzzles.door.treasure.tech3.desc_link2') }}</a>
+                {{ t('Puzzles.door.treasure.tech3.desc_4') }}
               </p>
               <div class="technique-demo">
                 <p class="demo-text">
-                  <strong>Effect:</strong> The massive painting transforms into a fish or small item, instantly making it portable and worth points!
+                  <strong>{{ t('Puzzles.door.treasure.tech3.demo.text_bold') }}</strong>
+                  {{ t('Puzzles.door.treasure.tech3.demo.text_text') }}
                 </p>
                 <div class="demo-placeholder">
-                  <p class="muted">GIF placeholder: Video clip at 02:50 showing player transforming a wall painting into a fish with magic</p>
+                  <p class="muted">{{ t('Puzzles.door.treasure.tech3.demo.placeholder') }}</p>
                   <p class="demo-caption">
-                    <strong>Magic Moment:</strong> Transform heavy loot into portable points!
+                    <strong>{{ t('Puzzles.door.treasure.tech3.demo.caption_bold') }}</strong>
+                    {{ t('Puzzles.door.treasure.tech3.demo.caption_text') }}
                   </p>
                 </div>
               </div>
@@ -267,9 +341,9 @@
 
           <div class="guaranteed-reward">
             <div class="reward-box">
-              <div class="reward-label">Guaranteed Minimum</div>
-              <div class="reward-value">500+ Points</div>
-              <div class="reward-desc">As long as you get inside, this run is worth at least 500 points</div>
+              <div class="reward-label">{{ t('Puzzles.door.treasure.guaranteed.label') }}</div>
+              <div class="reward-value">{{ t('Puzzles.door.treasure.guaranteed.value') }}</div>
+              <div class="reward-desc">{{ t('Puzzles.door.treasure.guaranteed.desc') }}</div>
             </div>
           </div>
         </div>
@@ -278,20 +352,27 @@
       <!-- Voice Recognition Warning -->
       <section class="voice-warning-section card warning-card">
         <div class="section-head">
-          <h2 class="section-title">Voice Recognition Warning</h2>
+          <h2 class="section-title">{{ t('Puzzles.door.voice.title') }}</h2>
         </div>
         <div class="voice-warning-content">
           <p class="warning-main">
-            <strong>Voice recognition here is very strict.</strong> The system requires precise pronunciation and clear pauses between words.
+            <strong>{{ t('Puzzles.door.voice.main_bold') }}</strong>
+            {{ t('Puzzles.door.voice.main_text') }}
           </p>
           <div class="voice-tips">
-            <h3 class="tips-title">Tips for Success:</h3>
+            <h3 class="tips-title">{{ t('Puzzles.door.voice.tips.title') }}</h3>
             <ul class="tips-list">
-              <li>Pause between each word—don't rush or speak continuously</li>
-              <li>Speak clearly and enunciate each syllable</li>
-              <li>If it doesn't work after 2-3 attempts, consider skipping this room</li>
-              <li>Use the symbol decoder table above to ensure you have the correct words</li>
-              <li>If voice recognition is too difficult, try the <strong>YAPYAP scales puzzle</strong> first to practice voice commands. The <strong>YAPYAP scales puzzle</strong> uses simpler pitch-based controls that can help you improve your microphone technique.</li>
+              <li>{{ t('Puzzles.door.voice.tips.l1') }}</li>
+              <li>{{ t('Puzzles.door.voice.tips.l2') }}</li>
+              <li>{{ t('Puzzles.door.voice.tips.l3') }}</li>
+              <li>{{ t('Puzzles.door.voice.tips.l4') }}</li>
+              <li>
+                {{ t('Puzzles.door.voice.tips.l5_1') }}
+                <strong>{{ t('Puzzles.door.voice.tips.l5_bold1') }}</strong>
+                {{ t('Puzzles.door.voice.tips.l5_2') }}
+                <strong>{{ t('Puzzles.door.voice.tips.l5_bold2') }}</strong>
+                {{ t('Puzzles.door.voice.tips.l5_3') }}
+              </li>
             </ul>
           </div>
         </div>
@@ -300,31 +381,42 @@
       <!-- Value Assessment -->
       <section class="value-section card">
         <div class="section-head">
-          <h2 class="section-title">Value Assessment</h2>
-          <p class="section-subtitle">Is this room worth it?</p>
+          <h2 class="section-title">{{ t('Puzzles.door.value.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.door.value.subtitle') }}</p>
         </div>
         <div class="value-content">
           <div class="value-pros">
-            <h3 class="value-title">Pros</h3>
+            <h3 class="value-title">{{ t('Puzzles.door.value.pros.title') }}</h3>
             <ul class="value-list">
-              <li>Extremely high reward (500+ points guaranteed)</li>
-              <li>Lots of valuable small items in one place</li>
-              <li>Advanced looting techniques can maximize gains</li>
-              <li>Fish-yuk wand trick makes large items portable</li>
+              <li>{{ t('Puzzles.door.value.pros.l1') }}</li>
+              <li>{{ t('Puzzles.door.value.pros.l2') }}</li>
+              <li>{{ t('Puzzles.door.value.pros.l3') }}</li>
+              <li>{{ t('Puzzles.door.value.pros.l4') }}</li>
             </ul>
           </div>
           <div class="value-cons">
-            <h3 class="value-title">Cons</h3>
+            <h3 class="value-title">{{ t('Puzzles.door.value.cons.title') }}</h3>
             <ul class="value-list">
-              <li>Very difficult voice recognition</li>
-              <li>Easy to get stuck and waste time</li>
-              <li>Requires specific wands (Nova Staff, Grotesque Wand) for optimal looting</li>
-              <li>May not be worth it if your microphone is unreliable</li>
+              <li>{{ t('Puzzles.door.value.cons.l1') }}</li>
+              <li>{{ t('Puzzles.door.value.cons.l2') }}</li>
+              <li>{{ t('Puzzles.door.value.cons.l3') }}</li>
+              <li>{{ t('Puzzles.door.value.cons.l4') }}</li>
             </ul>
           </div>
           <div class="value-verdict">
             <p class="verdict-text">
-              <strong>Bottom Line:</strong> This YAPYAP door puzzle room is hard to enter, but if you have the Fish-yuk wand from the <a href="/wiki/wands">YAPYAP wands list</a> or a good microphone, you should definitely try it—there's 500+ points inside. This utilitarian approach is what players love most for the YAPYAP door puzzle. If you find the <strong>YAPYAP scales puzzle</strong> (<a href="/puzzles/balance-puzzle">Balance Puzzle</a>) easier, master that first before attempting this more challenging door puzzle. The <strong>YAPYAP scales puzzle</strong> is a good warm-up for voice-controlled puzzles. For more strategies, check our <a href="/guides">YAPYAP guides</a>.
+              <strong>{{ t('Puzzles.door.value.verdict_bold') }}</strong>
+              {{ t('Puzzles.door.value.verdict_text1') }}
+              <a href="/wiki/wands">{{ t('Puzzles.door.value.verdict_link1') }}</a>
+              {{ t('Puzzles.door.value.verdict_text2') }}
+              <strong>{{ t('Puzzles.door.value.verdict_bold2') }}</strong>
+              {{ t('Puzzles.door.value.verdict_text3') }}
+              <a href="/puzzles/balance-puzzle">{{ t('Puzzles.door.value.verdict_link2') }}</a>
+              {{ t('Puzzles.door.value.verdict_text4') }}
+              <strong>{{ t('Puzzles.door.value.verdict_bold3') }}</strong>
+              {{ t('Puzzles.door.value.verdict_text5') }}
+              <a href="/guides">{{ t('Puzzles.door.value.verdict_link3') }}</a>
+              {{ t('Puzzles.door.value.verdict_text6') }}
             </p>
           </div>
         </div>
@@ -333,7 +425,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .page {

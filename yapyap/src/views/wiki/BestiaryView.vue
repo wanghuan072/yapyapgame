@@ -3,17 +3,15 @@
     <section class="page-hero">
       <div class="container">
         <nav class="breadcrumbs">
-          <a href="/">Home</a>
+          <router-link to="/">{{ t('Wiki.Home.breadcrumbs.home') }}</router-link>
           <span class="separator">></span>
-          <a href="/wiki">Wiki</a>
+          <router-link to="/wiki">{{ t('Wiki.Home.breadcrumbs.wiki') }}</router-link>
           <span class="separator">></span>
-          <span>Bestiary</span>
+          <span>{{ t('Wiki.Bestiary.title').split(':')[0] }}</span>
         </nav>
-        <p class="pill">Monsters · Enemies · Sound Cues · Strategies</p>
-        <h1 class="title">YAPYAP Bestiary: All Monsters & Survival Guide</h1>
-        <p class="intro">
-          Complete <strong>YAPYAP bestiary</strong> guide to all enemies in YAPYAP. This comprehensive <strong>YAPYAP bestiary</strong> helps you learn their behaviors, weaknesses, sound sensitivity, and how to counter them. The <strong>YAPYAP bestiary</strong> is your essential reference for surviving encounters with <strong>YAPYAP monsters</strong>. Use this <strong>YAPYAP bestiary</strong> to master every <strong>YAPYAP enemy</strong> type.
-        </p>
+        <p class="pill">{{ t('Wiki.Bestiary.pill') }}</p>
+        <h1 class="title">{{ t('Wiki.Bestiary.title') }}</h1>
+        <p class="intro" v-html="t('Wiki.Bestiary.intro')"></p>
       </div>
     </section>
     <main class="container">
@@ -21,19 +19,17 @@
       <!-- Enemy List -->
       <section class="wiki-content card">
         <div class="section-head">
-          <h2 class="section-title">All Enemies</h2>
-          <p class="section-subtitle">
-            Quick reference <strong>YAPYAP bestiary</strong> guide to all <strong>YAPYAP monsters</strong>, their threat levels, and detection methods. This <strong>YAPYAP bestiary</strong> section covers every <strong>YAPYAP enemy</strong> you'll encounter in the tower.
-          </p>
+          <h2 class="section-title">{{ t('Wiki.Bestiary.table.title') }}</h2>
+          <p class="section-subtitle" v-html="t('Wiki.Bestiary.table.subtitle')"></p>
         </div>
 
         <!-- Desktop table -->
         <div class="table card" aria-label="All YAPYAP enemies list">
           <div class="row head">
-            <div class="image">Image</div>
-            <div class="name">Monster Name</div>
-            <div class="danger">Threat Level</div>
-            <div class="characteristics">Characteristics & Strategy</div>
+            <div class="image">{{ t('Wiki.Bestiary.table.headers.image') }}</div>
+            <div class="name">{{ t('Wiki.Bestiary.table.headers.name') }}</div>
+            <div class="danger">{{ t('Wiki.Bestiary.table.headers.danger') }}</div>
+            <div class="characteristics">{{ t('Wiki.Bestiary.table.headers.characteristics') }}</div>
           </div>
 
           <div class="row" v-for="enemy in enemies" :key="enemy.name">
@@ -56,11 +52,11 @@
             <div class="c characteristics">
               <div class="characteristics-content">
                 <div class="traits-section" v-if="enemy.traits">
-                  <strong class="section-label">Traits:</strong>
+                  <strong class="section-label">{{ t('Wiki.Bestiary.table.labels.traits') }}</strong>
                   <p class="traits-text">{{ enemy.traits }}</p>
                 </div>
                 <div class="strategy-section" v-if="enemy.strategy">
-                  <strong class="section-label">Strategy:</strong>
+                  <strong class="section-label">{{ t('Wiki.Bestiary.table.labels.strategy') }}</strong>
                   <ol class="strategy-list" v-if="Array.isArray(enemy.strategy)">
                     <li v-for="(item, idx) in enemy.strategy" :key="idx">{{ item }}</li>
                   </ol>
@@ -93,11 +89,11 @@
             </div>
             <div class="enemy-characteristics">
               <div class="traits-section" v-if="enemy.traits">
-                <strong class="section-label">Traits:</strong>
+                <strong class="section-label">{{ t('Wiki.Bestiary.table.labels.traits') }}</strong>
                 <p class="traits-text">{{ enemy.traits }}</p>
               </div>
               <div class="strategy-section" v-if="enemy.strategy">
-                <strong class="section-label">Strategy:</strong>
+                <strong class="section-label">{{ t('Wiki.Bestiary.table.labels.strategy') }}</strong>
                 <ol class="strategy-list" v-if="Array.isArray(enemy.strategy)">
                   <li v-for="(item, idx) in enemy.strategy" :key="idx">{{ item }}</li>
                 </ol>
@@ -113,32 +109,24 @@
         <div class="mechanics-grid">
           <!-- Audio Detection -->
           <div class="mechanics-card card">
-            <h2 class="section-title">How Monsters Hear You</h2>
+            <h2 class="section-title">{{ t('Wiki.Bestiary.mechanics.audio.title') }}</h2>
             <div class="mechanics-content">
-              <p>
-                YAPYAP is a voice-controlled game. Your microphone is always active—even casual conversation or coughing can attract nearby <strong>Guards</strong> and sound-sensitive enemies.
-              </p>
+              <p v-html="t('Wiki.Bestiary.mechanics.audio.intro')"></p>
               
               <div class="mechanics-topic">
-                <h3 class="topic-title">Microphone Threshold</h3>
-                <p>
-                  <strong>Warning:</strong> Loud talking or coughing will attract enemies even if you're not casting spells. Adjust your mic sensitivity in settings, but remember: <strong>silence is often the best strategy.</strong>
-                </p>
+                <h3 class="topic-title">{{ t('Wiki.Bestiary.mechanics.audio.mic.title') }}</h3>
+                <p v-html="t('Wiki.Bestiary.mechanics.audio.mic.text')"></p>
               </div>
 
               <div class="mechanics-topic">
-                <h3 class="topic-title">Spell Noise</h3>
-                <p>
-                  <strong>Casting spells makes noise.</strong> Every spell command you shout produces sound that can alert nearby enemies. Don't randomly shout spells while sneaking unless you're prepared to fight.
-                </p>
+                <h3 class="topic-title">{{ t('Wiki.Bestiary.mechanics.audio.noise.title') }}</h3>
+                <p v-html="t('Wiki.Bestiary.mechanics.audio.noise.text')"></p>
               </div>
 
               <div class="mechanics-topic">
-                <h3 class="topic-title">Detection Types</h3>
+                <h3 class="topic-title">{{ t('Wiki.Bestiary.mechanics.audio.detection.title') }}</h3>
                 <ul class="topic-list">
-                  <li><strong>Sound-Based (Guards, Goblins):</strong> Break Line of Sight by hiding behind walls or objects.</li>
-                  <li><strong>Vision-Based (The Eye):</strong> Doesn't react to sound but tracks visually. Hide behind cover.</li>
-                  <li><strong>Lock-On (The Jester):</strong> Once spotted, it's locked on. Your only option is to run.</li>
+                  <li v-for="(item, index) in tm('Wiki.Bestiary.mechanics.audio.detection.list')" :key="index" v-html="item"></li>
                 </ul>
               </div>
             </div>
@@ -146,37 +134,25 @@
 
           <!-- Farming Strategy -->
           <div class="mechanics-card card">
-            <h2 class="section-title">Farming Enemies for Points</h2>
+            <h2 class="section-title">{{ t('Wiki.Bestiary.mechanics.farming.title') }}</h2>
             <div class="mechanics-content">
-              <p>
-                Killing <strong>YAPYAP enemies</strong> isn't just about survival—it's about maximizing your quota. Understanding which <strong>YAPYAP monsters</strong> are worth farming is key to successful runs. This <strong>YAPYAP bestiary</strong> farming guide helps you identify the most valuable targets. The <strong>YAPYAP bestiary</strong> point values vary by enemy type.
-              </p>
+              <p v-html="t('Wiki.Bestiary.mechanics.farming.intro')"></p>
 
               <div class="mechanics-topic">
-                <h3 class="topic-title">Goblins: The Perfect ATM</h3>
-                <p>
-                  <strong>Best point farm in the game.</strong> Use <strong>Piss-Yuk</strong> to hit them multiple times for +5 points per hit, rather than killing them instantly. Keep your distance and use terrain to avoid being swarmed.
-                </p>
-                <p class="topic-note">
-                  <strong>Pro Tip:</strong> Don't get too greedy. Balance point farming with your escape timeline.
-                </p>
+                <h3 class="topic-title">{{ t('Wiki.Bestiary.mechanics.farming.goblins.title') }}</h3>
+                <p v-html="t('Wiki.Bestiary.mechanics.farming.goblins.text')"></p>
+                <p class="topic-note" v-html="t('Wiki.Bestiary.mechanics.farming.goblins.note')"></p>
               </div>
 
               <div class="mechanics-topic">
-                <h3 class="topic-title">Guards: Helmet Bonus</h3>
-                <p>
-                  Shooting off their helmets first grants extra points before you kill them. Use terrain to your advantage—Guards can't climb, so elevated positions are safer.
-                </p>
+                <h3 class="topic-title">{{ t('Wiki.Bestiary.mechanics.farming.guards.title') }}</h3>
+                <p v-html="t('Wiki.Bestiary.mechanics.farming.guards.text')"></p>
               </div>
 
               <div class="mechanics-topic warning-topic">
-                <h3 class="topic-title">⚠️ The Cost of Greed</h3>
-                <p>
-                  Spending too much time farming can lead to disaster: Time Ghost spawns at 00:00, dangerous enemies spawn more frequently, and team wipe risks increase.
-                </p>
-                <p class="topic-warning">
-                  <strong>Golden Rule:</strong> Always prioritize escape over farming. Set a time limit (e.g., leave by 23:30) and stick to it.
-                </p>
+                <h3 class="topic-title">{{ t('Wiki.Bestiary.mechanics.farming.greed.title') }}</h3>
+                <p v-html="t('Wiki.Bestiary.mechanics.farming.greed.text')"></p>
+                <p class="topic-warning" v-html="t('Wiki.Bestiary.mechanics.farming.greed.warning')"></p>
               </div>
             </div>
           </div>
@@ -186,19 +162,15 @@
       <!-- Death Penalties -->
       <section class="death-section">
         <div class="death-card card">
-          <h2 class="section-title">Death Penalties</h2>
+          <h2 class="section-title">{{ t('Wiki.Bestiary.death.title') }}</h2>
           <div class="death-content">
-            <p>
-              When you die to <strong>YAPYAP enemies</strong>, <strong>all items in your inventory drop at your death location</strong>, including Scrap, your equipped Wand, and consumables. Your corpse remains visible to teammates who can recover your items. The <strong>YAPYAP bestiary</strong> shows which <strong>YAPYAP monsters</strong> are most likely to cause deaths.
-            </p>
-            <p>
-              Each death reduces your team's quota progress. Dead players cannot contribute to the quota, so it's crucial to keep at least one person alive. Study this <strong>YAPYAP bestiary</strong> to avoid dangerous <strong>YAPYAP enemies</strong> that can wipe your team.
-            </p>
+            <p v-html="t('Wiki.Bestiary.death.text1')"></p>
+            <p v-html="t('Wiki.Bestiary.death.text2')"></p>
             <div class="death-warning">
               <div class="warning-icon">⚠️</div>
               <div class="warning-content">
-                <strong>Warning: Full Team Wipe</strong>
-                <p>If everyone dies, you lose ALL items on the ship. Always leave one person alive on the ship as a safety net!</p>
+                <strong v-html="t('Wiki.Bestiary.death.warning')"></strong>
+                <p>{{ t('Wiki.Bestiary.death.warningText') }}</p>
               </div>
             </div>
           </div>
@@ -208,22 +180,22 @@
       <!-- Related Guides -->
       <section class="related-section">
         <div class="related-card card">
-          <h2 class="section-title">Prepared for Battle?</h2>
+          <h2 class="section-title">{{ t('Wiki.Bestiary.related.title') }}</h2>
           <div class="related-links">
-            <a href="/wiki/wands" class="related-link">
+            <router-link to="/wiki/wands" class="related-link">
               <div class="link-icon">🪄</div>
               <div class="link-content">
-                <h3 class="link-title">Get the Right Weapons</h3>
-                <p class="link-desc">Which wands knock back Guards? Find the perfect wand for your survival strategy against <strong>YAPYAP monsters</strong>.</p>
+                <h3 class="link-title">{{ t('Wiki.Bestiary.related.wands.title') }}</h3>
+                <p class="link-desc" v-html="t('Wiki.Bestiary.related.wands.desc')"></p>
               </div>
-            </a>
-            <a href="/spells" class="related-link">
+            </router-link>
+            <router-link to="/spells" class="related-link">
               <div class="link-icon">✨</div>
               <div class="link-content">
-                <h3 class="link-title">Learn Defense Spells</h3>
-                <p class="link-desc">Spells to block lasers and slow <strong>YAPYAP enemies</strong>. Master Aero-bis, Duplico, and more. Combine with this <strong>YAPYAP bestiary</strong> for maximum effectiveness.</p>
+                <h3 class="link-title">{{ t('Wiki.Bestiary.related.spells.title') }}</h3>
+                <p class="link-desc" v-html="t('Wiki.Bestiary.related.spells.desc')"></p>
               </div>
-            </a>
+            </router-link>
           </div>
         </div>
       </section>
@@ -232,84 +204,56 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const enemies = [
+const { t, tm } = useI18n()
+
+const enemiesData = [
   {
-    name: 'Goblins',
+    id: 'goblins',
     image: '/images/bestiary/bestiary-01.webp',
-    threat: '🟢 Low',
     threatLevel: 'low',
-    threatDesc: 'Dangerous in swarms',
-    traits: 'Small creatures that spawn in large groups later in the stage.',
-    strategy: [
-      'Use the Wind Wand (Aero-bis) to easily push them away.',
-      'Use Piss-Yuk on them to farm points (+5 per hit).',
-      'Be careful not to get cornered; they deal small damage individually but melt HP quickly in groups.',
-    ],
   },
   {
-    name: 'Guards',
+    id: 'guards',
     image: '/images/bestiary/bestiary-02.webp',
-    threat: '🟠 High',
     threatLevel: 'high',
-    threatDesc: '2-Hit Kill',
-    traits: 'Red armored knights. They deal massive damage (50% HP per hit). They have poor pathfinding and cannot climb.',
-    strategy: [
-      'Shoot off their helmets for points, then run.',
-      'Use the Duplico spell to create a decoy and distract them.',
-      'Use objects/terrain to block them since they have to walk around.',
-    ],
   },
   {
-    name: 'Headless Guards',
+    id: 'headless_guards',
     image: '/images/bestiary/bestiary-03.webp',
-    threat: '🔴 Very High',
     threatLevel: 'very-high',
-    threatDesc: '2-Hit Kill',
-    traits: 'A more dangerous version of the standard Guard. They also kill in 2 hits but move and attack much faster.',
-    strategy: 'Extremely dangerous. Keep maximum distance and avoid narrow corridors.',
   },
   {
-    name: 'The Jester',
+    id: 'jester',
     image: '/images/bestiary/bestiary-04.webp',
-    threat: '⚫ CRITICAL',
     threatLevel: 'critical',
-    threatDesc: 'Insta-Kill',
-    traits: 'The deadliest enemy in the demo. It moves extremely fast and will instantly kill you upon contact.',
-    strategy: 'Do not fight. As soon as you see or hear it, RUN away immediately.',
   },
   {
-    name: 'The Eye',
+    id: 'eye',
     image: '/images/bestiary/bestiary-05.webp',
-    threat: '🟠 High',
     threatLevel: 'high',
-    threatDesc: 'Ranged Damage',
-    traits: 'A stationary, turret-like enemy that spawns randomly. It tracks players with a damaging laser beam.',
-    strategy: [
-      'Break Line of Sight (LOS) by hiding behind walls or pillars.',
-      'Be careful: The Eye often distracts you so other monsters can finish you off.',
-    ],
   },
   {
-    name: 'The Slime',
+    id: 'slime',
     image: '/images/bestiary/bestiary-06.webp',
-    threat: '🟣 Situational',
     threatLevel: 'situational',
-    threatDesc: 'Path Blocker',
-    traits: 'A giant green gelatinous cube. Easy to avoid in open rooms, but deadly in tight spaces.',
-    strategy: 'Its main threat is blocking your path (e.g., staircases). If a Slime traps you in a dead-end with other monsters, you will die.',
   },
   {
-    name: 'Time Ghost',
+    id: 'time_ghost',
     image: '/images/bestiary/bestiary-07.webp',
-    threat: '⚫ Unavoidable',
     threatLevel: 'unavoidable',
-    threatDesc: 'Game Over',
-    traits: 'Spawns when the level timer hits 00:00.',
-    strategy: 'Instantly kills the player to end the night/run. Cannot be fought.',
   },
 ]
+
+const enemies = computed(() => enemiesData.map(enemy => {
+  const data = tm(`Wiki.Bestiary.enemies.${enemy.id}`)
+  return {
+    ...enemy,
+    ...data
+  }
+}))
 </script>
 
 <style scoped>

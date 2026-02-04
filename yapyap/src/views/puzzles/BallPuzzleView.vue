@@ -2,15 +2,13 @@
   <div class="page" id="top">
     <section class="page-hero">
       <div class="container">
-        <p class="pill">Challenge Room · Solo Farm · Easy Loot</p>
-        <h1 class="title">YAPYAP Ball Puzzle: Orb Drop Challenge Guide</h1>
-        <p class="intro">
-          Complete guide to the YAPYAP ball puzzle (Orb Drop Challenge). High-tier room: easy solo farm for double wands. Perfect for solo players looking for efficient loot runs in this YAPYAP ball puzzle.
-        </p>
+        <p class="pill">{{ t('Puzzles.ball.hero.pill') }}</p>
+        <h1 class="title">{{ t('Puzzles.ball.hero.title') }}</h1>
+        <p class="intro">{{ t('Puzzles.ball.hero.intro') }}</p>
         <div class="puzzle-meta">
-          <span class="tag easy">Very Easy</span>
-          <span class="tag solo">Solo Friendly</span>
-          <span class="tag loot">High Loot</span>
+          <span class="tag easy">{{ t('Puzzles.ball.hero.tags.easy') }}</span>
+          <span class="tag solo">{{ t('Puzzles.ball.hero.tags.solo') }}</span>
+          <span class="tag loot">{{ t('Puzzles.ball.hero.tags.loot') }}</span>
         </div>
       </div>
     </section>
@@ -20,38 +18,38 @@
       <section class="overview-section">
         <div class="overview-grid">
           <div class="overview-card card">
-            <div class="overview-label">Difficulty</div>
-            <div class="overview-value">Very Easy</div>
-            <div class="overview-desc">The easiest challenge room according to the video</div>
+            <div class="overview-label">{{ t('Puzzles.ball.overview.difficulty.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.ball.overview.difficulty.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.ball.overview.difficulty.desc') }}</div>
           </div>
           <div class="overview-card card">
-            <div class="overview-label">Recommended Spells</div>
-            <div class="overview-value">Teleport, Up Dog</div>
-            <div class="overview-desc">Tarot wand teleport or Up Dog for vertical movement</div>
+            <div class="overview-label">{{ t('Puzzles.ball.overview.spells.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.ball.overview.spells.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.ball.overview.spells.desc') }}</div>
           </div>
           <div class="overview-card card">
-            <div class="overview-label">Mechanic</div>
-            <div class="overview-value">Gravity Drop</div>
-            <div class="overview-desc">Break the orb by dropping it from the second floor</div>
+            <div class="overview-label">{{ t('Puzzles.ball.overview.mechanic.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.ball.overview.mechanic.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.ball.overview.mechanic.desc') }}</div>
           </div>
           <div class="overview-card card highlight-card">
-            <div class="overview-label">Reward</div>
-            <div class="overview-value">2 Wands + Coins</div>
-            <div class="overview-desc">Chest (1 wand) + Hidden cabinet (1 wand)</div>
+            <div class="overview-label">{{ t('Puzzles.ball.overview.reward.label') }}</div>
+            <div class="overview-value">{{ t('Puzzles.ball.overview.reward.value') }}</div>
+            <div class="overview-desc">{{ t('Puzzles.ball.overview.reward.desc') }}</div>
           </div>
         </div>
       </section>
 
       <!-- Video Section -->
-      <!-- <section class="video-section card">
+      <section class="video-section card">
         <div class="section-head">
-          <h2 class="section-title">Video Walkthrough</h2>
-          <p class="section-subtitle">Watch the complete YAPYAP ball puzzle strategy demonstration</p>
+          <h2 class="section-title">{{ t('Puzzles.ball.video.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.ball.video.subtitle') }}</p>
         </div>
         <div class="video-container">
           <div class="video-frame">
             <iframe
-              src="https://www.youtube.com/embed/VIDEO_ID"
+              src="https://www.youtube.com/embed/3ljYkNgczdY"
               title="Orb Drop Challenge walkthrough"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -59,32 +57,34 @@
             ></iframe>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Objective Section -->
       <section class="objective-section card">
         <div class="section-head">
-          <h2 class="section-title">Objective</h2>
-          <p class="section-subtitle">What you need to accomplish</p>
+          <h2 class="section-title">{{ t('Puzzles.ball.objective.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.ball.objective.subtitle') }}</p>
         </div>
         <div class="objective-content">
           <p class="objective-text">
-            In this YAPYAP ball puzzle, before the timer ends, find the <strong>Small Orb</strong> (purple orb) in the room and destroy it. This is the core objective of the YAPYAP ball puzzle challenge.
+            {{ t('Puzzles.ball.objective.text_1') }}
+            <strong>{{ t('Puzzles.ball.objective.text_bold') }}</strong>
+            {{ t('Puzzles.ball.objective.text_2') }}
           </p>
           <div class="approach-comparison">
             <div class="approach-box wrong-approach">
-              <h3 class="approach-title">Wrong Approach</h3>
+              <h3 class="approach-title">{{ t('Puzzles.ball.objective.wrong.title') }}</h3>
               <ul class="approach-list">
-                <li>Attacking the orb on flat ground</li>
-                <li>Blowing at it with spells</li>
+                <li>{{ t('Puzzles.ball.objective.wrong.l1') }}</li>
+                <li>{{ t('Puzzles.ball.objective.wrong.l2') }}</li>
               </ul>
             </div>
             <div class="approach-box correct-approach">
-              <h3 class="approach-title">Correct Approach</h3>
+              <h3 class="approach-title">{{ t('Puzzles.ball.objective.correct.title') }}</h3>
               <ol class="approach-list">
-                <li>Pick up the orb from the first floor</li>
-                <li>Go to the second floor</li>
-                <li>Drop or throw it down to break it</li>
+                <li>{{ t('Puzzles.ball.objective.correct.l1') }}</li>
+                <li>{{ t('Puzzles.ball.objective.correct.l2') }}</li>
+                <li>{{ t('Puzzles.ball.objective.correct.l3') }}</li>
               </ol>
             </div>
           </div>
@@ -94,38 +94,35 @@
       <!-- Strategy Section -->
       <section class="strategy-section card">
         <div class="section-head">
-          <h2 class="section-title">Perfect Clear Strategy</h2>
-          <p class="section-subtitle">Step-by-step walkthrough for optimal completion</p>
+          <h2 class="section-title">{{ t('Puzzles.ball.strategy.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.ball.strategy.subtitle') }}</p>
         </div>
         <div class="strategy-steps">
           <div class="strategy-step">
             <div class="step-header">
               <span class="step-number">1</span>
-              <h3 class="step-title">Activate the Challenge</h3>
+              <h3 class="step-title">{{ t('Puzzles.ball.strategy.step1.title') }}</h3>
             </div>
-            <p class="step-description">
-              Activate the ritual circle to start the timer. A Guard will spawn immediately when the challenge begins.
-            </p>
+            <p class="step-description">{{ t('Puzzles.ball.strategy.step1.desc') }}</p>
           </div>
 
           <div class="strategy-step highlight-step">
             <div class="step-header">
               <span class="step-number">2</span>
-              <h3 class="step-title">Teleport Loop Strategy</h3>
+              <h3 class="step-title">{{ t('Puzzles.ball.strategy.step2.title') }}</h3>
             </div>
-            <p class="step-description">
-              This is the core strategy that makes this YAPYAP ball puzzle easy. Use a Teleport wand (Tarot wand) to create an infinite loop for the YAPYAP ball puzzle.
-            </p>
+            <p class="step-description">{{ t('Puzzles.ball.strategy.step2.desc') }}</p>
             <div class="step-details">
-              <h4 class="details-title">The Loop:</h4>
+              <h4 class="details-title">{{ t('Puzzles.ball.strategy.step2.loop.title') }}</h4>
               <ol class="details-list">
-                <li>Pick up the orb on the first floor</li>
-                <li>Teleport directly to the second floor (bypasses stairs and avoids the Guard)</li>
-                <li>Jump down and drop the orb to break it</li>
-                <li>After landing, teleport back to the second floor</li>
+                <li>{{ t('Puzzles.ball.strategy.step2.loop.l1') }}</li>
+                <li>{{ t('Puzzles.ball.strategy.step2.loop.l2') }}</li>
+                <li>{{ t('Puzzles.ball.strategy.step2.loop.l3') }}</li>
+                <li>{{ t('Puzzles.ball.strategy.step2.loop.l4') }}</li>
               </ol>
               <div class="step-tip">
-                <strong>Why this works:</strong> The Guard gets stuck looping the stairs due to the height difference and teleport invincibility frames. It can't reach you. If you don't have teleport, use Up Dog to reach the second floor quickly.
+                <strong>{{ t('Puzzles.ball.strategy.step2.tip_bold') }}</strong>
+                {{ t('Puzzles.ball.strategy.step2.tip_text') }}
               </div>
             </div>
           </div>
@@ -133,37 +130,39 @@
           <div class="strategy-step">
             <div class="step-header">
               <span class="step-number">3</span>
-              <h3 class="step-title">Collect Loot</h3>
+              <h3 class="step-title">{{ t('Puzzles.ball.strategy.step3.title') }}</h3>
             </div>
-            <p class="step-description">
-              After the orb breaks, a chest appears at the starting circle containing coins and a wand. Don't forget to check the hidden cabinet near the Guard spawn point for a second wand.
-            </p>
+            <p class="step-description">{{ t('Puzzles.ball.strategy.step3.desc') }}</p>
           </div>
         </div>
       </section>
 
-      <!-- Hidden Loot Warning -->
-      <section class="warning-section card warning-card">
-        <div class="warning-header">
-          <h2 class="section-title">Important: Hidden Bonus Loot</h2>
-        </div>
-        <div class="warning-body">
-          <p class="warning-main-text">
-            <strong>Do NOT leave with only the chest — check the cabinet!</strong>
-          </p>
-          <p>
-            Because this room spawns a Guard, there is usually a <strong>wire-mesh cabinet</strong> near the Guard spawn point.
-          </p>
-          <div class="warning-details">
-            <div class="warning-item">
-              <strong>Location:</strong> Wall-side cabinet near Guard spawn
-            </div>
-            <div class="warning-item highlight">
-              <strong>Reward:</strong> Guaranteed extra wand (100% drop rate)
-            </div>
-          </div>
-            <div class="warning-conclusion">
-            <strong>Bottom line:</strong> This YAPYAP ball puzzle room can yield two wands per run (chest + cabinet), making it one of the best farm rooms in the game. The YAPYAP ball puzzle is highly recommended for efficient farming.
+      <!-- Warning Section -->
+      <section class="warning-section card">
+        <div class="warning-content">
+          <div class="warning-icon">⚠️</div>
+          <div class="warning-text">
+            <h3 class="warning-title">{{ t('Puzzles.ball.warning.title') }}</h3>
+            <p class="warning-main"><strong>{{ t('Puzzles.ball.warning.main_bold') }}</strong></p>
+            <p>
+              {{ t('Puzzles.ball.warning.text_1') }}
+              <strong>{{ t('Puzzles.ball.warning.text_bold') }}</strong>
+              {{ t('Puzzles.ball.warning.text_2') }}
+            </p>
+            <ul class="warning-list">
+              <li>
+                <strong>{{ t('Puzzles.ball.warning.location_bold') }}</strong>
+                {{ t('Puzzles.ball.warning.location_text') }}
+              </li>
+              <li>
+                <strong>{{ t('Puzzles.ball.warning.reward_bold') }}</strong>
+                {{ t('Puzzles.ball.warning.reward_text') }}
+              </li>
+            </ul>
+            <p class="warning-conclusion">
+              <strong>{{ t('Puzzles.ball.warning.conclusion_bold') }}</strong>
+              {{ t('Puzzles.ball.warning.conclusion_text') }}
+            </p>
           </div>
         </div>
       </section>
@@ -171,40 +170,32 @@
       <!-- Spells & Alternatives -->
       <section class="spells-section card">
         <div class="section-head">
-          <h2 class="section-title">Recommended Spells & Alternatives</h2>
-          <p class="section-subtitle">Choose the right tools for the YAPYAP ball puzzle</p>
+          <h2 class="section-title">{{ t('Puzzles.ball.spells.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.ball.spells.subtitle') }}</p>
         </div>
         <div class="spells-grid">
           <div class="spell-card tier-best">
-            <div class="spell-tier">T0 - Best</div>
-            <h3 class="spell-name">Teleport</h3>
-            <p class="spell-description">
-              The optimal solution. Ignores pathing, provides invincibility frames to dodge the Guard, and is the fastest method. As demonstrated in the video.
-            </p>
+            <div class="spell-tier">{{ t('Puzzles.ball.spells.teleport.tier') }}</div>
+            <h3 class="spell-name">{{ t('Puzzles.ball.spells.teleport.name') }}</h3>
+            <p class="spell-description">{{ t('Puzzles.ball.spells.teleport.desc') }}</p>
           </div>
 
           <div class="spell-card tier-strong">
-            <div class="spell-tier">T1 - Strong</div>
-            <h3 class="spell-name">Up Dog</h3>
-            <p class="spell-description">
-              If you don't have teleport, use Up Dog to quickly reach the second-floor platform without taking the stairs, saving time and avoiding the Guard.
-            </p>
+            <div class="spell-tier">{{ t('Puzzles.ball.spells.updog.tier') }}</div>
+            <h3 class="spell-name">{{ t('Puzzles.ball.spells.updog.name') }}</h3>
+            <p class="spell-description">{{ t('Puzzles.ball.spells.updog.desc') }}</p>
           </div>
 
           <div class="spell-card tier-control">
-            <div class="spell-tier">T2 - Control</div>
-            <h3 class="spell-name">Aero-Bis</h3>
-            <p class="spell-description">
-              If the Guard blocks the stairs, use Aero-Bis to push it away or off the ledge, creating space to reposition safely.
-            </p>
+            <div class="spell-tier">{{ t('Puzzles.ball.spells.aerobis.tier') }}</div>
+            <h3 class="spell-name">{{ t('Puzzles.ball.spells.aerobis.name') }}</h3>
+            <p class="spell-description">{{ t('Puzzles.ball.spells.aerobis.desc') }}</p>
           </div>
 
           <div class="spell-card tier-avoid">
-            <div class="spell-tier">Not Recommended</div>
-            <h3 class="spell-name">Damage Spells</h3>
-            <p class="spell-description">
-              Don't waste time killing the Guard. It's tanky, may respawn, and kills don't contribute to the objective. Only use damage spells if you must defend yourself.
-            </p>
+            <div class="spell-tier">{{ t('Puzzles.ball.spells.damage.tier') }}</div>
+            <h3 class="spell-name">{{ t('Puzzles.ball.spells.damage.name') }}</h3>
+            <p class="spell-description">{{ t('Puzzles.ball.spells.damage.desc') }}</p>
           </div>
         </div>
       </section>
@@ -212,27 +203,25 @@
       <!-- Co-op Tactics -->
       <section class="coop-section card">
         <div class="section-head">
-          <h2 class="section-title">Co-op Tactics</h2>
-          <p class="section-subtitle">Team strategies for faster completion</p>
+          <h2 class="section-title">{{ t('Puzzles.ball.coop.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.ball.coop.subtitle') }}</p>
         </div>
         <div class="tactics-grid">
           <div class="tactic-card">
-            <h3 class="tactic-name">Plan A: The Alley-Oop</h3>
-            <p class="tactic-description">
-              The carrier throws the orb up toward the second floor (or uses Up Dog), while a teammate waits at the ledge to catch/collect it and drop it down again.
-            </p>
+            <h3 class="tactic-name">{{ t('Puzzles.ball.coop.planA.name') }}</h3>
+            <p class="tactic-description">{{ t('Puzzles.ball.coop.planA.desc') }}</p>
             <div class="tactic-benefit">
-              <strong>Benefit:</strong> No stair running required; extremely fast completion.
+              <strong>{{ t('Puzzles.ball.coop.planA.benefit_bold') }}</strong>
+              {{ t('Puzzles.ball.coop.planA.benefit_text') }}
             </div>
           </div>
 
           <div class="tactic-card">
-            <h3 class="tactic-name">Plan B: The Bait</h3>
-            <p class="tactic-description">
-              One player (even a ghost) makes noise or uses bait actions to draw the Guard's attention toward the stairs, away from the carrier.
-            </p>
+            <h3 class="tactic-name">{{ t('Puzzles.ball.coop.planB.name') }}</h3>
+            <p class="tactic-description">{{ t('Puzzles.ball.coop.planB.desc') }}</p>
             <div class="tactic-benefit">
-              <strong>Benefit:</strong> The carrier can complete the objective with minimal pressure.
+              <strong>{{ t('Puzzles.ball.coop.planB.benefit_bold') }}</strong>
+              {{ t('Puzzles.ball.coop.planB.benefit_text') }}
             </div>
           </div>
         </div>
@@ -241,29 +230,23 @@
       <!-- FAQ Section -->
       <section class="faq-section card">
         <div class="section-head">
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">Common issues and mechanics explained</p>
+          <h2 class="section-title">{{ t('Puzzles.ball.faq.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.ball.faq.subtitle') }}</p>
         </div>
         <div class="faq-grid">
           <div class="faq-item">
-            <h3 class="faq-question">The orb didn't break after dropping it in the YAPYAP ball puzzle — why?</h3>
-            <p class="faq-answer">
-              The height wasn't sufficient. Make sure you throw it from outside the second-floor railing so it hits the first-floor ground. If it lands on decorations or the middle stairs, it may not count. Try jump-throwing for better results in this YAPYAP ball puzzle.
-            </p>
+            <h3 class="faq-question">{{ t('Puzzles.ball.faq.q1.q') }}</h3>
+            <p class="faq-answer">{{ t('Puzzles.ball.faq.q1.a') }}</p>
           </div>
 
           <div class="faq-item">
-            <h3 class="faq-question">Does the Guard respawn infinitely?</h3>
-            <p class="faq-answer">
-              Based on the video, the room is usually paired with a Guard spawn. Killing it isn't recommended, but a strong team can burst it down to complete the objective safely.
-            </p>
+            <h3 class="faq-question">{{ t('Puzzles.ball.faq.q2.q') }}</h3>
+            <p class="faq-answer">{{ t('Puzzles.ball.faq.q2.a') }}</p>
           </div>
 
           <div class="faq-item">
-            <h3 class="faq-question">What do we do after the orb breaks in the YAPYAP ball puzzle?</h3>
-            <p class="faq-answer">
-              The YAPYAP ball puzzle objective completes instantly. No pickup is required. Go back to the starting circle and open the chest first, then check the hidden cabinet near the Guard spawn to maximize your rewards from this YAPYAP ball puzzle.
-            </p>
+            <h3 class="faq-question">{{ t('Puzzles.ball.faq.q3.q') }}</h3>
+            <p class="faq-answer">{{ t('Puzzles.ball.faq.q3.a') }}</p>
           </div>
         </div>
       </section>
@@ -271,37 +254,40 @@
       <!-- Loot Table -->
       <section class="loot-section card">
         <div class="section-head">
-          <h2 class="section-title">Loot Table</h2>
-          <p class="section-subtitle">Complete reward breakdown</p>
+          <h2 class="section-title">{{ t('Puzzles.ball.loot.title') }}</h2>
+          <p class="section-subtitle">{{ t('Puzzles.ball.loot.subtitle') }}</p>
         </div>
         <div class="table-container">
           <table class="loot-table">
             <thead>
               <tr>
-                <th>Source</th>
-                <th>Item</th>
-                <th>Quantity</th>
-                <th>Notes</th>
+                <th>{{ t('Puzzles.ball.loot.th.source') }}</th>
+                <th>{{ t('Puzzles.ball.loot.th.item') }}</th>
+                <th>{{ t('Puzzles.ball.loot.th.quantity') }}</th>
+                <th>{{ t('Puzzles.ball.loot.th.notes') }}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Center Chest</td>
-                <td>Coins</td>
-                <td>50–100G</td>
-                <td>Guaranteed; shared by team</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r1.source') }}</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r1.item') }}</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r1.qty') }}</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r1.notes') }}</td>
               </tr>
               <tr>
-                <td>Center Chest</td>
-                <td>Random Wand</td>
-                <td>1</td>
-                <td>Guaranteed; any wand type</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r2.source') }}</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r2.item') }}</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r2.qty') }}</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r2.notes') }}</td>
               </tr>
               <tr class="highlight-row">
-                <td>Corner Cabinet</td>
-                <td>Random Wand</td>
-                <td>1</td>
-                <td><strong>Easy to miss!</strong> Located near Guard spawn</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r3.source') }}</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r3.item') }}</td>
+                <td>{{ t('Puzzles.ball.loot.rows.r3.qty') }}</td>
+                <td>
+                  <strong>{{ t('Puzzles.ball.loot.rows.r3.notes_bold') }}</strong>
+                  {{ t('Puzzles.ball.loot.rows.r3.notes_text') }}
+                </td>
               </tr>
             </tbody>
           </table>
@@ -311,7 +297,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .page {

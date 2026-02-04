@@ -3,17 +3,15 @@
     <section class="page-hero">
       <div class="container">
         <nav class="breadcrumbs">
-          <a href="/">Home</a>
+          <router-link to="/">{{ t('Wiki.Home.breadcrumbs.home') }}</router-link>
           <span class="separator">></span>
-          <a href="/wiki">Wiki</a>
+          <router-link to="/wiki">{{ t('Wiki.Home.breadcrumbs.wiki') }}</router-link>
           <span class="separator">></span>
-          <span>Potions & Crafting</span>
+          <span>{{ t('Wiki.Home.grid.potions.title') }}</span>
         </nav>
-        <p class="pill">Crafting Recipes · Ingredients · Effects</p>
-        <h1 class="title">YAPYAP Potions & Crafting Recipes Guide</h1>
-        <p class="intro">
-          Complete <strong>YAPYAP potions</strong> guide to all crafting recipes in YAPYAP. This comprehensive <strong>YAPYAP crafting</strong> guide helps you master the three-step brewing process using the Cauldron and learn which ingredients to eat raw vs. brew into <strong>YAPYAP potions</strong>. The <strong>YAPYAP potions</strong> system is essential for survival. Use this <strong>YAPYAP crafting</strong> guide to master all <strong>YAPYAP recipes</strong>.
-        </p>
+        <p class="pill">{{ t('Wiki.Potions.pill') }}</p>
+        <h1 class="title">{{ t('Wiki.Potions.title') }}</h1>
+        <p class="intro" v-html="t('Wiki.Potions.intro')"></p>
       </div>
     </section>
     <main class="container">
@@ -23,10 +21,8 @@
         <div class="seo-highlight card">
           <div class="seo-icon">💡</div>
           <div class="seo-content">
-            <h3 class="seo-title">Pro Tip: Broken Bottles Work Too!</h3>
-            <p class="seo-text">
-              <strong>Did you know?</strong> You can brew potions using broken glass bottles found on the floor! Don't waste money buying bottles from the shop. Even <strong>Broken Bottles</strong> can be used to fill potions from the cauldron.
-            </p>
+            <h3 class="seo-title">{{ t('Wiki.Potions.seo.title') }}</h3>
+            <p class="seo-text" v-html="t('Wiki.Potions.seo.text')"></p>
           </div>
         </div>
       </section>
@@ -34,38 +30,20 @@
       <!-- How to Craft Section -->
       <section class="crafting-mechanic-section">
         <div class="mechanic-card card">
-          <h2 class="section-title">How to Brew Potions (The Three-Step Process)</h2>
+          <h2 class="section-title">{{ t('Wiki.Potions.crafting.title') }}</h2>
           <div class="mechanic-content">
-            <p>
-              Brewing <strong>YAPYAP potions</strong> requires a <strong>Cauldron</strong> (the green alchemy pot), an <strong>Ingredient</strong>, and an <strong>Empty Bottle</strong>. The <strong>YAPYAP crafting</strong> process is simple but requires all three components. This <strong>YAPYAP potions</strong> guide explains every step of <strong>YAPYAP crafting</strong>. Master these <strong>YAPYAP recipes</strong> to create powerful <strong>YAPYAP potions</strong>.
-            </p>
+            <p v-html="t('Wiki.Potions.crafting.intro')"></p>
             <div class="steps-list">
-              <div class="step-item">
-                <div class="step-number">1</div>
+              <div class="step-item" v-for="step in 3" :key="step">
+                <div class="step-number">{{ step }}</div>
                 <div class="step-content">
-                  <h3 class="step-title">Toss it in</h3>
-                  <p>Hold the ingredient (mushroom, carrot, etc.) in your hand, then press <strong>Q</strong> to drop it into the green Cauldron. The cauldron will react with a splash effect.</p>
-                </div>
-              </div>
-              <div class="step-item">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                  <h3 class="step-title">Wait for Splash</h3>
-                  <p>Watch for the water to splash. The cauldron's liquid properties will change based on the ingredient you added. The liquid will turn green and become ready for bottling.</p>
-                </div>
-              </div>
-              <div class="step-item">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                  <h3 class="step-title">Fill Bottle</h3>
-                  <p>Hold an <strong>Empty Bottle</strong> or <strong>Broken Bottle</strong> in your hand, face the cauldron, and press <strong>E</strong> (Fill) to bottle the potion. The potion color will change based on the ingredient used.</p>
-                  <p class="step-note"><strong>Key Point:</strong> Even broken glass bottles found on the floor can be used to create perfect potions!</p>
+                  <h3 class="step-title">{{ t(`Wiki.Potions.crafting.steps.${step}.title`) }}</h3>
+                  <p v-html="t(`Wiki.Potions.crafting.steps.${step}.text`)"></p>
+                  <p v-if="step === 3" class="step-note" v-html="t(`Wiki.Potions.crafting.steps.${step}.note`)"></p>
                 </div>
               </div>
             </div>
-            <div class="mechanic-formula">
-              <strong>Formula:</strong> Cauldron + Ingredient + Empty Bottle = Potion
-            </div>
+            <div class="mechanic-formula" v-html="t('Wiki.Potions.crafting.formula')"></div>
           </div>
         </div>
       </section>
@@ -73,21 +51,19 @@
       <!-- Potion Recipes Table -->
       <section class="wiki-content card">
         <div class="section-head">
-          <h2 class="section-title">Potion Recipes Database</h2>
-          <p class="section-subtitle">
-            Complete <strong>YAPYAP potions</strong> list of all <strong>YAPYAP recipes</strong>, their colors, recipes, effects, and durations. This <strong>YAPYAP crafting</strong> database contains every <strong>YAPYAP potions</strong> recipe available. Use this <strong>YAPYAP crafting</strong> guide to master all <strong>YAPYAP recipes</strong>.
-          </p>
+          <h2 class="section-title">{{ t('Wiki.Potions.database.title') }}</h2>
+          <p class="section-subtitle" v-html="t('Wiki.Potions.database.subtitle')"></p>
         </div>
 
         <!-- Desktop table -->
-        <div class="table card" aria-label="All YAPYAP potion recipes">
+        <div class="table card" :aria-label="t('Wiki.Potions.database.title')">
           <div class="row head">
-            <div class="c image">Image</div>
-            <div class="c potion">Potion</div>
-            <div class="c color">Color</div>
-            <div class="c recipe">Recipe</div>
-            <div class="c effect">Effect</div>
-            <div class="c duration">Duration</div>
+            <div class="c image">{{ t('Wiki.Potions.database.headers.image') }}</div>
+            <div class="c potion">{{ t('Wiki.Potions.database.headers.potion') }}</div>
+            <div class="c color">{{ t('Wiki.Potions.database.headers.color') }}</div>
+            <div class="c recipe">{{ t('Wiki.Potions.database.headers.recipe') }}</div>
+            <div class="c effect">{{ t('Wiki.Potions.database.headers.effect') }}</div>
+            <div class="c duration">{{ t('Wiki.Potions.database.headers.duration') }}</div>
           </div>
 
           <div class="row" v-for="recipe in recipes" :key="recipe.item">
@@ -145,7 +121,7 @@
               </div>
             </div>
             <div class="recipe-formula-card">
-              <div class="formula-label">Recipe:</div>
+              <div class="formula-label">{{ t('Wiki.Potions.database.headers.recipe') }}:</div>
               <div class="recipe-formula">
                 <span v-for="(ingredient, idx) in recipe.recipe" :key="idx">
                   {{ ingredient }}
@@ -154,12 +130,12 @@
               </div>
             </div>
             <div class="recipe-effect">
-              <div class="effect-label">Effect:</div>
+              <div class="effect-label">{{ t('Wiki.Potions.database.headers.effect') }}:</div>
               <div class="effect-text">{{ recipe.effect }}</div>
             </div>
             <div class="recipe-meta">
               <div class="meta-row">
-                <span class="meta-label">Duration:</span>
+                <span class="meta-label">{{ t('Wiki.Potions.database.headers.duration') }}:</span>
                 <span>{{ recipe.duration }}</span>
               </div>
             </div>
@@ -170,20 +146,18 @@
       <!-- Raw Ingredients Section -->
       <section class="raw-ingredients-section">
         <div class="raw-card card">
-          <h2 class="section-title">Raw Ingredient Effects (Eating without Crafting)</h2>
+          <h2 class="section-title">{{ t('Wiki.Potions.raw.title') }}</h2>
           <div class="raw-content">
-            <p>
-              Right-click to eat ingredients directly. This <strong>YAPYAP crafting</strong> section compares the effects of eating raw vs. brewing into <strong>YAPYAP potions</strong>, which is crucial for survival decisions in critical moments. The <strong>YAPYAP potions</strong> guide helps you decide when to craft vs. eat raw. Understanding <strong>YAPYAP recipes</strong> and raw effects is essential.
-            </p>
+            <p v-html="t('Wiki.Potions.raw.intro')"></p>
             
             <!-- Desktop table -->
             <div class="raw-table">
               <div class="raw-row head">
-                <div class="raw-c icon">Icon</div>
-                <div class="raw-c name">Ingredient</div>
-                <div class="raw-c raw-effect">Raw Effect</div>
-                <div class="raw-c brewed-effect">Brewed Effect</div>
-                <div class="raw-c verdict">Verdict</div>
+                <div class="raw-c icon">{{ t('Wiki.Potions.raw.headers.icon') }}</div>
+                <div class="raw-c name">{{ t('Wiki.Potions.raw.headers.name') }}</div>
+                <div class="raw-c raw-effect">{{ t('Wiki.Potions.raw.headers.rawEffect') }}</div>
+                <div class="raw-c brewed-effect">{{ t('Wiki.Potions.raw.headers.brewedEffect') }}</div>
+                <div class="raw-c verdict">{{ t('Wiki.Potions.raw.headers.verdict') }}</div>
               </div>
               <div class="raw-row" v-for="ingredient in rawIngredients" :key="ingredient.name">
                 <div class="raw-c icon">
@@ -209,15 +183,15 @@
                 </div>
                 <div class="raw-card-content">
                   <div class="raw-card-row">
-                    <span class="raw-label">Raw Effect:</span>
+                    <span class="raw-label">{{ t('Wiki.Potions.raw.headers.rawEffect') }}:</span>
                     <span class="raw-value">{{ ingredient.rawEffect }}</span>
                   </div>
                   <div class="raw-card-row">
-                    <span class="raw-label">Brewed Effect:</span>
+                    <span class="raw-label">{{ t('Wiki.Potions.raw.headers.brewedEffect') }}:</span>
                     <span class="raw-value">{{ ingredient.brewedEffect }}</span>
                   </div>
                   <div class="raw-card-row verdict-row">
-                    <span class="raw-label">Verdict:</span>
+                    <span class="raw-label">{{ t('Wiki.Potions.raw.headers.verdict') }}:</span>
                     <span class="raw-value verdict-text">{{ ingredient.verdict }}</span>
                   </div>
                 </div>
@@ -230,25 +204,18 @@
       <!-- Potion Room Secrets -->
       <section class="secrets-section">
         <div class="secrets-card card">
-          <h2 class="section-title">The Potion Room Secrets</h2>
+          <h2 class="section-title">{{ t('Wiki.Potions.secrets.title') }}</h2>
           <div class="secrets-content">
-            <p>
-              The Potion Room contains a hidden mechanic that advanced players should know about. This <strong>YAPYAP crafting</strong> secret is an "expert-level" tip that can save your life. The Potion Room is essential for <strong>YAPYAP potions</strong> crafting. This <strong>YAPYAP recipes</strong> location provides guaranteed <strong>YAPYAP potions</strong>.
-            </p>
+            <p v-html="t('Wiki.Potions.secrets.intro')"></p>
             <div class="ladder-strategy">
               <div class="ladder-icon">🪜</div>
               <div class="ladder-content">
-                <h3 class="ladder-title">The Ladder Strategy</h3>
-                <p>
-                  The Potion Room always contains a <strong>Wooden Ladder</strong>. Climb up and you'll find:
-                </p>
+                <h3 class="ladder-title">{{ t('Wiki.Potions.secrets.ladder.title') }}</h3>
+                <p v-html="t('Wiki.Potions.secrets.ladder.text')"></p>
                 <ul class="ladder-list">
-                  <li><strong>100% Guaranteed Spawn:</strong> One <strong>Vitality Potion</strong> ready to use.</li>
-                  <li><strong>Bonus Loot:</strong> A <strong>Chest</strong> that may contain wands or coins.</li>
+                  <li v-for="(item, index) in tm('Wiki.Potions.secrets.ladder.list')" :key="index" v-html="item"></li>
                 </ul>
-                <div class="ladder-tip">
-                  <strong>💡 Pro Tip:</strong> Don't rush to eat raw ingredients when low on health. Head to the Potion Room and climb the ladder to get a free potion!
-                </div>
+                <div class="ladder-tip" v-html="t('Wiki.Potions.secrets.ladder.tip')"></div>
               </div>
             </div>
           </div>
@@ -258,37 +225,11 @@
       <!-- FAQ Section -->
       <section class="faq-section">
         <div class="faq-card card">
-          <h2 class="section-title">Frequently Asked Questions</h2>
+          <h2 class="section-title">{{ t('Wiki.Potions.faq.title') }}</h2>
           <div class="faq-list">
-            <div class="faq-item">
-              <h3 class="faq-question">Can I stack potion effects?</h3>
-              <p class="faq-answer">
-                <strong>No, YAPYAP potions effects do not stack.</strong> Drinking a new <strong>YAPYAP potions</strong> will either replace the previous effect or refresh the timer. You can only have one active <strong>YAPYAP potions</strong> effect at a time. Plan your <strong>YAPYAP potions</strong> usage carefully—don't waste a Flight Potion if you already have Invisibility active. This <strong>YAPYAP crafting</strong> limitation is important to remember.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use broken bottles to brew potions?</h3>
-              <p class="faq-answer">
-                <strong>Yes!</strong> Broken glass bottles found on the floor work perfectly for brewing <strong>YAPYAP potions</strong>. You don't need to buy empty bottles from the shop. Just pick up any broken bottle, face the cauldron, and press <strong>E</strong> to fill it. This <strong>YAPYAP crafting</strong> tip saves money and makes <strong>YAPYAP recipes</strong> more accessible.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">What does Strength Potion actually do?</h3>
-              <p class="faq-answer">
-                <strong>Strength Potion is one of the most useful YAPYAP potions.</strong> This <strong>YAPYAP potions</strong> enhances your physics capabilities. Before drinking, you cannot lift heavy crates. After drinking, you can throw heavy wooden crates high into the air. It's essential for moving heavy objects and reaching high loot. This <strong>YAPYAP crafting</strong> recipe creates a powerful <strong>YAPYAP potions</strong>. It does <strong>not</strong> increase melee damage against enemies.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">Should I eat mushrooms raw or brew them?</h3>
-              <p class="faq-answer">
-                <strong>Do NOT eat normal mushrooms raw!</strong> They only restore 15 HP when eaten, but brewing them into <strong>YAPYAP potions</strong> (Strength Potion) is far more valuable for moving heavy crates. This <strong>YAPYAP crafting</strong> strategy maximizes the value of ingredients. Save them for the cauldron unless you're in a life-or-death emergency. Follow this <strong>YAPYAP recipes</strong> advice for optimal results.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">What happens if I drink Nasty Potion?</h3>
-              <p class="faq-answer">
-                <strong>Nasty Potion is one YAPYAP potions you should avoid.</strong> This <strong>YAPYAP potions</strong> causes a Dizzy debuff that makes your screen blurry and spin. It's essentially useless for you, but some players throw it at teammates as a prank. Avoid this <strong>YAPYAP crafting</strong> recipe unless you're intentionally trolling. Most <strong>YAPYAP recipes</strong> are useful, but this <strong>YAPYAP potions</strong> is an exception.
-              </p>
+            <div class="faq-item" v-for="(item, index) in tm('Wiki.Potions.faq.list')" :key="index">
+              <h3 class="faq-question">{{ item.question }}</h3>
+              <p class="faq-answer" v-html="item.answer"></p>
             </div>
           </div>
         </div>
@@ -298,99 +239,83 @@
 </template>
 
 <script setup>
-const recipes = [
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+
+const recipesData = [
   {
+    id: 'vitality',
     image: '/images/potions/potions-01.webp',
-    item: 'Vitality Potion',
-    cn: '(Life Potion)',
-    color: '🟢 Green → 🔴 Red',
     colorDot: '🔴',
     colorClass: 'red',
-    recipe: ['Carrot', 'Five-leaf Clover', 'Feather'],
-    effect: 'Full Heal. No matter how much HP you have left, drinking this will restore you to full health instantly.',
-    duration: 'Instant',
     isWarning: false,
   },
   {
+    id: 'strength',
     image: '/images/potions/potions-04.webp',
-    item: 'Strength Potion',
-    cn: '(Power Potion)',
-    color: '🟢 Green → 🟣 Purple',
     colorDot: '🟣',
     colorClass: 'purple',
-    recipe: ['Mushroom (Normal)'],
-    effect: 'Super Physics. Before drinking, you cannot lift heavy crates. After drinking, you can throw heavy wooden crates high into the air. Essential for moving heavy objects.',
-    duration: '~20s',
     isWarning: false,
   },
   {
+    id: 'invisibility',
     image: '/images/potions/potions-03.webp',
-    item: 'Invisibility Potion',
-    cn: '(Stealth Potion)',
-    color: '🟢 Green → 🔵 Blue',
     colorDot: '🔵',
     colorClass: 'blue',
-    recipe: ['Susroom (Green/Blue Spotted Mushroom)'],
-    effect: 'Invisibility. Your body becomes transparent, monsters cannot see you. Perfect for sneaking past Guards.',
-    duration: '10s (Very short!)',
     isWarning: false,
   },
   {
+    id: 'flight',
     image: '/images/potions/potions-02.webp',
-    item: 'Flight Potion',
-    cn: '(Flying Potion)',
-    color: '🟢 Green → 🟡 Yellow',
     colorDot: '🟡',
     colorClass: 'brown',
-    recipe: ['Feather'],
-    effect: 'Flight. Grants the ability to fly for a limited duration.',
-    duration: '20s',
     isWarning: false,
   },
   {
+    id: 'nasty',
     image: '/images/potions/potions-05.webp',
-    item: 'Nasty Potion',
-    cn: '(Trash Potion)',
-    color: '🟠 Orange',
     colorDot: '🟠',
     colorClass: 'brown',
-    recipe: ['Small Bat', 'Bottle', 'Random Junk'],
-    effect: 'Debuff: Dizzy. Reversed controls: forward becomes backward, left becomes right. Blurry spinning vision. Do NOT drink unless trolling teammates!',
-    duration: 'Until effect wears off',
     isWarning: true,
   },
 ]
 
-const rawIngredients = [
+const recipes = computed(() => recipesData.map(recipe => {
+  const data = tm(`Potions.recipes.${recipe.id}`)
+  return {
+    ...recipe,
+    ...data
+  }
+}))
+
+const rawIngredientsData = [
   {
+    id: 'carrot',
     icon: '🥕',
-    name: 'Carrot',
-    rawEffect: 'Restores 15 HP',
-    brewedEffect: 'Full Heal (100%)',
-    verdict: 'Eat raw when low on HP. Brew when critically injured.',
   },
   {
+    id: 'mushroom',
     icon: '🍄',
-    name: 'Mushroom (Normal)',
-    rawEffect: 'Restores 15 HP',
-    brewedEffect: 'Strength Enhancement',
-    verdict: 'Do NOT eat raw! Strength potion for moving crates is too important.',
   },
   {
+    id: 'clover',
     icon: '🍀',
-    name: 'Five-leaf Clover',
-    rawEffect: 'Restores 10 HP',
-    brewedEffect: 'Full Heal (100%)',
-    verdict: 'Restores least HP when eaten raw. Best used for brewing.',
   },
   {
+    id: 'susroom',
     icon: '🍄',
-    name: 'Susroom (Green Spotted Mushroom)',
-    rawEffect: 'Random Effect. May grant strength or cause Dizzy debuff.',
-    brewedEffect: 'Stable Invisibility',
-    verdict: 'Gambler\'s choice. For non-emergency situations, brew into Invisibility Potion.',
   },
 ]
+
+const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
+  const data = tm(`Potions.raw.ingredients.${ingredient.id}`)
+  return {
+    ...ingredient,
+    ...data
+  }
+}))
 </script>
 
 <style scoped>

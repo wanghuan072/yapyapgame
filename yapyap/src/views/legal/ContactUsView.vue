@@ -2,8 +2,8 @@
   <div class="legal-page">
     <section class="legal-header">
       <div class="container">
-        <h1 class="page-title">Contact Us</h1>
-        <p class="page-date">Last Updated: January 23, 2026</p>
+        <h1 class="page-title">{{ t('Legal.ContactUs.title') }}</h1>
+        <p class="page-date">{{ t('Legal.ContactUs.lastUpdated') }}</p>
       </div>
     </section>
 
@@ -11,47 +11,47 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="legal-text">
-            <h2>Get in Touch</h2>
+            <h2>{{ t('Legal.ContactUs.touch.title') }}</h2>
             <p>
-              We'd love to hear from you! Whether you have questions, suggestions, feedback, or just want to say hello, please don't hesitate to contact us.
+              {{ t('Legal.ContactUs.touch.text') }}
             </p>
 
-            <h2>Email</h2>
+            <h2>{{ t('Legal.ContactUs.email.title') }}</h2>
             <p>
-              For general inquiries, please email us at: <a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a>
+              {{ t('Legal.ContactUs.email.text') }}<a href="mailto:wyong@yapyapgame.com">wyong@yapyapgame.com</a>
             </p>
 
-            <h2>What We Can Help With</h2>
+            <h2>{{ t('Legal.ContactUs.help.title') }}</h2>
             <p>
-              We're here to assist with:
+              {{ t('Legal.ContactUs.help.text') }}
             </p>
             <ul>
-              <li>Questions about our website or content</li>
-              <li>Suggestions for improvements or new features</li>
-              <li>Reporting errors or outdated information</li>
-              <li>Copyright or legal inquiries</li>
-              <li>Partnership or collaboration opportunities</li>
-              <li>General feedback about YAPYAP Game Guide Hub</li>
+              <li>{{ t('Legal.ContactUs.help.list.questions') }}</li>
+              <li>{{ t('Legal.ContactUs.help.list.suggestions') }}</li>
+              <li>{{ t('Legal.ContactUs.help.list.errors') }}</li>
+              <li>{{ t('Legal.ContactUs.help.list.copyright') }}</li>
+              <li>{{ t('Legal.ContactUs.help.list.partnership') }}</li>
+              <li>{{ t('Legal.ContactUs.help.list.feedback') }}</li>
             </ul>
 
-            <h2>Response Time</h2>
+            <h2>{{ t('Legal.ContactUs.response.title') }}</h2>
             <p>
-              We strive to respond to all inquiries within 2-3 business days. Please be patient as we review and respond to your message.
+              {{ t('Legal.ContactUs.response.text') }}
             </p>
 
-            <h2>Community Contributions</h2>
+            <h2>{{ t('Legal.ContactUs.contributions.title') }}</h2>
             <p>
-              If you'd like to contribute content, corrections, or updates to our website, please contact us with details about your contribution. We appreciate all community support!
+              {{ t('Legal.ContactUs.contributions.text') }}
             </p>
 
-            <h2>Privacy</h2>
+            <h2>{{ t('Legal.ContactUs.privacy.title') }}</h2>
             <p>
-              Any information you provide in your correspondence will be kept confidential and used only for the purpose of responding to your inquiry. Please review our <a href="/privacy-policy">Privacy Policy</a> for more information.
+              {{ t('Legal.ContactUs.privacy.text_1') }}<a href="/privacy-policy">{{ t('Legal.ContactUs.privacy.link') }}</a>{{ t('Legal.ContactUs.privacy.text_2') }}
             </p>
 
-            <h2>Thank You</h2>
+            <h2>{{ t('Legal.ContactUs.thanks.title') }}</h2>
             <p>
-              Thank you for your interest in YAPYAP Game Guide Hub. We look forward to hearing from you!
+              {{ t('Legal.ContactUs.thanks.text') }}
             </p>
           </div>
         </div>
@@ -62,6 +62,9 @@
 
 <script setup>
 // SEO is set in router/index.js via route.meta.seo
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>
