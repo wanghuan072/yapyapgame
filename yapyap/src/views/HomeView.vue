@@ -78,7 +78,7 @@
               </template>
               <iframe
                 v-else
-                src="https://www.youtube.com/embed/vzl2ljQ8OaQ?autoplay=1"
+                src="https://www.youtube.com/embed/wzXSuakyC3Q"
                 title="YAPYAP Trailer"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -90,7 +90,7 @@
       </section>
 
       <!-- Pain Points & Solutions -->
-      <section id="pain-points" class="section pain-points-section">
+      <section id="pain-points" class="section">
         <div class="container">
           <div class="section-header">
             <p class="pill">{{ $t('HomePage.pain.pill') }}</p>
@@ -98,7 +98,7 @@
             <p class="section-subtitle">{{ $t('HomePage.pain.subtitle') }}</p>
           </div>
           <div class="pain-points-grid">
-            <div class="pain-point-card card">
+            <a class="pain-point-card card" :href="getLocalizedPath('/spells')">
               <div class="pain-icon">🎤</div>
               <div class="pain-content">
                 <h3>{{ $t('HomePage.pain.p1.title') }}</h3>
@@ -113,10 +113,10 @@
                   <span class="stat-item">{{ $t('HomePage.pain.p1.stats1') }}</span>
                   <span class="stat-item">{{ $t('HomePage.pain.p1.stats2') }}</span>
                 </div>
-                <a :href="getLocalizedPath('/spells')" class="pain-solution-btn">{{ $t('HomePage.pain.p1.btn') }}</a>
+                <span class="pain-solution-btn">{{ $t('HomePage.pain.p1.btn') }}</span>
               </div>
-            </div>
-            <div class="pain-point-card card">
+            </a>
+            <a class="pain-point-card card" :href="getLocalizedPath('/spell-generator')">
               <div class="pain-icon">🎬</div>
               <div class="pain-content">
                 <h3>{{ $t('HomePage.pain.p2.title') }}</h3>
@@ -131,10 +131,10 @@
                   <span class="stat-item">{{ $t('HomePage.pain.p2.stats1') }}</span>
                   <span class="stat-item">{{ $t('HomePage.pain.p2.stats2') }}</span>
                 </div>
-                <a :href="getLocalizedPath('/spell-generator')" class="pain-solution-btn">{{ $t('HomePage.pain.p2.btn') }}</a>
+                <span class="pain-solution-btn">{{ $t('HomePage.pain.p2.btn') }}</span>
               </div>
-            </div>
-            <div class="pain-point-card card">
+            </a>
+            <a class="pain-point-card card" :href="getLocalizedPath('/wiki')">
               <div class="pain-icon">📚</div>
               <div class="pain-content">
                 <h3>{{ $t('HomePage.pain.p3.title') }}</h3>
@@ -147,15 +147,15 @@
                   <span class="stat-item">{{ $t('HomePage.pain.p3.stats1') }}</span>
                   <span class="stat-item">{{ $t('HomePage.pain.p3.stats2') }}</span>
                 </div>
-                <a :href="getLocalizedPath('/wiki')" class="pain-solution-btn">{{ $t('HomePage.pain.p3.btn') }}</a>
+                <span class="pain-solution-btn">{{ $t('HomePage.pain.p3.btn') }}</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
       <!-- Latest Guides -->
-      <section id="guides" class="section">
+      <section id="guides" class="section pain-points-section">
         <div class="container">
           <div class="section-header">
             <p class="pill">{{ $t('HomePage.guides.pill') }}</p>
@@ -181,6 +181,7 @@
               :key="guide.id"
               class="card guide-card"
             >
+            <a :href="getLocalizedPath(`/guides/${guide.addressBar}`)">
               <div class="guide-image" v-if="guide.imageUrl">
                 <img
                   :src="guide.imageUrl"
@@ -202,8 +203,10 @@
                 </div>
                 <h3>{{ guide.title }}</h3>
                 <p>{{ guide.description }}</p>
-                <a :href="getLocalizedPath(`/guides/${guide.addressBar}`)" class="guide-link">{{ $t('HomePage.guides.readMore') }}</a>
+                <span  class="guide-link">{{ $t('HomePage.guides.readMore') }}</span>
               </div>
+            </a>
+              
             </article>
           </div>
           <!-- Empty State -->
@@ -222,9 +225,6 @@
         <div class="container">
           <div class="trouble-card">
             <div class="trouble-content">
-              <div class="trouble-icon-wrapper">
-                <div class="trouble-icon">🎤</div>
-              </div>
               <div class="trouble-text">
                 <p class="pill warning-pill">{{ $t('HomePage.trouble.pill') }}</p>
                 <h2 class="section-title">{{ $t('HomePage.trouble.title') }}</h2>
@@ -268,7 +268,7 @@
       </section>
 
       <!-- What is YAPYAP? (SEO) -->
-      <section id="what" class="section section-light">
+      <section id="what" class="section pain-points-section">
         <div class="container what-grid">
           <div class="what-text card">
             <h2 class="section-title">{{ $t('HomePage.what.title') }}</h2>
@@ -305,7 +305,7 @@
       </section>
 
       <!-- Release Date / Countdown -->
-      <section id="release" class="section release-section">
+      <section id="release" class="section">
         <div class="container">
           <div class="release-hero">
             <p class="pill release-pill">{{ $t('HomePage.release.pill') }}</p>
@@ -378,7 +378,7 @@
       </section>
 
       <!-- FAQ -->
-      <section id="faq" class="section section-light">
+      <section id="faq" class="section pain-points-section">
         <div class="container">
           <div class="section-header">
             <p class="pill">{{ $t('HomePage.faq.pill') }}</p>
@@ -782,11 +782,6 @@ onMounted(async () => {
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.95);
 }
 
-
-.section-light {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.03));
-}
-
 .section-header {
   margin-bottom: 28px;
 }
@@ -1024,7 +1019,6 @@ onMounted(async () => {
 
 .trouble-content {
   display: grid;
-  grid-template-columns: auto 1fr;
   gap: 24px;
   align-items: start;
 }
@@ -1160,12 +1154,6 @@ onMounted(async () => {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.release-section {
-  background: linear-gradient(180deg, rgba(7, 9, 18, 0.95), rgba(15, 20, 36, 0.98));
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .release-hero {

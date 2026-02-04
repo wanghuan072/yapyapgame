@@ -130,7 +130,7 @@ a {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.7;
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0;
   font-weight: 400;
 }

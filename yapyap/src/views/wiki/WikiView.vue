@@ -16,14 +16,6 @@
         </div>
       </div>
 
-      <!-- Core Loop Introduction -->
-      <section class="core-loop-section">
-        <h2 class="section-title">{{ t('Wiki.Home.coreLoop.title') }}</h2>
-        <div class="core-loop-content card">
-          <p v-html="t('Wiki.Home.coreLoop.content')"></p>
-        </div>
-      </section>
-
       <!-- Wiki Navigation Grid -->
       <section class="wiki-grid-section">
         <h2 class="section-title">{{ t('Wiki.Home.grid.title') }}</h2>
@@ -49,6 +41,14 @@
             <p class="wiki-card-desc" v-html="t('Wiki.Home.grid.potions.desc')"></p>
             <div class="wiki-card-keywords muted">{{ t('Wiki.Home.grid.potions.keywords') }}</div>
           </router-link>
+        </div>
+      </section>
+
+      <!-- Core Loop Introduction -->
+      <section class="core-loop-section">
+        <h2 class="section-title">{{ t('Wiki.Home.coreLoop.title') }}</h2>
+        <div class="core-loop-content card">
+          <p v-html="t('Wiki.Home.coreLoop.content')"></p>
         </div>
       </section>
 
