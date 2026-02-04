@@ -48,6 +48,29 @@
               </div>
             </div>
 
+          </div>
+          <div class="hero-media card">
+            <div class="video-frame">
+              <template v-if="!heroVideoLoaded">
+                <div
+                  class="video-mask"
+                  :style="{ backgroundImage: 'url(../images/video-img.webp)' }"
+                >
+                  <div class="video-mask-overlay"></div>
+                  <button type="button" class="video-play-btn" aria-label="Play YAPYAP Trailer" @click="heroVideoLoaded = true">
+                    <span class="play-icon"></span>
+                  </button>
+                </div>
+              </template>
+              <iframe
+                v-else
+                src="https://www.youtube.com/embed/mPKPTDnvqCk"
+                title="YAPYAP Trailer"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
             <div class="hero-stats">
               <div>
                 <span class="label">{{ $t('HomePage.hero.stats.release') }}</span>
@@ -61,29 +84,6 @@
                 <span class="label">{{ $t('HomePage.hero.stats.platform') }}</span>
                 <span class="value">{{ $t('HomePage.hero.stats.platformVal') }}</span>
               </div>
-            </div>
-          </div>
-          <div class="hero-media card">
-            <div class="video-frame">
-              <template v-if="!heroVideoLoaded">
-                <div
-                  class="video-mask"
-                  :style="{ backgroundImage: 'url(https://img.youtube.com/vi/vzl2ljQ8OaQ/hqdefault.jpg)' }"
-                >
-                  <div class="video-mask-overlay"></div>
-                  <button type="button" class="video-play-btn" aria-label="Play YAPYAP Trailer" @click="heroVideoLoaded = true">
-                    <span class="play-icon"></span>
-                  </button>
-                </div>
-              </template>
-              <iframe
-                v-else
-                src="https://www.youtube.com/embed/wzXSuakyC3Q"
-                title="YAPYAP Trailer"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
             </div>
           </div>
         </div>
@@ -687,7 +687,6 @@ onMounted(async () => {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 12px;
-  margin-top: 20px;
 }
 
 .label {
@@ -712,7 +711,8 @@ onMounted(async () => {
 .video-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 5 / 4;
+  height: 320px;
+  /* aspect-ratio: 5 / 3; */
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
