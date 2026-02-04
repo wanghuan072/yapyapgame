@@ -283,7 +283,7 @@ const recipesData = [
 ]
 
 const recipes = computed(() => recipesData.map(recipe => {
-  const data = tm(`Potions.recipes.${recipe.id}`)
+  const data = tm(`Wiki.Potions.recipes.${recipe.id}`)
   return {
     ...recipe,
     ...data
@@ -310,7 +310,7 @@ const rawIngredientsData = [
 ]
 
 const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
-  const data = tm(`Potions.raw.ingredients.${ingredient.id}`)
+  const data = tm(`Wiki.Potions.raw.ingredients.${ingredient.id}`)
   return {
     ...ingredient,
     ...data
