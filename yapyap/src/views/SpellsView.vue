@@ -30,33 +30,31 @@
         <!-- Wand Tables -->
         <div v-for="wand in wands" :key="wand.id" class="wand-section">
           <div class="wand-header">
-            <h3 class="wand-title">{{ wand.name }}</h3>
-            <p class="wand-subtitle" v-if="wand.subtitle">{{ wand.subtitle }}</p>
+            <div class="wand-header-content">
+               <div>
+                 <h3 class="wand-title">{{ wand.name }}</h3>
+                 <p class="wand-subtitle" v-if="wand.subtitle">{{ wand.subtitle }}</p>
+               </div>
+            </div>
           </div>
 
           <!-- Desktop table -->
           <div class="table card" :aria-label="`${wand.name} spells list`">
             <div class="row head">
-              <div class="icon">{{ $t('SpellsPage.list.table.icon') }}</div>
               <div class="spell">{{ $t('SpellsPage.list.table.spell') }}</div>
-              <div class="effect">{{ $t('SpellsPage.list.table.effect') }}</div>
+              <div class="effect">Description</div>
               <div class="tips">{{ $t('SpellsPage.list.table.tips') }}</div>
+              <div class="state">State</div>
               <div class="action">{{ $t('SpellsPage.list.table.action') }}</div>
             </div>
 
             <div class="row" v-for="s in wand.spells" :key="s.spell">
-              <div class="c icon">{{ s.icon }}</div>
               <div class="c spell">
                 <strong>{{ s.spell }}</strong>
-                <div class="small" v-if="s.misheard">
-                  {{ $t('SpellsPage.list.table.misheard') }} <span class="mono">{{ s.misheard }}</span>
-                </div>
               </div>
-              <div class="c effect">{{ s.effect }}</div>
-              <div class="c tips">
-                <div>{{ s.tips }}</div>
-                <div class="small muted" v-if="s.misheardTip">{{ s.misheardTip }}</div>
-              </div>
+              <div class="c effect">{{ s.description }}</div>
+              <div class="c tips">{{ s.tips }}</div>
+              <div class="c state">{{ s.state }}</div>
               <div class="c action">
                 <a
                   :href="`/spell-generator?spell=${encodeURIComponent(
@@ -78,27 +76,19 @@
               :key="`m-${wand.id}-${s.spell}`"
             >
               <div class="spell-top">
-                <div class="spell-icon">{{ s.icon }}</div>
                 <div class="spell-main">
                   <h3>{{ s.spell }}</h3>
+                  <span class="tag">{{ s.state }}</span>
                 </div>
               </div>
               <div class="spell-body">
                 <div class="spell-row">
-                  <span class="label">{{ $t('SpellsPage.list.table.mobile.effect') }}</span>
-                  <span>{{ s.effect }}</span>
+                  <span class="label">Description</span>
+                  <span>{{ s.description }}</span>
                 </div>
                 <div class="spell-row">
                   <span class="label">{{ $t('SpellsPage.list.table.mobile.tips') }}</span>
                   <span>{{ s.tips }}</span>
-                </div>
-                <div class="spell-row" v-if="s.misheard">
-                  <span class="label warn">{{ $t('SpellsPage.list.table.mobile.misheard') }}</span>
-                  <span class="mono">{{ s.misheard }}</span>
-                </div>
-                <div class="spell-row" v-if="s.misheardTip">
-                  <span class="label warn">{{ $t('SpellsPage.list.table.mobile.note') }}</span>
-                  <span class="small muted">{{ s.misheardTip }}</span>
                 </div>
                 <div class="spell-actions">
                   <a
@@ -115,6 +105,7 @@
         </div>
       </section>
 
+      <!-- System Spells removed -->
       <!-- Mic Tester -->
       <section id="mic-tester" class="section mic card">
         <div class="mic-head">
@@ -379,14 +370,26 @@ const wands = computed(() =>
     id: wand.id,
     name: wand.name,
     subtitle: wand.subtitle,
-    spells: wand.spells.map((spell) => ({
-      icon: spell.icon,
-      spell: spell.spell,
-      effect: spell.effect,
-      tips: spell.tips,
+    imageUrl: wand.imageUrl,
+    imageAlt: wand.imageAlt,
+    spells: (wand.Spells || []).map((spell) => ({
+      spell: spell.Spell || spell.name,
+      name: spell.name,
+      state: spell.state || '-',
+      description: spell.description || '-',
+      tips: spell.tips || '-',
+      audio: spell.audio || {},
     })),
   }))
 )
+
+function checkMedia(audioData, type) {
+  if (!audioData || !audioData[type]) {
+    alert('暂无')
+    return false
+  }
+  return true
+}
 
 </script>
 
@@ -576,6 +579,92 @@ const wands = computed(() =>
   font-size: 14px;
 }
 
+/* System Spells */
+.system-group {
+  margin-bottom: 24px;
+}
+
+.system-group:last-child {
+  margin-bottom: 0;
+}
+
+.group-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(237, 240, 255, 0.9);
+  margin: 0 0 14px 0;
+}
+
+.group-title .icon {
+  font-size: 20px;
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(237, 240, 255, 0.6);
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.revive-sequence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.seq-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.seq-num {
+  font-size: 12px;
+  color: rgba(237, 240, 255, 0.4);
+  font-family: monospace;
+}
+
+.seq-word {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.seq-arrow {
+  color: rgba(237, 240, 255, 0.2);
+  margin-left: 8px;
+}
+
+.word-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.word-tag {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(237, 240, 255, 0.85);
+}
+
+.tag.success {
+  background: rgba(74, 222, 128, 0.12);
+  border-color: rgba(74, 222, 128, 0.35);
+  color: #86efac;
+}
+
 /* Table */
 .table {
   overflow: hidden;
@@ -585,11 +674,11 @@ const wands = computed(() =>
 
 .row {
   display: grid;
-  grid-template-columns: 70px 120px 1fr 1.2fr 160px;
+  grid-template-columns: 140px 1fr 1fr 100px 100px;
   gap: 12px;
   padding: 14px 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  align-items: start;
+  align-items: center;
 }
 
 .row.head {
@@ -599,8 +688,10 @@ const wands = computed(() =>
   color: rgba(237, 240, 255, 0.8);
 }
 
-.c.icon {
-  font-size: 22px;
+.c.state {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 13px;
 }
 
 .c.spell strong {
@@ -611,7 +702,49 @@ const wands = computed(() =>
 .c.effect,
 .c.tips {
   color: rgba(237, 240, 255, 0.82);
+  font-size: 14px;
 }
+
+.media-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 16px;
+}
+
+.btn-icon:hover {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.wand-header-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wand-header-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 
 /* Mobile spell cards */
 .mobile-list {
@@ -625,21 +758,10 @@ const wands = computed(() =>
 }
 
 .spell-top {
-  display: grid;
-  grid-template-columns: 44px 1fr auto;
-  gap: 12px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-
-.spell-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 20px;
+  gap: 12px;
 }
 
 .spell-main h3 {
@@ -674,7 +796,8 @@ const wands = computed(() =>
 /* iPad端 - 1024px */
 @media (max-width: 1024px) {
   .row {
-    grid-template-columns: 60px 150px 1fr 1fr 90px;
+    grid-template-columns: 80px 120px 1fr 1fr 100px 80px;
+    font-size: 13px;
   }
 }
 

@@ -16,10 +16,11 @@ export function useWands() {
     isLoading.value = true
     try {
       // Try to load current locale, fallback to 'en'
-      const module = await import(`@/data/wands/${locale.value}.js`)
+      let module = await import(`@/data/wands/${locale.value}.js`)
         .catch(() => import('@/data/wands/en.js'))
       
       wands.value = module.wands || module.default || []
+      
       loadedLocale = locale.value
     } catch (e) {
       console.error('Failed to load wands data:', e)

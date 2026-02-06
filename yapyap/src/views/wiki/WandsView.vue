@@ -129,11 +129,11 @@ const { t, tm } = useI18n()
 const { wands: wandsData } = useWands()
 
 const wands = computed(() => wandsData.value.map(wand => ({
-  name: wand.shortName,
-  image: wand.image,
-  spells: wand.spells.map(spell => ({
-    name: spell.name,
-    effect: spell.effect,
+  name: wand.name,
+  image: wand.imageUrl,
+  spells: (wand.Spells || []).map(spell => ({
+    name: spell.name || spell.Spell,
+    effect: spell.description || spell.state || '-',
   })),
 })))
 </script>

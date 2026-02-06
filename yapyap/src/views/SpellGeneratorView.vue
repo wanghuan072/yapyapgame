@@ -27,12 +27,8 @@
                   :class="['wand-item', { active: selectedWand?.id === wand.id }]"
                   @click="selectWand(wand)"
                 >
-                  <div 
-                    class="wand-accent" 
-                    :style="{ background: wand.accentGradient }"
-                  ></div>
                   <div class="wand-text">
-                    <span class="wand-name-cn">{{ wand.shortName }}</span>
+                    <span class="wand-name-cn">{{ wand.name }}</span>
                   </div>
                 </button>
               </div>
@@ -151,7 +147,7 @@
 
             <div class="spell-effect-section">
               <h4>{{ $t('SpellGenerator.display.effect') }}</h4>
-              <p>{{ manifestedSpell.effect }}</p>
+              <p>{{ manifestedSpell.description }}</p>
             </div>
 
             <div class="spell-tips-section" v-if="manifestedSpell.tips">
@@ -321,21 +317,33 @@ import { useRoute } from 'vue-router'
 import { useWands } from '@/composables/useWands'
 import { useI18n } from 'vue-i18n'
 
-const { wands } = useWands()
+const { wands: rawWands } = useWands()
 const { t } = useI18n()
 
 const route = useRoute()
 
 // Vocal Timbre options
 const timbres = computed(() => [
-  { value: 'kore', label: t('SpellGenerator.forge.timbre.kore') },
-  { value: 'puck', label: t('SpellGenerator.forge.timbre.puck') },
+  { value: 'en', label: 'English' },
+  { value: 'cn', label: 'Chinese' },
 ])
+
+const wands = computed(() => rawWands.value.map(wand => ({
+  ...wand,
+  spells: (wand.Spells || []).map(spell => ({
+    ...spell,
+    spell: spell.Spell || spell.name,
+    description: spell.description || spell.state || '-',
+    video: spell.audio?.video || '',
+    audio: spell.audio || {}
+  })),
+  accentGradient: wand.accentGradient || 'linear-gradient(135deg, #6366f1, #a855f7)'
+})))
 
 const selectedWand = ref(null)
 const selectedSpell = ref(null)
 const manifestedSpell = ref(null)
-const selectedTimbre = ref('kore')
+const selectedTimbre = ref('en')
 const spellAudio = ref(null)
 const showMedia = ref(false)
 const mediaType = ref(null)
@@ -352,9 +360,18 @@ function getSpellFileName(spellName) {
 // Computed paths - get audio from data
 const audioPath = computed(() => {
   if (!manifestedSpell.value || !selectedTimbre.value) return ''
-  if (manifestedSpell.value.audio && manifestedSpell.value.audio[selectedTimbre.value]) {
-    return manifestedSpell.value.audio[selectedTimbre.value]
+  const audio = manifestedSpell.value.audio
+  if (!audio) return ''
+
+  // Try exact match first
+  if (audio[selectedTimbre.value]) {
+    return audio[selectedTimbre.value]
   }
+
+  // Fallback for legacy data
+  if (selectedTimbre.value === 'en') return audio['kore']
+  if (selectedTimbre.value === 'cn') return audio['puck']
+
   return ''
 })
 
@@ -375,6 +392,19 @@ function selectSpell(spell) {
 
 function manifestSpell() {
   if (selectedSpell.value && selectedTimbre.value) {
+    let audioSrc = selectedSpell.value.audio?.[selectedTimbre.value]
+    
+    // Fallback for legacy data
+    if (!audioSrc && selectedSpell.value.audio) {
+      if (selectedTimbre.value === 'en') audioSrc = selectedSpell.value.audio['kore']
+      if (selectedTimbre.value === 'cn') audioSrc = selectedSpell.value.audio['puck']
+    }
+
+    if (!audioSrc) {
+      alert('No media available')
+      return
+    }
+
     manifestedSpell.value = selectedSpell.value
     loadMedia(selectedSpell.value)
     
@@ -398,32 +428,9 @@ function loadMedia(spell) {
     mediaPath.value = spell.video
     showMedia.value = true
   } else {
-    // Fallback: try to load video using old method
-    const fileName = getSpellFileName(spell.spell)
-    const videoPath = `/videos/spells/${fileName}.mp4`
-    const video = new Image()
-    video.onload = () => {
-      mediaType.value = 'video'
-      mediaPath.value = videoPath
-      showMedia.value = true
-    }
-    video.onerror = () => {
-      // Try GIF
-      const gifPath = `/videos/spells/${fileName}.gif`
-      const gif = new Image()
-      gif.onload = () => {
-        mediaType.value = 'gif'
-        mediaPath.value = gifPath
-        showMedia.value = true
-      }
-      gif.onerror = () => {
-        showMedia.value = true
-        mediaType.value = null
-        mediaPath.value = null
-      }
-      gif.src = gifPath
-    }
-    video.src = videoPath
+    showMedia.value = false
+    mediaType.value = null
+    mediaPath.value = null
   }
 }
 

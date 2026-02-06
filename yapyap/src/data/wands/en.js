@@ -1,220 +1,452 @@
 export const wands = [
+  // 星界魔杖
   {
-    id: 'wand-of-wind',
-    name: 'Wand 1: Wand of Wind',
-    shortName: 'WAND OF WIND',
-    subtitle: 'Wind Magic',
-    image: '/images/wands/wands-01.webp',
-    accentGradient: 'linear-gradient(180deg, #fbbf24, #f97316)',
-    spells: [
+    id: 1,
+    name: "Astral Wand",
+    subtitle: 'Space & Telekinesis',
+    imageUrl: '/images/wands/wands-01.webp',
+    imageAlt: 'Astral Wand',
+    Spells: [
       {
-        icon: '💨',
-        spell: 'AERO-BIS',
-        name: 'AERO-BIS',
-        effect: 'Directional Repulsion: Fires a green aura that pushes away items and monsters in front of you.',
-        tips: '⚠️ Friendly Fire: Be careful! This is the easiest spell to push teammates off cliffs. Use with caution.',
+        Spell: 'Astral Eyes',
+        name: 'Astral Eyes',
+        description: "You can now see through walls, allowing you to view nearby allies and enemies",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '/MP3/Astral Wand - Astral Eyes - en.mp3',
+          cn: '/MP3/Astral Wand - Astral Eyes - cn.mp3',
+          video: '',
+        },
+      },
+      {
+        Spell: 'Blink',
+        name: 'Blink',
+        description: "Teleport a short distance in front of you.",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '/MP3/Astral Wand - Blink - en.mp3',
+          cn: '/MP3/Astral Wand - Blink - cn.mp3',
+          video: '',
+        },
+      },
+      {
+        Spell: 'Swap',
+        name: 'Swap',
+        description: "Swap positions with a chosen target.",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '/MP3/Astral Wand - Swap - en.mp3',
+          cn: '/MP3/Astral Wand - Swap - cn.mp3',
+          video: '',
+        },
+      },
+      {
+        Spell: 'Offer',
+        name: 'Offer',
+        description: 'This is a secret Spell, not seen in the Spell list, but you can confirm it in the Grimoire after buying the wand and bringing it to the Grimoire. This Spell allows you to swap positions with a given player. You use the "Offer" to select someone, and then Trade to switch with them.',
+        tips: 'This is a secret Spell, not seen in the Spell list, but you can confirm it in the Grimoire after buying the wand and bringing it to the Grimoire.',
+        state: 'secret Spell',
+        audio: {
+          en: '/MP3/Astral Wand - Offer - en.mp3',
+          cn: '/MP3/Astral Wand - Offer - cn.mp3',
+          video: '',
+        },
+      }
+    ]
+  },
+
+  // 祝福魔杖
+  {
+    id: 2,
+    name: "Blessed Wand",
+    subtitle: 'Blessed Wand',
+    imageUrl: '/images/wands/wands-02.webp',
+    imageAlt: 'Blessed Wand',
+    Spells: [
+      {
+        Spell: 'Corpus Anima',
+        name: 'Corpus Anima',
+        description: "Bring dead things back to life.",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Custodia',
+        name: 'Custodia',
+        description: "Create a shield around the chosen target that you see in front of you, protecting them from incoming damage.",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Lux Vita',
+        name: 'Lux Vita',
+        description: "Create a healing effect on the target that heals them over time.",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Merci',
+        name: 'Merci',
+        description: "If you're near your allies, be able to provide a small amount of healing to them if they've taken damage. You'll also dash towards them!",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+    ]
+  },
+
+  // 怪异魔杖
+  {
+    id: 3,
+    name: "Grotesque Wand",
+    subtitle: 'Grotesque Wand',
+    imageUrl: '/images/wands/wands-03.webp',
+    imageAlt: 'Grotesque Wand',
+    Spells: [
+      {
+        Spell: 'Achoo!',
+        name: 'Achoo!',
+        description: "With your Spell, sneeze on an enemy and objects.",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Piss-Yuk',
+        name: 'Piss-Yuk',
+        description: "Your wand sends out a stream of piss, damaging enemies and objects that are in its way. If you're louder, the flow from the stream becomes stronger.",
+        tips: "The 'Dub' part allows two streams to appear!",
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Fish-Yuk',
+        name: 'Fish-Yuk',
+        description: "Target the wand at an object and cause it to become a fish",
+        tips: '',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+    ]
+  },
+
+  // 火之魔杖
+  {
+    id: 4,
+    name: "Wand of Fire",
+    subtitle: 'Wand of Fire',
+    imageUrl: '/images/wands/wands-04.webp',
+    imageAlt: 'Wand of Fire',
+    Spells: [
+      {
+        Spell: 'Ignis Tongue',
+        name: 'Ignis Tongue',
+        description: "The wand causes your tongue to release fire whenever you speak; talk to send out a stream of fire against enemies and objects near you.",
+        tips: 'Lighting furniture on fire',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Ignis Boom',
+        name: 'Ignis Boom',
+        description: "With your wand, conjure a mine that appears on the ground that an enemy (you or an ally!) can stand on and cause to explode.",
+        tips: 'Knocking back pursuing enemies.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Ignis Legs',
+        name: 'Ignis Legs',
+        description: "The Spellcaster moves faster and leaves a short trail of fire behind them.",
+        tips: 'Getting away from enemies, rushing to the escape.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Ignis Balls',
+        name: 'Ignis Balls',
+        description: "This is a secret spell that you can learn from the Grimoire. You'll become a fireball, sending yourself forward, hitting enemies and objects.",
+        tips: 'Lighting furniture on fire',
+        state: 'Secret Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+    ]
+  },
+
+  // 幻象魔杖
+  {
+    id: 5,
+    name: "Wand of Illusions",
+    subtitle: 'Illusion Magic',
+    imageUrl: '/images/wands/wands-05.webp',
+    imageAlt: '"Wand of Illusions',
+    Spells: [
+      {
+        Spell: 'Shrink Ana',
+        name: 'Shrink Ana',
+        description: "Shrinks the Spell's target.",
+        tips: 'Shrink a target. Look down to shrink yourself.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Float Oculus',
+        name: 'Float Oculus',
+        description: "Spellcaster's spirit leaves their body to look around.",
+        tips: 'Scouting for enemies and hard-to-reach areas',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Poof Me',
+        name: 'Poof Me',
+        description: "Turns the Spellcaster into an item.",
+        tips: 'Good for hiding.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Echo Me',
+        name: 'Echo Me',
+        description: "Creates a walking, talking version of the Spellcaster.",
+        tips: 'Helps distract enemies.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+    ]
+  },
+
+  // 次级奥数魔杖
+  {
+    id: 6,
+    name: "Wand of Minor Arcanes",
+    subtitle: 'Wand of Minor Arcanes',
+    imageUrl: '/images/wands/wands-06.webp',
+    imageAlt: '"Wand of Minor Arcanes',
+    Spells: [
+      {
+        Spell: 'Lux Ana',
+        name: 'Lux Ana',
+        description: "Summons a bat that will help light your way.",
+        tips: 'Lighting dark rooms and corridors.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Teleportana',
+        name: 'Teleportana',
+        description: "Teleports the player upward.",
+        tips: 'Getting to hard-to-reach rooms, avoiding enemies.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Grab Ana',
+        name: 'Grab Ana',
+        description: "Grabs an object in range and yanks it backwards.",
+        tips: 'Smashing heavier items, bringing things closer to you.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+    ]
+  },
+
+  // 念力魔杖
+  {
+    id: 7,
+    name: "Wand of Telekinesis",
+    subtitle: 'As its name implies, the Wand of Telekinesis helps move objects. This includes lifting heavier objects to throw them, tossing objects with great force, and even locking them in place.',
+    imageUrl: '/images/wands/wands-07.webp',
+    imageAlt: '"Wand of Telekinesis',
+    Spells: [
+      {
+        Spell: 'Tele Float',
+        name: 'Tele Float',
+        description: "Creates an area in front of the spellcaster that moves objects.",
+        tips: 'Lifting heavy objects, throwing objects off the map',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Tele Lock',
+        name: 'Tele Lock',
+        description: "Prevents an object from being moved.",
+        tips: 'Freezing things in place.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Tele Blast',
+        name: 'Tele Blast',
+        description: "Flings the objects in front of the player away.",
+        tips: 'Breaking items, knocking back enemies.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      {
+        Spell: 'Float Nulla',
+        name: 'Float Nulla',
+        description: "Lifts the gravity on an object, allowing players to grab it and throw it in the air.",
+        tips: 'Knocking items off the map.',
+        state: 'Spell',
+        audio: {
+          en: '',
+          cn: '',
+          video: '',
+        }
+      },
+      
+    ]
+  },
+
+  // 风之魔杖
+  {
+    id: 8,
+    name: "Wand of Winds",
+    subtitle: 'Wind Magic',
+    imageUrl: '/images/wands/wands-08.webp',
+    imageAlt: 'Wand of Winds',
+    Spells: [
+      {
+        Spell: 'Aero',
+        name: 'Aero',
+        description: 'Send forth a surge of wind energy, knocking things off tables, pushing enemies back, or moving things around ever so slightly.',
+        tips: '',
+        state: 'Spell',
         audio: {
           kore: '/MP3/Kore_aero-bis.wav',
           puck: '/MP3/Puck_aero-bis.wav',
+          video: '/MP4/AERO-BIS.mp4',
         },
-        video: '/MP4/AERO-BIS.mp4',
       },
       {
-        icon: '🎈',
-        spell: 'Up Dog',
-        name: 'Up Dog',
-        effect: 'Self Launch: Creates an upward aura that launches yourself into the air.',
-        tips: '💡 Technique: Supports "continuous jumping" to gain height. Essential skill for climbing high places.',
-        audio: {
-          kore: '/MP3/Kore_up-dog.wav',
-          puck: '/MP3/Puck_up-dog.wav',
-        },
-        video: '/MP4/Up Dog.mp4',
-      },
-      {
-        icon: '🌪️',
-        spell: 'Tempest',
+        Spell: 'Tempest',
         name: 'Tempest',
-        effect: 'Tornado: Creates a small green tornado.',
-        tips: '💡 AOE Control: Can blow away all items and players in range. Perfect for breaking out when surrounded.',
+        description: "Send out a tornado in a small circle, picking up small and medium objects, knocking them around. It also works on enemies if they're light enough.",
+        tips: '',
+        state: 'Spell',
         audio: {
-          kore: '/MP3/Kore_tempest.wav',
-          puck: '/MP3/Puck_tempest.wav',
+          en: '',
+          cn: '',
+          video: '',
         },
-        video: '/MP4/Tempest.mp4',
-      },
-    ],
-  },
-  {
-    id: 'grotesque-wand',
-    name: 'Wand 2: Grotesque Wand',
-    shortName: 'Grotesque Wand',
-    subtitle: 'Grotesque Magic',
-    image: '/images/wands/wands-02.webp',
-    accentGradient: 'linear-gradient(180deg, #ec4899, #f43f5e)',
-    spells: [
-      {
-        icon: '💧',
-        spell: 'Piss-yuk',
-        name: 'Piss-yuk',
-        effect: 'Urination: As the name suggests.',
-        tips: '💡 Point Farming Tool: Monsters or items that get splashed will give points. Must-learn for achieving S-rank.',
-        audio: {
-          kore: '/MP3/Kore_piss-yuk.wav',
-          puck: '/MP3/Puck_piss-yuk.wav',
-        },
-        video: '/MP4/Piss-yuk.mp4',
       },
       {
-        icon: '🐟',
-        spell: 'Fish-yuk',
-        name: 'Fish-yuk',
-        effect: 'Turn into Fish: Transforms items into several fish.',
-        tips: '💡 Reroll Loot: Current version cannot transform monsters, but can turn junk items into fish (possibly more valuable?).',
+        Spell: 'Up Dog',
+        name: 'Up Dog',
+        description: "Create an upward wind column underneath you, allowing you to float in the air. You may want to use this to protect yourself from falling or to avoid enemies chasing you.",
+        tips: '',
+        state: 'secret Spell',
         audio: {
-          kore: '/MP3/Kore_fish-yuk.wav',
-          puck: '/MP3/Puck_fish-yuk.wav',
+          en: '',
+          cn: '',
+          video: '',
         },
-        video: '/MP4/Fish-yuk.mp4',
       },
       {
-        icon: '🤧',
-        spell: 'Achoo',
-        name: 'Achoo',
-        effect: 'Sneeze: Fires 3-5 mucus balls.',
-        tips: '💡 Slow: Hitting monsters can slow them down. Perfect for kiting high-movement enemies (like Headless Guards).',
+        Spell: 'Dog, dog, dog!',
+        name: 'Dog, dog, dog',
+        description: "This is a secret Spell you can learn from the Grimoire. After you use the Up Dog, you can say Dog up to three more times to continue the upward surge and remain floating.",
+        tips: 'Sustainable floating in the air',
+        state: 'secret Spell',
         audio: {
-          kore: '/MP3/Kore_achoo.wav',
-          puck: '/MP3/Puck_achoo.wav',
+          en: '',
+          cn: '',
+          video: '',
         },
-        video: '/MP4/Achoo.mp4',
-      },
-    ],
-  },
-  {
-    id: 'astral-wand',
-    name: 'Wand 3: Astral Wand',
-    shortName: 'Astral Wand',
-    subtitle: 'Astral Magic',
-    image: '/images/wands/wands-03.webp',
-    accentGradient: 'linear-gradient(180deg, #3b82f6, #2563eb)',
-    spells: [
-      {
-        icon: '✨',
-        spell: 'Blink',
-        name: 'Blink',
-        effect: 'Blink: Teleports forward a short distance.',
-        tips: '💡 Phase Through Walls: With practice, can be used to pass through fences or avoid ground traps.',
-        audio: {
-          kore: '/MP3/Kore_blink.wav',
-          puck: '/MP3/Puck_blink.wav',
-        },
-        video: '/MP4/Blink.mp4',
-      },
-      {
-        icon: '🔄',
-        spell: 'Swap',
-        name: 'Swap',
-        effect: 'Position Swap: Swaps positions with target (item/player/monster).',
-        tips: '💡 Rescue/Troll: Can swap teammates out of monster groups (you go in), or swap valuable items from afar.',
-        audio: {
-          kore: '/MP3/Kore_swap.wav',
-          puck: '/MP3/Puck_swap.wav',
-        },
-        video: '/MP4/Swap.mp4',
-      },
-      {
-        icon: '👁️',
-        spell: 'Astral-Eyes',
-        name: 'Astral-Eyes',
-        effect: 'X-Ray Vision: Activates X-ray mode.',
-        tips: '💡 Official Wallhack: Highlights valuable items, reveals monster positions. Essential skill for team leaders.',
-        audio: {
-          kore: '/MP3/Kore_astral-eyes.wav',
-          puck: '/MP3/Puck_astral-eyes.wav',
-        },
-        video: '/MP4/Astral-Eyes.mp4',
-      },
-    ],
-  },
-  {
-    id: 'wand-of-minor-arcanes',
-    name: 'Wand 4: Wand of Minor Arcanes',
-    shortName: 'Wand of Minor Arcanes',
-    subtitle: 'Arcane Magic',
-    image: '/images/wands/wands-04.webp',
-    accentGradient: 'linear-gradient(180deg, #10b981, #059669)',
-    spells: [
-      {
-        icon: '🦇',
-        spell: 'Lux-anna',
-        name: 'Lux-anna',
-        effect: 'Summon Familiar: Summons a small bat named Luxanna.',
-        tips: '💡 Pet: May have auto-attack or lighting functions (needs in-game verification).',
-        audio: {
-          kore: '/MP3/Kore_lux-anna.wav',
-          puck: '/MP3/Puck_lux-anna.wav',
-        },
-        video: '/MP4/Lux-anna.mp4',
-      },
-      {
-        icon: '👋',
-        spell: 'Grab-ana',
-        name: 'Grab-ana',
-        effect: 'Void Hand: Helps you grab items from a distance.',
-        tips: '💡 Safe Pickup: Use to grab items above traps. Be careful not to hit yourself with improper operation.',
-        audio: {
-          kore: '/MP3/Kore_grab-ana.wav',
-          puck: '/MP3/Puck_grab-ana.wav',
-        },
-        video: '/MP4/Grab-ana.mp4',
-      },
-      {
-        icon: '🚀',
-        spell: 'Tele-port-ana',
-        name: 'Tele-port-ana',
-        effect: 'Mass Teleport: Teleports all players in range upward (one floor up).',
-        tips: '💡 Escape Skill: Specifically used to escape deep levels. If there is no floor above, will teleport upward a certain height.',
-        audio: {
-          kore: '/MP3/Kore_tele-port-ana.wav',
-          puck: '/MP3/Puck_tele-port-ana.wav',
-        },
-        video: '/MP4/Tele-port-ana.mp4',
-      },
-    ],
-  },
-  {
-    id: 'wand-of-illusion',
-    name: 'Wand 5: Wand of Illusion',
-    shortName: 'Wand of Illusion',
-    subtitle: 'Illusion Magic',
-    image: '/images/wands/wands-05.webp',
-    accentGradient: 'linear-gradient(180deg, #8b5cf6, #7c3aed)',
-    spells: [
-      {
-        icon: '👤',
-        spell: 'Dub-ill-oo',
-        name: 'Dub-ill-oo',
-        effect: 'Clone: Summons a clone that walks forward, attracting aggro.',
-        tips: '💡 Pull Aggro: Let the clone step on traps or lure away guards.',
-        audio: {
-          kore: '/MP3/Kore_dub-ill-oo.wav',
-          puck: '/MP3/Puck_dub-ill-oo.wav',
-        },
-        video: '/MP4/Dub-ill-oo.mp4',
-      },
-      {
-        icon: '🪑',
-        spell: 'Mim-ill-oo',
-        name: 'Mim-ill-oo',
-        effect: 'Mimicry: Transform into items like chairs, crates, etc.',
-        tips: '💡 Invincible: You are invincible while transformed! Not just for hide-and-seek, but also for emergency escape. Press F to transform back instantly without recovery frames.',
-        audio: {
-          kore: '/MP3/Kore_mim-ill-oo.wav',
-          puck: '/MP3/Puck_mim-ill-oo.wav',
-        },
-        video: '/MP4/Mim-ill-oo.mp4',
-      },
-    ],
-  },
+      }
+    ]
+  }
 ]
+
+// systemSpells removed
