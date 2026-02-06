@@ -13,7 +13,7 @@ export const guides = [
       "keywords": "Yapyap réglages, Yapyap voice chat fix, Yapyap commandes, Yapyap mal des transports, Yapyap sorts, Yapyap touches"
     },
     "isHighlight": true,
-    "addressBar": "yapyap-guide-reglages",
+    "addressBar": "yapyap-settings-guide",
     "detailsHtml": `<div class="container">
     <p>Yapyap n'est pas seulement un jeu d'adresse ; de bons réglages peuvent considérablement améliorer votre expérience. Que vous souhaitiez résoudre des problèmes de reconnaissance vocale ou optimiser vos commandes, ce guide est là pour vous aider.</p>
     <div style="position: relative; padding-bottom: 56.25%; height: 0px; overflow: hidden; max-width: 100%;">
@@ -103,7 +103,7 @@ export const guides = [
       "keywords": "Yapyap guide français, Yapyap vol infini, Yapyap farming or, Yapyap combat, astuces Yapyap"
     },
     "isHome": true,
-    "addressBar": "yapyap-guide-demarrage-complet",
+    "addressBar": "yapyap-full-version-starter-guide",
     "detailsHtml": `<div class="container">
     <p>Bienvenue dans Yapyap ! Dans ce monde de magie et de chaos, votre préparation initiale détermine votre survie. Voici un guide pratique basé sur l'expérience terrain.</p>
     <div style="position: relative; padding-bottom: 56.25%; height: 0px; overflow: hidden; max-width: 100%;">
