@@ -434,7 +434,6 @@ export default {
         "display": {
             "placeholder": "Wähle einen Stab und Zauber, klicke dann auf „Zauber manifestieren“, um die Animation zu sehen",
             "noAnimation": "Zauber-Animation nicht verfügbar",
-            "animationHint": "Animationsdatei ablegen in: public/videos/spells/",
             "pronunciationTip": "💡 Tipp: ",
             "castingTechnique": "Zauber-Technik: ",
             "effect": "Effekt",

@@ -434,7 +434,6 @@ export default {
     "display": {
       "placeholder": "Sélectionnez une baguette et un sort, puis cliquez sur « Manifester le Sort » pour voir l'animation",
       "noAnimation": "Animation du sort non disponible",
-      "animationHint": "Placez le fichier d'animation dans : public/videos/spells/",
       "pronunciationTip": "💡 Conseil : ",
       "castingTechnique": "Technique d'incantation : ",
       "effect": "Effet",

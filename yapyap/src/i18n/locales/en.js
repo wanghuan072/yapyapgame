@@ -434,7 +434,6 @@ export default {
     display: {
       placeholder: "Select a wand and spell, then click \"Manifest Spell\" to view the animation",
       noAnimation: "Spell animation not available",
-      animationHint: "Place animation file in: public/videos/spells/",
       pronunciationTip: "💡 Tip: ",
       castingTechnique: "Casting Technique: ",
       effect: "Effect",

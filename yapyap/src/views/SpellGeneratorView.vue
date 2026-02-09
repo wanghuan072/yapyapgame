@@ -115,7 +115,6 @@
             <div v-else-if="manifestedSpell" class="media-placeholder">
               <div class="placeholder-icon">🎬</div>
               <p>{{ $t('SpellGenerator.display.noAnimation') }}</p>
-              <p class="small muted">{{ $t('SpellGenerator.display.animationHint') }}</p>
             </div>
           </div>
 
@@ -400,24 +399,21 @@ function manifestSpell() {
       if (selectedTimbre.value === 'cn') audioSrc = selectedSpell.value.audio['puck']
     }
 
-    if (!audioSrc) {
-      alert('No media available')
-      return
-    }
-
     manifestedSpell.value = selectedSpell.value
     loadMedia(selectedSpell.value)
     
-    // Play audio after a short delay to ensure audio element is updated
-    setTimeout(() => {
-      if (spellAudio.value) {
-        // Reload audio source to ensure it uses the new path
-        spellAudio.value.load()
-        spellAudio.value.play().catch(err => {
-          console.log('Audio playback failed:', err)
-        })
-      }
-    }, 300)
+    if (audioSrc) {
+      // Play audio after a short delay to ensure audio element is updated
+      setTimeout(() => {
+        if (spellAudio.value) {
+          // Reload audio source to ensure it uses the new path
+          spellAudio.value.load()
+          spellAudio.value.play().catch(err => {
+            console.log('Audio playback failed:', err)
+          })
+        }
+      }, 300)
+    }
   }
 }
 

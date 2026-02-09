@@ -14,8 +14,8 @@ export const wands = [
         tips: '',
         state: 'Spell',
         audio: {
-          en: '/MP3/Astral Wand - Astral Eyes - en.mp3',
-          cn: '/MP3/Astral Wand - Astral Eyes - cn.mp3',
+          en: '/MP3/Astral Wand - Astral Eyes - en.wav',
+          cn: '/MP3/Astral Wand - Astral Eyes - cn.wav',
           video: '',
         },
       },
@@ -26,8 +26,8 @@ export const wands = [
         tips: '',
         state: 'Spell',
         audio: {
-          en: '/MP3/Astral Wand - Blink - en.mp3',
-          cn: '/MP3/Astral Wand - Blink - cn.mp3',
+          en: '/MP3/Astral Wand - Blink - en.wav',
+          cn: '/MP3/Astral Wand - Blink - cn.wav',
           video: '',
         },
       },
@@ -38,8 +38,8 @@ export const wands = [
         tips: '',
         state: 'Spell',
         audio: {
-          en: '/MP3/Astral Wand - Swap - en.mp3',
-          cn: '/MP3/Astral Wand - Swap - cn.mp3',
+          en: '/MP3/Astral Wand - Swap - en.wav',
+          cn: '/MP3/Astral Wand - Swap - cn.wav',
           video: '',
         },
       },
@@ -50,8 +50,8 @@ export const wands = [
         tips: 'This is a secret Spell, not seen in the Spell list, but you can confirm it in the Grimoire after buying the wand and bringing it to the Grimoire.',
         state: 'secret Spell',
         audio: {
-          en: '/MP3/Astral Wand - Offer - en.mp3',
-          cn: '/MP3/Astral Wand - Offer - cn.mp3',
+          en: '/MP3/Astral Wand - Offer - en.wav',
+          cn: '',
           video: '',
         },
       }
@@ -132,7 +132,7 @@ export const wands = [
         tips: '',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Grotesque Wand - Achoo - en.wan',
           cn: '',
           video: '',
         }
@@ -144,7 +144,7 @@ export const wands = [
         tips: "The 'Dub' part allows two streams to appear!",
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Grotesque Wand - Piss-Yuk - en.wan',
           cn: '',
           video: '',
         }
@@ -156,7 +156,7 @@ export const wands = [
         tips: '',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Grotesque Wand - Fish-Yuk - en.wan',
           cn: '',
           video: '',
         }
@@ -238,7 +238,7 @@ export const wands = [
         tips: 'Shrink a target. Look down to shrink yourself.',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Illusions - Shrink Ana - en.wav',
           cn: '',
           video: '',
         }
@@ -250,7 +250,7 @@ export const wands = [
         tips: 'Scouting for enemies and hard-to-reach areas',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Illusions - Float Oculus - en.wav',
           cn: '',
           video: '',
         }
@@ -262,7 +262,7 @@ export const wands = [
         tips: 'Good for hiding.',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Illusions - Poof Me - en.wav',
           cn: '',
           video: '',
         }
@@ -274,7 +274,7 @@ export const wands = [
         tips: 'Helps distract enemies.',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Illusions - Echo Me - en.wav',
           cn: '',
           video: '',
         }
@@ -297,19 +297,19 @@ export const wands = [
         tips: 'Lighting dark rooms and corridors.',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Minor Arcanes - Lux Ana - en.wav',
           cn: '',
           video: '',
         }
       },
       {
-        Spell: 'Teleportana',
-        name: 'Teleportana',
+        Spell: 'Tele Port Ana',
+        name: 'Tele Port Ana',
         description: "Teleports the player upward.",
         tips: 'Getting to hard-to-reach rooms, avoiding enemies.',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Minor Arcanes - Tele Port Ana - en.wav',
           cn: '',
           video: '',
         }
@@ -321,7 +321,7 @@ export const wands = [
         tips: 'Smashing heavier items, bringing things closer to you.',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Minor Arcanes - Grab Ana - en.wav',
           cn: '',
           video: '',
         }
@@ -404,9 +404,9 @@ export const wands = [
         tips: '',
         state: 'Spell',
         audio: {
-          kore: '/MP3/Kore_aero-bis.wav',
-          puck: '/MP3/Puck_aero-bis.wav',
-          video: '/MP4/AERO-BIS.mp4',
+          en: '/MP3/Wand of Winds - Aero - en.wav',
+          cn: '',
+          video: '',
         },
       },
       {
@@ -416,7 +416,7 @@ export const wands = [
         tips: '',
         state: 'Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Winds - Tempest - en.wav',
           cn: '',
           video: '',
         },
@@ -428,13 +428,13 @@ export const wands = [
         tips: '',
         state: 'secret Spell',
         audio: {
-          en: '',
+          en: '/MP3/Wand of Winds - Up Dog - en.wav',
           cn: '',
           video: '',
         },
       },
       {
-        Spell: 'Dog, dog, dog!',
+        Spell: 'Dog, dog, dog!', 
         name: 'Dog, dog, dog',
         description: "This is a secret Spell you can learn from the Grimoire. After you use the Up Dog, you can say Dog up to three more times to continue the upward surge and remain floating.",
         tips: 'Sustainable floating in the air',
