@@ -48,153 +48,58 @@
         </div>
       </section>
 
-      <!-- Potion Recipes Table -->
-      <section class="wiki-content card">
-        <div class="section-head">
-          <h2 class="section-title">{{ t('Wiki.Potions.database.title') }}</h2>
-          <p class="section-subtitle" v-html="t('Wiki.Potions.database.subtitle')"></p>
-        </div>
-
-        <!-- Desktop table -->
-        <div class="table card" :aria-label="t('Wiki.Potions.database.title')">
-          <div class="row head">
-            <div class="c image">{{ t('Wiki.Potions.database.headers.image') }}</div>
-            <div class="c potion">{{ t('Wiki.Potions.database.headers.potion') }}</div>
-            <div class="c color">{{ t('Wiki.Potions.database.headers.color') }}</div>
-            <div class="c recipe">{{ t('Wiki.Potions.database.headers.recipe') }}</div>
-            <div class="c effect">{{ t('Wiki.Potions.database.headers.effect') }}</div>
-            <div class="c duration">{{ t('Wiki.Potions.database.headers.duration') }}</div>
+      <!-- Potion list: card grid (no images) -->
+      <section class="potions-section">
+        <div class="potions-card card">
+          <div class="section-head">
+            <h2 class="section-title">{{ t('Wiki.Potions.database.title') }}</h2>
+            <p class="section-subtitle" v-html="t('Wiki.Potions.database.subtitle')"></p>
           </div>
-
-          <div class="row" v-for="recipe in recipes" :key="recipe.item">
-            <div class="c image">
-              <div class="image-placeholder">
-                <img :src="recipe.image" :alt="recipe.item" />
-              </div>
-            </div>
-            <div class="c potion">
-              <div class="potion-name">
-                <strong>
-                  <span v-if="recipe.isWarning" class="warning-icon">⚠️</span>
-                  {{ recipe.item }}
-                  <span v-if="recipe.colorDot" class="color-dot" :class="`color-${recipe.colorClass}`">{{ recipe.colorDot }}</span>
-                </strong>
-                <span v-if="recipe.cn" class="potion-cn">{{ recipe.cn }}</span>
-              </div>
-            </div>
-            <div class="c color">
-              <div class="color-bar" :class="`color-bar-${recipe.colorClass}`"></div>
-              <span class="color-name">{{ recipe.color }}</span>
-            </div>
-            <div class="c recipe">
-              <div class="recipe-formula">
-                <span v-for="(ingredient, idx) in recipe.recipe" :key="idx" class="ingredient-item">
-                  {{ ingredient }}
-                </span>
-              </div>
-            </div>
-            <div class="c effect">{{ recipe.effect }}</div>
-            <div class="c duration">{{ recipe.duration }}</div>
+          <div class="potions-grid">
+            <article v-for="recipe in recipes" :key="recipe.item" class="potion-card">
+              <h3 class="potion-card-title">{{ recipe.item }}</h3>
+              <dl class="potion-card-meta">
+                <dt>{{ t('Wiki.Potions.database.headers.recipe') }}</dt>
+                <dd class="potion-recipe">{{ recipe.recipe[0] }}</dd>
+                <dt>{{ t('Wiki.Potions.database.headers.effect') }}</dt>
+                <dd>{{ recipe.effect }}</dd>
+                <dt>{{ t('Wiki.Potions.database.headers.duration') }}</dt>
+                <dd>{{ recipe.duration }}</dd>
+              </dl>
+            </article>
           </div>
         </div>
+      </section>
 
-        <!-- Mobile cards -->
-        <div class="cards-mobile">
-          <div class="recipe-card card" v-for="recipe in recipes" :key="recipe.item" :class="{ 'warning-card': recipe.isWarning }">
-            <div class="recipe-card-header">
-              <div class="recipe-image">
-                <div class="image-placeholder">
-                  <img :src="recipe.image" :alt="recipe.item" />
-                </div>
-              </div>
-              <div>
-                <h3 class="recipe-name">
-                  <span v-if="recipe.isWarning" class="warning-icon">⚠️</span>
-                  {{ recipe.item }}
-                  <span v-if="recipe.cn" class="potion-cn">{{ recipe.cn }}</span>
-                  <span v-if="recipe.colorDot" class="color-dot" :class="`color-${recipe.colorClass}`">{{ recipe.colorDot }}</span>
-                </h3>
-                <div class="recipe-color">
-                  <div class="color-bar" :class="`color-bar-${recipe.colorClass}`"></div>
-                  <span>{{ recipe.color }}</span>
-                </div>
-              </div>
-            </div>
-            <div class="recipe-formula-card">
-              <div class="formula-label">{{ t('Wiki.Potions.database.headers.recipe') }}:</div>
-              <div class="recipe-formula">
-                <span v-for="(ingredient, idx) in recipe.recipe" :key="idx">
-                  {{ ingredient }}
-                  <span v-if="idx < recipe.recipe.length - 1" class="recipe-plus">or</span>
-                </span>
-              </div>
-            </div>
-            <div class="recipe-effect">
-              <div class="effect-label">{{ t('Wiki.Potions.database.headers.effect') }}:</div>
-              <div class="effect-text">{{ recipe.effect }}</div>
-            </div>
-            <div class="recipe-meta">
-              <div class="meta-row">
-                <span class="meta-label">{{ t('Wiki.Potions.database.headers.duration') }}:</span>
-                <span>{{ recipe.duration }}</span>
+      <!-- Recipe book: in-game reference (5 spreads) -->
+      <section class="recipe-book-section">
+        <div class="wiki-content card">
+          <div class="section-head">
+            <h2 class="section-title">{{ t('Wiki.Potions.recipeBook.title') }}</h2>
+            <p class="section-subtitle" v-html="t('Wiki.Potions.recipeBook.subtitle')"></p>
+          </div>
+          <div class="recipe-book-grid">
+            <div class="recipe-book-item" v-for="(img, idx) in recipeBookImages" :key="idx">
+              <div class="recipe-book-image-wrap">
+                <img :src="img" :alt="'Recipe book spread ' + (idx + 1)" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Raw Ingredients Section -->
-      <section class="raw-ingredients-section">
-        <div class="raw-card card">
-          <h2 class="section-title">{{ t('Wiki.Potions.raw.title') }}</h2>
-          <div class="raw-content">
-            <p v-html="t('Wiki.Potions.raw.intro')"></p>
-            
-            <!-- Desktop table -->
-            <div class="raw-table">
-              <div class="raw-row head">
-                <div class="raw-c icon">{{ t('Wiki.Potions.raw.headers.icon') }}</div>
-                <div class="raw-c name">{{ t('Wiki.Potions.raw.headers.name') }}</div>
-                <div class="raw-c raw-effect">{{ t('Wiki.Potions.raw.headers.rawEffect') }}</div>
-                <div class="raw-c brewed-effect">{{ t('Wiki.Potions.raw.headers.brewedEffect') }}</div>
-                <div class="raw-c verdict">{{ t('Wiki.Potions.raw.headers.verdict') }}</div>
-              </div>
-              <div class="raw-row" v-for="ingredient in rawIngredients" :key="ingredient.name">
-                <div class="raw-c icon">
-                  <div class="ingredient-icon-large">{{ ingredient.icon }}</div>
+      <!-- Ingredients: with images -->
+      <section class="ingredients-section">
+        <div class="ingredients-card card">
+          <h2 class="section-title">{{ t('Wiki.Potions.ingredients.title') }}</h2>
+          <div class="ingredients-content">
+            <p v-html="t('Wiki.Potions.ingredients.intro')"></p>
+            <div class="ingredients-grid">
+              <div class="ingredient-item card" v-for="ingredient in ingredients" :key="ingredient.name">
+                <div class="ingredient-image-wrap">
+                  <img :src="ingredient.image" :alt="ingredient.name" />
                 </div>
-                <div class="raw-c name">
-                  <strong>{{ ingredient.name }}</strong>
-                </div>
-                <div class="raw-c raw-effect">{{ ingredient.rawEffect }}</div>
-                <div class="raw-c brewed-effect">{{ ingredient.brewedEffect }}</div>
-                <div class="raw-c verdict">
-                  <span class="verdict-text">{{ ingredient.verdict }}</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Mobile cards -->
-            <div class="raw-cards-mobile">
-              <div class="raw-card-item card" v-for="ingredient in rawIngredients" :key="ingredient.name">
-                <div class="raw-card-header">
-                  <div class="ingredient-icon-large">{{ ingredient.icon }}</div>
-                  <h3 class="raw-card-name">{{ ingredient.name }}</h3>
-                </div>
-                <div class="raw-card-content">
-                  <div class="raw-card-row">
-                    <span class="raw-label">{{ t('Wiki.Potions.raw.headers.rawEffect') }}:</span>
-                    <span class="raw-value">{{ ingredient.rawEffect }}</span>
-                  </div>
-                  <div class="raw-card-row">
-                    <span class="raw-label">{{ t('Wiki.Potions.raw.headers.brewedEffect') }}:</span>
-                    <span class="raw-value">{{ ingredient.brewedEffect }}</span>
-                  </div>
-                  <div class="raw-card-row verdict-row">
-                    <span class="raw-label">{{ t('Wiki.Potions.raw.headers.verdict') }}:</span>
-                    <span class="raw-value verdict-text">{{ ingredient.verdict }}</span>
-                  </div>
-                </div>
+                <div class="ingredient-name">{{ ingredient.name }}</div>
               </div>
             </div>
           </div>
@@ -245,76 +150,50 @@ import { useI18n } from 'vue-i18n'
 const { t, tm } = useI18n()
 
 const recipesData = [
-  {
-    id: 'vitality',
-    image: '/images/potions/potions-01.webp',
-    colorDot: '🔴',
-    colorClass: 'red',
-    isWarning: false,
-  },
-  {
-    id: 'strength',
-    image: '/images/potions/potions-04.webp',
-    colorDot: '🟣',
-    colorClass: 'purple',
-    isWarning: false,
-  },
-  {
-    id: 'invisibility',
-    image: '/images/potions/potions-03.webp',
-    colorDot: '🔵',
-    colorClass: 'blue',
-    isWarning: false,
-  },
-  {
-    id: 'flight',
-    image: '/images/potions/potions-02.webp',
-    colorDot: '🟡',
-    colorClass: 'brown',
-    isWarning: false,
-  },
-  {
-    id: 'nasty',
-    image: '/images/potions/potions-05.webp',
-    colorDot: '🟠',
-    colorClass: 'brown',
-    isWarning: true,
-  },
+  { id: 'healing' },
+  { id: 'healthBoost' },
+  { id: 'staminaBoost' },
+  { id: 'cooldownReduction' },
+  { id: 'flight' },
+  { id: 'invisibility' },
+  { id: 'explosive' },
+  { id: 'zippy' },
+  { id: 'froggy' },
+  { id: 'revive' },
 ]
 
 const recipes = computed(() => recipesData.map(recipe => {
   const data = tm(`Wiki.Potions.recipes.${recipe.id}`)
-  return {
-    ...recipe,
-    ...data
-  }
+  return { ...recipe, ...data }
 }))
 
-const rawIngredientsData = [
-  {
-    id: 'carrot',
-    icon: '🥕',
-  },
-  {
-    id: 'mushroom',
-    icon: '🍄',
-  },
-  {
-    id: 'clover',
-    icon: '🍀',
-  },
-  {
-    id: 'susroom',
-    icon: '🍄',
-  },
+const potionsBase = '/images/potions/'
+
+const recipeBookImages = [
+  potionsBase + 'ScreenShot_2026-02-09_192951_632.png',
+  potionsBase + 'ScreenShot_2026-02-09_193001_191.png',
+  potionsBase + 'ScreenShot_2026-02-09_193009_599.png',
+  potionsBase + 'ScreenShot_2026-02-09_193019_511.png',
+  potionsBase + 'ScreenShot_2026-02-09_193027_952.png',
 ]
 
-const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
-  const data = tm(`Wiki.Potions.raw.ingredients.${ingredient.id}`)
-  return {
-    ...ingredient,
-    ...data
-  }
+const ingredientsData = [
+  { id: 'fresh_water_pearl', image: potionsBase + 'ScreenShot_2026-02-09_192603_392.png' },
+  { id: 'dragon_bone', image: potionsBase + 'ScreenShot_2026-02-09_192617_048.png' },
+  { id: 'blood_rose', image: potionsBase + 'ScreenShot_2026-02-09_192650_088.png' },
+  { id: 'goblin_tooth', image: potionsBase + 'ScreenShot_2026-02-09_192700_855.png' },
+  { id: 'phoenix_feather', image: potionsBase + 'ScreenShot_2026-02-09_192710_847.png' },
+  { id: 'glowing_mushroom', image: potionsBase + 'ScreenShot_2026-02-09_192722_255.png' },
+  { id: 'coal', image: potionsBase + 'ScreenShot_2026-02-09_192729_007.png' },
+  { id: 'golem_gonads', image: potionsBase + 'ScreenShot_2026-02-09_192739_935.png' },
+  { id: 'powdered_crystal', image: potionsBase + 'ScreenShot_2026-02-09_192810_543.png' },
+  { id: 'weeping_willow_amber', image: potionsBase + 'ScreenShot_2026-02-09_192836_367.png' },
+  { id: 'mystery_egg', image: potionsBase + 'ScreenShot_2026-02-09_192844_822.png' },
+]
+
+const ingredients = computed(() => ingredientsData.map(ing => {
+  const name = t(`Wiki.Potions.ingredients.items.${ing.id}.name`)
+  return { ...ing, name: name || ing.id.replace(/_/g, ' ') }
 }))
 </script>
 
@@ -370,7 +249,7 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
 
 /* Common Content Styles */
 .mechanic-content p,
-.raw-content p,
+.ingredients-content p,
 .secrets-content p,
 .faq-answer {
   font-size: 15px;
@@ -385,7 +264,7 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
 
 /* Common Strong Styles */
 .mechanic-content strong,
-.raw-content strong,
+.ingredients-content strong,
 .secrets-content strong,
 .faq-answer strong,
 .mechanic-warning strong,
@@ -492,7 +371,8 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
 /* Common Card Styles */
 .wiki-content,
 .mechanic-card,
-.raw-card,
+.potions-card,
+.ingredients-card,
 .faq-card,
 .secrets-card {
   margin-top: 32px;
@@ -503,8 +383,178 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
   box-shadow: var(--shadow);
 }
 
-.wiki-content {
+/* Potions: card grid (no images) */
+.potions-section {
   margin-top: 32px;
+}
+
+.potions-card {
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.potions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.potion-card {
+  padding: 20px;
+  background: rgba(15, 20, 36, 0.5);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.potion-card:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  background: rgba(139, 92, 246, 0.06);
+}
+
+.potion-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+  color: var(--text);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.potion-card-meta {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.potion-card-meta dt {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.potion-card-meta dt:first-of-type {
+  margin-top: 0;
+}
+
+.potion-card-meta dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.potion-recipe {
+  font-style: italic;
+}
+
+/* Recipe book: 5 spread images */
+.recipe-book-section {
+  margin-top: 32px;
+}
+
+.recipe-book-section .wiki-content {
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.recipe-book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.recipe-book-item {
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(15, 20, 36, 0.6);
+  border: 1px solid var(--border);
+}
+
+.recipe-book-image-wrap {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-book-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Ingredients: grid with images */
+.ingredients-section {
+  margin-top: 32px;
+}
+
+.ingredients-card {
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.ingredients-content p {
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.ingredient-item {
+  padding: 12px;
+  text-align: center;
+  background: rgba(15, 20, 36, 0.5);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.2s ease;
+}
+
+.ingredient-item:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.ingredient-image-wrap {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(15, 20, 36, 0.8);
+  margin-bottom: 10px;
+}
+
+.ingredient-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ingredient-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
 }
 
 .section-head {
@@ -523,506 +573,8 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
   margin: 0;
 }
 
-.table {
-  display: none;
-  flex-direction: column;
-  gap: 0;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-}
-
-.table .row {
-  display: grid;
-  grid-template-columns: 120px 1.4fr 140px 1fr 2.2fr 90px;
-  gap: 16px;
-  padding: 18px 20px;
-  border-bottom: 1px solid var(--border);
-  align-items: center;
-  transition: background-color 0.2s ease;
-}
-
-.table .row:not(.head):hover {
-  background: rgba(139, 92, 246, 0.05);
-}
-
-.table .row:not(.head) {
-  min-height: 90px;
-}
-
-.table .row.warning-row:hover {
-  background: rgba(239, 68, 68, 0.1);
-}
-
-.table .row:last-child {
-  border-bottom: none;
-}
-
-.table .row.head {
-  background: rgba(139, 92, 246, 0.08);
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  align-items: center;
-}
-
-.table .c {
-  overflow: hidden;
-}
-
-.table .c.image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Common Image Placeholder Styles */
-.image-placeholder {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(15, 20, 36, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.image-placeholder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.table .row:not(.head):hover .image-placeholder {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
-}
-
-.recipe-image .image-placeholder {
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.table .c.potion {
-  display: flex;
-  align-items: center;
-}
-
-.potion-name {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: flex-start;
-}
-
-.potion-name strong {
-  color: var(--text);
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.3;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.warning-icon {
-  font-size: 18px;
-  flex-shrink: 0;
-}
-
-.color-dot {
-  font-size: 14px;
-  flex-shrink: 0;
-}
-
-.table .c.color {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  align-items: flex-start;
-}
-
-/* Common Color Bar Styles */
-.color-bar {
-  width: 100%;
-  height: 5px;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.recipe-color .color-bar {
-  width: 40px;
-  height: 4px;
-  border-radius: 2px;
-  box-shadow: none;
-}
-
-.color-bar-red {
-  background: #ef4444;
-}
-
-.color-bar-pink {
-  background: #ec4899;
-}
-
-.color-bar-blue {
-  background: #3b82f6;
-}
-
-.color-bar-purple {
-  background: #a855f7;
-}
-
-.color-bar-brown {
-  background: #a16207;
-}
-
-.color-bar-yellow {
-  background: #eab308;
-}
-
-.color-name {
-  font-size: 11px;
-  color: var(--muted);
-  line-height: 1.3;
-}
-
-.table .c.recipe {
-  min-width: 0;
-  font-size: 12px;
-  line-height: 1.4;
-}
-
-.recipe-formula {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  line-height: 1.3;
-}
-
-.ingredient-item {
-  font-size: 12px;
-  color: var(--text);
-  font-weight: 400;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.recipe-plus {
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: lowercase;
-  margin: 0 2px;
-  display: inline-block;
-}
-
-.table .c.effect {
-  font-size: 13px;
-  line-height: 1.5;
-  color: var(--muted);
-  padding-right: 4px;
-}
-
-.table .c.duration {
-  font-size: 12px;
-  color: var(--text);
-  font-weight: 600;
-  text-align: center;
-  padding: 4px 8px;
-  background: rgba(139, 92, 246, 0.08);
-  border-radius: 6px;
-  border: 1px solid rgba(139, 92, 246, 0.15);
-}
-
 .muted {
   color: var(--muted);
-}
-
-.cards-mobile {
-  display: none;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.recipe-card {
-  padding: 20px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  transition: all 0.2s ease;
-}
-
-.recipe-card.warning-card {
-  background: rgba(239, 68, 68, 0.05);
-  border-color: rgba(239, 68, 68, 0.3);
-}
-
-.recipe-card-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 20px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border);
-}
-
-.recipe-image {
-  flex-shrink: 0;
-}
-
-.recipe-image .image-placeholder {
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.recipe-name {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.recipe-color {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.recipe-formula-card {
-  margin-bottom: 12px;
-  padding: 12px;
-  background: rgba(139, 92, 246, 0.08);
-  border-radius: 10px;
-}
-
-.formula-label {
-  font-weight: 600;
-  font-size: 13px;
-  margin-bottom: 6px;
-  color: var(--text);
-}
-
-.recipe-formula {
-  font-size: 14px;
-}
-
-.recipe-effect {
-  margin-bottom: 12px;
-}
-
-.effect-label {
-  font-weight: 600;
-  font-size: 13px;
-  margin-bottom: 6px;
-  color: var(--text);
-}
-
-.effect-text {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.recipe-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.meta-row {
-  display: flex;
-  gap: 8px;
-  font-size: 14px;
-}
-
-.meta-label {
-  font-weight: 600;
-  color: var(--text);
-}
-
-/* Raw Ingredients Section */
-.raw-ingredients-section {
-  margin-top: 32px;
-}
-
-.ingredients-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-
-.ingredient-item.warning-item {
-  background: rgba(251, 191, 36, 0.1);
-  border-color: rgba(251, 191, 36, 0.3);
-}
-
-.ingredient-icon {
-  font-size: 40px;
-  flex-shrink: 0;
-}
-
-.ingredient-info {
-  flex-grow: 1;
-}
-
-.ingredient-name {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-  color: var(--text);
-}
-
-.ingredient-effect {
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--muted);
-  margin: 0;
-}
-
-/* Raw Ingredients Table */
-.raw-table {
-  display: none;
-  flex-direction: column;
-  gap: 0;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-  margin-top: 24px;
-}
-
-.raw-row {
-  display: grid;
-  grid-template-columns: 80px 1.5fr 1.2fr 1.2fr 1.5fr;
-  gap: 16px;
-  padding: 16px 20px;
-  border-bottom: 1px solid var(--border);
-  align-items: center;
-}
-
-.raw-row:last-child {
-  border-bottom: none;
-}
-
-.raw-row.head {
-  background: rgba(139, 92, 246, 0.08);
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.raw-c {
-  overflow: hidden;
-}
-
-.raw-c.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ingredient-icon-large {
-  font-size: 32px;
-}
-
-.raw-c.name strong {
-  color: var(--text);
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.raw-c.raw-effect,
-.raw-c.brewed-effect {
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--muted);
-}
-
-.raw-c.verdict {
-  font-size: 14px;
-}
-
-.verdict-text {
-  padding: 6px 12px;
-  background: rgba(139, 92, 246, 0.1);
-  border-radius: 6px;
-  color: var(--text);
-  font-weight: 500;
-  display: inline-block;
-}
-
-.raw-cards-mobile {
-  display: none;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.raw-card-item {
-  padding: 20px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-}
-
-.raw-card-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
-
-.raw-card-name {
-  font-size: 17px;
-  font-weight: 700;
-  margin: 0;
-  color: var(--text);
-}
-
-.raw-card-content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.raw-card-row {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.raw-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.raw-value {
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--text);
-}
-
-.verdict-row .raw-value {
-  padding: 6px 12px;
-  background: rgba(139, 92, 246, 0.1);
-  border-radius: 6px;
-  margin-top: 4px;
 }
 
 /* Secrets Section */
@@ -1116,49 +668,15 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
   margin: 0;
 }
 
-/* iPad端 - 1024px */
-@media (max-width: 1024px) {
-  .table {
-    display: none;
-  }
-
-  .cards-mobile {
-    display: flex;
-  }
-
-  .raw-table {
-    display: none;
-  }
-
-  .raw-cards-mobile {
-    display: flex;
-  }
-}
-
-@media (min-width: 1025px) {
-  .table {
-    display: flex;
-  }
-
-  .cards-mobile {
-    display: none;
-  }
-
-  .raw-table {
-    display: flex;
-  }
-
-  .raw-cards-mobile {
-    display: none;
-  }
-}
 
 /* 移动端 - 768px */
 @media (max-width: 768px) {
   /* 板块间距 */
   .seo-highlight-section,
   .crafting-mechanic-section,
-  .raw-ingredients-section,
+  .potions-section,
+  .recipe-book-section,
+  .ingredients-section,
   .secrets-section,
   .faq-section {
     padding: 0.8rem 0;
@@ -1172,7 +690,8 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
 
   .wiki-content,
   .mechanic-card,
-  .raw-card,
+  .potions-card,
+  .ingredients-card,
   .faq-card,
   .secrets-card {
     padding: 0.8rem;
@@ -1185,9 +704,12 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
     gap: 0.7rem;
   }
 
-  .recipe-card,
-  .raw-card-item {
-    padding: 0.8rem;
+  .potion-card {
+    padding: 1rem;
+  }
+
+  .potions-grid {
+    grid-template-columns: 1fr;
   }
 
   .faq-item {
@@ -1238,7 +760,7 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
   }
 
   .mechanic-content p,
-  .raw-content p,
+  .ingredients-content p,
   .secrets-content p,
   .faq-answer {
     font-size: 0.8rem;
@@ -1328,14 +850,5 @@ const rawIngredients = computed(() => rawIngredientsData.map(ingredient => {
     margin-top: 0.7rem;
   }
 
-  .raw-card-row {
-    margin-bottom: 0.5rem;
-  }
-
-  .raw-label,
-  .raw-value {
-    font-size: 0.8rem;
-    line-height: 1.2;
-  }
 }
 </style>

@@ -1460,79 +1460,90 @@ export default {
     },
     "Potions": {
       "title": "Guide YAPYAP des Potions et Recettes d'Artisanat",
-      "pill": "Recettes · Ingrédients · Effets",
-      "intro": "Guide complet des <strong>potions YAPYAP</strong> pour toutes les recettes d'artisanat dans YAPYAP. Ce guide complet de <strong>l'artisanat YAPYAP</strong> vous aide à maîtriser le processus de brassage en trois étapes à l'aide du chaudron et à apprendre quels ingrédients manger crus ou brasser en <strong>potions YAPYAP</strong>. Le système de <strong>potions YAPYAP</strong> est essentiel pour la survie. Utilisez ce guide de <strong>l'artisanat YAPYAP</strong> pour maîtriser toutes les <strong>recettes YAPYAP</strong>.",
+      "pill": "Recettes · Ingrédients · Livre de recettes",
+      "intro": "Guide complet des <strong>potions YAPYAP</strong> pour l'artisanat. Débloquez le sous-sol après avoir survécu à vos trois premières nuits pour accéder au <strong>Chaudron</strong> et au <strong>livre de recettes</strong> sur le mur. Chaque potion nécessite <strong>quatre ingrédients</strong> — trouvez-les dans la tour ou achetez-les au vendeur — puis jetez-les dans le chaudron et suivez le livre de recettes. Ce guide liste toutes les potions du livre en jeu et les ingrédients que vous pouvez trouver dans la tour.",
       "seo": {
         "title": "Astuce de Pro : Les bouteilles cassées fonctionnent aussi !",
         "text": "<strong>Le saviez-vous ?</strong> Vous pouvez brasser des potions en utilisant des bouteilles en verre cassées trouvées par terre ! Ne gaspillez pas d'argent en achetant des bouteilles au magasin. Même les <strong>bouteilles cassées</strong> peuvent être utilisées pour remplir des potions à partir du chaudron."
       },
       "crafting": {
-        "title": "Comment brasser des potions (Le processus en trois étapes)",
-        "intro": "Brasser des <strong>potions YAPYAP</strong> nécessite un <strong>Chaudron</strong> (le pot d'alchimie vert), un <strong>Ingrédient</strong> et une <strong>Bouteille vide</strong>. Le processus <strong>d'artisanat YAPYAP</strong> est simple mais nécessite ces trois composants. Ce guide des <strong>potions YAPYAP</strong> explique chaque étape de <strong>l'artisanat YAPYAP</strong>. Maîtrisez ces <strong>recettes YAPYAP</strong> pour créer de puissantes <strong>potions YAPYAP</strong>.",
+        "title": "Comment brasser des potions",
+        "intro": "L'artisanat de potions se débloque après avoir survécu aux trois premières nuits et déposé votre or ; vous recevez une clé du sous-sol pour la pièce avec le <strong>Chaudron</strong> et le <strong>livre de recettes</strong> sur le mur. Rassemblez <strong>quatre ingrédients</strong> par recette (trouvés dans le château ou chez le vendeur près du chaudron), jetez-les dans le chaudron (un éclaboussement confirme qu'ils sont dedans), puis tenez une <strong>Bouteille vide</strong> ou une <strong>Bouteille cassée</strong> et appuyez sur <strong>E</strong> au chaudron pour la remplir. Le livre de recettes affiche chaque potion et ses quatre icônes d'ingrédients.",
         "steps": {
-          "1": { "title": "Jetez-le dedans", "text": "Tenez l'ingrédient (champignon, carotte, etc.) dans votre main, puis appuyez sur <strong>Q</strong> pour le déposer dans le chaudron vert. Le chaudron réagira avec un effet d'éclaboussure." },
-          "2": { "title": "Attendez l'éclaboussure", "text": "Surveillez l'éclaboussure de l'eau. Les propriétés liquides du chaudron changeront en fonction de l'ingrédient ajouté. Le liquide deviendra vert et sera prêt pour l'embouteillage." },
-          "3": { "title": "Remplissez la bouteille", "text": "Tenez une <strong>bouteille vide</strong> ou une <strong>bouteille cassée</strong> dans votre main, faites face au chaudron et appuyez sur <strong>E</strong> (Remplir) pour mettre la potion en bouteille. La couleur de la potion changera en fonction de l'ingrédient utilisé.", "note": "<strong>Point clé :</strong> Même les bouteilles en verre cassées trouvées sur le sol peuvent être utilisées pour créer des potions parfaites !" }
+          "1": { "title": "Débloquer le sous-sol", "text": "Survivez aux trois premières nuits et déposez votre or pour recevoir la clé du sous-sol. Le chaudron et le livre de recettes sont dans cette pièce." },
+          "2": { "title": "Rassembler quatre ingrédients", "text": "Collectez les quatre ingrédients indiqués pour la potion choisie dans le livre de recettes. Trouvez-les dans la tour ou achetez-les au vendeur à l'extérieur de la zone du chaudron." },
+          "3": { "title": "Jeter dans le chaudron et remplir la bouteille", "text": "Jetez chaque ingrédient dans le Chaudron vert (l'éclaboussement confirme qu'il est dedans). Quand le mélange est prêt, tenez une <strong>Bouteille vide</strong> ou une <strong>Bouteille cassée</strong>, faites face au chaudron et appuyez sur <strong>E</strong> pour remplir.", "note": "<strong>Point clé :</strong> Les bouteilles cassées trouvées par terre servent à mettre les potions en bouteille." }
         },
-        "formula": "<strong>Formule :</strong> Chaudron + Ingrédient + Bouteille vide = Potion"
+        "formula": "<strong>Formule :</strong> Chaudron + 4 ingrédients (selon le livre de recettes) + Bouteille vide/cassée = Potion"
       },
       "database": {
-        "title": "Base de données des recettes de potions",
-        "subtitle": "Liste complète des <strong>potions YAPYAP</strong> avec toutes les <strong>recettes YAPYAP</strong>, leurs couleurs, recettes, effets et durées. Cette base de données <strong>d'artisanat YAPYAP</strong> contient chaque recette de <strong>potions YAPYAP</strong> disponible. Utilisez ce guide de <strong>l'artisanat YAPYAP</strong> pour maîtriser toutes les <strong>recettes YAPYAP</strong>.",
+        "title": "Recettes de potions (livre de recettes en jeu)",
+        "subtitle": "Le livre de recettes dans le sous-sol affiche chaque potion et quatre icônes d'ingrédients par recette. Les noms exacts des ingrédients sont indiqués en jeu. Ci-dessous : tous les noms de potions et les effets connus lorsqu'ils sont confirmés.",
         "headers": {
-          "image": "Image",
           "potion": "Potion",
-          "color": "Couleur",
           "recipe": "Recette",
           "effect": "Effet",
           "duration": "Durée"
         }
       },
       "recipes": {
-        "vitality": { "item": "Potion de Vitalité", "cn": "(Potion de Vie)", "color": "🟢 Vert → 🔴 Rouge", "recipe": ["Carotte", "Trèfle à cinq feuilles", "Plume"], "effect": "Soin complet. Quel que soit le nombre de PV qu'il vous reste, boire ceci vous redonnera instantanément toute votre santé.", "duration": "Instantané" },
-        "strength": { "item": "Potion de Force", "cn": "(Potion de Puissance)", "color": "🟢 Vert → 🟣 Violet", "recipe": ["Champignon (Normal)"], "effect": "Super Physique. Avant de boire, vous ne pouvez pas soulever de lourdes caisses. Après avoir bu, vous pouvez lancer de lourdes caisses en bois haut dans les airs. Essentiel pour déplacer des objets lourds.", "duration": "~20s" },
-        "invisibility": { "item": "Potion d'Invisibilité", "cn": "(Potion de Discrétion)", "color": "🟢 Vert → 🔵 Bleu", "recipe": ["Susroom (Champignon tacheté vert/bleu)"], "effect": "Invisibilité. Votre corps devient transparent, les monstres ne peuvent pas vous voir. Parfait pour se faufiler devant les gardes.", "duration": "10s (Très court !)" },
-        "flight": { "item": "Potion de Vol", "cn": "(Potion Volante)", "color": "🟢 Vert → 🟡 Jaune", "recipe": ["Plume"], "effect": "Vol. Accorde la capacité de voler pendant une durée limitée.", "duration": "20s" },
-        "nasty": { "item": "Potion Infecte", "cn": "(Potion de Déchet)", "color": "🟠 Orange", "recipe": ["Petite chauve-souris", "Bouteille", "Déchet aléatoire"], "effect": "Malus : Étourdi. Commandes inversées : l'avant devient l'arrière, la gauche devient la droite. Vision floue et tournante. Ne PAS boire à moins de vouloir troller ses coéquipiers !", "duration": "Jusqu'à la fin de l'effet" }
+        "healing": { "item": "Potion de Soin", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Restaure la santé. Effet exact décrit en jeu.", "duration": "—" },
+        "healthBoost": { "item": "Potion de Santé", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Augmente la santé. Effet exact décrit en jeu.", "duration": "—" },
+        "staminaBoost": { "item": "Potion d'Endurance", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Améliore l'endurance. Effet exact décrit en jeu.", "duration": "—" },
+        "cooldownReduction": { "item": "Potion de Réduction de Recharge", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Réduit les temps de recharge. Effet exact décrit en jeu.", "duration": "—" },
+        "flight": { "item": "Potion de Vol", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Accorde la capacité de voler pendant une durée limitée.", "duration": "—" },
+        "invisibility": { "item": "Potion d'Invisibilité", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Votre corps devient transparent ; les monstres ne peuvent pas vous voir. Utile pour se faufiler devant les ennemis.", "duration": "—" },
+        "explosive": { "item": "Potion Explosive", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Effet explosif. Utilisation exacte décrite en jeu.", "duration": "—" },
+        "zippy": { "item": "Potion Zippy", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Probablement liée au déplacement ou à la vitesse. Effet exact décrit en jeu.", "duration": "—" },
+        "froggy": { "item": "Potion Grenouille", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Effet décrit dans le livre de recettes en jeu.", "duration": "—" },
+        "revive": { "item": "Potion de Résurrection", "color": "", "recipe": ["4 ingrédients — voir le livre de recettes au sous-sol"], "effect": "Permet de ressusciter les joueurs tombés. Mécanique exacte en jeu.", "duration": "—" }
       },
-      "raw": {
-        "title": "Effets des ingrédients crus (Manger sans cuisiner)",
-        "intro": "Faites un clic droit pour manger les ingrédients directement. Cette section sur <strong>l'artisanat YAPYAP</strong> compare les effets de la consommation crue par rapport au brassage en <strong>potions YAPYAP</strong>, ce qui est crucial pour les décisions de survie dans les moments critiques. Le guide des <strong>potions YAPYAP</strong> vous aide à décider quand fabriquer ou manger cru. Comprendre les <strong>recettes YAPYAP</strong> et les effets crus est essentiel.",
+      "ingredients": {
+        "title": "Ingrédients trouvés dans la tour",
+        "intro": "Ces ingrédients se trouvent dans la tour ou s'achètent chez le vendeur. Le livre de recettes en jeu (sur le mur face au chaudron dans le sous-sol) indique quels quatre ingrédients sont nécessaires pour chaque potion. <strong>E</strong> pour ramasser ou <strong>E (maintenir) Stash</strong> pour ranger ; <strong>Grab</strong> pour porter.",
         "headers": {
-          "icon": "Icône",
-          "name": "Ingrédient",
-          "rawEffect": "Effet cru",
-          "brewedEffect": "Effet brassé",
-          "verdict": "Verdict"
+          "image": "Image",
+          "name": "Ingrédient"
         },
-        "ingredients": {
-          "carrot": { "name": "Carotte", "rawEffect": "Restaure 15 PV", "brewedEffect": "Soin complet (100%)", "verdict": "Manger cru quand les PV sont bas. Brasser en cas de blessure critique." },
-          "mushroom": { "name": "Champignon (Normal)", "rawEffect": "Restaure 15 PV", "brewedEffect": "Amélioration de la force", "verdict": "Ne PAS manger cru ! La potion de force pour déplacer les caisses est trop importante." },
-          "clover": { "name": "Trèfle à cinq feuilles", "rawEffect": "Restaure 10 PV", "brewedEffect": "Soin complet (100%)", "verdict": "Restaure le moins de PV lorsqu'il est mangé cru. Préférable pour le brassage." },
-          "susroom": { "name": "Susroom (Champignon tacheté vert)", "rawEffect": "Effet aléatoire. Peut donner de la force ou provoquer l'étourdissement.", "brewedEffect": "Invisibilité stable", "verdict": "Choix risqué. Pour les situations hors urgence, brasser en potion d'invisibilité." }
+        "items": {
+          "fresh_water_pearl": { "name": "Perle d'eau douce" },
+          "dragon_bone": { "name": "Os de dragon" },
+          "blood_rose": { "name": "Rose de sang" },
+          "goblin_tooth": { "name": "Dent de gobelin" },
+          "phoenix_feather": { "name": "Plume de phénix" },
+          "glowing_mushroom": { "name": "Champignon lumineux" },
+          "coal": { "name": "Charbon" },
+          "golem_gonads": { "name": "Gonades de golem" },
+          "powdered_crystal": { "name": "Cristal en poudre" },
+          "weeping_willow_amber": { "name": "Ambre de saule pleureur" },
+          "mystery_egg": { "name": "Œuf mystérieux" }
         }
+      },
+      "recipeBook": {
+        "title": "Référence du livre de recettes (en jeu)",
+        "subtitle": "Le livre de recettes du sous-sol affiche deux potions par double page. Chaque potion liste quatre icônes d'ingrédients — les noms et combinaisons exacts sont visibles en jeu."
       },
       "secrets": {
         "title": "Les secrets de la salle des potions",
-        "intro": "La salle des potions contient un mécanisme caché que les joueurs avancés devraient connaître. Ce secret de <strong>l'artisanat YAPYAP</strong> est une astuce de « niveau expert » qui peut vous sauver la vie. La salle des potions est essentielle pour la fabrication de <strong>potions YAPYAP</strong>. Cet emplacement de <strong>recettes YAPYAP</strong> fournit des <strong>potions YAPYAP</strong> garanties.",
+        "intro": "La salle des potions (sous-sol) contient un mécanisme caché que les joueurs avancés utilisent. La pièce avec le chaudron et le livre de recettes est essentielle pour brasser des potions.",
         "ladder": {
           "title": "La stratégie de l'échelle",
-          "text": "La salle des potions contient toujours une <strong>échelle en bois</strong>. Montez et vous trouverez :",
+          "text": "La salle des potions contient souvent une <strong>échelle en bois</strong>. Montez et vous trouverez peut-être :",
           "list": [
-            "<strong>Apparition garantie à 100% :</strong> Une <strong>potion de vitalité</strong> prête à l'emploi.",
+            "<strong>Apparition garantie :</strong> Une potion prête à l'emploi.",
             "<strong>Butin bonus :</strong> Un <strong>coffre</strong> qui peut contenir des baguettes ou des pièces."
           ],
-          "tip": "<strong>💡 Astuce de Pro :</strong> Ne vous précipitez pas pour manger des ingrédients crus lorsque vous êtes bas en santé. Dirigez-vous vers la salle des potions et montez à l'échelle pour obtenir une potion gratuite !"
+          "tip": "<strong>💡 Astuce de Pro :</strong> Rendez-vous dans la salle des potions et vérifiez l'échelle pour une potion gratuite quand vous en avez besoin."
         }
       },
       "faq": {
         "title": "Foire Aux Questions",
         "list": [
-          { "question": "Puis-je cumuler les effets des potions ?", "answer": "<strong>Non, les effets des potions YAPYAP ne se cumulent pas.</strong> Boire une nouvelle <strong>potion YAPYAP</strong> remplacera l'effet précédent ou réinitialisera le minuteur. Vous ne pouvez avoir qu'un seul effet de <strong>potion YAPYAP</strong> actif à la fois. Planifiez soigneusement l'utilisation de vos <strong>potions YAPYAP</strong> — ne gaspillez pas une potion de vol si l'invisibilité est déjà active. Cette limitation de <strong>l'artisanat YAPYAP</strong> est importante à retenir." },
-          { "question": "Puis-je utiliser des bouteilles cassées pour brasser des potions ?", "answer": "<strong>Oui !</strong> Les bouteilles en verre cassées trouvées sur le sol fonctionnent parfaitement pour brasser des <strong>potions YAPYAP</strong>. Vous n'avez pas besoin d'acheter des bouteilles vides au magasin. Ramassez simplement n'importe quelle bouteille cassée, faites face au chaudron et appuyez sur <strong>E</strong> pour la remplir. Cette astuce <strong>d'artisanat YAPYAP</strong> permet d'économiser de l'argent et rend les <strong>recettes YAPYAP</strong> plus accessibles." },
-          { "question": "Que fait réellement la potion de force ?", "answer": "<strong>La potion de force est l'une des potions YAPYAP les plus utiles.</strong> Cette <strong>potion YAPYAP</strong> améliore vos capacités physiques. Avant de boire, vous ne pouvez pas soulever de lourdes caisses. Après avoir bu, vous pouvez lancer de lourdes caisses en bois haut dans les airs. C'est essentiel pour déplacer des objets lourds et atteindre des butins en hauteur. Cette recette <strong>d'artisanat YAPYAP</strong> crée une puissante <strong>potion YAPYAP</strong>. Elle <strong>n'augmente pas</strong> les dégâts de mêlée contre les ennemis." },
-          { "question": "Dois-je manger les champignons crus ou les brasser ?", "answer": "<strong>Ne mangez PAS de champignons normaux crus !</strong> Ils ne restaurent que 15 PV lorsqu'ils sont mangés, mais les brasser en <strong>potions YAPYAP</strong> (Potion de Force) est bien plus précieux pour déplacer des caisses lourdes. Cette stratégie <strong>d'artisanat YAPYAP</strong> maximise la valeur des ingrédients. Gardez-les pour le chaudron, sauf en cas d'urgence absolue de vie ou de mort. Suivez ce conseil de <strong>recettes YAPYAP</strong> pour des résultats optimaux." },
-          { "question": "Que se passe-t-il si je bois la Potion Infecte ?", "answer": "<strong>La potion infecte est une potion YAPYAP que vous devriez éviter.</strong> Cette <strong>potion YAPYAP</strong> provoque un malus d'étourdissement qui rend votre écran flou et tournoyant. Elle est pratiquement inutile pour vous, mais certains joueurs la lancent à leurs coéquipiers pour leur faire une blague. Évitez cette recette <strong>d'artisanat YAPYAP</strong> à moins que vous ne fassiez exprès de troller. La plupart des <strong>recettes YAPYAP</strong> sont utiles, mais cette <strong>potion YAPYAP</strong> est une exception." }
+          { "question": "Puis-je cumuler les effets des potions ?", "answer": "<strong>Non, les effets des potions YAPYAP ne se cumulent pas.</strong> Boire une nouvelle potion remplace ou réinitialise généralement l'effet actuel. Planifiez votre utilisation — par ex. ne gaspillez pas une potion de vol si vous avez déjà l'invisibilité active." },
+          { "question": "Puis-je utiliser des bouteilles cassées pour brasser des potions ?", "answer": "<strong>Oui !</strong> Les bouteilles en verre cassées trouvées sur le sol permettent de mettre les potions en bouteille depuis le chaudron. Vous n'avez pas besoin d'acheter des bouteilles vides. Ramassez une bouteille cassée, faites face au chaudron et appuyez sur <strong>E</strong> pour la remplir." },
+          { "question": "Comment débloquer l'artisanat de potions ?", "answer": "Survivez aux trois premières nuits et déposez votre or. Vous recevrez la clé du sous-sol. Le chaudron et le livre de recettes sont dans cette pièce. Avant cela, vous ne pouvez que trouver ou acheter des potions toutes faites." },
+          { "question": "Où se trouve le livre de recettes ?", "answer": "Le livre de recettes est sur le mur dans la pièce du sous-sol avec le chaudron, en face du chaudron. Il affiche le nom de chaque potion et quatre icônes d'ingrédients par recette." },
+          { "question": "Combien d'ingrédients par potion ?", "answer": "Chaque potion du livre de recettes utilise <strong>quatre ingrédients</strong>. Vous trouvez les ingrédients dans la tour ou les achetez au vendeur près du chaudron." }
         ]
       }
     },

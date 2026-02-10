@@ -1460,79 +1460,90 @@ export default {
         },
         "Potions": {
             "title": "YAPYAP Tränke & Handwerkshandbuch",
-            "pill": "Handwerksrezepte · Zutaten · Effekte",
-            "intro": "Vollständiger <strong>YAPYAP Tränke</strong>-Guide zu allen Handwerksrezepten in YAPYAP. Dieser umfassende <strong>YAPYAP Handwerks</strong>-Guide hilft dir, den dreistufigen Brauprozess am Kessel zu meistern und zu lernen, welche Zutaten man roh essen sollte vs. welche man zu <strong>YAPYAP Tränken</strong> braut. Das <strong>YAPYAP Tränke</strong>-System ist überlebenswichtig. Nutze diesen <strong>YAPYAP Handwerks</strong>-Guide, um alle <strong>YAPYAP Rezepte</strong> zu meistern.",
+            "pill": "Handwerksrezepte · Zutaten · Rezeptbuch",
+            "intro": "Vollständiger <strong>YAPYAP Tränke</strong>-Guide zum Brauen. Schließe nach den ersten drei Nächten den Keller frei, um zum <strong>Kessel</strong> und zum <strong>Rezeptbuch</strong> an der Wand zu gelangen. Jeder Trank benötigt <strong>vier Zutaten</strong> – finde sie im Turm oder kaufe sie beim Händler – wirf sie in den Kessel und folge dem Rezeptbuch. Dieser Guide listet alle Tränke aus dem Spiel-Rezeptbuch und die Zutaten, die du im Turm findest.",
             "seo": {
                 "title": "Profi-Tipp: Zerbrochene Flaschen funktionieren auch!",
                 "text": "<strong>Wusstest du schon?</strong> Du kannst Tränke mit zerbrochenen Glasflaschen brauen, die du auf dem Boden findest! Verschwende kein Geld für Flaschen aus dem Shop. Sogar <strong>zerbrochene Flaschen</strong> können verwendet werden, um Tränke aus dem Kessel abzufüllen."
             },
             "crafting": {
-                "title": "Wie man Tränke braut (Der Drei-Schritte-Prozess)",
-                "intro": "Das Brauen von <strong>YAPYAP Tränken</strong> erfordert einen <strong>Kessel</strong> (den grünen Alchemie-Topf), eine <strong>Zutat</strong> und eine <strong>leere Flasche</strong>. Der <strong>YAPYAP Handwerks</strong>-Prozess ist einfach, erfordert aber alle drei Komponenten. Dieser <strong>YAPYAP Tränke</strong>-Guide erklärt jeden Schritt des <strong>YAPYAP Handwerks</strong>. Meistere diese <strong>YAPYAP Rezepte</strong>, um mächtige <strong>YAPYAP Tränke</strong> zu erschaffen.",
+                "title": "Wie man Tränke braut",
+                "intro": "Das Trank-Handwerk wird freigeschaltet, nachdem du die ersten drei Nächte überlebst und dein Gold eingezahlt hast; du erhältst einen Kellerschlüssel zum Raum mit dem <strong>Kessel</strong> und dem <strong>Rezeptbuch</strong> an der Wand. Sammle <strong>vier Zutaten</strong> pro Rezept (im Schloss oder beim Händler in Kesselnähe), wirf sie in den Kessel (ein Spritzer zeigt, dass sie drin sind), dann halte eine <strong>leere Flasche</strong> oder <strong>zerbrochene Flasche</strong> und drücke am Kessel <strong>E</strong>, um sie zu füllen. Das Rezeptbuch zeigt jeden Trank und seine vier Zutaten-Icons.",
                 "steps": {
-                    "1": { "title": "Hineinwerfen", "text": "Halte die Zutat (Pilz, Karotte, etc.) in der Hand und drücke <strong>Q</strong>, um sie in den grünen Kessel fallen zu lassen. Der Kessel reagiert mit einem Spritzeffekt." },
-                    "2": { "title": "Auf das Spritzen warten", "text": "Achte darauf, dass das Wasser spritzt. Die Eigenschaften der Flüssigkeit im Kessel ändern sich basierend auf der hinzugefügten Zutat. Die Flüssigkeit wird grün und ist bereit zum Abfüllen." },
-                    "3": { "title": "Flasche füllen", "text": "Halte eine <strong>leere Flasche</strong> oder eine <strong>zerbrochene Flasche</strong> in der Hand, schaue zum Kessel und drücke <strong>E</strong> (Füllen), um den Trank abzufüllen. Die Farbe des Tranks ändert sich je nach verwendeter Zutat.", "note": "<strong>Wichtiger Punkt:</strong> Sogar zerbrochene Glasflaschen vom Boden können verwendet werden, um perfekte Tränke zu erschaffen!" }
+                    "1": { "title": "Keller freischalten", "text": "Überlebe die ersten drei Nächte und zahle dein Gold ein, um den Kellerschlüssel zu erhalten. Kessel und Rezeptbuch sind in diesem Raum." },
+                    "2": { "title": "Vier Zutaten sammeln", "text": "Sammle die vier im Rezeptbuch für deinen gewählten Trank angezeigten Zutaten. Finde sie im Turm oder kaufe sie beim Händler außerhalb des Kesselbereichs." },
+                    "3": { "title": "In Kessel werfen & Flasche füllen", "text": "Wirf jede Zutat in den grünen Kessel (Spritzer bestätigt, dass sie drin ist). Wenn der Sud fertig ist, halte eine <strong>leere Flasche</strong> oder <strong>zerbrochene Flasche</strong>, schau zum Kessel und drücke <strong>E</strong> zum Füllen.", "note": "<strong>Wichtiger Punkt:</strong> Zerbrochene Flaschen vom Boden eignen sich zum Abfüllen von Tränken." }
                 },
-                "formula": "<strong>Formel:</strong> Kessel + Zutat + Leere Flasche = Trank"
+                "formula": "<strong>Formel:</strong> Kessel + 4 Zutaten (laut Rezeptbuch) + Leere/zerbrochene Flasche = Trank"
             },
             "database": {
-                "title": "Trank-Rezepte Datenbank",
-                "subtitle": "Vollständige <strong>YAPYAP Tränke</strong>-Liste aller <strong>YAPYAP Rezepte</strong>, ihrer Farben, Rezepte, Effekte und Dauer. Diese <strong>YAPYAP Handwerks</strong>-Datenbank enthält jedes verfügbare <strong>YAPYAP Tränke</strong>-Rezept. Nutze diesen <strong>YAPYAP Handwerks</strong>-Guide, um alle <strong>YAPYAP Rezepte</strong> zu meistern.",
+                "title": "Trank-Rezepte (aus dem Rezeptbuch im Spiel)",
+                "subtitle": "Das Rezeptbuch im Keller zeigt jeden Trank und vier Zutaten-Icons pro Rezept. Die genauen Zutatennamen stehen im Spiel. Unten: alle Tranknamen und bekannte Effekte, soweit bestätigt.",
                 "headers": {
-                    "image": "Bild",
                     "potion": "Trank",
-                    "color": "Farbe",
                     "recipe": "Rezept",
                     "effect": "Effekt",
                     "duration": "Dauer"
                 }
             },
             "recipes": {
-                "vitality": { "item": "Vitalitätstrank", "cn": "(Leboustrank)", "color": "🟢 Grün → 🔴 Rot", "recipe": ["Karotte", "Fünfblättriges Kleeblatt", "Feder"], "effect": "Volle Heilung. Egal wie viel HP du noch hast, das Trinken regeneriert sofort deine gesamte Gesundheit.", "duration": "Sofort" },
-                "strength": { "item": "Stärketrank", "cn": "(Krafttrank)", "color": "🟢 Grün → 🟣 Lila", "recipe": ["Pilz (Normal)"], "effect": "Super-Physik. Vor dem Trinken kannst du keine schweren Kisten heben. Nach dem Trinken kannst du schwere Holzkisten hoch in die Luft werfen. Unverzichtbar zum Bewegen schwerer Objekte.", "duration": "~20s" },
-                "invisibility": { "item": "Unsichtbarkeitstrank", "cn": "(Tarnungstrank)", "color": "🟢 Grün → 🔵 Blau", "recipe": ["Susroom (Grün/Blau gepunkteter Pilz)"], "effect": "Unsichtbarkeit. Dein Körper wird transparent, Monster können dich nicht sehen. Perfekt, um an Wachen vorbeizuschleichen.", "duration": "10s (Sehr kurz!)" },
-                "flight": { "item": "Flugtrank", "cn": "(Fliegender Trank)", "color": "🟢 Grün → 🟡 Gelb", "recipe": ["Feder"], "effect": "Flug. Verleiht die Fähigkeit, für eine begrenzte Dauer zu fliegen.", "duration": "20s" },
-                "nasty": { "item": "Ekelhafter Trank", "cn": "(Mülltrank)", "color": "🟠 Orange", "recipe": ["Kleine Fledermaus", "Flasche", "Zufälliger Schrott"], "effect": "Debuff: Schwindelig. Umgekehrte Steuerung: Vorwärts wird zu Rückwärts, Links zu Rechts. Verschwommene, drehende Sicht. NICHT trinken, außer man will Teammitglieder trollen!", "duration": "Bis der Effekt nachlässt" }
+                "healing": { "item": "Heiltrank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Stellt Gesundheit wieder her. Genauer Effekt im Spiel beschrieben.", "duration": "—" },
+                "healthBoost": { "item": "Gesundheitsbooster-Trank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Erhöht Gesundheit. Genauer Effekt im Spiel beschrieben.", "duration": "—" },
+                "staminaBoost": { "item": "Ausdauerbooster-Trank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Verbessert Ausdauer. Genauer Effekt im Spiel beschrieben.", "duration": "—" },
+                "cooldownReduction": { "item": "Abklingzeit-Reduktions-Trank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Reduziert Abklingzeiten. Genauer Effekt im Spiel beschrieben.", "duration": "—" },
+                "flight": { "item": "Flugtrank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Verleiht die Fähigkeit, für eine begrenzte Dauer zu fliegen.", "duration": "—" },
+                "invisibility": { "item": "Unsichtbarkeitstrank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Dein Körper wird transparent; Monster können dich nicht sehen. Gut zum Schleichen an Gegnern vorbei.", "duration": "—" },
+                "explosive": { "item": "Explosivtrank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Explosiver Effekt. Genauer Nutzen im Spiel beschrieben.", "duration": "—" },
+                "zippy": { "item": "Zippy-Trank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Vermutlich bewegungs- oder tempobezogen. Genauer Effekt im Spiel beschrieben.", "duration": "—" },
+                "froggy": { "item": "Frosch-Trank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Effekt im Rezeptbuch im Spiel beschrieben.", "duration": "—" },
+                "revive": { "item": "Wiederbelebungs-Trank", "color": "", "recipe": ["4 Zutaten — siehe Rezeptbuch im Keller"], "effect": "Dient zur Wiederbelebung gefallener Spieler. Genau Mechanik im Spiel.", "duration": "—" }
             },
-            "raw": {
-                "title": "Effekte roher Zutaten (Essen ohne Handwerk)",
-                "intro": "Rechtsklick, um Zutaten direkt zu essen. Dieser <strong>YAPYAP Handwerks</strong>-Abschnitt vergleicht die Effekte des rohen Verzehrs vs. das Brauen zu <strong>YAPYAP Tränken</strong>, was für Überlebensentscheidungen in kritischen Momenten entscheidend ist. Der <strong>YAPYAP Tränke</strong>-Guide hilft dir zu entscheiden, wann du brauen oder roh essen solltest. Das Verständnis von <strong>YAPYAP Rezepten</strong> und rohen Effekten ist essenziell.",
+            "ingredients": {
+                "title": "Zutaten im Turm",
+                "intro": "Diese Zutaten findest du im Turm oder kaufst sie beim Händler. Das Rezeptbuch im Spiel (an der Wand gegenüber dem Kessel im Keller) zeigt, welche vier Zutaten pro Trank nötig sind. <strong>E</strong> zum Aufheben oder <strong>E (halten) Stash</strong> zum Verstauen; <strong>Grab</strong> zum Tragen.",
                 "headers": {
-                    "icon": "Icon",
-                    "name": "Zutat",
-                    "rawEffect": "Roher Effekt",
-                    "brewedEffect": "Gebrauter Effekt",
-                    "verdict": "Urteil"
+                    "image": "Bild",
+                    "name": "Zutat"
                 },
-                "ingredients": {
-                    "carrot": { "name": "Karotte", "rawEffect": "Stellt 15 HP wieder her", "brewedEffect": "Volle Heilung (100%)", "verdict": "Roh essen bei wenig HP. Brauen bei kritischen Verletzungen." },
-                    "mushroom": { "name": "Pilz (Normal)", "rawEffect": "Stellt 15 HP wieder her", "brewedEffect": "Stärkeverbesserung", "verdict": "NICHT roh essen! Der Stärketrank zum Bewegen von Kisten ist zu wichtig." },
-                    "clover": { "name": "Fünfblättriges Kleeblatt", "rawEffect": "Stellt 10 HP wieder her", "brewedEffect": "Volle Heilung (100%)", "verdict": "Stellt am wenigsten HP wieder her, wenn roh gegessen. Am besten zum Brauen verwenden." },
-                    "susroom": { "name": "Susroom (Grün gepunkteter Pilz)", "rawEffect": "Zufälliger Effekt. Kann Stärke verleihen oder Schwindel verursachen.", "brewedEffect": "Stabile Unsichtbarkeit", "verdict": "Wahl für Risikofreudige. In Nicht-Notfällen zu Unsichtbarkeitstrank brauen." }
+                "items": {
+                    "fresh_water_pearl": { "name": "Süßwasserperle" },
+                    "dragon_bone": { "name": "Drachenknochen" },
+                    "blood_rose": { "name": "Blutrose" },
+                    "goblin_tooth": { "name": "Koboldzahn" },
+                    "phoenix_feather": { "name": "Phönixfeder" },
+                    "glowing_mushroom": { "name": "Leuchtpilz" },
+                    "coal": { "name": "Kohle" },
+                    "golem_gonads": { "name": "Golem-Gonaden" },
+                    "powdered_crystal": { "name": "Kristallpulver" },
+                    "weeping_willow_amber": { "name": "Trauerweiden-Bernstein" },
+                    "mystery_egg": { "name": "Mysteriöses Ei" }
                 }
+            },
+            "recipeBook": {
+                "title": "Rezeptbuch-Referenz (im Spiel)",
+                "subtitle": "Das Rezeptbuch im Keller zeigt zwei Tränke pro Doppelseite. Jeder Trank listet vier Zutaten-Icons — genaue Namen und Kombinationen sind im Spiel sichtbar."
             },
             "secrets": {
                 "title": "Geheimnisse des Trankzimmers",
-                "intro": "Das Trankzimmer enthält eine versteckte Mechanik, die fortgeschrittene Spieler kennen sollten. Dieser <strong>YAPYAP Handwerks</strong>-Geheimtipp ist ein \"Experten-Tipp\", der dein Leben retten kann. Das Trankzimmer ist essenziell für das Brauen von <strong>YAPYAP Tränken</strong>. Dieser <strong>YAPYAP Rezepte</strong>-Ort bietet garantierte <strong>YAPYAP Tränke</strong>.",
+                "intro": "Das Trankzimmer (Keller) enthält eine versteckte Mechanik, die fortgeschrittene Spieler nutzen. Der Raum mit Kessel und Rezeptbuch ist für das Brauen von Tränken essenziell.",
                 "ladder": {
                     "title": "Die Leiter-Strategie",
-                    "text": "Das Trankzimmer enthält immer eine <strong>Holzleiter</strong>. Klettere hinauf und du findest:",
+                    "text": "Das Trankzimmer enthält oft eine <strong>Holzleiter</strong>. Klettere hinauf und du findest möglicherweise:",
                     "list": [
-                        "<strong>100% Garantierter Spawn:</strong> Ein gebrauchsfertiger <strong>Vitalitätstrank</strong>.",
+                        "<strong>Garantierter Spawn:</strong> Einen gebrauchsfertigen Trank.",
                         "<strong>Bonus-Beute:</strong> Eine <strong>Truhe</strong>, die Zauberstäbe oder Münzen enthalten kann."
                     ],
-                    "tip": "<strong>💡 Profi-Tipp:</strong> Beeile dich nicht, rohe Zutaten zu essen, wenn du wenig Gesundheit hast. Geh ins Trankzimmer und klettere die Leiter hoch, um einen kostenlosen Trank zu bekommen!"
+                    "tip": "<strong>💡 Profi-Tipp:</strong> Geh ins Trankzimmer und schau an der Leiter nach einem kostenlosen Trank, wenn du einen brauchst."
                 }
             },
             "faq": {
                 "title": "Häufig gestellte Fragen",
                 "list": [
-                    { "question": "Kann ich Trankeffekte stapeln?", "answer": "<strong>Nein, Effekte von YAPYAP Tränken sind nicht stapelbar.</strong> Das Trinken eines neuen <strong>YAPYAP Tranks</strong> wird entweder den vorherigen Effekt ersetzen oder den Timer zurücksetzen. Du kannst immer nur einen aktiven <strong>YAPYAP Trank</strong>-Effekt haben. Plane die Nutzung deiner <strong>YAPYAP Tränke</strong> sorgfältig – verschwende keinen Flugtrank, wenn du bereits unsichtbar bist. Diese <strong>YAPYAP Handwerks</strong>-Einschränkung ist wichtig zu merken." },
-                    { "question": "Kann ich zerbrochene Flaschen zum Brauen verwenden?", "answer": "<strong>Ja!</strong> Zerbrochene Glasflaschen vom Boden funktionieren perfekt zum Brauen von <strong>YAPYAP Tränken</strong>. Du musst keine leeren Flaschen im Shop kaufen. Hebe einfach eine zerbrochene Flasche auf, schaue zum Kessel und drücke <strong>E</strong> zum Füllen. Dieser <strong>YAPYAP Handwerks</strong>-Tipp spart Geld und macht <strong>YAPYAP Rezepte</strong> zugänglicher." },
-                    { "question": "Was bewirkt der Stärketrank eigentlich?", "answer": "<strong>Der Stärketrank ist einer der nützlichsten YAPYAP Tränke.</strong> Dieser <strong>YAPYAP Trank</strong> verbessert deine physischen Fähigkeiten. Vor dem Trinken kannst du keine schweren Kisten heben. Nach dem Trinken kannst du schwere Holzkisten hoch in die Luft werfen. Er ist essenziell, um schwere Objekte zu bewegen und hohe Beute zu erreichen. Dieses <strong>YAPYAP Handwerks</strong>-Rezept erschafft einen mächtigen <strong>YAPYAP Trank</strong>. Er erhöht <strong>nicht</strong> den Nahkampfschaden gegen Gegner." },
-                    { "question": "Sollte ich Pilze roh essen oder brauen?", "answer": "<strong>Iss normale Pilze NICHT roh!</strong> Sie regenerieren nur 15 HP beim Essen, aber sie zu <strong>YAPYAP Tränken</strong> (Stärketrank) zu brauen, ist viel wertvoller, um schwere Kisten zu bewegen. Diese <strong>YAPYAP Handwerks</strong>-Strategie maximiert den Wert der Zutaten. Hebe sie für den Kessel auf, außer in absoluten Lebensgefahr-Situationen. Folge diesem <strong>YAPYAP Rezepte</strong>-Rat für optimale Ergebnisse." },
-                    { "question": "Was passiert, wenn ich einen ekelhaften Trank trinke?", "answer": "<strong>Der ekelhafte Trank ist ein YAPYAP Trank, den du vermeiden solltest.</strong> Dieser <strong>YAPYAP Trank</strong> verursacht einen Schwindel-Debuff, der deinen Bildschirm verschwimmen und drehen lässt. Er ist für dich im Grunde nutzlos, aber manche Spieler werfen ihn als Streich auf Teammitglieder. Vermeide dieses <strong>YAPYAP Handwerks</strong>-Rezept, es sei denn, du willst absichtlich trollen. Die meisten <strong>YAPYAP Rezepte</strong> sind nützlich, aber dieser <strong>YAPYAP Trank</strong> ist eine Ausnahme." }
+                    { "question": "Kann ich Trankeffekte stapeln?", "answer": "<strong>Nein, YAPYAP Trankeffekte sind nicht stapelbar.</strong> Ein neuer Trank ersetzt oder erneuert in der Regel den aktuellen Effekt. Plane deine Nutzung – z. B. verschwende keinen Flugtrank, wenn du bereits unsichtbar bist." },
+                    { "question": "Kann ich zerbrochene Flaschen zum Brauen verwenden?", "answer": "<strong>Ja!</strong> Zerbrochene Glasflaschen vom Boden eignen sich zum Abfüllen von Tränken aus dem Kessel. Du musst keine leeren Flaschen kaufen. Hebe eine zerbrochene Flasche auf, schau zum Kessel und drücke <strong>E</strong> zum Füllen." },
+                    { "question": "Wie schalte ich das Trank-Handwerk frei?", "answer": "Überlebe die ersten drei Nächte und zahle dein Gold ein. Du erhältst den Kellerschlüssel. Kessel und Rezeptbuch sind in diesem Raum. Davor kannst du nur fertige Tränke finden oder kaufen." },
+                    { "question": "Wo ist das Rezeptbuch?", "answer": "Das Rezeptbuch hängt an der Wand im Kellerraum mit dem Kessel, gegenüber dem Kessel. Es zeigt jeden Tranknamen und vier Zutaten-Icons pro Rezept." },
+                    { "question": "Wie viele Zutaten pro Trank?", "answer": "Jeder Trank im Rezeptbuch benötigt <strong>vier Zutaten</strong>. Du findest Zutaten im Turm oder kaufst sie beim Händler in Kesselnähe." }
                 ]
             }
         },

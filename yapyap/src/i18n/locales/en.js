@@ -1460,79 +1460,90 @@ export default {
     },
     Potions: {
       title: "YAPYAP Potions & Crafting Recipes Guide",
-      pill: "Crafting Recipes · Ingredients · Effects",
-      intro: "Complete <strong>YAPYAP potions</strong> guide to all crafting recipes in YAPYAP. This comprehensive <strong>YAPYAP crafting</strong> guide helps you master the three-step brewing process using the Cauldron and learn which ingredients to eat raw vs. brew into <strong>YAPYAP potions</strong>. The <strong>YAPYAP potions</strong> system is essential for survival. Use this <strong>YAPYAP crafting</strong> guide to master all <strong>YAPYAP recipes</strong>.",
+      pill: "Crafting Recipes · Ingredients · Recipe Book",
+      intro: "Complete <strong>YAPYAP potions</strong> guide to crafting in YAPYAP. Unlock the basement after surviving your first three nights to reach the <strong>Cauldron</strong> and the <strong>recipe book</strong> on the wall. Each potion requires <strong>four ingredients</strong>—find them in the tower or buy from the seller—then drop them into the cauldron and follow the recipe book. This guide lists all potions from the in-game book and the ingredients you can find in the tower.",
       seo: {
         title: "Pro Tip: Broken Bottles Work Too!",
         text: "<strong>Did you know?</strong> You can brew potions using broken glass bottles found on the floor! Don't waste money buying bottles from the shop. Even <strong>Broken Bottles</strong> can be used to fill potions from the cauldron."
       },
       crafting: {
-        title: "How to Brew Potions (The Three-Step Process)",
-        intro: "Brewing <strong>YAPYAP potions</strong> requires a <strong>Cauldron</strong> (the green alchemy pot), an <strong>Ingredient</strong>, and an <strong>Empty Bottle</strong>. The <strong>YAPYAP crafting</strong> process is simple but requires all three components. This <strong>YAPYAP potions</strong> guide explains every step of <strong>YAPYAP crafting</strong>. Master these <strong>YAPYAP recipes</strong> to create powerful <strong>YAPYAP potions</strong>.",
+        title: "How to Brew Potions",
+        intro: "Potion crafting is unlocked after you survive the first three nights and bank your gold; you receive a basement key to the room with the <strong>Cauldron</strong> and the <strong>recipe book</strong> on the wall. Gather <strong>four ingredients</strong> per recipe (found in the castle or from the seller near the cauldron), drop them into the cauldron (you'll see a splash when they're in), then hold an <strong>Empty Bottle</strong> or <strong>Broken Bottle</strong> and press <strong>E</strong> at the cauldron to fill it. The recipe book shows each potion and its four ingredient icons.",
         steps: {
-          1: { title: "Toss it in", text: "Hold the ingredient (mushroom, carrot, etc.) in your hand, then press <strong>Q</strong> to drop it into the green Cauldron. The cauldron will react with a splash effect." },
-          2: { title: "Wait for Splash", text: "Watch for the water to splash. The cauldron's liquid properties will change based on the ingredient you added. The liquid will turn green and become ready for bottling." },
-          3: { title: "Fill Bottle", text: "Hold an <strong>Empty Bottle</strong> or <strong>Broken Bottle</strong> in your hand, face the cauldron, and press <strong>E</strong> (Fill) to bottle the potion. The potion color will change based on the ingredient used.", note: "<strong>Key Point:</strong> Even broken glass bottles found on the floor can be used to create perfect potions!" }
+          1: { title: "Unlock the basement", text: "Survive the first three nights and bank your gold to receive the basement key. The cauldron and recipe book are in this room." },
+          2: { title: "Gather four ingredients", text: "Collect the four ingredients shown for your chosen potion in the recipe book. Find them in the tower or buy from the seller outside the cauldron area." },
+          3: { title: "Drop in cauldron & fill bottle", text: "Drop each ingredient into the green Cauldron (splash confirms it's in). When the brew is ready, hold an <strong>Empty Bottle</strong> or <strong>Broken Bottle</strong>, face the cauldron, and press <strong>E</strong> to fill it.", note: "<strong>Key Point:</strong> Broken bottles found on the floor work for bottling potions." }
         },
-        formula: "<strong>Formula:</strong> Cauldron + Ingredient + Empty Bottle = Potion"
+        formula: "<strong>Formula:</strong> Cauldron + 4 ingredients (per recipe book) + Empty/Broken Bottle = Potion"
       },
       database: {
-        title: "Potion Recipes Database",
-        subtitle: "Complete <strong>YAPYAP potions</strong> list of all <strong>YAPYAP recipes</strong>, their colors, recipes, effects, and durations. This <strong>YAPYAP crafting</strong> database contains every <strong>YAPYAP potions</strong> recipe available. Use this <strong>YAPYAP crafting</strong> guide to master all <strong>YAPYAP recipes</strong>.",
+        title: "Potion Recipes (from in-game recipe book)",
+        subtitle: "The recipe book in the basement shows each potion and four ingredient icons per recipe. Exact ingredient names are shown in-game. Below: all potion names and known effects where confirmed.",
         headers: {
-          image: "Image",
           potion: "Potion",
-          color: "Color",
           recipe: "Recipe",
           effect: "Effect",
           duration: "Duration"
         }
       },
       recipes: {
-        vitality: { item: "Vitality Potion", cn: "(Life Potion)", color: "🟢 Green → 🔴 Red", recipe: ["Carrot", "Five-leaf Clover", "Feather"], effect: "Full Heal. No matter how much HP you have left, drinking this will restore you to full health instantly.", duration: "Instant" },
-        strength: { item: "Strength Potion", cn: "(Power Potion)", color: "🟢 Green → 🟣 Purple", recipe: ["Mushroom (Normal)"], effect: "Super Physics. Before drinking, you cannot lift heavy crates. After drinking, you can throw heavy wooden crates high into the air. Essential for moving heavy objects.", duration: "~20s" },
-        invisibility: { item: "Invisibility Potion", cn: "(Stealth Potion)", color: "🟢 Green → 🔵 Blue", recipe: ["Susroom (Green/Blue Spotted Mushroom)"], effect: "Invisibility. Your body becomes transparent, monsters cannot see you. Perfect for sneaking past Guards.", duration: "10s (Very short!)" },
-        flight: { item: "Flight Potion", cn: "(Flying Potion)", color: "🟢 Green → 🟡 Yellow", recipe: ["Feather"], effect: "Flight. Grants the ability to fly for a limited duration.", duration: "20s" },
-        nasty: { item: "Nasty Potion", cn: "(Trash Potion)", color: "🟠 Orange", recipe: ["Small Bat", "Bottle", "Random Junk"], effect: "Debuff: Dizzy. Reversed controls: forward becomes backward, left becomes right. Blurry spinning vision. Do NOT drink unless trolling teammates!", duration: "Until effect wears off" }
+        healing: { item: "Healing Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Restores health. Exact effect described in-game.", duration: "—" },
+        healthBoost: { item: "Health Boost Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Boosts health. Exact effect described in-game.", duration: "—" },
+        staminaBoost: { item: "Stamina Boost Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Improves stamina. Exact effect described in-game.", duration: "—" },
+        cooldownReduction: { item: "Cooldown Reduction Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Reduces cooldowns. Exact effect described in-game.", duration: "—" },
+        flight: { item: "Flight Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Grants the ability to fly for a limited duration.", duration: "—" },
+        invisibility: { item: "Invisibility Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Your body becomes transparent; monsters cannot see you. Good for sneaking past enemies.", duration: "—" },
+        explosive: { item: "Explosive Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Explosive effect. Exact use described in-game.", duration: "—" },
+        zippy: { item: "Zippy Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Likely movement or speed related. Exact effect described in-game.", duration: "—" },
+        froggy: { item: "Froggy Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Effect described in recipe book in-game.", duration: "—" },
+        revive: { item: "Revive Potion", color: "", recipe: ["4 ingredients — see recipe book in basement"], effect: "Used to revive fallen players. Exact mechanics in-game.", duration: "—" }
       },
-      raw: {
-        title: "Raw Ingredient Effects (Eating without Crafting)",
-        intro: "Right-click to eat ingredients directly. This <strong>YAPYAP crafting</strong> section compares the effects of eating raw vs. brewing into <strong>YAPYAP potions</strong>, which is crucial for survival decisions in critical moments. The <strong>YAPYAP potions</strong> guide helps you decide when to craft vs. eat raw. Understanding <strong>YAPYAP recipes</strong> and raw effects is essential.",
+      ingredients: {
+        title: "Ingredients found in the tower",
+        intro: "These ingredients can be found in the tower or purchased from the seller. The in-game recipe book (on the wall opposite the cauldron in the basement) shows which four ingredients are needed for each potion. Use <strong>E</strong> to pick up or <strong>E (Hold) Stash</strong> to store; <strong>Grab</strong> to carry.",
         headers: {
-          icon: "Icon",
-          name: "Ingredient",
-          rawEffect: "Raw Effect",
-          brewedEffect: "Brewed Effect",
-          verdict: "Verdict"
+          image: "Image",
+          name: "Ingredient"
         },
-        ingredients: {
-          carrot: { name: "Carrot", rawEffect: "Restores 15 HP", brewedEffect: "Full Heal (100%)", verdict: "Eat raw when low on HP. Brew when critically injured." },
-          mushroom: { name: "Mushroom (Normal)", rawEffect: "Restores 15 HP", brewedEffect: "Strength Enhancement", verdict: "Do NOT eat raw! Strength potion for moving crates is too important." },
-          clover: { name: "Five-leaf Clover", rawEffect: "Restores 10 HP", brewedEffect: "Full Heal (100%)", verdict: "Restores least HP when eaten raw. Best used for brewing." },
-          susroom: { name: "Susroom (Green Spotted Mushroom)", rawEffect: "Random Effect. May grant strength or cause Dizzy debuff.", brewedEffect: "Stable Invisibility", verdict: "Gambler's choice. For non-emergency situations, brew into Invisibility Potion." }
+        items: {
+          fresh_water_pearl: { name: "Fresh Water Pearl" },
+          dragon_bone: { name: "Dragon Bone" },
+          blood_rose: { name: "Blood Rose" },
+          goblin_tooth: { name: "Goblin Tooth" },
+          phoenix_feather: { name: "Phoenix Feather" },
+          glowing_mushroom: { name: "Glowing Mushroom" },
+          coal: { name: "Coal" },
+          golem_gonads: { name: "Golem Gonads" },
+          powdered_crystal: { name: "Powdered Crystal" },
+          weeping_willow_amber: { name: "Weeping Willow Amber" },
+          mystery_egg: { name: "Mystery Egg" }
         }
+      },
+      recipeBook: {
+        title: "Recipe book reference (in-game)",
+        subtitle: "The basement recipe book shows two potions per spread. Each potion lists four ingredient icons—exact names and combinations are visible in-game."
       },
       secrets: {
         title: "The Potion Room Secrets",
-        intro: "The Potion Room contains a hidden mechanic that advanced players should know about. This <strong>YAPYAP crafting</strong> secret is an \"expert-level\" tip that can save your life. The Potion Room is essential for <strong>YAPYAP potions</strong> crafting. This <strong>YAPYAP recipes</strong> location provides guaranteed <strong>YAPYAP potions</strong>.",
+        intro: "The Potion Room (basement) contains a hidden mechanic that advanced players use. The room with the cauldron and recipe book is essential for crafting potions.",
         ladder: {
           title: "The Ladder Strategy",
-          text: "The Potion Room always contains a <strong>Wooden Ladder</strong>. Climb up and you'll find:",
+          text: "The Potion Room often contains a <strong>Wooden Ladder</strong>. Climb up and you may find:",
           list: [
-            "<strong>100% Guaranteed Spawn:</strong> One <strong>Vitality Potion</strong> ready to use.",
-            "<strong>Bonus Loot:</strong> A <strong>Chest</strong> that may contain wands or coins."
+            "<strong>Guaranteed spawn:</strong> A ready-to-use potion.",
+            "<strong>Bonus loot:</strong> A <strong>Chest</strong> that may contain wands or coins."
           ],
-          tip: "<strong>💡 Pro Tip:</strong> Don't rush to eat raw ingredients when low on health. Head to the Potion Room and climb the ladder to get a free potion!"
+          tip: "<strong>💡 Pro Tip:</strong> Head to the Potion Room and check the ladder for a free potion when you need it."
         }
       },
       faq: {
         title: "Frequently Asked Questions",
         list: [
-          { question: "Can I stack potion effects?", answer: "<strong>No, YAPYAP potions effects do not stack.</strong> Drinking a new <strong>YAPYAP potions</strong> will either replace the previous effect or refresh the timer. You can only have one active <strong>YAPYAP potions</strong> effect at a time. Plan your <strong>YAPYAP potions</strong> usage carefully—don't waste a Flight Potion if you already have Invisibility active. This <strong>YAPYAP crafting</strong> limitation is important to remember." },
-          { question: "Can I use broken bottles to brew potions?", answer: "<strong>Yes!</strong> Broken glass bottles found on the floor work perfectly for brewing <strong>YAPYAP potions</strong>. You don't need to buy empty bottles from the shop. Just pick up any broken bottle, face the cauldron, and press <strong>E</strong> to fill it. This <strong>YAPYAP crafting</strong> tip saves money and makes <strong>YAPYAP recipes</strong> more accessible." },
-          { question: "What does Strength Potion actually do?", answer: "<strong>Strength Potion is one of the most useful YAPYAP potions.</strong> This <strong>YAPYAP potions</strong> enhances your physics capabilities. Before drinking, you cannot lift heavy crates. After drinking, you can throw heavy wooden crates high into the air. It's essential for moving heavy objects and reaching high loot. This <strong>YAPYAP crafting</strong> recipe creates a powerful <strong>YAPYAP potions</strong>. It does <strong>not</strong> increase melee damage against enemies." },
-          { question: "Should I eat mushrooms raw or brew them?", answer: "<strong>Do NOT eat normal mushrooms raw!</strong> They only restore 15 HP when eaten, but brewing them into <strong>YAPYAP potions</strong> (Strength Potion) is far more valuable for moving heavy crates. This <strong>YAPYAP crafting</strong> strategy maximizes the value of ingredients. Save them for the cauldron unless you're in a life-or-death emergency. Follow this <strong>YAPYAP recipes</strong> advice for optimal results." },
-          { question: "What happens if I drink Nasty Potion?", answer: "<strong>Nasty Potion is one YAPYAP potions you should avoid.</strong> This <strong>YAPYAP potions</strong> causes a Dizzy debuff that makes your screen blurry and spin. It's essentially useless for you, but some players throw it at teammates as a prank. Avoid this <strong>YAPYAP crafting</strong> recipe unless you're intentionally trolling. Most <strong>YAPYAP recipes</strong> are useful, but this <strong>YAPYAP potions</strong> is an exception." }
+          { question: "Can I stack potion effects?", answer: "<strong>No, YAPYAP potion effects do not stack.</strong> Drinking a new potion typically replaces or refreshes the current effect. Plan your usage—e.g. don't waste a Flight Potion if you already have Invisibility active." },
+          { question: "Can I use broken bottles to brew potions?", answer: "<strong>Yes!</strong> Broken glass bottles found on the floor work for bottling potions from the cauldron. You don't need to buy empty bottles. Pick up a broken bottle, face the cauldron, and press <strong>E</strong> to fill it." },
+          { question: "How do I unlock potion crafting?", answer: "Survive the first three nights and bank your gold. You'll receive the basement key. The cauldron and recipe book are in that room. Before that, you can only find or buy potions ready-made." },
+          { question: "Where is the recipe book?", answer: "The recipe book is on the wall in the basement room with the cauldron, opposite the cauldron. It shows each potion name and four ingredient icons per recipe." },
+          { question: "How many ingredients per potion?", answer: "Each potion in the recipe book uses <strong>four ingredients</strong>. You can find ingredients in the tower or buy them from the seller near the cauldron area." }
         ]
       }
     },

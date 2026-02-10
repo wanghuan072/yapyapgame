@@ -73,7 +73,9 @@
           <div class="wand-card card" v-for="wand in wands" :key="wand.name">
             <div class="wand-card-header">
               <div class="wand-image">
-                <div class="image-placeholder">🖼️</div>
+                <div class="image-placeholder">
+                  <img :src="wand.image" :alt="wand.name" :srcset="wand.image">
+                </div>
               </div>
               <div class="wand-info">
                 <h3 class="wand-name">{{ wand.name }}</h3>
@@ -226,7 +228,7 @@ const wands = computed(() => wandsData.value.map(wand => ({
 
 .table .row {
   display: grid;
-  grid-template-columns: 140px 1fr 1.5fr 2fr;
+  grid-template-columns: 240px 0.8fr 1.5fr 2fr;
   gap: 16px;
   padding: 16px;
   border-bottom: 1px solid var(--border);
@@ -261,8 +263,8 @@ const wands = computed(() => wandsData.value.map(wand => ({
 }
 
 .image-placeholder {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  aspect-ratio: 5/2;
   display: flex;
   align-items: center;
   justify-content: center;

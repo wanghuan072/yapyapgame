@@ -310,7 +310,7 @@ export const guides = [
     "imageAlt": "Guide de survie Jour 1 Yapyap",
     "isHome": true,
     "seo": {
-      "title": "Guide Nuit 1 Yapyap : Vol infini, spots de loot et stratégie d'évasion",
+      "title": "Guide Nuit 1 Yapyap : Vol infini, spots de loot et stratégie d'évasion", 
       "description": "Survivez au Jour 1 de Yapyap avec notre guide pro. Apprenez l'astuce du vol à double baguette, où trouver le loot caché des lavabos, et comment identifier la Tour d'Évasion Bleue.",
       "keywords": "yapyap nuit 1, vol infini, potion de vol, tour d'évasion yapyap, loot lavabo"
     },
