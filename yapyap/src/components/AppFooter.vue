@@ -4,7 +4,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="/images/logo.png" alt="YAPYAP Game" class="brand-logo" />
+            <img src="/images/logo.webp" alt="YAPYAP Game" class="brand-logo" />
             <span class="logo-text">YAPYAP Game</span>
           </div>
           <p class="footer-text">

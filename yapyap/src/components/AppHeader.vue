@@ -3,7 +3,7 @@
     <div class="container">
       <div class="header-inner">
         <a :href="getLocalizedPath('/')" class="logo">
-          <img src="/images/logo.png" alt="YAPYAP Game" class="brand-logo">
+          <img src="/images/logo.webp" alt="YAPYAP Game" class="brand-logo">
           <span class="logo-title">YAPYAP Game</span>
         </a>
 

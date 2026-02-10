@@ -5,7 +5,7 @@ export const guides = [
     "description": "Optimiere dein Yapyap-Erlebnis mit unserem ultimativen Einstellungs-Guide. Erfahre, wie du die Spracherkennung fixst, Motion Sickness durch Anpassen der Kamerasensitivität reduzierst und wichtige Keybinds wie 'Click to Cast' und Inventar-Swap meisterst.",
     "tags": ["ultimativ", "guide", "yapyap", "game", "settings"],
     "publishDate": "2026-02-05",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1770285821/cms-uploads/cms-1770285820808-547421476.jpg",
+    "imageUrl": "/images/blog/blog05.webp",
     "imageAlt": "Professionelles Bild des Modern Yapyap Settings Guide: Fix Voice Chat, Motion Sickness & Controls",
     "seo": {
       "title": "Yapyap Einstellungs-Guide: Voice-Chat, Motion Sickness & Steuerung fixen",
@@ -131,7 +131,7 @@ export const guides = [
     "description": "Meistere die Yapyap Vollversion mit diesem Starter-Guide. Lerne das Drei-Stäbe-System für unendliches Fliegen, Gold-Farming-Spots in der Lobby, Tricks für schadenfreie Landungen und Kampfstrategien.",
     "tags": ["yapyap"],
     "publishDate": "2026-02-06",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1770284189/cms-uploads/cms-1770284189565-592812970.png",
+    "imageUrl": "/images/blog/blog04.webp",
     "imageAlt": "Yapyap Full Version Starter Guide",
     "seo": {
       "title": "Yapyap Vollversion Starter-Guide: Unendlich Fliegen, Farming & Kampf-Tipps",
@@ -232,7 +232,7 @@ export const guides = [
     "description": "Neu in Yapyap? Dieser Guide hilft angehenden Zauberern, die grundlegende Steuerung und Einstellungen zu meistern! Lerne Zaubersprüche zu wirken (sogar mit defektem Mikrofon!), mit der Umwelt zu interagieren, dein Inventar zu verwalten und vieles mehr. Werde im Handumdrehen zum Yapyap-Profi!",
     "tags": ["yapyap", "erste schritte", "steuerung", "zaubern", "zauberer-spiel"],
     "publishDate": "2026-01-22",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769068783/cms-uploads/cms-1769068783333-120035290.jpg",
+    "imageUrl": "/images/blog/blog01.webp",
     "imageAlt": "Ein Zauberer wirkt einen Zauberspruch in Yapyap und zeigt das Magiesystem des Spiels.",
     "seo": {
       "title": "Yapyap: Einsteiger-Guide - Steuerung & Zaubersprüche meistern",
@@ -315,7 +315,7 @@ export const guides = [
     "description": "Stürze dich nicht sofort ins Schloss! Dieser Yapyap Secrets Guide enthüllt versteckte Schätze in der Startlobby: 20-30 Münzen, kostenlose Zauberstäbe und sogar 50-Gold-Edelsteine. Meistere den Doppelstab-Flugtrick für unendliches Gleiten! Dominiere Yapyap, bevor du überhaupt richtig anfängst.",
     "tags": ["yapyap geheimnisse", "yapyap guide", "münzen farmen", "unendlich fliegen", "doppelstab trick"],
     "publishDate": "2026-01-22",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769069595/cms-uploads/cms-1769069594889-927630996.jpg",
+    "imageUrl": "/images/blog/blog02.webp",
     "imageAlt": "Yapyap Gameplay-Screenshot, der einen Charakter im Startwald zeigt und das Potenzial zum Münzenfarmen hervorhebt.",
     "seo": {
       "title": "Yapyap Secrets Guide: Münzen farmen & unendlich fliegen vor dem Schloss!",
@@ -379,7 +379,7 @@ export const guides = [
     "description": "Die erste Nacht in Yapyap bestimmt das Tempo für deinen gesamten Run. Viele neue Zauberer sterben, weil sie den Ausgang nicht finden oder vom Clown-Mädchen in die Enge getrieben werden. Dieser Guide beschreibt die \"Standard-Eröffnung\", die Profi-Spieler nutzen, um 800+ Punkte und eine sichere Extraktion in unter 5 Minuten zu garantieren.",
     "tags": ["erste", "nacht", "yapyap", "tempo", "survival"],
     "publishDate": "2026-01-22",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769070237/cms-uploads/cms-1769069594889-927630996.jpg",
+    "imageUrl": "/images/blog/blog03.webp",
     "imageAlt": "Yapyap Tag 1 Survival-Guide",
     "isHome": true,
     "seo": {

@@ -5,7 +5,7 @@ export const guides = [
     "description": "Optimisez votre expérience Yapyap avec notre guide de réglages ultime. Apprenez à corriger la reconnaissance vocale, réduire le mal des transports en ajustant la sensibilité et maîtriser les touches essentielles.",
     "tags": ["ultime", "guide", "yapyap", "jeu", "reglages"],
     "publishDate": "2026-02-05",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1770285821/cms-uploads/cms-1770285820808-547421476.jpg",
+    "imageUrl": "/images/blog/blog05.webp",
     "imageAlt": "Image professionnelle du guide de réglages Yapyap : Fix Voice Chat, Motion Sickness & Controls",
     "seo": {
       "title": "Guide de réglages Yapyap : Correction Voice Chat, Motion Sickness & Commandes",
@@ -95,7 +95,7 @@ export const guides = [
     "description": "Maîtrisez la version complète de Yapyap. Apprenez le système des trois baguettes pour le vol infini, les zones de farming d'or dans le lobby et les astuces de combat.",
     "tags": ["yapyap"],
     "publishDate": "2026-02-06",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1770284189/cms-uploads/cms-1770284189565-592812970.png",
+    "imageUrl": "/images/blog/blog04.webp",
     "imageAlt": "Yapyap Guide de démarrage version complète",
     "seo": {
       "title": "Guide du débutant Yapyap : Vol infini, Farming & Combat",
@@ -157,7 +157,7 @@ export const guides = [
     "description": "Nouveau sur Yapyap ? Ce guide aide les sorciers novices à maîtriser les commandes et paramètres essentiels ! Apprenez à lancer des sorts (même avec un micro défaillant !), interagir avec l'environnement, gérer votre inventaire, et plus encore. Devenez un pro de Yapyap en un rien de temps !",
     "tags": ["yapyap", "bien démarrer", "commandes", "lancement de sorts", "jeu de sorcier"],
     "publishDate": "2026-01-22",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769068783/cms-uploads/cms-1769068783333-120035290.jpg",
+    "imageUrl": "/images/blog/blog01.webp",
     "imageAlt": "Un sorcier lance un sort dans Yapyap, illustrant le système de magie du jeu.",
     "seo": {
       "title": "Yapyap : Guide de démarrage - Maîtrisez les commandes et le lancement de sorts",
@@ -241,7 +241,7 @@ export const guides = [
     "description": "Ne vous précipitez pas dans le château ! Ce guide des secrets de Yapyap dévoile les trésors cachés du hall de départ : 20-30 pièces, des baguettes gratuites et même des gemmes de 50 pièces d'or. Maîtrisez l'astuce de la double baguette pour un vol infini ! Dominez Yapyap avant même de commencer.",
     "tags": ["secrets yapyap", "guide yapyap", "farm de pièces", "vol infini", "astuce double baguette"],
     "publishDate": "2026-01-22",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769069595/cms-uploads/cms-1769069594889-927630996.jpg",
+    "imageUrl": "/images/blog/blog02.webp",
     "imageAlt": "Capture d'écran du gameplay de Yapyap montrant un personnage dans la zone forestière de départ, soulignant le potentiel de farm de pièces.",
     "seo": {
       "title": "Guide des secrets de Yapyap : Farmez des pièces et volez à l'infini avant le château !",
@@ -306,7 +306,7 @@ export const guides = [
     "description": "La première nuit dans Yapyap donne le ton pour toute votre partie. De nombreux nouveaux sorciers meurent parce qu'ils ne trouvent pas la sortie ou se font coincer par la Clown Girl. Ce guide détaille la stratégie d'ouverture standardisée utilisée par les pros pour sécuriser plus de 800 points et une extraction sûre en moins de 5 minutes.",
     "tags": ["première", "nuit", "yapyap", "donne", "ton"],
     "publishDate": "2026-01-22",
-    "imageUrl": "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769070237/cms-uploads/cms-1769070236697-715966904.jpg",
+    "imageUrl": "/images/blog/blog03.webp",
     "imageAlt": "Guide de survie Jour 1 Yapyap",
     "isHome": true,
     "seo": {

@@ -5,7 +5,7 @@ export const guides = [
     description: "Optimize your Yapyap experience with our ultimate settings guide. Learn how to fix voice recognition, reduce motion sickness by adjusting camera sensitivity, and master essential keybinds like 'Click to Cast' and inventory swapping.",
     tags: ["ultimate", "guide", "yapyap", "game", "settings"],
     publishDate: "2026-02-05",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1770285821/cms-uploads/cms-1770285820808-547421476.jpg",
+    imageUrl: "/images/blog/blog05.webp",
     imageAlt: "Professional image of Modern Yapyap Settings Guide: Fix Voice Chat, Motion Sickness & Controls",
     seo: {
       title: "Yapyap Settings Guide: Fix Voice Chat, Motion Sickness & Controls",
@@ -131,7 +131,7 @@ export const guides = [
     description: "Master the Yapyap full version with this starter guide. Learn the Three-Wand System for infinite flight, lobby gold farming locations, no-damage landing tricks, and combat strategies.",
     tags: ["yapyap"],
     publishDate: "2026-02-06",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1770284189/cms-uploads/cms-1770284189565-592812970.png",
+    imageUrl: "/images/blog/blog04.webp",
     imageAlt: "Yapyap Full Version Starter Guide",
     seo: {
       title: "Yapyap Full Version Starter Guide: Infinite Flight, Farming & Combat Tips",
@@ -232,7 +232,7 @@ export const guides = [
     description: "New to Yapyap? This guide helps fledgling wizards master essential controls & settings! Learn to cast spells (even with a buggy mic!), interact with the environment, manage your inventory, and more. Become a Yapyap pro in no time!",
     tags: ["yapyap", "getting started", "controls", "spell casting", "wizard game"],
     publishDate: "2026-01-22",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769068783/cms-uploads/cms-1769068783333-120035290.jpg",
+    imageUrl: "/images/blog/blog01.webp",
     imageAlt: "A wizard casts a spell in Yapyap, showcasing the game's magic system.",
     seo: {
       title: "Yapyap: Getting Started Guide - Master Controls & Spell Casting",
@@ -319,7 +319,7 @@ export const guides = [
     description: "Don't rush into the castle! This Yapyap secrets guide unveils hidden treasures in the starting lobby: 20-30 coins, free wands, and even 50-gold gems. Master the Double Wand Flight trick for infinite soaring! Dominate Yapyap before you even begin.",
     tags: ["yapyap secrets", "yapyap guide", "coin farming", "infinite flight", "double wand trick"],
     publishDate: "2026-01-22",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769069595/cms-uploads/cms-1769069594889-927630996.jpg",
+    imageUrl: "/images/blog/blog02.webp",
     imageAlt: "Yapyap gameplay screenshot showing a character in the starting forest area, highlighting the coin farming potential.",
     seo: {
       title: "Yapyap Secrets Guide: Farm Coins & Infinite Flight Before the Castle!",
@@ -384,12 +384,12 @@ export const guides = [
 
   {
     id: 3,
-    title: "Yapyap Night 1 Survival Guide: The \"Infinite Flight\" Strategy & Best Loot Routes",
+    title: 'apyap Night 1 Survival Guide: The "Infinite Flight" Strategy & Best Loot Routes',
     iframeUrl: "1",
     description: "The first night in Yapyap sets the pace for your entire run. Many new wizards die because they can't find the exit or get cornered by the Clown Girl. This guide details the \"Standardized Opening\" strategy that pro players use to secure 800+ points and safe extraction in under 5 minutes.",
     tags: ["first", "night", "yapyap", "sets", "pace"],
     publishDate: "2026-01-22",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1769070237/cms-uploads/cms-1769070236697-715966904.jpg",
+    imageUrl: "/images/blog/blog03.webp",
     imageAlt: "Yapyap Day 1 Survival Guide",
     isHome: true,
     seo: {

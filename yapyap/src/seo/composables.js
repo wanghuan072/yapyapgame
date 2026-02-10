@@ -186,7 +186,7 @@ export function useSEO() {
         url: seoConfig.fullDomain,
         logo: {
           '@type': 'ImageObject',
-          url: `${seoConfig.fullDomain}/images/logo.png`
+          url: `${seoConfig.fullDomain}/images/logo.webp`
         },
         sameAs: [
           `https://twitter.com/${seoConfig.social.twitter.replace('@', '')}`,
