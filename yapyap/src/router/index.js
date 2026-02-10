@@ -22,7 +22,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/:locale(de|fr)?',
+      path: '/:locale(de|fr|zh|ja)?',
       component: RouterView,
       children: [
         {
@@ -117,9 +117,12 @@ const router = createRouter({
 
 // Navigation guard to set locale based on route param
 router.beforeEach((to, from, next) => {
-  const locale = to.params.locale || 'en'
-  if (i18n.global.locale.value !== locale) {
-    i18n.global.locale.value = locale
+  const supportedLocales = ['en', 'de', 'fr', 'zh', 'ja']
+  const rawParam = to.params.locale
+  const routeLocale = (typeof rawParam === 'string' && supportedLocales.includes(rawParam)) ? rawParam : 'en'
+
+  if (i18n.global.locale.value !== routeLocale) {
+    i18n.global.locale.value = routeLocale
   }
   next()
 })

@@ -124,7 +124,7 @@ export function useSEO() {
 
   // 更新Hreflang标签
   const updateHreflangTags = () => {
-    const locales = ['en', 'de', 'fr']
+    const locales = ['en', 'de', 'fr', 'zh', 'ja']
     const origin = window.location.origin
     const path = currentPath.value
 
@@ -133,11 +133,14 @@ export function useSEO() {
 
     // 清理当前路径中的语言前缀，获取"纯净"路径
     let cleanPath = path
-    // 检查是否以 /de 开头（注意：要处理 /de 和 /de/ 的情况）
-    if (cleanPath === '/de' || cleanPath.startsWith('/de/')) {
-      cleanPath = cleanPath.substring(3)
-    } else if (cleanPath === '/fr' || cleanPath.startsWith('/fr/')) {
-      cleanPath = cleanPath.substring(3)
+    // 移除任意已支持的语言前缀（/de, /fr, /zh, /ja）
+    for (const loc of locales) {
+      if (loc === 'en') continue
+      const prefix = `/${loc}`
+      if (cleanPath === prefix || cleanPath.startsWith(prefix + '/')) {
+        cleanPath = cleanPath.substring(prefix.length)
+        break
+      }
     }
     // 确保 cleanPath 以 / 开头（如果是空字符串，则设为 /）
     if (!cleanPath || cleanPath === '') {

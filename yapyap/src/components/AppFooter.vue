@@ -4,51 +4,57 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="/images/logo.webp" alt="YAPYAP Game" class="brand-logo" />
-            <span class="logo-text">YAPYAP Game</span>
+            <img src="/images/logo.webp" :alt="$t('Footer.logoTitle')" class="brand-logo" />
+            <span class="logo-text">{{ $t('Footer.logoTitle') }}</span>
           </div>
           <p class="footer-text">
-            Comprehensive YAPYAP game resources including guides, wiki, spells database, and puzzle solutions to help you master the voice-activated magic and survive the tower.
+            {{ $t('Footer.description') }}
           </p>
         </div>
         <div class="link-column">
-          <h2>Navigate</h2>
+          <h2>{{ $t('Footer.navigate') }}</h2>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/spells">Spells</a></li>
-            <li><a href="/spell-generator">Spell Generator</a></li>
-            <li><a href="/guides">Guides</a></li>
-            <li><a href="/wiki">Wiki</a></li>
+            <li><a :href="getLocalizedPath('/')">{{ $t('Footer.nav.home') }}</a></li>
+            <li><a :href="getLocalizedPath('/spells')">{{ $t('Footer.nav.spells') }}</a></li>
+            <li><a :href="getLocalizedPath('/spell-generator')">{{ $t('Footer.nav.spellGenerator') }}</a></li>
+            <li><a :href="getLocalizedPath('/guides')">{{ $t('Footer.nav.guides') }}</a></li>
+            <li><a :href="getLocalizedPath('/wiki')">{{ $t('Footer.nav.wiki') }}</a></li>
           </ul>
         </div>
         <div class="link-column">
-          <h2>Legal</h2>
+          <h2>{{ $t('Footer.legal') }}</h2>
           <ul>
             <li>
-              <a href="/privacy-policy" rel="nofollow">Privacy Policy</a>
+              <a :href="getLocalizedPath('/privacy-policy')" rel="nofollow">{{ $t('Footer.legalLinks.privacyPolicy') }}</a>
             </li>
             <li>
-              <a href="/terms-of-service" rel="nofollow">Terms of Service</a>
+              <a :href="getLocalizedPath('/terms-of-service')" rel="nofollow">{{ $t('Footer.legalLinks.termsOfService') }}</a>
             </li>
             <li>
-              <a href="/copyright" rel="nofollow">Copyright</a>
+              <a :href="getLocalizedPath('/copyright')" rel="nofollow">{{ $t('Footer.legalLinks.copyright') }}</a>
             </li>
             <li>
-              <a href="/about-us" rel="nofollow">About Us</a>
+              <a :href="getLocalizedPath('/about-us')" rel="nofollow">{{ $t('Footer.legalLinks.aboutUs') }}</a>
             </li>
             <li>
-              <a href="/contact-us" rel="nofollow">Contact Us</a>
+              <a :href="getLocalizedPath('/contact-us')" rel="nofollow">{{ $t('Footer.legalLinks.contactUs') }}</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 yapyapgame.com. All rights reserved.</p>
-        <p>yapyapgame.com is not affiliated with, endorsed by, or connected to the original game or its publishers. This is an independent fan site created for informational purposes only. All trademarks and copyrights belong to their respective owners.</p>
+        <p>{{ $t('Footer.copyright') }}</p>
+        <p>{{ $t('Footer.disclaimer') }}</p>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup>
+import { useLocalizedPath } from '@/composables/useLocalizedPath'
+
+const { getLocalizedPath } = useLocalizedPath()
+</script>
 
 <style scoped>
 .site-footer {

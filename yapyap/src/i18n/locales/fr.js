@@ -91,6 +91,45 @@ export default {
       "robots": "noindex, nofollow"
     }
   },
+  "Header": {
+    "ariaMenu": "Ouvrir la navigation",
+    "logoTitle": "YAPYAP Game",
+    "nav": {
+      "home": "Accueil",
+      "spells": "Sorts",
+      "spellGenerator": "Générateur de sorts",
+      "puzzles": "Énigmes",
+      "puzzlesDropdown": "Énigmes ▾",
+      "ballPuzzle": "Énigme de la boule",
+      "balancePuzzle": "Énigme d'équilibre",
+      "doorPuzzle": "Énigme de la porte",
+      "guides": "Guides",
+      "wiki": "Wiki",
+      "language": "Langue"
+    }
+  },
+  "Footer": {
+    "logoTitle": "YAPYAP Game",
+    "description": "Ressources complètes sur YAPYAP : guides, wiki, base de sorts et solutions d'énigmes pour maîtriser la magie vocale et survivre dans la tour.",
+    "navigate": "Navigation",
+    "legal": "Mentions légales",
+    "nav": {
+      "home": "Accueil",
+      "spells": "Sorts",
+      "spellGenerator": "Générateur de sorts",
+      "guides": "Guides",
+      "wiki": "Wiki"
+    },
+    "legalLinks": {
+      "privacyPolicy": "Politique de confidentialité",
+      "termsOfService": "Conditions d'utilisation",
+      "copyright": "Droits d'auteur",
+      "aboutUs": "À propos",
+      "contactUs": "Contact"
+    },
+    "copyright": "© 2026 yapyapgame.com. Tous droits réservés.",
+    "disclaimer": "yapyapgame.com n'est pas affilié à, soutenu par ou lié au jeu original ou à ses éditeurs. Ce site fan indépendant est à but informatif uniquement. Toutes les marques et droits appartiennent à leurs propriétaires respectifs."
+  },
   "HomePage": {
     "hero": {
       "pill": "Sorts Vocaux · Chaos en Coop · Horreur Légère",
@@ -1590,202 +1629,203 @@ export default {
         ]
       }
     },
-    "Legal": {
-      "AboutUs": {
-        "title": "À Propos de Nous",
-        "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
-        "welcome": {
-          "title": "Bienvenue sur le Hub des Guides YAPYAP",
-          "text": "YAPYAP Game Guide Hub est une ressource communautaire non officielle dédiée au jeu d'horreur multijoueur YAPYAP. Nous sommes des fans passionnés qui ont créé ce site pour aider les autres joueurs à maîtriser les sorts activés par la voix, à résoudre les énigmes et à survivre dans la tour."
-        },
-        "mission": {
-          "title": "Notre Mission",
-          "text": "Notre mission est de fournir des informations complètes, précises et à jour sur le jeu YAPYAP. Nous archivons les prononciations de sorts, les solutions d'énigmes, les mécaniques de jeu et les stratégies communautaires afin que les joueurs puissent améliorer leur expérience de jeu en coop."
-        },
-        "offer": {
-          "title": "Ce que nous proposons",
-          "text": "Nous offrons une large gamme de ressources comprenant :",
-          "list": {
-            "pronunciation": "Guide complet de prononciation des sorts avec démos audio",
-            "generator": "Générateur de sorts interactif avec tutoriels vidéo",
-            "puzzles": "Solutions détaillées des énigmes et guides de progression",
-            "wiki": "Wiki complet avec baguettes, objets et monstres",
-            "community": "Guides et stratégies pilotés par la communauté"
-          }
-        },
-        "commitment": {
-          "title": "Notre Engagement",
-          "text": "Nous nous engageons à maintenir l'exactitude et la qualité de notre contenu. Notre équipe met régulièrement à jour les informations en fonction des mises à jour du jeu, des retours de la communauté et des données de jeu vérifiées."
-        },
-        "disclaimer": {
-          "title": "Avis de non-responsabilité",
-          "text": "YAPYAP Game Guide Hub est un site web indépendant géré par des fans. Nous ne sommes pas affiliés, approuvés ou liés aux développeurs ou éditeurs originaux du jeu. Tout le contenu lié au jeu est utilisé à des fins d'information uniquement."
-        },
-        "contact": {
-          "title": "Contactez-nous",
-          "text_1": "Si vous avez des questions, des suggestions ou des commentaires, n'hésitez pas à nous contacter à ",
-          "text_2": ". Nous apprécions votre soutien et vos contributions à la communauté YAPYAP."
-        },
-        "thanks": {
-          "title": "Merci",
-          "text": "Merci de visiter YAPYAP Game Guide Hub. Nous espérons que nos ressources vous aideront à maîtriser les sorts, à résoudre les énigmes et à survivre dans la tour !"
+  },
+  "Legal": {
+    "AboutUs": {
+      "title": "À Propos de Nous",
+      "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
+      "welcome": {
+        "title": "Bienvenue sur le Hub des Guides YAPYAP",
+        "text": "YAPYAP Game Guide Hub est une ressource communautaire non officielle dédiée au jeu d'horreur multijoueur YAPYAP. Nous sommes des fans passionnés qui ont créé ce site pour aider les autres joueurs à maîtriser les sorts activés par la voix, à résoudre les énigmes et à survivre dans la tour."
+      },
+      "mission": {
+        "title": "Notre Mission",
+        "text": "Notre mission est de fournir des informations complètes, précises et à jour sur le jeu YAPYAP. Nous archivons les prononciations de sorts, les solutions d'énigmes, les mécaniques de jeu et les stratégies communautaires afin que les joueurs puissent améliorer leur expérience de jeu en coop."
+      },
+      "offer": {
+        "title": "Ce que nous proposons",
+        "text": "Nous offrons une large gamme de ressources comprenant :",
+        "list": {
+          "pronunciation": "Guide complet de prononciation des sorts avec démos audio",
+          "generator": "Générateur de sorts interactif avec tutoriels vidéo",
+          "puzzles": "Solutions détaillées des énigmes et guides de progression",
+          "wiki": "Wiki complet avec baguettes, objets et monstres",
+          "community": "Guides et stratégies pilotés par la communauté"
         }
       },
-      "ContactUs": {
+      "commitment": {
+        "title": "Notre Engagement",
+        "text": "Nous nous engageons à maintenir l'exactitude et la qualité de notre contenu. Notre équipe met régulièrement à jour les informations en fonction des mises à jour du jeu, des retours de la communauté et des données de jeu vérifiées."
+      },
+      "disclaimer": {
+        "title": "Avis de non-responsabilité",
+        "text": "YAPYAP Game Guide Hub est un site web indépendant géré par des fans. Nous ne sommes pas affiliés, approuvés ou liés aux développeurs ou éditeurs originaux du jeu. Tout le contenu lié au jeu est utilisé à des fins d'information uniquement."
+      },
+      "contact": {
         "title": "Contactez-nous",
-        "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
-        "touch": {
-          "title": "Entrer en contact",
-          "text": "Nous serions ravis de vous entendre ! Que vous ayez des questions, des suggestions, des commentaires ou que vous vouliez simplement nous dire bonjour, n'hésitez pas à nous contacter."
-        },
-        "email": {
-          "title": "E-mail",
-          "text": "Pour toute demande générale, veuillez nous envoyer un e-mail à : "
-        },
-        "help": {
-          "title": "Comment nous pouvons vous aider",
-          "text": "Nous sommes là pour vous aider avec :",
-          "list": {
-            "questions": "Des questions sur notre site ou son contenu",
-            "suggestions": "Des suggestions d'améliorations ou de nouvelles fonctionnalités",
-            "errors": "Signaler des erreurs ou des informations obsolètes",
-            "copyright": "Demandes liées au droit d'auteur ou juridiques",
-            "partnership": "Opportunités de partenariat ou de collaboration",
-            "feedback": "Commentaires généraux sur YAPYAP Game Guide Hub"
-          }
-        },
-        "response": {
-          "title": "Temps de réponse",
-          "text": "Nous nous efforçons de répondre à toutes les demandes sous 2 à 3 jours ouvrables. Merci de patienter pendant que nous examinons votre message."
-        },
-        "contributions": {
-          "title": "Contributions de la communauté",
-          "text": "Si vous souhaitez contribuer avec du contenu, des corrections ou des mises à jour pour notre site, veuillez nous contacter en détaillant votre contribution. Nous apprécions tout le soutien de la communauté !"
-        },
-        "privacy": {
-          "title": "Confidentialité",
-          "text_1": "Toute information que vous fournissez dans votre correspondance restera confidentielle et ne sera utilisée que pour répondre à votre demande. Veuillez consulter notre ",
-          "link": "Politique de confidentialité",
-          "text_2": " pour plus d'informations."
-        },
-        "thanks": {
-          "title": "Merci",
-          "text": "Merci de votre intérêt pour YAPYAP Game Guide Hub. Nous avons hâte de vous lire !"
+        "text_1": "Si vous avez des questions, des suggestions ou des commentaires, n'hésitez pas à nous contacter à ",
+        "text_2": ". Nous apprécions votre soutien et vos contributions à la communauté YAPYAP."
+      },
+      "thanks": {
+        "title": "Merci",
+        "text": "Merci de visiter YAPYAP Game Guide Hub. Nous espérons que nos ressources vous aideront à maîtriser les sorts, à résoudre les énigmes et à survivre dans la tour !"
+      }
+    },
+    "ContactUs": {
+      "title": "Contactez-nous",
+      "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
+      "touch": {
+        "title": "Entrer en contact",
+        "text": "Nous serions ravis de vous entendre ! Que vous ayez des questions, des suggestions, des commentaires ou que vous vouliez simplement nous dire bonjour, n'hésitez pas à nous contacter."
+      },
+      "email": {
+        "title": "E-mail",
+        "text": "Pour toute demande générale, veuillez nous envoyer un e-mail à : "
+      },
+      "help": {
+        "title": "Comment nous pouvons vous aider",
+        "text": "Nous sommes là pour vous aider avec :",
+        "list": {
+          "questions": "Des questions sur notre site ou son contenu",
+          "suggestions": "Des suggestions d'améliorations ou de nouvelles fonctionnalités",
+          "errors": "Signaler des erreurs ou des informations obsolètes",
+          "copyright": "Demandes liées au droit d'auteur ou juridiques",
+          "partnership": "Opportunités de partenariat ou de collaboration",
+          "feedback": "Commentaires généraux sur YAPYAP Game Guide Hub"
         }
       },
-      "Copyright": {
-        "title": "Droits d'auteur",
-        "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
-        "notice": {
-          "title": "Avis de droit d'auteur",
-          "text": "© 2026 YAPYAP Game Guide Hub. Tous droits réservés. Ce site web et son contenu sont protégés par les lois sur le droit d'auteur."
-        },
-        "ownership": {
-          "title": "Propriété",
-          "text": "Tout le contenu de ce site web, y compris, mais sans s'y limiter, les textes, graphiques, logos, images et logiciels, est la propriété de YAPYAP Game Guide Hub ou de ses fournisseurs de contenu et est protégé par les lois internationales sur le droit d'auteur."
-        },
-        "trademark": {
-          "title": "Avis de marque déposée",
-          "text": "YAPYAP est une marque de ses propriétaires respectifs. Ce site web n'est pas affilié ou approuvé par les développeurs ou éditeurs originaux du jeu. Toutes les références à YAPYAP et aux marques associées sont utilisées à des fins d'information uniquement."
-        },
-        "fairUse": {
-          "title": "Usage loyal",
-          "text": "Ce site contient des informations sur le jeu YAPYAP à des fins éducatives et informatives. Nous pensons que notre utilisation du contenu lié au jeu relève de l'usage loyal car nous fournissons des commentaires, des analyses et des ressources communautaires."
-        },
-        "userContent": {
-          "title": "Contenu généré par l'utilisateur",
-          "text": "Les utilisateurs qui soumettent du contenu à notre site conservent la propriété de leur contenu original mais accordent à YAPYAP Game Guide Hub une licence pour utiliser, afficher et distribuer ce contenu sur notre site."
-        },
-        "dmca": {
-          "title": "Politique DMCA",
-          "text": "Si vous pensez qu'un contenu de notre site enfreint vos droits d'auteur, veuillez nous contacter à ",
-          "email": "wyong@yapyapgame.com",
-          "text_2": " avec les informations suivantes :",
-          "list": {
-            "contact": "Vos coordonnées",
-            "desc": "Une description de l'œuvre protégée par le droit d'auteur dont vous revendiquez l'infraction",
-            "location": "L'emplacement du matériel prétendument contrefait sur notre site",
-            "faith": "Une déclaration attestant que vous croyez de bonne foi que l'utilisation n'est pas autorisée",
-            "accurate": "Une déclaration attestant que les informations contenues dans votre avis sont exactes"
-          }
-        },
-        "contact": {
-          "title": "Contactez-nous",
-          "text": "Pour toute demande liée aux droits d'auteur, veuillez nous contacter à "
+      "response": {
+        "title": "Temps de réponse",
+        "text": "Nous nous efforçons de répondre à toutes les demandes sous 2 à 3 jours ouvrables. Merci de patienter pendant que nous examinons votre message."
+      },
+      "contributions": {
+        "title": "Contributions de la communauté",
+        "text": "Si vous souhaitez contribuer avec du contenu, des corrections ou des mises à jour pour notre site, veuillez nous contacter en détaillant votre contribution. Nous apprécions tout le soutien de la communauté !"
+      },
+      "privacy": {
+        "title": "Confidentialité",
+        "text_1": "Toute information que vous fournissez dans votre correspondance restera confidentielle et ne sera utilisée que pour répondre à votre demande. Veuillez consulter notre ",
+        "link": "Politique de confidentialité",
+        "text_2": " pour plus d'informations."
+      },
+      "thanks": {
+        "title": "Merci",
+        "text": "Merci de votre intérêt pour YAPYAP Game Guide Hub. Nous avons hâte de vous lire !"
+      }
+    },
+    "Copyright": {
+      "title": "Droits d'auteur",
+      "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
+      "notice": {
+        "title": "Avis de droit d'auteur",
+        "text": "© 2026 YAPYAP Game Guide Hub. Tous droits réservés. Ce site web et son contenu sont protégés par les lois sur le droit d'auteur."
+      },
+      "ownership": {
+        "title": "Propriété",
+        "text": "Tout le contenu de ce site web, y compris, mais sans s'y limiter, les textes, graphiques, logos, images et logiciels, est la propriété de YAPYAP Game Guide Hub ou de ses fournisseurs de contenu et est protégé par les lois internationales sur le droit d'auteur."
+      },
+      "trademark": {
+        "title": "Avis de marque déposée",
+        "text": "YAPYAP est une marque de ses propriétaires respectifs. Ce site web n'est pas affilié ou approuvé par les développeurs ou éditeurs originaux du jeu. Toutes les références à YAPYAP et aux marques associées sont utilisées à des fins d'information uniquement."
+      },
+      "fairUse": {
+        "title": "Usage loyal",
+        "text": "Ce site contient des informations sur le jeu YAPYAP à des fins éducatives et informatives. Nous pensons que notre utilisation du contenu lié au jeu relève de l'usage loyal car nous fournissons des commentaires, des analyses et des ressources communautaires."
+      },
+      "userContent": {
+        "title": "Contenu généré par l'utilisateur",
+        "text": "Les utilisateurs qui soumettent du contenu à notre site conservent la propriété de leur contenu original mais accordent à YAPYAP Game Guide Hub une licence pour utiliser, afficher et distribuer ce contenu sur notre site."
+      },
+      "dmca": {
+        "title": "Politique DMCA",
+        "text": "Si vous pensez qu'un contenu de notre site enfreint vos droits d'auteur, veuillez nous contacter à ",
+        "email": "wyong@yapyapgame.com",
+        "text_2": " avec les informations suivantes :",
+        "list": {
+          "contact": "Vos coordonnées",
+          "desc": "Une description de l'œuvre protégée par le droit d'auteur dont vous revendiquez l'infraction",
+          "location": "L'emplacement du matériel prétendument contrefait sur notre site",
+          "faith": "Une déclaration attestant que vous croyez de bonne foi que l'utilisation n'est pas autorisée",
+          "accurate": "Une déclaration attestant que les informations contenues dans votre avis sont exactes"
         }
       },
-      "PrivacyPolicy": {
-        "title": "Politique de Confidentialité",
-        "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
-        "intro": {
-          "title": "Introduction",
-          "text": "YAPYAP Game Guide Hub (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous visitez notre site."
-        },
-        "collect": {
-          "title": "Informations que nous collectons",
-          "text": "Nous pouvons collecter des informations que vous nous fournissez directement, par exemple lorsque vous nous contactez ou interagissez avec notre site web. Cela peut inclure votre nom, votre adresse e-mail et tout message que vous nous envoyez."
-        },
-        "use": {
-          "title": "Comment nous utilisons vos informations",
-          "text": "Nous utilisons les informations que nous collectons pour fournir, maintenir et améliorer nos services, répondre à vos demandes et communiquer avec vous au sujet de notre site et de nos services."
-        },
-        "security": {
-          "title": "Sécurité des données",
-          "text": "Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles. Cependant, aucune méthode de transmission sur Internet n'est sûre à 100%, et nous ne pouvons garantir une sécurité absolue."
-        },
-        "thirdParty": {
-          "title": "Services tiers",
-          "text": "Notre site peut contenir des liens vers des sites ou services tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces tiers. Nous vous encourageons à consulter leurs politiques de confidentialité."
-        },
-        "cookies": {
-          "title": "Cookies",
-          "text": "Nous pouvons utiliser des cookies et des technologies de suivi similaires pour améliorer votre expérience sur notre site. Vous pouvez contrôler les paramètres des cookies via les préférences de votre navigateur."
-        },
-        "contact": {
-          "title": "Contactez-nous",
-          "text": "Si vous avez des questions sur cette politique de confidentialité, veuillez nous contacter à "
-        },
-        "changes": {
-          "title": "Modifications de cette politique",
-          "text": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page et en mettant à jour la date de « Dernière mise à jour »."
-        }
+      "contact": {
+        "title": "Contactez-nous",
+        "text": "Pour toute demande liée aux droits d'auteur, veuillez nous contacter à "
+      }
+    },
+    "PrivacyPolicy": {
+      "title": "Politique de Confidentialité",
+      "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
+      "intro": {
+        "title": "Introduction",
+        "text": "YAPYAP Game Guide Hub (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous visitez notre site."
       },
-      "TermsOfService": {
-        "title": "Conditions de Service",
-        "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
-        "agreement": {
-          "title": "Acceptation des conditions",
-          "text": "En accédant et en utilisant YAPYAP Game Guide Hub, vous acceptez d'être lié par ces conditions de service. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre site."
-        },
-        "use": {
-          "title": "Utilisation du site web",
-          "text": "Vous ne pouvez utiliser notre site qu'à des fins licites. Vous acceptez de ne pas utiliser le site d'une manière qui viole les lois ou réglementations applicables, ou qui pourrait endommager, désactiver ou nuire au site."
-        },
-        "intellectual": {
-          "title": "Propriété intellectuelle",
-          "text": "Tout le contenu de ce site web, y compris les textes, graphiques, logos et images, est la propriété de YAPYAP Game Guide Hub ou de ses fournisseurs de contenu et est protégé par les lois sur le droit d'auteur et autres lois sur la propriété intellectuelle. YAPYAP est une marque de ses propriétaires respectifs. Ce site n'est pas affilié ou approuvé par les développeurs ou éditeurs originaux du jeu."
-        },
-        "userContent": {
-          "title": "Contenu utilisateur",
-          "text": "Si vous soumettez du contenu à notre site, vous nous accordez une licence non exclusive, libre de redevance, pour utiliser, reproduire et distribuer ce contenu. Vous déclarez que vous avez le droit d'accorder une telle licence."
-        },
-        "disclaimer": {
-          "title": "Avis de non-responsabilité",
-          "text": "Les informations sur ce site sont fournies « en l'état » sans aucune garantie d'aucune sorte. Nous ne garantissons pas l'exactitude, l'exhaustivité ou l'utilité de toute information sur le site. Nous ne sommes pas responsables des erreurs ou omissions dans le contenu."
-        },
-        "liability": {
-          "title": "Limitation de responsabilité",
-          "text": "Dans toute la mesure permise par la loi, YAPYAP Game Guide Hub ne pourra être tenu responsable des dommages indirects, accessoires, spéciaux ou consécutifs découlant de ou en rapport avec votre utilisation du site."
-        },
-        "changes": {
-          "title": "Modifications des conditions",
-          "text": "Nous nous réservons le droit de modifier ces conditions de service à tout moment. Nous vous informerons de tout changement en publiant les nouvelles conditions de service sur cette page et en mettant à jour la date de « Dernière mise à jour »."
-        },
-        "contact": {
-          "title": "Contactez-nous",
-          "text": "Si vous avez des questions sur ces conditions de service, veuillez nous contacter à "
-        }
+      "collect": {
+        "title": "Informations que nous collectons",
+        "text": "Nous pouvons collecter des informations que vous nous fournissez directement, par exemple lorsque vous nous contactez ou interagissez avec notre site web. Cela peut inclure votre nom, votre adresse e-mail et tout message que vous nous envoyez."
+      },
+      "use": {
+        "title": "Comment nous utilisons vos informations",
+        "text": "Nous utilisons les informations que nous collectons pour fournir, maintenir et améliorer nos services, répondre à vos demandes et communiquer avec vous au sujet de notre site et de nos services."
+      },
+      "security": {
+        "title": "Sécurité des données",
+        "text": "Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles. Cependant, aucune méthode de transmission sur Internet n'est sûre à 100%, et nous ne pouvons garantir une sécurité absolue."
+      },
+      "thirdParty": {
+        "title": "Services tiers",
+        "text": "Notre site peut contenir des liens vers des sites ou services tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces tiers. Nous vous encourageons à consulter leurs politiques de confidentialité."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "text": "Nous pouvons utiliser des cookies et des technologies de suivi similaires pour améliorer votre expérience sur notre site. Vous pouvez contrôler les paramètres des cookies via les préférences de votre navigateur."
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "text": "Si vous avez des questions sur cette politique de confidentialité, veuillez nous contacter à "
+      },
+      "changes": {
+        "title": "Modifications de cette politique",
+        "text": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page et en mettant à jour la date de « Dernière mise à jour »."
+      }
+    },
+    "TermsOfService": {
+      "title": "Conditions de Service",
+      "lastUpdated": "Dernière mise à jour : 23 janvier 2026",
+      "agreement": {
+        "title": "Acceptation des conditions",
+        "text": "En accédant et en utilisant YAPYAP Game Guide Hub, vous acceptez d'être lié par ces conditions de service. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre site."
+      },
+      "use": {
+        "title": "Utilisation du site web",
+        "text": "Vous ne pouvez utiliser notre site qu'à des fins licites. Vous acceptez de ne pas utiliser le site d'une manière qui viole les lois ou réglementations applicables, ou qui pourrait endommager, désactiver ou nuire au site."
+      },
+      "intellectual": {
+        "title": "Propriété intellectuelle",
+        "text": "Tout le contenu de ce site web, y compris les textes, graphiques, logos et images, est la propriété de YAPYAP Game Guide Hub ou de ses fournisseurs de contenu et est protégé par les lois sur le droit d'auteur et autres lois sur la propriété intellectuelle. YAPYAP est une marque de ses propriétaires respectifs. Ce site n'est pas affilié ou approuvé par les développeurs ou éditeurs originaux du jeu."
+      },
+      "userContent": {
+        "title": "Contenu utilisateur",
+        "text": "Si vous soumettez du contenu à notre site, vous nous accordez une licence non exclusive, libre de redevance, pour utiliser, reproduire et distribuer ce contenu. Vous déclarez que vous avez le droit d'accorder une telle licence."
+      },
+      "disclaimer": {
+        "title": "Avis de non-responsabilité",
+        "text": "Les informations sur ce site sont fournies « en l'état » sans aucune garantie d'aucune sorte. Nous ne garantissons pas l'exactitude, l'exhaustivité ou l'utilité de toute information sur le site. Nous ne sommes pas responsables des erreurs ou omissions dans le contenu."
+      },
+      "liability": {
+        "title": "Limitation de responsabilité",
+        "text": "Dans toute la mesure permise par la loi, YAPYAP Game Guide Hub ne pourra être tenu responsable des dommages indirects, accessoires, spéciaux ou consécutifs découlant de ou en rapport avec votre utilisation du site."
+      },
+      "changes": {
+        "title": "Modifications des conditions",
+        "text": "Nous nous réservons le droit de modifier ces conditions de service à tout moment. Nous vous informerons de tout changement en publiant les nouvelles conditions de service sur cette page et en mettant à jour la date de « Dernière mise à jour »."
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "text": "Si vous avez des questions sur ces conditions de service, veuillez nous contacter à "
       }
     }
+
   }
 }

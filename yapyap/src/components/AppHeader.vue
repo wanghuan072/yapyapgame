@@ -3,35 +3,35 @@
     <div class="container">
       <div class="header-inner">
         <a :href="getLocalizedPath('/')" class="logo">
-          <img src="/images/logo.webp" alt="YAPYAP Game" class="brand-logo">
-          <span class="logo-title">YAPYAP Game</span>
+          <img src="/images/logo.webp" :alt="$t('Header.logoTitle')" class="brand-logo">
+          <span class="logo-title">{{ $t('Header.logoTitle') }}</span>
         </a>
 
-        <button class="menu-toggle" @click="toggleMenu" aria-label="Switch navigation">
+        <button class="menu-toggle" @click="toggleMenu" :aria-label="$t('Header.ariaMenu')">
           <span :class="{ open: isOpen }"></span>
           <span :class="{ open: isOpen }"></span>
           <span :class="{ open: isOpen }"></span>
         </button>
 
         <nav class="nav" :class="{ open: isOpen }">
-          <a :href="getLocalizedPath('/')" @click="closeMenu">Home</a>
-          <a :href="getLocalizedPath('/spells')" @click="closeMenu">Spells</a>
-          <a :href="getLocalizedPath('/spell-generator')" @click="closeMenu">Spell Generator</a>
+          <a :href="getLocalizedPath('/')" @click="closeMenu">{{ $t('Header.nav.home') }}</a>
+          <a :href="getLocalizedPath('/spells')" @click="closeMenu">{{ $t('Header.nav.spells') }}</a>
+          <a :href="getLocalizedPath('/spell-generator')" @click="closeMenu">{{ $t('Header.nav.spellGenerator') }}</a>
           <div class="nav-dropdown" :class="{ open: isDropdownOpen }">
-            <span class="nav-trigger" @click="toggleDropdown">Puzzles ▾</span>
+            <span class="nav-trigger" @click="toggleDropdown">{{ $t('Header.nav.puzzlesDropdown') }}</span>
             <div class="nav-dropdown-menu">
-              <a :href="getLocalizedPath('/puzzles/ball-puzzle')" @click="closeMenu">Ball Puzzle</a>
-              <a :href="getLocalizedPath('/puzzles/balance-puzzle')" @click="closeMenu">Balance Puzzle</a>
-              <a :href="getLocalizedPath('/puzzles/door-puzzle')" @click="closeMenu">Door Puzzle</a>
+              <a :href="getLocalizedPath('/puzzles/ball-puzzle')" @click="closeMenu">{{ $t('Header.nav.ballPuzzle') }}</a>
+              <a :href="getLocalizedPath('/puzzles/balance-puzzle')" @click="closeMenu">{{ $t('Header.nav.balancePuzzle') }}</a>
+              <a :href="getLocalizedPath('/puzzles/door-puzzle')" @click="closeMenu">{{ $t('Header.nav.doorPuzzle') }}</a>
             </div>
           </div>
-          <a :href="getLocalizedPath('/guides')" @click="closeMenu">Guides</a>
-          <a :href="getLocalizedPath('/wiki')" @click="closeMenu">Wiki</a>
+          <a :href="getLocalizedPath('/guides')" @click="closeMenu">{{ $t('Header.nav.guides') }}</a>
+          <a :href="getLocalizedPath('/wiki')" @click="closeMenu">{{ $t('Header.nav.wiki') }}</a>
 
           <!-- Language Switcher -->
           <div class="nav-dropdown lang-switcher" :class="{ open: isLangDropdownOpen }">
             <span class="nav-trigger" @click="toggleLangDropdown">
-              {{ availableLocales[locale] || 'Language' }} ▾
+              {{ availableLocales[locale] || $t('Header.nav.language') }} ▾
             </span>
             <div class="nav-dropdown-menu">
               <a 
@@ -66,7 +66,9 @@ const isLangDropdownOpen = ref(false)
 const availableLocales = {
   en: 'English',
   de: 'Deutsch',
-  fr: 'Français'
+  fr: 'Français',
+  zh: '中文',
+  ja: '日本語',
 }
 
 const toggleMenu = () => {

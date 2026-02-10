@@ -11,7 +11,7 @@ const seoConfig = {
 }
 
 // 支持的语言列表
-const supportedLocales = ['en', 'de', 'fr']
+const supportedLocales = ['en', 'de', 'fr', 'zh', 'ja']
 
 // 生成本地化路径
 function createLocalizedPath(path, locale = 'en') {
