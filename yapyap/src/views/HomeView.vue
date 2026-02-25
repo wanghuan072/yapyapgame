@@ -87,7 +87,30 @@
             </div>
           </div>
         </div>
+
+         <!-- PC横幅广告位1 -->
+        <aside style="width: 100%; padding: 20px 0; text-align: center; overflow: hidden;" v-if="!isMobile">
+  <ins class="eas6a97888e2" data-zoneid="5859056"></ins>
+</aside>
       </section>
+
+      <!-- 移动横幅广告1 -->
+      <aside style="width: 100%; padding: 20px 0; text-align: center; overflow: hidden;" v-if="isMobile">
+  <ins class="eas6a97888e10" data-zoneid="5859070"></ins>
+</aside>
+
+
+      <!-- PC粘性横幅广告2 -->
+          <aside style="width: 100%; padding: 20px 0; text-align: center; overflow: hidden;" v-if="!isMobile">
+  <ins class="eas6a97888e17" data-zoneid="5859058"></ins>
+</aside>
+
+<!-- PC左侧粘性广告1 -->
+<ins class="eas6a97888e17" data-zoneid="5859066" v-if="!isMobile"></ins>
+
+<!-- PC右侧粘性广告1 -->
+<ins class="eas6a97888e17" data-zoneid="5859068" v-if="!isMobile"></ins>
+
 
       <!-- Pain Points & Solutions -->
       <section id="pain-points" class="section">
@@ -217,6 +240,12 @@
           <div v-if="!loading && homeGuides.length > 0" class="guides-actions">
             <a :href="getLocalizedPath('/guides')" class="btn btn-ghost">{{ $t('HomePage.guides.viewAll') }}</a>
           </div>
+
+          <!-- PC横幅广告位2 -->
+          <aside style="width: 100%; padding: 20px 0; text-align: center; overflow: hidden;" v-if="!isMobile">
+  <ins class="eas6a97888e2" data-zoneid="5859060"></ins>
+</aside>
+
         </div>
       </section>
 
@@ -265,6 +294,11 @@
             </div>
           </div>
         </div>
+
+        <!-- 原生广告 -->
+          <aside style="width: 100%; padding: 20px 0; text-align: center; overflow: hidden;">
+  <ins class="eas6a97888e20" data-zoneid="5859064"></ins>
+</aside>
       </section>
 
       <!-- What is YAPYAP? (SEO) -->
@@ -302,6 +336,8 @@
             <img src="/images/about-img.webp" alt="YAPYAP Game" class="what-image" />
           </div>
         </div>
+
+         
       </section>
 
       <!-- Release Date / Countdown -->
@@ -445,6 +481,9 @@ import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useGuideData } from '../composables/useGuideData'
 import { useLocalizedPath } from '../composables/useLocalizedPath'
 
+import { useDeviceDetection } from '@/utils/useDeviceDetection.js'
+const { isMobile } = useDeviceDetection()
+
 const { guides, loading, loadData } = useGuideData()
 const { getLocalizedPath } = useLocalizedPath()
 
@@ -454,7 +493,28 @@ const homeGuides = computed(() => {
 
 const heroVideoLoaded = ref(false)
 
+// 广告联盟
+const adProvider = () => {
+  const script = document.createElement('script')
+    script.src = 'https://a.magsrv.com/ad-provider.js'
+    script.async = true
+    script.type = 'application/javascript'
+    document.head.appendChild(script)
+
+    script.onload = () => {
+        if (window.AdProvider) {
+            window.AdProvider.push({ "serve": {} })
+        }
+    }
+}
+
 onMounted(async () => {
+  // 广告联盟
+  setTimeout(() => {
+    adProvider()
+  }, 1000); // 延迟1秒加载广
+
+
   await loadData()
 })
 </script>
