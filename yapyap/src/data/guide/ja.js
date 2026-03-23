@@ -126,6 +126,75 @@ export const guides = [
     },
 
     {
+        id: 6,
+        title: "YAPYAP 協力プレイチェックリスト：音声呪文・チーム連携・キュー前の準備",
+        description:
+            "フレンドと YAPYAP を始める前に読む公式情報ベースのチェックリスト。Steam（Windows）版の協力ホラー、音声で唱える呪文、最大5人までのオンライン協力、マイクとアクセシビリティ設定、そして本サイトの呪文・パズル・Wiki への導線をまとめました。",
+        tags: ["yapyap", "協力プレイ", "マルチ", "音声呪文", "steam", "チェックリスト"],
+        publishDate: "2026-03-23",
+        imageUrl: "/images/blog/blog01.webp",
+        imageAlt: "YAPYAP で協力セッションの準備をするプレイヤー",
+        seo: {
+            title: "YAPYAP 協力プレイチェックリスト：音声呪文・マルチ・セッション前設定",
+            description:
+                "Steam 版 YAPYAP のパーティ向け：最大5人の協力、音声呪文、マイク設定とクリック詠唱のアクセシビリティ、パズル攻略と Wiki リソースへのリンク。",
+            keywords:
+                "YAPYAP 協力プレイ, YAPYAP マルチ, YAPYAP 音声呪文, YAPYAP Steam, YAPYAP パーティ, YAPYAP アクセシビリティ, YAPYAP 初心者 チェックリスト",
+        },
+        isHome: true,
+        addressBar: "yapyap-co-op-voice-spells-checklist",
+        detailsHtml: `<div class="container">
+    <p>
+      <strong>YAPYAP</strong> は <strong>Steam（Windows）</strong> の協力型ホラーゲームで、チームで敵の塔に潜入し、<strong>マイクに向かって唱える音声呪文</strong>で魔法を扱いながらパズルを解き、静かに生き残って脱出を目指します。ここでは公式の説明と本サイトの既存ガイドに沿った、<em>事実ベース</em>の事前チェックリストです。
+    </p>
+
+    <h2>1. パーティ全員で共有したい前提</h2>
+    <ul>
+      <li><strong>ジャンル：</strong> 協力・ステルス・パズルを含むマルチプレイホラーという公式の位置づけ。</li>
+      <li><strong>人数：</strong> オンライン協力は<strong>最大5人</strong>まで。</li>
+      <li><strong>核となる仕組み：</strong> 多くの呪文は<strong>マイクに呪文を唱える</strong>前提で、発音のクリアさが認識の安定に直結します。</li>
+    </ul>
+    <p>初めてゲームで音声入力を使う人がいれば、最初のマッチの前に音声確認の時間を少し多めに取るのがおすすめです。</p>
+
+    <h2>2. オーディオ・マイク・アクセシビリティ（初日の夜の前に）</h2>
+    <p>入力デバイスの取り違えや、声を出しにくいプレイヤーでトラブルが起きがちです。ゲーム側に代替手段があります。</p>
+    <ul>
+      <li><strong>マイク：</strong> オーディオ設定で、実際に使うマイクが<strong>入力デバイス</strong>として選ばれているか確認してください。</li>
+      <li><strong>アクセシビリティ：</strong> 音声認識が不安定な場合や静かに遊びたい場合は、<strong>マウスで呪文を選んで唱えさせる（クリックで詠唱）</strong>オプションを有効にできます。手順は <a href="/guides/yapyap-settings-guide">Yapyap 設定ガイド</a> を参照してください。</li>
+    </ul>
+    <p>発音の練習には、マッチ前に <a href="/spell-generator">スペルジェネレーター</a> と <a href="/spells">呪文一覧</a> をパーティで共有するとスムーズです。</p>
+
+    <h2>3. YAPYAP の設計に合わせた協力のコツ</h2>
+    <ul>
+      <li><strong>コール：</strong> 扉・音のリスク・パズルの手順を声に出すと、ステルスと連携がしやすくなります。</li>
+      <li><strong>チームの持久力：</strong> 公式の説明でも、<strong>仲間を助ける</strong>こと—倒れたプレイヤーを状況が許すときに戻すこと—が強調されています。</li>
+      <li><strong>目標：</strong> 契約形式のタスクが登場します。共有の目標として扱い、報酬をチームで狙いましょう（タスク確認の操作は <a href="/guides/yapyap-settings-guide">設定ガイド</a> のキー説明を参照）。</li>
+    </ul>
+
+    <h2>4. ブックマークしておきたいパズルと Wiki</h2>
+    <p>YAPYAP には複数タイプのパズルがあります。行き詰まったら本サイトの攻略へ：</p>
+    <ul>
+      <li><a href="/puzzles/ball-puzzle">ボールパズル攻略</a></li>
+      <li><a href="/puzzles/balance-puzzle">バランスパズル攻略</a></li>
+      <li><a href="/puzzles/door-puzzle">ドアパズル攻略</a></li>
+    </ul>
+    <p>装備と脅威の概要は、より難しい夜に向けて <a href="/wiki/wands">杖</a>・<a href="/wiki/bestiary">魔物図鑑</a>・<a href="/wiki/potions">ポーションとクラフト</a> の Wiki ハブを事前に共有すると便利です。</p>
+
+    <h2>5. すぐ使える最終確認</h2>
+    <ol>
+      <li>Steam で全員オンライン、ゲームは最新。人数は公式の協力上限内。</li>
+      <li>マイク確認済み、必要な人はクリック詠唱をオン。</li>
+      <li>呪文資料を共有し、現地で発音トラブルが出ないようにする。</li>
+      <li>パズルと Wiki のリンクをボイスチャットや Discord に貼っておく。</li>
+    </ol>
+
+    <p>
+      さらに操作とビルドを深掘りするなら、<a href="/guides/yapyap-full-version-starter-guide">製品版スターターガイド</a> と <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">基本操作・設定ガイド</a> のあと、<a href="/guides/yapyap-Night-1-Survival-Guide">初夜サバイバルガイド</a> へ進むとよいでしょう。
+    </p>
+  </div>`,
+    },
+
+    {
         id: 4,
         title: "Yapyap 製品版スターターガイド：無限飛行、稼ぎ、戦闘のコツ",
         description: "製品版 Yapyap をマスターするためのスターターガイド。無限飛行を可能にする「3本杖システム」、ロビーでのゴールド稼ぎ場所、ノーダメージ着地術、そして戦闘戦略を学びましょう。",

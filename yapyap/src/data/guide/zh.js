@@ -126,6 +126,75 @@ export const guides = [
     },
 
     {
+        id: 6,
+        title: "YAPYAP 联机合作清单：语音咒语、团队分工与开黑前资源",
+        description:
+            "准备和好友一起开黑？本文根据官方设定整理：Steam 版多人恐怖合作、语音施法、五人联机上限、无障碍施法选项，以及本站咒语/谜题/维基入口，帮助全队开局前对齐预期。",
+        tags: ["yapyap", "联机", "多人", "语音施法", "steam", "清单"],
+        publishDate: "2026-03-23",
+        imageUrl: "/images/blog/blog01.webp",
+        imageAlt: "YAPYAP 玩家组队准备联机，语音施法与协作",
+        seo: {
+            title: "YAPYAP 联机清单：语音咒语、多人合作与开黑前设置",
+            description:
+                "为 Steam 版 YAPYAP 组队开黑做准备：最多五人合作、语音激活咒语、麦克风与无障碍点击施法设置，以及咒语表、谜题攻略与维基资源链接。",
+            keywords:
+                "YAPYAP 联机, YAPYAP 多人, YAPYAP 语音咒语, YAPYAP Steam, YAPYAP 组队攻略, YAPYAP 无障碍施法, YAPYAP 新手清单",
+        },
+        isHome: true,
+        addressBar: "yapyap-co-op-voice-spells-checklist",
+        detailsHtml: `<div class="container">
+    <p>
+      <strong>YAPYAP</strong> 是 <strong>Steam（Windows）</strong> 上的多人恐怖游戏：小队潜入敌对高塔，使用<strong>语音激活的咒语施法</strong>，解谜并尽量安静求生。本文是一份<strong>有据可查</strong>的开黑前清单，减少菜单里磨蹭，把沟通留给战术。
+    </p>
+
+    <h2>1. 全队需要达成的共识</h2>
+    <ul>
+      <li><strong>类型定位：</strong> 多人恐怖、合作、潜行与解谜相结合的官方体验描述。</li>
+      <li><strong>队伍规模：</strong> 在线合作模式支持<strong>最多五名玩家</strong>同场。</li>
+      <li><strong>核心机制：</strong> 许多咒语需要<strong>对着麦克风念出咒语</strong>；发音是否清晰会直接影响识别稳定性。</li>
+    </ul>
+    <p>若有人从未在游戏里用过语音输入，建议在第一场开始前多留两分钟做音频检测。</p>
+
+    <h2>2. 音频、麦克风与无障碍（第一晚之前务必处理）</h2>
+    <p>常见问题包括选错输入设备，或有人不方便大声说话。游戏提供无障碍选项，让施法仍然可行。</p>
+    <ul>
+      <li><strong>麦克风：</strong> 在音频设置中确认已选择正确的<strong>输入设备</strong>，确保游戏监听的是你实际在用的麦克风。</li>
+      <li><strong>无障碍：</strong> 若语音识别不稳定，或需要安静环境游戏，可开启用<strong>鼠标选择咒语（点击施法）</strong>的选项，详见本站 <a href="/guides/yapyap-settings-guide">Yapyap 设置指南</a>。</li>
+    </ul>
+    <p>建议在排队前把 <a href="/spell-generator">咒语生成器</a> 与 <a href="/spells">完整咒语列表</a> 发给队友，先练发音再进局。</p>
+
+    <h2>3. 与官方设计相契合的合作习惯</h2>
+    <ul>
+      <li><strong>沟通：</strong> 门、声响风险与解谜步骤要及时报点——潜行与配合是体验的一部分。</li>
+      <li><strong>团队韧性：</strong> 游戏强调<strong>互相支援</strong>，包括在条件允许时让倒下的队友重新加入战斗。</li>
+      <li><strong>目标：</strong> 世界中会出现契约式任务；当作全队共同目标以获取奖励（查看任务的操作可参考 <a href="/guides/yapyap-settings-guide">设置指南</a> 中的按键说明）。</li>
+    </ul>
+
+    <h2>4. 建议收藏的谜题与维基页面</h2>
+    <p>YAPYAP 包含多种谜题。若全队卡住，可直接打开本站攻略：</p>
+    <ul>
+      <li><a href="/puzzles/ball-puzzle">球类谜题攻略</a></li>
+      <li><a href="/puzzles/balance-puzzle">平衡谜题攻略</a></li>
+      <li><a href="/puzzles/door-puzzle">门谜题攻略</a></li>
+    </ul>
+    <p>配装与威胁信息可提前分享 <a href="/wiki/wands">魔杖</a>、<a href="/wiki/bestiary">怪物图鉴</a> 与 <a href="/wiki/potions">药水与合成</a> 维基汇总页。</p>
+
+    <h2>5. 起飞前速查</h2>
+    <ol>
+      <li>全员 Steam 在线、游戏已更新，人数在官方合作上限内。</li>
+      <li>麦克风已测通，或已为需要的玩家启用无障碍点击施法。</li>
+      <li>咒语资料已分享，避免临场发音问题拖垮整局。</li>
+      <li>谜题与维基链接已备好（语音或 Discord 里一键可开）。</li>
+    </ol>
+
+    <p>
+      想继续深入机制？先看 <a href="/guides/yapyap-full-version-starter-guide">正式版新手指南</a> 与 <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">必备操作与设置</a>，再按路线阅读 <a href="/guides/yapyap-Night-1-Survival-Guide">第一夜生存指南</a>。
+    </p>
+  </div>`,
+    },
+
+    {
         id: 4,
         title: "Yapyap 正式版新手指南：无限飞行、刷钱与战斗技巧",
         description: "通过这份新手指南掌握 Yapyap 正式版。学习用于无限飞行的‘三杖系统’、大厅金币刷钱位置、无伤落地技巧以及战斗策略。",

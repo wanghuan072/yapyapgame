@@ -126,6 +126,72 @@ export const guides = [
   },
 
   {
+    "id": 6,
+    "title": "YAPYAP Koop-Checkliste: Spruchzauber, Teamplay & Vorbereitung vor der Lobby",
+    "description": "Du planst eine YAPYAP-Session mit Freunden? Diese Checkliste fasst die offiziellen Grundlagen zusammen: Steam (Windows), Koop-Horror, sprachaktivierte Zauber, bis zu fünf Spieler, Mikrofon- und Barrierefreiheitsoptionen sowie die wichtigsten Ressourcen auf dieser Website.",
+    "tags": ["yapyap", "koop", "multiplayer", "spruchzauber", "steam", "checkliste"],
+    "publishDate": "2026-03-23",
+    "imageUrl": "/images/blog/blog01.webp",
+    "imageAlt": "YAPYAP-Spieler bereiten eine Koop-Session mit Spruchzauber vor",
+    "seo": {
+      "title": "YAPYAP Koop-Checkliste: Spruchzauber, Multiplayer & Setup vor dem Start",
+      "description": "Steam-Teamplay in YAPYAP vorbereiten: Koop-Horror mit Sprachzaubern, bis zu fünf Spieler, Mikro-Einstellungen, Klick-Zaubern per Barrierefreiheit und Links zu Zauberliste, Rätseln und Wiki.",
+      "keywords": "YAPYAP Koop, YAPYAP Multiplayer, YAPYAP Spruchzauber, YAPYAP Steam, YAPYAP Team Guide, YAPYAP Barrierefreiheit Zauber, YAPYAP Checkliste Anfänger"
+    },
+    "isHome": true,
+    "addressBar": "yapyap-co-op-voice-spells-checklist",
+    "detailsHtml": `<div class="container">
+    <p>
+      <strong>YAPYAP</strong> ist ein <strong>Multiplayer-Horrorspiel auf Steam (Windows)</strong>, in dem Teams einen gegnerischen Turm infiltrieren, <strong>sprachaktivierte Zauber</strong> wirken, Rätsel lösen und versuchen zu entkommen – möglichst leise. Dieser Text ist eine <em>sachliche</em> Checkliste vor der Session, damit ihr weniger Zeit in Menüs und mehr für Absprachen habt.
+    </p>
+
+    <h2>1. Was die Gruppe gemeinsam wissen sollte</h2>
+    <ul>
+      <li><strong>Genre:</strong> Laut offizieller Einordnung Koop-Horror mit Stealth und Rätseln.</li>
+      <li><strong>Teamgröße:</strong> Online-Koop mit <strong>bis zu fünf Spielern</strong>.</li>
+      <li><strong>Kernmechanik:</strong> Viele Zauber erwarten, dass ihr <strong>Zaubersprüche ins Mikrofon sprecht</strong>; klare Aussprache hilft der Erkennung.</li>
+    </ul>
+    <p>Wenn jemand noch nie Spracheingabe in einem Spiel genutzt hat, plant vor dem ersten Match ein paar Minuten für Audio-Tests ein.</p>
+
+    <h2>2. Audio, Mikrofon und Barrierefreiheit (vor der ersten Nacht)</h2>
+    <p>Häufige Probleme sind falsche Eingabegeräte oder Spieler, die lieber nicht laut sprechen. Das Spiel bietet Alternativen.</p>
+    <ul>
+      <li><strong>Mikrofon:</strong> Stellt im Audio-Menü sicher, dass das richtige <strong>Eingabegerät</strong> gewählt ist.</li>
+      <li><strong>Barrierefreiheit:</strong> Wenn die Spracherkennung zickt – oder ihr leise spielen müsst – aktiviert die Option zum <strong>Auswählen von Zaubern per Mausklick (Klick-Zaubern)</strong>. Details im <a href="/guides/yapyap-settings-guide">Yapyap-Einstellungs-Guide</a>.</li>
+    </ul>
+    <p>Schickt euch vor dem Match den <a href="/spell-generator">Spruch-Generator</a> und die <a href="/spells">vollständige Zauberliste</a> dieser Website, um Aussprache zu üben.</p>
+
+    <h2>3. Teamgewohnheiten, die zum Design von YAPYAP passen</h2>
+    <ul>
+      <li><strong>Kommunikation:</strong> Ruft Türen, Lärmrisiken und Rätselschritte aus – Stealth und Koordination gehören dazu.</li>
+      <li><strong>Teamfähigkeit:</strong> Offiziell liegt der Fokus darauf, <strong>einander zu helfen</strong> – etwa gefallene Spieler wieder ins Spiel zu bringen, wenn es die Lage erlaubt.</li>
+      <li><strong>Ziele:</strong> Vertragsartige Aufgaben erscheinen in der Welt; nutzt sie als gemeinsame Ziele (Steuerung zum Lesen der Aufgaben siehe <a href="/guides/yapyap-settings-guide">Einstellungs-Guide</a>).</li>
+    </ul>
+
+    <h2>4. Lesezeichen: Rätsel- und Wiki-Seiten</h2>
+    <p>YAPYAP enthält mehrere Rätseltypen. Wenn ihr stecken bleibt, nutzt die Walkthroughs hier:</p>
+    <ul>
+      <li><a href="/puzzles/ball-puzzle">Ball-Rätsel-Guide</a></li>
+      <li><a href="/puzzles/balance-puzzle">Balance-Rätsel-Guide</a></li>
+      <li><a href="/puzzles/door-puzzle">Tür-Rätsel-Guide</a></li>
+    </ul>
+    <p>Für Ausrüstung und Gegner teilt vor härteren Nächten die Wiki-Übersichten zu <a href="/wiki/wands">Stäben</a>, <a href="/wiki/bestiary">Bestiarium</a> und <a href="/wiki/potions">Tränke &amp; Crafting</a>.</p>
+
+    <h2>5. Kurz-Check vor dem Start</h2>
+    <ol>
+      <li>Alle auf Steam, Spiel aktualisiert, Spielerzahl innerhalb des Koop-Limits.</li>
+      <li>Mikro getestet – oder Klick-Zaubern aktiviert, wo nötig.</li>
+      <li>Zauber-Ressourcen geteilt, damit Überraschungen bei der Aussprache keinen Run kosten.</li>
+      <li>Rätsel- und Wiki-Links in Voice-Chat oder Discord bereitliegen.</li>
+    </ol>
+
+    <p>
+      Tiefer einsteigen? Startet mit dem <a href="/guides/yapyap-full-version-starter-guide">Vollversion-Starter-Guide</a> und den <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">wichtigsten Steuerungen</a>, danach z. B. dem <a href="/guides/yapyap-Night-1-Survival-Guide">Night-1-Survival-Guide</a>.
+    </p>
+  </div>`
+  },
+
+  {
     "id": 4,
     "title": "Yapyap Vollversion Starter-Guide: Unendlich Fliegen, Farming & Kampf-Tipps",
     "description": "Meistere die Yapyap Vollversion mit diesem Starter-Guide. Lerne das Drei-Stäbe-System für unendliches Fliegen, Gold-Farming-Spots in der Lobby, Tricks für schadenfreie Landungen und Kampfstrategien.",

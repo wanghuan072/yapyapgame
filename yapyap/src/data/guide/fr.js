@@ -90,6 +90,71 @@ export const guides = [
 </div>`,
   },
   {
+    "id": 6,
+    "title": "YAPYAP coop : liste de contrôle (sorts vocaux, équipe et ressources avant la partie)",
+    "description": "Vous lancez une session YAPYAP entre amis ? Cette checklist s'appuie sur les infos officielles : jeu d'horreur coop sur Steam (Windows), sorts activés par la voix, jusqu'à cinq joueurs, options d'accessibilité pour lancer les sorts, et liens vers nos guides de sorts, énigmes et wiki.",
+    "tags": ["yapyap", "coop", "multijoueur", "sorts vocaux", "steam", "guide"],
+    "publishDate": "2026-03-23",
+    "imageUrl": "/images/blog/blog01.webp",
+    "imageAlt": "Joueurs YAPYAP préparant une session coopérative",
+    "seo": {
+      "title": "YAPYAP coop : sorts vocaux, multijoueur et réglages (liste de contrôle)",
+      "description": "Préparez votre équipe YAPYAP sur Steam : horreur coopérative, sorts par la voix, jusqu'à cinq joueurs, micro et option de lancement au clic, plus liens vers liste de sorts, énigmes et wiki.",
+      "keywords": "YAPYAP coop, YAPYAP multijoueur, YAPYAP sorts vocaux, YAPYAP Steam, YAPYAP guide équipe, YAPYAP accessibilité sorts, YAPYAP liste de contrôle débutant"
+    },
+    "isHome": true,
+    "addressBar": "yapyap-co-op-voice-spells-checklist",
+    "detailsHtml": `<div class="container">
+    <p>
+      <strong>YAPYAP</strong> est un jeu d'<strong>horreur multijoueur sur Steam (Windows)</strong> où une équipe infiltre une tour rivale, lance des <strong>sorts activés par la voix</strong>, résout des énigmes et tente de s'échapper en restant discret. Voici une checklist <em>factuelle</em> (positionnement officiel + guides déjà publiés ici) pour gagner du temps avant de lancer une partie.
+    </p>
+
+    <h2>1. Ce que toute l'équipe doit avoir en tête</h2>
+    <ul>
+      <li><strong>Genre :</strong> horreur coopérative mêlant furtivité et énigmes, telle que présentée officiellement.</li>
+      <li><strong>Taille du groupe :</strong> le coop en ligne prend en charge <strong>jusqu'à cinq joueurs</strong>.</li>
+      <li><strong>Mécanique centrale :</strong> de nombreux sorts supposent de <strong>prononcer les incantations au micro</strong> ; une prononciation claire aide la reconnaissance.</li>
+    </ul>
+    <p>Si quelqu'un n'a jamais utilisé la voix dans un jeu, prévoyez deux minutes de test audio avant la première manche.</p>
+
+    <h2>2. Audio, micro et accessibilité (avant la première nuit)</h2>
+    <p>Les soucis fréquents viennent d'un mauvais périphérique d'entrée ou du besoin de jouer sans parler fort. Le jeu propose des options pour garder des sorts utilisables.</p>
+    <ul>
+      <li><strong>Microphone :</strong> vérifiez dans les réglages audio que le bon <strong>périphérique d'entrée</strong> est sélectionné.</li>
+      <li><strong>Accessibilité :</strong> si la reconnaissance vocale est capricieuse — ou pour jouer en silence — activez l'option qui permet de <strong>sélectionner un sort à la souris (lancer au clic)</strong>. Détails dans notre <a href="/guides/yapyap-settings-guide">guide des réglages Yapyap</a>.</li>
+    </ul>
+    <p>Avant la file d'attente, partagez le <a href="/spell-generator">générateur de sorts</a> et la <a href="/spells">liste complète des sorts</a> pour vous entraîner à la prononciation.</p>
+
+    <h2>3. Habitudes d'équipe alignées sur la conception du jeu</h2>
+    <ul>
+      <li><strong>Communication :</strong> annoncez portes, risques de bruit et étapes d'énigme — la furtivité et la coordination font partie de l'expérience.</li>
+      <li><strong>Résilience :</strong> le jeu met l'accent sur le fait de <strong>s'entraider</strong>, y compris pour faire revenir au combat des coéquipiers à terre lorsque la situation le permet.</li>
+      <li><strong>Objectifs :</strong> des tâches façon contrat apparaissent dans le monde ; traitez-les comme des buts d'équipe (voir les touches de consultation dans le <a href="/guides/yapyap-settings-guide">guide des réglages</a>).</li>
+    </ul>
+
+    <h2>4. Pages énigmes et wiki à mettre en favoris</h2>
+    <p>YAPYAP comporte plusieurs types d'énigmes. Si vous bloquez, ouvrez nos guides sur place :</p>
+    <ul>
+      <li><a href="/puzzles/ball-puzzle">Guide énigme boule</a></li>
+      <li><a href="/puzzles/balance-puzzle">Guide énigme balance</a></li>
+      <li><a href="/puzzles/door-puzzle">Guide énigme porte</a></li>
+    </ul>
+    <p>Pour équipements et menaces, partagez les hubs wiki <a href="/wiki/wands">baguettes</a>, <a href="/wiki/bestiary">bestiaire</a> et <a href="/wiki/potions">potions &amp; artisanat</a> avant les nuits les plus dures.</p>
+
+    <h2>5. Résumé express avant lancement</h2>
+    <ol>
+      <li>Tout le monde sur Steam, jeu à jour, effectif dans la limite coop officielle.</li>
+      <li>Micro testé — ou lancement au clic activé pour qui en a besoin.</li>
+      <li>Ressources sorts partagées pour éviter les mauvaises surprises de prononciation.</li>
+      <li>Liens énigmes + wiki prêts dans le vocal ou Discord.</li>
+    </ol>
+
+    <p>
+      Pour aller plus loin : <a href="/guides/yapyap-full-version-starter-guide">guide de démarrage version complète</a>, <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">commandes essentielles</a>, puis par exemple <a href="/guides/yapyap-Night-1-Survival-Guide">survie nuit 1</a>.
+    </p>
+  </div>`
+  },
+  {
     "id": 4,
     "title": "Guide du débutant Yapyap : Vol infini, Farming & Combat",
     "description": "Maîtrisez la version complète de Yapyap. Apprenez le système des trois baguettes pour le vol infini, les zones de farming d'or dans le lobby et les astuces de combat.",

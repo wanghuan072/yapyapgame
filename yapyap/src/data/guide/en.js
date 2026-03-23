@@ -126,6 +126,75 @@ export const guides = [
   },
 
   {
+    id: 6,
+    title: "YAPYAP Co-op Checklist: Voice Spells, Team Play & Resources Before You Queue",
+    description:
+      "Planning a YAPYAP session with friends? This checklist covers what the game is (Steam, co-op horror, voice spells), party size, accessibility options for casting, and the on-site guides to open before you play—so everyone starts on the same page.",
+    tags: ["yapyap", "co-op", "multiplayer", "voice spells", "steam", "checklist"],
+    publishDate: "2026-03-23",
+    imageUrl: "/images/blog/blog01.webp",
+    imageAlt: "YAPYAP players preparing for a co-op session with spells and teamwork",
+    seo: {
+      title: "YAPYAP Co-op Checklist: Voice Spells, Multiplayer & Pre-Session Setup",
+      description:
+        "Get your squad ready for YAPYAP on Steam: co-op horror with voice-activated spells, up to five players, and clear steps for mic setup, accessibility casting, puzzles, and wiki resources.",
+      keywords:
+        "YAPYAP co-op, YAPYAP multiplayer, YAPYAP voice spells, YAPYAP Steam, YAPYAP team guide, YAPYAP accessibility spells, YAPYAP beginner checklist",
+    },
+    isHome: true,
+    addressBar: "yapyap-co-op-voice-spells-checklist",
+    detailsHtml: `<div class="container">
+    <p>
+      <strong>YAPYAP</strong> is a multiplayer horror game on <strong>Steam (Windows)</strong> where teams infiltrate a rival tower, use <strong>voice-activated spellcasting</strong>, solve puzzles, and try to escape while staying quiet enough to survive. This article is a <em>fact-based</em> pre-session checklist so your group wastes less time in menus and more time coordinating.
+    </p>
+
+    <h2>1. What you are agreeing to as a group</h2>
+    <ul>
+      <li><strong>Genre:</strong> Multiplayer horror with co-op chaos, stealth, and puzzle solving—official positioning from the developers.</li>
+      <li><strong>Team size:</strong> Online co-op supports <strong>up to five players</strong> in one session.</li>
+      <li><strong>Signature mechanic:</strong> Many spells expect you to <strong>speak incantations into a microphone</strong>; pronunciation matters for consistency.</li>
+    </ul>
+    <p>If someone in the party has never used voice input in a game, schedule two extra minutes before the first match for audio checks.</p>
+
+    <h2>2. Audio, microphone, and accessibility (do this before the first night)</h2>
+    <p>Common pain points are wrong input devices or players who prefer not to speak aloud. The game provides accessibility options so casting stays viable.</p>
+    <ul>
+      <li><strong>Microphone:</strong> Confirm the correct <strong>input device</strong> is selected in game audio settings so the PC is listening to the mic you think it is.</li>
+      <li><strong>Accessibility:</strong> If voice recognition is unreliable—or you need to play quietly—enable the option that lets you <strong>select a spell with the mouse (click to cast)</strong> instead of speaking. This is documented in our <a href="/guides/yapyap-settings-guide">Yapyap settings guide</a>.</li>
+    </ul>
+    <p>For pronunciation practice, send teammates to the <a href="/spell-generator">Spell Generator</a> and the <a href="/spells">full spells list</a> on this site before you queue.</p>
+
+    <h2>3. Co-op habits that match how YAPYAP is designed</h2>
+    <ul>
+      <li><strong>Communication:</strong> Call out doors, noise risks, and puzzle steps—stealth and coordination are part of the experience.</li>
+      <li><strong>Team resilience:</strong> The game is built around <strong>helping each other</strong>, including getting fallen players back into the fight when the situation allows.</li>
+      <li><strong>Objectives:</strong> Contract-style tasks appear in the world; use them as shared goals so the squad earns rewards together (see controls for reviewing tasks in our <a href="/guides/yapyap-settings-guide">settings guide</a>).</li>
+    </ul>
+
+    <h2>4. Puzzles and wiki pages worth bookmarking</h2>
+    <p>YAPYAP includes several puzzle types. If your group gets stuck, these walkthroughs stay on-site and search-friendly:</p>
+    <ul>
+      <li><a href="/puzzles/ball-puzzle">Ball puzzle guide</a></li>
+      <li><a href="/puzzles/balance-puzzle">Balance puzzle guide</a></li>
+      <li><a href="/puzzles/door-puzzle">Door puzzle guide</a></li>
+    </ul>
+    <p>For loadouts and threats, share the <a href="/wiki/wands">Wands</a>, <a href="/wiki/bestiary">Bestiary</a>, and <a href="/wiki/potions">Potions &amp; crafting</a> wiki hubs before harder nights.</p>
+
+    <h2>5. Quick pre-flight summary</h2>
+    <ol>
+      <li>Everyone on Steam, game updated, session size within the supported co-op limit.</li>
+      <li>Mic tested—or accessibility casting enabled where needed.</li>
+      <li>Spell resources shared so pronunciation surprises do not wipe a run.</li>
+      <li>Puzzle and wiki links ready in voice chat or Discord.</li>
+    </ol>
+
+    <p>
+      Want a deeper mechanical primer next? Start with <a href="/guides/yapyap-full-version-starter-guide">the full-version starter guide</a> and <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">essential controls</a>, then dive into night-specific routes such as <a href="/guides/yapyap-Night-1-Survival-Guide">Night 1 survival</a>.
+    </p>
+  </div>`,
+  },
+
+  {
     id: 4,
     title: "Yapyap Full Version Starter Guide: Infinite Flight, Farming & Combat Tips",
     description: "Master the Yapyap full version with this starter guide. Learn the Three-Wand System for infinite flight, lobby gold farming locations, no-damage landing tricks, and combat strategies.",
