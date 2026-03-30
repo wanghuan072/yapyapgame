@@ -195,6 +195,79 @@ export const guides = [
     },
 
     {
+        id: 7,
+        title: "我的 YAPYAP 第一晚：新玩家视角的联机开荒方案（少剧透）",
+        description:
+            "从新玩家角度出发的 YAPYAP 开荒方案：如何分工沟通、如何对待语音咒语（含点击施法兜底）、以及开局前该打开哪些咒语/谜题/Wiki 页面，让第一晚不再手忙脚乱。",
+        tags: ["yapyap", "新手", "联机", "语音施法", "开荒", "第一晚"],
+        publishDate: "2026-03-23",
+        imageUrl: "/images/blog/blog02.webp",
+        imageAlt: "YAPYAP 小队准备开始第一晚联机开荒",
+        seo: {
+            title: "我的 YAPYAP 第一晚：新玩家联机开荒方案（语音咒语、分工、资源）",
+            description:
+                "一份真实、少剧透的新手联机开荒方案：语音咒语的预期与练习、点击施法兜底、简单分工与关键站内链接，帮助你在 Steam 版 YAPYAP 的第一晚稳住节奏。",
+            keywords:
+                "YAPYAP 第一晚, YAPYAP 新手, YAPYAP 联机开荒, YAPYAP 语音咒语, YAPYAP 点击施法, YAPYAP 解谜攻略, YAPYAP Wiki",
+        },
+        isHome: true,
+        addressBar: "my-first-night-in-yapyap-new-player-coop-plan",
+        detailsHtml: `<div class="container">
+    <p>
+      这篇指南从<strong>新玩家</strong>视角出发：不是速通路线，也不是“秘技合集”，而是一套能让第一次和朋友开黑时更从容的实用流程。
+      本文只使用公开且一致的事实：<strong>YAPYAP</strong> 是 <strong>Steam（Windows）</strong> 上的多人恐怖合作游戏，特色是<strong>语音激活的咒语施法</strong>，并包含潜行与谜题要素。
+    </p>
+
+    <h2>1. 排队前 60 秒：先把预期对齐</h2>
+    <ul>
+      <li><strong>语音聊天可以热闹，但游戏里要谨慎：</strong>潜行压力存在，风险要提前报。</li>
+      <li><strong>不要默认语音施法“立刻就好用”：</strong>发音与输入设备选择可能会影响识别。</li>
+      <li><strong>少剧透：</strong>卡关时用攻略“点到为止”，留一点自己解谜的乐趣。</li>
+    </ul>
+
+    <h2>2. 语音咒语不焦虑：练习 + 兜底</h2>
+    <p>
+      这款游戏的标志性玩法之一，是很多咒语需要<strong>对着麦克风念出咒语</strong>。如果你们喜欢这种沉浸感，建议开局前先练两分钟：
+      打开 <a href="/spell-generator">咒语生成器</a> 和 <a href="/spells">完整咒语列表</a>。
+    </p>
+    <p>
+      如果语音识别不稳定（或需要安静环境），我会直接开启<strong>点击施法</strong>的无障碍方案作为兜底。
+      具体开关与相关按键说明在 <a href="/guides/yapyap-settings-guide">Yapyap 设置指南</a> 里已经写清楚了。
+    </p>
+
+    <h2>3. 新手联机最有效的三种轻量分工</h2>
+    <p>第一晚我倾向于“轻分工”，目的是减少争论与混乱，而不是把游戏玩成项目管理。</p>
+    <ul>
+      <li><strong>报点位（Caller）：</strong>盯门、盯声响风险，明确喊“撤”“集合”“重来”。</li>
+      <li><strong>解谜主驾（Puzzle Driver）：</strong>遇到需要互动的谜题时带队推进，安排两个人配合。</li>
+      <li><strong>资料员（Wiki Runner）：</strong>开着维基页，随用随查，不背答案，只补常识。</li>
+    </ul>
+    <p>人少就合并角色；人多就让一个人统一做决策，其余人跟随执行即可。</p>
+
+    <h2>4. 我会在第二屏提前打开的页面</h2>
+    <ul>
+      <li><strong>咒语练习：</strong><a href="/spell-generator">咒语生成器</a>、<a href="/spells">咒语列表</a></li>
+      <li><strong>谜题入口：</strong><a href="/puzzles/ball-puzzle">球类谜题</a>、<a href="/puzzles/balance-puzzle">平衡谜题</a>、<a href="/puzzles/door-puzzle">门谜题</a></li>
+      <li><strong>Wiki 汇总：</strong><a href="/wiki/wands">魔杖</a>、<a href="/wiki/potions">药水</a>、<a href="/wiki/bestiary">怪物图鉴</a></li>
+    </ul>
+    <p>这样遇到“这是什么/怎么用”时能快速对齐，不至于在语音里空耗。</p>
+
+    <h2>5. 第一晚的“稳态循环”</h2>
+    <ol>
+      <li><strong>先小规模试错：</strong>每个人确认自己的施法方式（语音或点击）都能正常触发。</li>
+      <li><strong>不确定就抱团：</strong>没把握时一起移动，确有必要再分开。</li>
+      <li><strong>攻略只用一小步：</strong>卡在物件谜题时，打开对应页面，先只看“下一步”，回到游戏再试。</li>
+      <li><strong>沟通乱了就重置：</strong>10 秒重新分工，比硬扛 5 分钟更省命。</li>
+    </ol>
+
+    <p>
+      想更系统地入门机制？可以继续看 <a href="/guides/yapyap-full-version-starter-guide">正式版新手指南</a> 与
+      <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">必备操作与设置</a>。
+    </p>
+  </div>`,
+    },
+
+    {
         id: 4,
         title: "Yapyap 正式版新手指南：无限飞行、刷钱与战斗技巧",
         description: "通过这份新手指南掌握 Yapyap 正式版。学习用于无限飞行的‘三杖系统’、大厅金币刷钱位置、无伤落地技巧以及战斗策略。",

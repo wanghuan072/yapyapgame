@@ -154,6 +154,75 @@ export const guides = [
     </p>
   </div>`
   },
+
+  {
+    "id": 7,
+    "title": "Ma première nuit sur YAPYAP : plan coop débutant (sans spoilers)",
+    "description": "Un plan coop réaliste vu côté joueur débutant : attentes sur les sorts vocaux, solution de secours « lancer au clic », rôles simples et pages à ouvrir (sorts, énigmes, wiki) pour rendre la première nuit moins chaotique.",
+    "tags": ["yapyap", "débutant", "coop", "sorts vocaux", "première nuit", "plan"],
+    "publishDate": "2026-03-23",
+    "imageUrl": "/images/blog/blog02.webp",
+    "imageAlt": "Équipe YAPYAP se préparant pour une première nuit en coop",
+    "seo": {
+      "title": "Ma première nuit sur YAPYAP : plan coop débutant (sorts vocaux, rôles, liens)",
+      "description": "Plan sans spoilers pour une première session coop YAPYAP sur Steam : sorts vocaux, lancer au clic en alternative, rôles d'équipe et liens utiles à ouvrir avant de lancer une partie.",
+      "keywords": "YAPYAP première nuit, YAPYAP débutant, YAPYAP plan coop, YAPYAP sorts vocaux, YAPYAP lancer au clic, YAPYAP énigmes, YAPYAP wiki"
+    },
+    "isHome": true,
+    "addressBar": "my-first-night-in-yapyap-new-player-coop-plan",
+    "detailsHtml": `<div class="container">
+    <p>
+      Ce guide est volontairement écrit du point de vue d'un <strong>joueur débutant</strong> : pas de route de speedrun, pas de liste d'exploits, juste une façon simple d'éviter que votre première soirée entre amis se transforme en panique et en discussions confuses.
+      On reste sur des faits publics : <strong>YAPYAP</strong> est un jeu d'<strong>horreur multijoueur coop sur Steam (Windows)</strong>, avec des <strong>sorts activés par la voix</strong>, de la furtivité et des moments d'énigmes.
+    </p>
+
+    <h2>1. L'accord de 60 secondes avant la file</h2>
+    <ul>
+      <li><strong>On peut parler en vocal, mais on reste prudent en jeu :</strong> on annonce les risques tôt.</li>
+      <li><strong>On n'assume pas que les sorts vocaux marchent parfaitement :</strong> micro, périphérique d'entrée et prononciation peuvent poser souci.</li>
+      <li><strong>Sans spoilers :</strong> si on consulte un guide, on lit seulement l'étape suivante.</li>
+    </ul>
+
+    <h2>2. Sorts vocaux sans stress (micro + alternative)</h2>
+    <p>
+      Une mécanique signature, c'est de <strong>prononcer des incantations au micro</strong>. Si vous aimez ça, entraînez-vous deux minutes avant de lancer :
+      <a href="/spell-generator">générateur de sorts</a> et <a href="/spells">liste des sorts</a>.
+    </p>
+    <p>
+      Si la reconnaissance est instable (ou si vous devez jouer en silence), activez l'option d'accessibilité pour <strong>lancer au clic</strong>.
+      Le réglage exact est décrit dans notre <a href="/guides/yapyap-settings-guide">guide des réglages Yapyap</a>.
+    </p>
+
+    <h2>3. Trois rôles simples qui aident vraiment</h2>
+    <p>Pour une première nuit, je préfère une répartition légère : ça clarifie sans rigidifier.</p>
+    <ul>
+      <li><strong>Caller :</strong> surveille portes/bruit, annonce “on recule”, “on se regroupe”, “reset”.</li>
+      <li><strong>Pilote d'énigme :</strong> mène quand une énigme demande des interactions, et appelle deux aides.</li>
+      <li><strong>Référence wiki :</strong> garde les onglets wiki ouverts et ne lit que le nécessaire (baguettes, potions, bestiaire).</li>
+    </ul>
+    <p>À 2 joueurs, on cumule. À 5, gardez une personne qui tranche les décisions pour éviter que la discussion parte dans tous les sens.</p>
+
+    <h2>4. Les onglets que j'ouvre avant de lancer</h2>
+    <ul>
+      <li><strong>Sorts :</strong> <a href="/spell-generator">Spell Generator</a>, <a href="/spells">Spells</a></li>
+      <li><strong>Énigmes :</strong> <a href="/puzzles/ball-puzzle">Ball</a>, <a href="/puzzles/balance-puzzle">Balance</a>, <a href="/puzzles/door-puzzle">Door</a></li>
+      <li><strong>Wiki :</strong> <a href="/wiki/wands">Wands</a>, <a href="/wiki/potions">Potions</a>, <a href="/wiki/bestiary">Bestiary</a></li>
+    </ul>
+
+    <h2>5. Un “loop” calme pour la première nuit</h2>
+    <ol>
+      <li><strong>Valider d'abord :</strong> chaque joueur réussit 1–2 sorts (voix ou clic).</li>
+      <li><strong>Rester groupés si on doute :</strong> on ne se sépare que pour une raison claire.</li>
+      <li><strong>Guides au bon moment :</strong> on lit une étape, on réessaie, puis seulement si besoin on relit.</li>
+      <li><strong>Si le vocal se brouille :</strong> 10 secondes de pause, on réattribue les rôles.</li>
+    </ol>
+
+    <p>
+      Pour aller plus loin ensuite : <a href="/guides/yapyap-full-version-starter-guide">guide de démarrage version complète</a> et
+      <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">commandes essentielles</a>.
+    </p>
+  </div>`
+  },
   {
     "id": 4,
     "title": "Guide du débutant Yapyap : Vol infini, Farming & Combat",

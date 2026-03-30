@@ -195,6 +195,81 @@ export const guides = [
   },
 
   {
+    id: 7,
+    title: "My First Night in YAPYAP: A New Player’s Co-op Game Plan (No Spoilers)",
+    description:
+      "A new-player, co-op-first game plan for YAPYAP on Steam: how I’d split roles, set expectations for voice spells, prepare a quiet-casting fallback, and keep puzzle/wiki links ready—so the first night feels manageable instead of chaotic.",
+    tags: ["yapyap", "beginner", "co-op", "voice spells", "game plan", "first night"],
+    publishDate: "2026-03-23",
+    imageUrl: "/images/blog/blog02.webp",
+    imageAlt: "A YAPYAP co-op team preparing for their first night",
+    seo: {
+      title: "My First Night in YAPYAP: New Player Co-op Plan (Voice Spells, Roles, Links)",
+      description:
+        "A realistic, spoiler-light first-night plan for YAPYAP co-op on Steam: voice spell expectations, a click-to-cast fallback, simple team roles, and the exact pages to open before you queue.",
+      keywords:
+        "YAPYAP first night, YAPYAP beginner, YAPYAP co-op plan, YAPYAP voice spells, YAPYAP click to cast, YAPYAP puzzle guides, YAPYAP wiki",
+    },
+    isHome: true,
+    addressBar: "my-first-night-in-yapyap-new-player-coop-plan",
+    detailsHtml: `<div class="container">
+    <p>
+      I’m writing this from a <strong>new player</strong> point of view: not a speedrun route, not a secret exploit list—just a practical plan that keeps a first session with friends from turning into “everyone panics, nobody knows what to do.”
+      Everything here stays aligned with the game’s public positioning: <strong>YAPYAP</strong> is a <strong>co-op multiplayer horror game on Steam (Windows)</strong> with <strong>voice-activated spellcasting</strong>, stealth pressure, and puzzle moments.
+    </p>
+
+    <h2>1. The “before we queue” agreement (60 seconds)</h2>
+    <ul>
+      <li><strong>We will be loud in voice chat, but careful in game:</strong> stealth matters, so we call risks early.</li>
+      <li><strong>We will not assume voice spells work instantly:</strong> pronunciation and device selection can be a hurdle.</li>
+      <li><strong>We will keep it spoiler-light:</strong> we use guides when stuck, but we don’t read the whole solution if we still want to solve puzzles.</li>
+    </ul>
+
+    <h2>2. Voice spells without stress (mic + fallback)</h2>
+    <p>
+      The signature mechanic is that many spells expect you to <strong>speak an incantation into a microphone</strong>. If that’s fun for you, great—practice a few lines first:
+      open the <a href="/spell-generator">Spell Generator</a> and the <a href="/spells">spells list</a>.
+    </p>
+    <p>
+      If voice recognition is unreliable (or you need to play quietly), I’d enable the accessibility option that lets you <strong>click to cast</strong> instead of speaking.
+      The exact setting and the related control tips are covered in our <a href="/guides/yapyap-settings-guide">Yapyap settings guide</a>.
+    </p>
+
+    <h2>3. Simple co-op roles that actually help</h2>
+    <p>For a first night, I like three lightweight roles. They keep comms clean without turning the game into a job.</p>
+    <ul>
+      <li><strong>Caller:</strong> watches doors and noise risks, announces “back up” / “reset” moments.</li>
+      <li><strong>Puzzle driver:</strong> takes point when an interaction-heavy puzzle shows up and asks for two helpers.</li>
+      <li><strong>Wiki runner:</strong> keeps tabs open for quick reference (wands, potions, bestiary) and only reads what we need.</li>
+    </ul>
+    <p>
+      If you’re fewer than three players, combine roles. If you’re five, duplicate the “helper” part and keep one voice leading decisions.
+    </p>
+
+    <h2>4. The tabs I open on a second monitor</h2>
+    <ul>
+      <li><strong>Spell practice:</strong> <a href="/spell-generator">Spell Generator</a> and <a href="/spells">Spells</a></li>
+      <li><strong>Puzzles:</strong> <a href="/puzzles/ball-puzzle">Ball</a>, <a href="/puzzles/balance-puzzle">Balance</a>, <a href="/puzzles/door-puzzle">Door</a></li>
+      <li><strong>Wiki hubs:</strong> <a href="/wiki/wands">Wands</a>, <a href="/wiki/potions">Potions</a>, <a href="/wiki/bestiary">Bestiary</a></li>
+    </ul>
+    <p>That’s enough coverage for most “what is this?” questions without spoiling the whole run.</p>
+
+    <h2>5. A calm first-night loop</h2>
+    <ol>
+      <li><strong>Start small:</strong> test one or two spells so everyone confirms their casting method (voice or click).</li>
+      <li><strong>Stay coordinated:</strong> move as a group when unsure; split only when you have a reason.</li>
+      <li><strong>Use guides tactically:</strong> when stuck on an object puzzle, open the relevant page, skim the next step, then try again.</li>
+      <li><strong>Reset fast:</strong> if comms get messy, pause for ten seconds and reassign roles.</li>
+    </ol>
+
+    <p>
+      If you want a more mechanical starter after this, continue with the <a href="/guides/yapyap-full-version-starter-guide">full-version starter guide</a> and
+      the <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">essential controls &amp; settings guide</a>.
+    </p>
+  </div>`,
+  },
+
+  {
     id: 4,
     title: "Yapyap Full Version Starter Guide: Infinite Flight, Farming & Combat Tips",
     description: "Master the Yapyap full version with this starter guide. Learn the Three-Wand System for infinite flight, lobby gold farming locations, no-damage landing tricks, and combat strategies.",

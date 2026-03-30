@@ -195,6 +195,79 @@ export const guides = [
     },
 
     {
+        id: 7,
+        title: "私の YAPYAP 初夜：初心者視点の協力プレイ作戦（ネタバレ控えめ）",
+        description:
+            "初心者の目線でまとめた YAPYAP 協力プレイの進め方。音声呪文の前提と練習、クリック詠唱の代替手段、簡単な役割分担、そして事前に開くべき呪文・パズル・Wiki ページを整理しました。",
+        tags: ["yapyap", "初心者", "協力プレイ", "音声呪文", "初夜", "作戦"],
+        publishDate: "2026-03-23",
+        imageUrl: "/images/blog/blog02.webp",
+        imageAlt: "YAPYAP の初夜に向けて協力セッションを準備するチーム",
+        seo: {
+            title: "私の YAPYAP 初夜：初心者協力プラン（音声呪文・役割・リンク）",
+            description:
+                "Steam 版 YAPYAP の初回協力を落ち着いて進めるための、現実的でネタバレ控えめなプラン。音声呪文の準備、クリック詠唱のアクセシビリティ、役割分担、必要なリンクをまとめました。",
+            keywords:
+                "YAPYAP 初夜, YAPYAP 初心者, YAPYAP 協力, YAPYAP 音声呪文, YAPYAP クリック詠唱, YAPYAP パズル, YAPYAP Wiki",
+        },
+        isHome: true,
+        addressBar: "my-first-night-in-yapyap-new-player-coop-plan",
+        detailsHtml: `<div class="container">
+    <p>
+      これは<strong>初心者</strong>視点のメモです。速通ルートでも、裏技まとめでもありません。
+      初めてフレンドと遊ぶときに「全員が焦って空回りする」状態を避けるための、実用的な進行プランです。
+      前提は公開情報の範囲にそろえています：<strong>YAPYAP</strong> は <strong>Steam（Windows）</strong> の協力型ホラーで、<strong>音声で唱える呪文</strong>、ステルス圧、パズル要素が特徴です。
+    </p>
+
+    <h2>1. キュー前 60 秒：まず合意しておくこと</h2>
+    <ul>
+      <li><strong>VC は賑やかでも OK、ゲーム内は慎重に：</strong>リスクを先に共有する。</li>
+      <li><strong>音声呪文は最初から完璧に動く前提にしない：</strong>発音と入力デバイスでつまずくことがある。</li>
+      <li><strong>ネタバレは最小限：</strong>詰まったらガイドを使うが、答えを全部読む必要はない。</li>
+    </ul>
+
+    <h2>2. 音声呪文のストレスを減らす（練習＋代替手段）</h2>
+    <p>
+      目玉のひとつは、呪文を<strong>マイクに向かって唱える</strong>ことです。楽しみたいなら、最初に 2 分だけ練習：
+      <a href="/spell-generator">スペルジェネレーター</a> と <a href="/spells">呪文一覧</a> を開きます。
+    </p>
+    <p>
+      認識が不安定（または静かに遊びたい）場合は、アクセシビリティの<strong>クリック詠唱</strong>を代替手段として有効化します。
+      手順は <a href="/guides/yapyap-settings-guide">Yapyap 設定ガイド</a> にまとまっています。
+    </p>
+
+    <h2>3. 初夜に効く“軽い役割分担”</h2>
+    <p>最初の夜は、3 つの役割に分けるだけで混乱がかなり減ります。</p>
+    <ul>
+      <li><strong>コール役：</strong>扉・音・危険の報告をまとめ、撤退判断も明確に。</li>
+      <li><strong>パズル先導：</strong>インタラクション系の場面で手順を整理して進行。</li>
+      <li><strong>参照役：</strong>Wiki を開いて必要分だけ確認し、情報を短く共有。</li>
+    </ul>
+    <p>人数が少なければ兼任、5 人なら意思決定役を 1 人に寄せると会話が散りません。</p>
+
+    <h2>4. 事前に開いておくタブ（2 画面推奨）</h2>
+    <ul>
+      <li><strong>呪文：</strong><a href="/spell-generator">Spell Generator</a>、<a href="/spells">Spells</a></li>
+      <li><strong>パズル：</strong><a href="/puzzles/ball-puzzle">Ball</a>、<a href="/puzzles/balance-puzzle">Balance</a>、<a href="/puzzles/door-puzzle">Door</a></li>
+      <li><strong>Wiki：</strong><a href="/wiki/wands">Wands</a>、<a href="/wiki/potions">Potions</a>、<a href="/wiki/bestiary">Bestiary</a></li>
+    </ul>
+
+    <h2>5. 落ち着いて回す“初夜ループ”</h2>
+    <ol>
+      <li><strong>小さく確認：</strong>全員が（音声 or クリック）で呪文を 1〜2 回成功させる。</li>
+      <li><strong>不安なら集合：</strong>理由がない限り固まって動く。</li>
+      <li><strong>ガイドは一歩だけ：</strong>詰まったら該当ページで次の手だけ見て、また試す。</li>
+      <li><strong>会話が散ったらリセット：</strong>10 秒で役割を再宣言する。</li>
+    </ol>
+
+    <p>
+      もっと仕組みを学びたいなら、<a href="/guides/yapyap-full-version-starter-guide">製品版スターターガイド</a> と
+      <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">基本操作・設定ガイド</a> へ進みましょう。
+    </p>
+  </div>`,
+    },
+
+    {
         id: 4,
         title: "Yapyap 製品版スターターガイド：無限飛行、稼ぎ、戦闘のコツ",
         description: "製品版 Yapyap をマスターするためのスターターガイド。無限飛行を可能にする「3本杖システム」、ロビーでのゴールド稼ぎ場所、ノーダメージ着地術、そして戦闘戦略を学びましょう。",

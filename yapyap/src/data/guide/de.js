@@ -192,6 +192,75 @@ export const guides = [
   },
 
   {
+    "id": 7,
+    "title": "Meine erste Nacht in YAPYAP: Ein Einsteiger-Plan für Koop (spoilerarm)",
+    "description": "Ein spoilerarmer Koop-Plan aus Einsteigerperspektive: Erwartungen an Sprachzauber, ein Klick-Zaubern-Fallback, einfache Rollenverteilung und die wichtigsten Tabs (Zauber, Rätsel, Wiki), damit die erste Nacht weniger chaotisch wird.",
+    "tags": ["yapyap", "einsteiger", "koop", "sprachzauber", "erste nacht", "plan"],
+    "publishDate": "2026-03-23",
+    "imageUrl": "/images/blog/blog02.webp",
+    "imageAlt": "Ein YAPYAP-Koop-Team bereitet die erste Nacht vor",
+    "seo": {
+      "title": "Meine erste Nacht in YAPYAP: Einsteiger-Koop-Plan (Sprachzauber, Rollen, Links)",
+      "description": "Ein realistischer, spoilerarmer Plan für die erste YAPYAP-Koop-Session auf Steam: Sprachzauber, Klick-Zaubern als Alternative, Rollen und die Seiten, die ihr vor dem Queue öffnen solltet.",
+      "keywords": "YAPYAP erste Nacht, YAPYAP Einsteiger, YAPYAP Koop Plan, YAPYAP Sprachzauber, YAPYAP Klick zaubern, YAPYAP Rätsel Guides, YAPYAP Wiki"
+    },
+    "isHome": true,
+    "addressBar": "my-first-night-in-yapyap-new-player-coop-plan",
+    "detailsHtml": `<div class="container">
+    <p>
+      Das hier ist bewusst aus <strong>Einsteiger-Sicht</strong> geschrieben: kein Speedrun, keine geheimen Exploits – nur ein praktischer Ablauf, der verhindert, dass die erste Runde mit Freunden in Chaos und Missverständnissen endet.
+      Grundlage sind öffentliche Fakten: <strong>YAPYAP</strong> ist ein <strong>Koop-Multiplayer-Horrorspiel auf Steam (Windows)</strong> mit <strong>sprachaktivierten Zaubern</strong>, Stealth-Druck und Puzzle-Momenten.
+    </p>
+
+    <h2>1. Ein 60-Sekunden-Deal vor dem Queue</h2>
+    <ul>
+      <li><strong>Voice-Chat darf laut sein, im Spiel bleiben wir vorsichtig:</strong> Risiken früh ansagen.</li>
+      <li><strong>Sprachzauber sind kein „funktioniert sofort“:</strong> Aussprache und Eingabegerät können haken.</li>
+      <li><strong>Spoilerarm bleiben:</strong> Guides nur nutzen, wenn wir stecken – und dann nur den nächsten Schritt lesen.</li>
+    </ul>
+
+    <h2>2. Sprachzauber ohne Frust (Mikro + Alternative)</h2>
+    <p>
+      Viele Zauber erwarten, dass ihr <strong>Inkantationen ins Mikrofon sprecht</strong>. Wenn ihr das mögt: vor dem Start kurz üben –
+      mit dem <a href="/spell-generator">Spell Generator</a> und der <a href="/spells">Zauberliste</a>.
+    </p>
+    <p>
+      Wenn die Erkennung unzuverlässig ist (oder ihr leise spielen müsst), würde ich als Fallback die Barrierefreiheitsoption für <strong>Klick-Zaubern</strong> aktivieren.
+      Die Einstellung ist in unserem <a href="/guides/yapyap-settings-guide">Einstellungs-Guide</a> beschrieben.
+    </p>
+
+    <h2>3. Drei einfache Koop-Rollen für die erste Nacht</h2>
+    <p>Leichte Rollen helfen, ohne dass es sich nach Arbeit anfühlt.</p>
+    <ul>
+      <li><strong>Caller:</strong> achtet auf Türen/Lärmrisiken und ruft „zurück“ / „sammeln“ / „reset“.</li>
+      <li><strong>Puzzle-Driver:</strong> übernimmt bei Interaktionsrätseln die Führung und holt zwei Helfer dazu.</li>
+      <li><strong>Wiki-Runner:</strong> hält Wiki-Tabs offen und liest nur das Nötigste (Stäbe, Tränke, Bestiarium).</li>
+    </ul>
+    <p>Bei weniger Spielern: Rollen zusammenlegen. Bei fünf Spielern: eine Person trifft Entscheidungen, die anderen führen aus.</p>
+
+    <h2>4. Die Tabs, die ich vorher öffne</h2>
+    <ul>
+      <li><strong>Zauber:</strong> <a href="/spell-generator">Spell Generator</a>, <a href="/spells">Spells</a></li>
+      <li><strong>Rätsel:</strong> <a href="/puzzles/ball-puzzle">Ball</a>, <a href="/puzzles/balance-puzzle">Balance</a>, <a href="/puzzles/door-puzzle">Door</a></li>
+      <li><strong>Wiki:</strong> <a href="/wiki/wands">Wands</a>, <a href="/wiki/potions">Potions</a>, <a href="/wiki/bestiary">Bestiary</a></li>
+    </ul>
+
+    <h2>5. Ein ruhiger „First-Night-Loop“</h2>
+    <ol>
+      <li><strong>Erst prüfen:</strong> Jeder schafft 1–2 Zauber erfolgreich (Sprache oder Klick).</li>
+      <li><strong>Bei Unsicherheit zusammen bleiben:</strong> nur trennen, wenn es einen Grund gibt.</li>
+      <li><strong>Guides taktisch nutzen:</strong> stecken wir fest, lesen wir nur den nächsten Schritt und probieren erneut.</li>
+      <li><strong>Wenn Comms kippen:</strong> 10 Sekunden Pause, Rollen neu ansagen.</li>
+    </ol>
+
+    <p>
+      Für mehr Mechanik danach: <a href="/guides/yapyap-full-version-starter-guide">Vollversion-Starter-Guide</a> und
+      <a href="/guides/getting-started-yapyap-essential-controls-settings-guide">Steuerung &amp; Einstellungen</a>.
+    </p>
+  </div>`
+  },
+
+  {
     "id": 4,
     "title": "Yapyap Vollversion Starter-Guide: Unendlich Fliegen, Farming & Kampf-Tipps",
     "description": "Meistere die Yapyap Vollversion mit diesem Starter-Guide. Lerne das Drei-Stäbe-System für unendliches Fliegen, Gold-Farming-Spots in der Lobby, Tricks für schadenfreie Landungen und Kampfstrategien.",
