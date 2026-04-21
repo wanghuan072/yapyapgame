@@ -224,6 +224,62 @@ export const guides = [
   </div>`
   },
   {
+    "id": 9,
+    "title": "YAPYAP : mises à jour récentes (sorts vocaux au maintien, contrats, outils hôte, rythme de run)",
+    "description": "Vue condensée des ajustements récents après la sortie : Spell Voice Cast on Hold, piles de Jump Potion, expulsion par l'hôte et restrictions de salon, nouveaux contrats, salles de départ plus serrées, audio en spectateur, langues de voice-cast élargies, plus rappels sur boussole et systèmes de récupération.",
+    "tags": ["yapyap", "mises à jour", "sorts vocaux", "contrats", "coop"],
+    "publishDate": "2026-04-21",
+    "imageUrl": "/images/blog/blog09.webp",
+    "imageAlt": "Points clés des mises à jour récentes YAPYAP",
+    "seo": {
+      "title": "YAPYAP : mises à jour récentes (sorts au maintien, contrats, kick hôte)",
+      "description": "Changements récents qui se sentent en partie : maintien du clic droit pour les sorts vocaux, stacks de Jump Potion, kick hôte, nouveaux contrats, départs plus compacts, audio côté spectateur, langues supplémentaires, boussole et sauvegardes/récupérations.",
+      "keywords": "YAPYAP mises à jour, YAPYAP patch notes, YAPYAP Spell Voice Cast on Hold, YAPYAP contrats, YAPYAP kick hôte, YAPYAP langue vocale, YAPYAP coop"
+    },
+    "isHome": true,
+    "addressBar": "yapyap-steam-updates-voice-cast-contracts-mar-2026",
+    "detailsHtml": `<div class="container">
+    <p>
+      Le jeu continue d'évoluer après la sortie. Voici les <strong>réglages récents</strong> qui bougent le plus la communication d'équipe, le déplacement et la gestion des potions — utile quand vous reprenez après une mise à jour.
+    </p>
+
+    <h2>1. Même version pour tout le monde</h2>
+    <p>Si quelqu'un ne peut pas rejoindre, un <strong>version mismatch</strong> arrive souvent en premier. Mettez tout le monde à jour avant de chercher plus loin.</p>
+
+    <h2>2. Sorts vocaux et entrées</h2>
+    <ul>
+      <li><strong>Spell Voice Cast on Hold :</strong> option pour n'écouter la voix que <strong>tant que le clic droit est maintenu</strong>, pratique contre les lancers accidentels en furtif.</li>
+      <li><strong>Langues pour le voice-cast :</strong> la liste s'enrichit ; quand le menu le propose, choisissez <strong>Paramètres &gt; Général &gt; Voice Language</strong>, séparément du texte d'interface.</li>
+    </ul>
+
+    <h2>3. Sessions, loot et objectifs</h2>
+    <ul>
+      <li><strong>Jump Potion :</strong> la quantité <strong>empilable par emplacement</strong> a été revue — refaites un tri d'inventaire avant les longues nuits.</li>
+      <li><strong>Kick hôte :</strong> l'hôte peut exclure un joueur ; l'exclu reste en général <strong>limité pour ce salon</strong> jusqu'à ce que l'hôte relance une nouvelle session.</li>
+      <li><strong>Nouveaux contrats :</strong> davantage d'ordres de chaos — mettez à jour vos callouts.</li>
+      <li><strong>Flux du château :</strong> la génération peut démarrer dans des <strong>zones d'ouverture plus étroites</strong>, ce qui change le ressenti par rapport aux anciennes vidéos.</li>
+      <li><strong>Spectateur :</strong> les voix près de l'orbe d'extraction peuvent parvenir à la personne observée — fixez des règles si plusieurs spectateurs parlent.</li>
+    </ul>
+
+    <h2>4. Systèmes des vagues précédentes qui comptent encore</h2>
+    <ul>
+      <li>Aide type <strong>boussole</strong> vers la <strong>sortie du donjon</strong> et un peu plus de marge sur certains modes.</li>
+      <li><strong>Sauvegardes et récupération</strong> plus fiables pour stamina, équipement posé en lobby, ingrédients ; mécanisme proche d'un <strong>objet perdu &amp; retrouvé</strong> après une extraction ratée (selon le type d'objet).</li>
+      <li><strong>Polish combat :</strong> gargouilles, certains boss, cas limites de réanimation, visibilité des boucliers, interactions de type <strong>Grab Ana</strong> — ajustements successifs.</li>
+      <li>Les potions de <strong>double saut</strong> ne se stackent plus comme avant : point distinct du plafond actuel des Jump Potions.</li>
+    </ul>
+
+    <p>Micro et lancer au clic : <a href="/guides/yapyap-settings-guide">guide des réglages</a> ; prononciation : <a href="/spells">liste des sorts</a>.</p>
+
+    <p>
+      <strong>Sur ce site :</strong>
+      <a href="/guides/yapyap-co-op-voice-spells-checklist">checklist coop</a>,
+      <a href="/guides/yapyap-full-version-starter-guide">guide version complète</a>,
+      <a href="/wiki/potions">wiki potions</a>.
+    </p>
+  </div>`
+  },
+  {
     "id": 4,
     "title": "Guide du débutant Yapyap : Vol infini, Farming & Combat",
     "description": "Maîtrisez la version complète de Yapyap. Apprenez le système des trois baguettes pour le vol infini, les zones de farming d'or dans le lobby et les astuces de combat.",

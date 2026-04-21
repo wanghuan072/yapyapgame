@@ -261,6 +261,63 @@ export const guides = [
   },
 
   {
+    "id": 9,
+    "title": "YAPYAP: Aktuelle Updates – Voice-Cast beim Halten, Verträge, Host-Tools & Ablauf",
+    "description": "Kurzüberblick über jüngere Feintuning-Schritte nach Release: Spell Voice Cast on Hold, Jump-Potion-Stapel, Host-Kick mit Lobby-Sperre, neue Contracts, engere Startlayouts, Spectate-Audio, mehr Sprachen fürs Voice-Casting plus Kompass- und Recovery-Systeme, die weiterhin Routen beeinflussen.",
+    "tags": ["yapyap", "updates", "sprachzauber", "verträge", "koop"],
+    "publishDate": "2026-04-21",
+    "imageUrl": "/images/blog/blog09.webp",
+    "imageAlt": "YAPYAP aktuelle Updates zu Sprachzaubern und Koop",
+    "seo": {
+      "title": "YAPYAP aktuelle Updates: Voice-Cast on Hold, Verträge, Host-Kick",
+      "description": "Was sich zuletzt im Spiel bemerkbar macht: optionaler Rechtsklick-Gate für Spruchzauber, Jump-Potion-Stacks, Host-Kick, neue Contracts, kleinere Startzonen, Spectate-Audio, mehr Voice-Sprachen, Kompass-Hilfen und Save-/Lost-and-found-nahe Mechaniken.",
+      "keywords": "YAPYAP Updates, YAPYAP Patch Notes, YAPYAP Spell Voice Cast on Hold, YAPYAP Verträge, YAPYAP Host Kick, YAPYAP Voice Language, YAPYAP Koop"
+    },
+    "isHome": true,
+    "addressBar": "yapyap-steam-updates-voice-cast-contracts-mar-2026",
+    "detailsHtml": `<div class="container">
+    <p>
+      Nach dem Launch kommen regelmäßig Balance- und Komfort-Patches. Hier stehen die <strong>zuletzt spürbarsten Änderungen</strong> für Kommunikation, Movement und Inventar – praktisch, wenn ihr euch nach einem Update neu abstimmt.
+    </p>
+
+    <h2>1. Zuerst dieselbe Spielversion</h2>
+    <p>Wenn jemand nicht joinen kann, endet das oft als <strong>version mismatch</strong>. Alle aktualisieren, dann erst Netzwerk oder Einladungen prüfen.</p>
+
+    <h2>2. Sprachzauber und Eingabe</h2>
+    <ul>
+      <li><strong>Spell Voice Cast on Hold:</strong> optional – Spracherkennung lauscht nur, <strong>solange du Rechtsklick hältst</strong>. Hilft gegen versehentliche Zauber in Stealth.</li>
+      <li><strong>Mehr Sprachen fürs Voice-Casting:</strong> nach und nach erweitert; wenn das Menü es bietet, unter <strong>Settings → General → Voice Language</strong> wählen, getrennt vom UI-Text.</li>
+    </ul>
+
+    <h2>3. Sessions, Loot, Ziele</h2>
+    <ul>
+      <li><strong>Jump Potion:</strong> kürzlich wurde angepasst, wie viele Tränke <strong>in einem Slot gestapelt</strong> werden dürfen – Inventar kurz neu sortieren.</li>
+      <li><strong>Host-Kick:</strong> Hosts können störende Spieler entfernen; Entfernte bleiben typischerweise <strong>für diese Lobby gesperrt</strong>, bis der Host eine neue Session startet.</li>
+      <li><strong>Neue Contracts:</strong> mehr Chaos-Aufträge vom Meister – Callouts aktualisieren.</li>
+      <li><strong>Burg-Flow:</strong> Generierung kann in <strong>kompakteren Starträumen</strong> beginnen; frühes Geräuschmanagement weicht von alten Videos ab.</li>
+      <li><strong>Spectate:</strong> Stimmen an der Extraktionskugel können bei der spektierten Person ankommen – bei mehreren Zuschauern Regeln vereinbaren.</li>
+    </ul>
+
+    <h2>4. Ältere Wellen, die noch zählen</h2>
+    <ul>
+      <li><strong>Kompass-Hilfe</strong> Richtung <strong>Dungeon-Exit</strong> plus etwas mehr Luft in manchen Dungeon-Modi.</li>
+      <li><strong>Save &amp; Recovery:</strong> stabilere Saves für Stamina, Lobby-Items, Zutaten; nach fehlgeschlagener Extraktion gibt es <strong>lost-and-found-ähnliche</strong> Rückholungen (je nach Itemtyp unterschiedlich).</li>
+      <li><strong>Kampf-Feinschliff:</strong> Gargoyles, bestimmte Bosse, Revive-Sonderfälle, Schildsichtbarkeit, Greif-Physik – iterativ verbessert.</li>
+      <li><strong>Double-Jump-Tränke</strong> stacken nicht mehr wie früher – das ist ein eigener Eintrag neben den aktuellen Jump-Potion-Stacks.</li>
+    </ul>
+
+    <p>Mikro und Klick-Zaubern: <a href="/guides/yapyap-settings-guide">Einstellungs-Guide</a>, Aussprachechecks: <a href="/spells">Zauberliste</a>.</p>
+
+    <p>
+      <strong>Auf dieser Site:</strong>
+      <a href="/guides/yapyap-co-op-voice-spells-checklist">Koop-Checkliste</a>,
+      <a href="/guides/yapyap-full-version-starter-guide">Vollversion-Starter</a>,
+      <a href="/wiki/potions">Tränke-Wiki</a>.
+    </p>
+  </div>`
+  },
+
+  {
     "id": 4,
     "title": "Yapyap Vollversion Starter-Guide: Unendlich Fliegen, Farming & Kampf-Tipps",
     "description": "Meistere die Yapyap Vollversion mit diesem Starter-Guide. Lerne das Drei-Stäbe-System für unendliches Fliegen, Gold-Farming-Spots in der Lobby, Tricks für schadenfreie Landungen und Kampfstrategien.",

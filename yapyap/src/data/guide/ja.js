@@ -268,6 +268,66 @@ export const guides = [
     },
 
     {
+        id: 9,
+        title: "YAPYAP 最近のアップデート：ホールド中のみ音声詠唱、新契約、ホスト機能とランの流れ",
+        description:
+            "発売後の調整で変わりやすいポイントを短く整理。Spell Voice Cast on Hold、ジャンプポーションの所持枠、ホストキックとロビー制限、新契約、城の開始レイアウト、観戦まわりの音声、追加された音声詠唱言語に加え、コンパスやセーブ／拾回系の仕組みも触れる。",
+        tags: ["yapyap", "アップデート", "音声詠唱", "契約", "協力プレイ"],
+        publishDate: "2026-04-21",
+        imageUrl: "/images/blog/blog09.webp",
+        imageAlt: "YAPYAP の最近のアップデートと協力プレイの要点",
+        seo: {
+            title: "YAPYAP 最近のアップデート：音声詠唱ホールド、新契約、ホストキック",
+            description:
+                "最近の変更点：Spell Voice Cast on Hold、ジャンプポーションのスタック、ホストキックとロビー制限、新契約、コンパクトな開始エリア、観戦時の音声、音声詠唱言語の拡充、コンパスやロストアンド的な回収など。",
+            keywords:
+                "YAPYAP アップデート, YAPYAP パッチ, YAPYAP 音声詠唱 ホールド, YAPYAP 契約, YAPYAP キック, YAPYAP 音声言語, YAPYAP 協力",
+        },
+        isHome: true,
+        addressBar: "yapyap-steam-updates-voice-cast-contracts-mar-2026",
+        detailsHtml: `<div class="container">
+    <p>
+      アップデートが続くので、ここでは<strong>最近よく効いてくる変更</strong>だけを圧縮して並べます。パッチ後に再集合するときのメモとして使ってください。
+    </p>
+
+    <h2>1. まずクライアントのビルドを揃える</h2>
+    <p>参加できないときは <strong>version mismatch</strong> で止まることが多いです。まず全員が同じ世代のビルドか確認してから、招待や回線を疑うと早いです。</p>
+
+    <h2>2. 音声詠唱と入力</h2>
+    <ul>
+      <li><strong>Spell Voice Cast on Hold：</strong>オンにすると、<strong>右クリックを押している間だけ</strong>音声が詠唱として通るモード。ステルス中の誤爆を減らしたいとき向き。</li>
+      <li><strong>音声詠唱の言語：</strong>順次追加されています。メニューに出る場合は <strong>設定 &gt; 一般 &gt; Voice Language</strong> で、UI 言語とは分けて選べます。</li>
+    </ul>
+
+    <h2>3. セッション、ドロップ、目標</h2>
+    <ul>
+      <li><strong>ジャンプポーション：</strong>インベントリ上の<strong>スタック上限</strong>が見直され、長時間プレイ前に持ち方を組み直したくなるタイミングがあります。</li>
+      <li><strong>ホストキック：</strong>ホストがプレイヤーを外せるようになり、外された側はそのロビーで<strong>しばらく制限</strong>が残る運用になりがちです（ホストが新しいセッションを切るまでなど）。</li>
+      <li><strong>新しい契約：</strong>主人からの指示が増え、ルートとコールを更新する必要が出ます。</li>
+      <li><strong>城の流れ：</strong>生成調整で、序盤が<strong>狭い開始エリア</strong>から入ることがあり、足音や導線の感覚が古い動画とズレます。</li>
+      <li><strong>観戦まわりの音声：</strong>脱出エリアのオーブ周りでは、声が観戦対象側に届きやすいので、複数人で見るときは通話ルールを決めると安全です。</li>
+    </ul>
+
+    <h2>4. 以前の調整波で残る仕組み</h2>
+    <ul>
+      <li><strong>ダンジョン出口</strong>を探しやすくする<strong>コンパス系</strong>の支援と、一部モードでの時間の余裕。</li>
+      <li><strong>セーブと拾回</strong>：体力、ロビーに置いた装備、素材などの保存が安定し、脱出失敗時に<strong>ロストアンド風</strong>で戻るアイテムもあります（対象は種類によって異なります）。</li>
+      <li><strong>戦闘まわりの磨き込み</strong>：ガーゴイル、特定ボス、復活の端事例、盾の視界、掴み系の挙動などが段階的に整備されています。</li>
+      <li><strong>二段ジャンプ系ポーション</strong>のスタック規則は、ジャンプポーション枠とは別ラインで触れられているので、混同しないように。</li>
+    </ul>
+
+    <p>マイクとクリック詠唱の基本は <a href="/guides/yapyap-settings-guide">設定ガイド</a>、発音確認は <a href="/spells">呪文一覧</a> と併用してください。</p>
+
+    <p>
+      <strong>関連：</strong>
+      <a href="/guides/yapyap-co-op-voice-spells-checklist">協力チェックリスト</a>、
+      <a href="/guides/yapyap-full-version-starter-guide">製品版スターター</a>、
+      <a href="/wiki/potions">ポーション Wiki</a>。
+    </p>
+  </div>`,
+    },
+
+    {
         id: 4,
         title: "Yapyap 製品版スターターガイド：無限飛行、稼ぎ、戦闘のコツ",
         description: "製品版 Yapyap をマスターするためのスターターガイド。無限飛行を可能にする「3本杖システム」、ロビーでのゴールド稼ぎ場所、ノーダメージ着地術、そして戦闘戦略を学びましょう。",

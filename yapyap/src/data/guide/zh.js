@@ -268,6 +268,66 @@ export const guides = [
     },
 
     {
+        id: 9,
+        title: "YAPYAP 近期更新要点：按住才语音施法、新契约、房主管理与流程变化",
+        description:
+            "发售后的平衡与体验调整速览：可选的「按住右键才语音施法」、跳跃药水叠加上限、房主踢人与大厅黑名单、新契约、城堡开局房间与观战语音、以及陆续增加的语音施法语言；并补充指南针与失物招领类系统等仍会影响对局的习惯点。",
+        tags: ["yapyap", "更新", "语音施法", "契约", "联机"],
+        publishDate: "2026-04-21",
+        imageUrl: "/images/blog/blog09.webp",
+        imageAlt: "YAPYAP 近期更新与语音联机要点",
+        seo: {
+            title: "YAPYAP 近期更新：按住语音施法、新契约、房主踢人",
+            description:
+                "近期版本里影响最大的改动：Spell Voice Cast on Hold、Jump Potion 叠放、房主踢人与黑名单、新契约、更小开局房间、撤离观战语音、更多语音施法语言，以及指南针与存档/拾回机制等。",
+            keywords:
+                "YAPYAP 更新, YAPYAP 补丁说明, YAPYAP 语音施法 按住, YAPYAP 契约, YAPYAP 房主踢人, YAPYAP 语音语言, YAPYAP 联机",
+        },
+        isHome: true,
+        addressBar: "yapyap-steam-updates-voice-cast-contracts-mar-2026",
+        detailsHtml: `<div class="container">
+    <p>
+      发售后游戏仍在持续调整。下面汇总<strong>近期常见、且会改变小队沟通与背包习惯</strong>的改动，方便你在版本迭代后重新对齐打法。
+    </p>
+
+    <h2>1. 联机先对齐客户端版本</h2>
+    <p>若有人加不进来，不同构建往往会提示 <strong>version mismatch</strong>。先全员更新，再排查邀请或网络。</p>
+
+    <h2>2. 语音施法与输入</h2>
+    <ul>
+      <li><strong>Spell Voice Cast on Hold：</strong>可选功能，仅在<strong>按住鼠标右键</strong>时才采集语音施法，适合容易在紧张时误触识别的队伍。</li>
+      <li><strong>语音施法语言：</strong>陆续增加多语言支持；在菜单提供时，可在 <strong>设置 → 一般 → 语音语言（Voice Language）</strong> 选择与界面文本不同的念咒语言。</li>
+    </ul>
+
+    <h2>3. 对局、掉落与目标</h2>
+    <ul>
+      <li><strong>Jump Potion（跳跃药水）：</strong>近期调整了<strong>同一格可叠放数量</strong>，长跑前记得重新整理背包节奏。</li>
+      <li><strong>房主踢人：</strong>房主可移出问题玩家；被移出者通常在该大厅<strong>保持限制</strong>，直至房主开启新一局。</li>
+      <li><strong>新契约：</strong>更多来自主人的破坏类任务，语音里要及时同步目标变化。</li>
+      <li><strong>城堡流程：</strong>生成规则微调后，开局可能落在<strong>更紧凑的起始区域</strong>，前期声响与路线会和旧录像略有差异。</li>
+      <li><strong>观战语音：</strong>撤离区域围绕法球观战时，语音可能传到被观战者一侧，多人围观时建议约定说话方式。</li>
+    </ul>
+
+    <h2>4. 仍会影响习惯的前期调整</h2>
+    <ul>
+      <li>提供<strong>指南针式</strong>的指引帮助寻找<strong>地城出口</strong>，部分地城模式下的时间压力也有放宽。</li>
+      <li><strong>存档与拾回</strong>：体力、大厅留置装备、炼金材料等保存更稳定；未成功撤离时还有类似<strong>失物招领</strong>的补偿机制（具体规则因物品种类而异）。</li>
+      <li><strong>战斗与交互</strong>：石像鬼、部分首领、复活边界、护盾视野与抓取类物理等经历多轮打磨。</li>
+      <li><strong>二段跳类药水</strong>的叠放规则曾单独调整，与当前 Jump Potion 的叠放上限<strong>不是同一条机制</strong>，配装时请分开记忆。</li>
+    </ul>
+
+    <p>麦克风与点击施法等基础设置，可配合本站 <a href="/guides/yapyap-settings-guide">设置指南</a> 与 <a href="/spells">咒语列表</a> 使用。</p>
+
+    <p>
+      <strong>本站相关：</strong>
+      <a href="/guides/yapyap-co-op-voice-spells-checklist">联机合作清单</a>、
+      <a href="/guides/yapyap-full-version-starter-guide">正式版新手指南</a>、
+      <a href="/wiki/potions">药水维基</a>。
+    </p>
+  </div>`,
+    },
+
+    {
         id: 4,
         title: "Yapyap 正式版新手指南：无限飞行、刷钱与战斗技巧",
         description: "通过这份新手指南掌握 Yapyap 正式版。学习用于无限飞行的‘三杖系统’、大厅金币刷钱位置、无伤落地技巧以及战斗策略。",

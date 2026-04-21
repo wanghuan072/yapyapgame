@@ -270,6 +270,66 @@ export const guides = [
   },
 
   {
+    id: 9,
+    title: "YAPYAP Recent Updates: Spell Voice Cast on Hold, Contracts, Host Tools & Run Flow",
+    description:
+      "A compact look at post-launch tuning that changes voice casting, co-op lobbies, and loot habits: optional right-click gating for voice spells, Jump Potion carry rules, host kick flow, new contracts, castle start layouts, spectate audio, and extra voice languages—plus compass and recovery systems worth remembering.",
+    tags: ["yapyap", "updates", "voice casting", "contracts", "co-op"],
+    publishDate: "2026-04-21",
+    imageUrl: "/images/blog/blog09.webp",
+    imageAlt: "YAPYAP recent update highlights for voice casting and co-op",
+    seo: {
+      title: "YAPYAP Recent Updates: Voice Cast on Hold, Contracts & Host Kick",
+      description:
+        "Recent YAPYAP changes that matter in runs: Spell Voice Cast on Hold, Jump Potion stacking, host kick and lobby blacklist, new contracts, tighter opening rooms, spectate audio, more voice languages, plus compass and lost-and-found style recovery.",
+      keywords:
+        "YAPYAP updates, YAPYAP patch notes, YAPYAP Spell Voice Cast on Hold, YAPYAP contracts, YAPYAP host kick, YAPYAP voice language, YAPYAP co-op",
+    },
+    isHome: true,
+    addressBar: "yapyap-steam-updates-voice-cast-contracts-mar-2026",
+    detailsHtml: `<div class="container">
+    <p>
+      YAPYAP keeps getting balance and quality-of-life passes after launch. Here is a <strong>short picture of recent changes</strong> that most often shift how squads talk, move, and pack potions—handy when you regroup after an update.
+    </p>
+
+    <h2>1. Same build before anything else</h2>
+    <p>If a friend cannot join, mismatched clients usually surface as a <strong>version mismatch</strong> warning. Have everyone update first, then troubleshoot invites or network.</p>
+
+    <h2>2. Voice casting and input</h2>
+    <ul>
+      <li><strong>Spell Voice Cast on Hold:</strong> optional setting so voice recognition only listens <strong>while you hold right-click</strong>. Strong option if accidental casts were breaking stealth.</li>
+      <li><strong>More spoken spell languages:</strong> additional languages have been rolled out over time; pick what fits your squad under <strong>Settings → General → Voice Language</strong> when the menu offers it, separately from UI text where supported.</li>
+    </ul>
+
+    <h2>3. Sessions, loot, and objectives</h2>
+    <ul>
+      <li><strong>Jump Potion:</strong> recent tuning raised how many you can <strong>stack in one inventory slot</strong>—refresh your muscle memory before long nights.</li>
+      <li><strong>Host kick:</strong> hosts can remove disruptive players; removed players typically stay <strong>blocked for that lobby</strong> until the host starts a fresh session.</li>
+      <li><strong>New contracts:</strong> more optional chaos directives from your patron—update callouts when the task mix shifts.</li>
+      <li><strong>Castle flow:</strong> generation tweaks can place teams in <strong>tighter opening rooms</strong>, so early noise and routing may feel different from older footage.</li>
+      <li><strong>Spectating:</strong> voices near the extraction orb can reach whoever is being watched—keep comms clean if several people spectate at once.</li>
+    </ul>
+
+    <h2>4. Systems from earlier tuning waves</h2>
+    <ul>
+      <li><strong>Compass-style help</strong> toward the <strong>dungeon exit</strong>, with extra breathing room in some dungeon modes.</li>
+      <li><strong>Saves and recovery</strong> improvements for stamina, lobby-placed gear, ingredients, and a <strong>lost-and-found style</strong> pickup when extractions fail (rules differ by item type).</li>
+      <li><strong>Combat polish:</strong> gargoyles, certain bosses, revive edge cases, shield visibility, and grab-based physics saw iterative fixes.</li>
+      <li><strong>Double jump potions</strong> were changed so they no longer stack the old way—that is a different line item from the newer Jump Potion stack cap.</li>
+    </ul>
+
+    <p>For microphones and click-to-cast accessibility, read our <a href="/guides/yapyap-settings-guide">settings guide</a> and keep the <a href="/spells">spells list</a> nearby for pronunciation checks.</p>
+
+    <p>
+      <strong>More on this site:</strong>
+      <a href="/guides/yapyap-co-op-voice-spells-checklist">Co-op checklist</a>,
+      <a href="/guides/yapyap-full-version-starter-guide">Full-version starter</a>,
+      <a href="/wiki/potions">Potions wiki</a>.
+    </p>
+  </div>`,
+  },
+
+  {
     id: 4,
     title: "Yapyap Full Version Starter Guide: Infinite Flight, Farming & Combat Tips",
     description: "Master the Yapyap full version with this starter guide. Learn the Three-Wand System for infinite flight, lobby gold farming locations, no-damage landing tricks, and combat strategies.",
